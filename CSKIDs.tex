@@ -233,7 +233,7 @@ $\!\!\!\!\!\!\,\bullet$\themnotecount: #1} }
 \begin{abstract}
  We obtain necessary and sufficient conditions for an initial data set
  for the \emph{vacuum conformal Einstein field equations} to give rise
- to a spacetime development in possession of a Killing spinor.
+ to a spacetime development possessing a Killing spinor.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This  constitutes the conformal analogue of the Killing spinor initial data
 % equations derived in \cite{GarVal08c}.
@@ -242,7 +242,7 @@ $\!\!\!\!\!\!\,\bullet$\themnotecount: #1} }
  field equations are used in our derivation allows for the possibility
  that the initial hypersurface be (part of) the conformal boundary
  $\mathscr{I}$. For conciseness, these conditions are derived assuming
- that the initial hypersurface is spacelike. Consequently, these
+ that the initial hypersurface is spacelike. Consequently\mnotex{Not restricted to this, right?}, these
  equations encode necessary and sufficient conditions for the
  existence of a Killing spinor in the development of asymptotic
  initial data on spacelike components of $\mathscr{I}$.
@@ -672,7 +672,7 @@ $\nabla_\tau,~\mathcal{D}_{AB}$.
 To write these commutators in a
 succinct way, first define
 \[\widehat{\square}_{AB}\equiv \tau_A{}^{A'}\tau_B{}^{B'}\square_{A'B'}\]
-from which, proceeding analogously as in \cite{BaeVal10b}, one obtains
+from which, proceeding analogously as in \cite{BaeVal10b}, one obtains\mnotex{Are we actually using these?}
 \begin{align}
  \left[\nabla_\tau ,\mathcal{D}_{AB}
    \right]&=-\tfrac{1}{2}\chi_{AB}-\square_{AB}+\widehat{\square}_{AB}
@@ -1912,8 +1912,10 @@ A short computation shows that
 \begin{equation}
 \nabla_{(A}{}^{A'}H_{\vert A'\vert BCD)} = 6\Xi B_{ABCD}. \label{Eq:BuchdahlAsCurlOfH}
 \end{equation}
-However, we will see that, unlike the twistor case, one cannot obtain a closed homogeneous wave system in terms of these variables alone. We also define the zero quantity
-\[ F_{A'BCD}:=\nabla^A{}_{A'}B_{ABCD}.\]
+We will see that, unlike the twistor case, one cannot obtain a closed homogeneous wave system in terms of these variables alone and we shall need the following additional zero quantity
+\begin{equation}
+ F_{A'BCD}:=\nabla^Q{}_{A'}B_{QBCD}.\label{Eq:DefZeroQuantityF}
+\end{equation}
 We shall see that one can derive a closed homogeneous wave system for $(\bmh, \bmB, \bmF)$. \mnotex{Add factor of one half into def of $Q$.}
 \begin{equation}
  Q_{BC} := \nabla^{AA'}H_{A'ABC} \equiv  2(\square \kappa_{BC} + 4 \Lambda\kappa_{BC}  - \Xi \kappa^{AD} \phi_{BCAD})=0. \label{Eq:WaveForKS}
@@ -1939,7 +1941,7 @@ Contracting with $\nabla^A{}_{B'}$ we then derive the following wave equation:
 \begin{multline}
     \square H_{B'ABC} = 6 \Lambda H_{B'ABC} - 12 \Xi F_{B'ABC} - 12 B_{ABCD} \nabla^{D}{}_{B'}\Xi \\+ \tfrac{3}{2} \nabla_{(A|B'|}Q_{BC)} - 6 \Phi_{(A}{}^{D}{}_{|B'}{}^{A'}H_{A'|BC)D}
 \end{multline}
-Similarly, substituting the definition of $F_{A'ABC}$ in terms of $B_{ABCD}$, it is straightforward to verify the following wave equation for $B_{ABCD}$: \mnotex{I haven't carried the $\bmQ$ quantities}
+Similarly, applying $\nabla_A{}^{A'}$ to \eqref{Eq:DefZeroQuantityF}, it is straightforward to verify the following wave equation for $B_{ABCD}$: \mnotex{I haven't carried the $\bmQ$ quantities}
 \begin{equation}
      \square B_{ABCD} = 12\Lambda B_{ABCD} - 6\Xi \phi_{(AB}{}^{FG}B_{CD)FG} + 2\nabla_{AA'}F^{A'}{}_{BCD}. \label{Eq:FirstWaveEqForB}
 \end{equation}
@@ -1947,7 +1949,7 @@ The task remaining is to derive a wave equation for $F_{A'ABC}$. Let us first co
 \begin{multline}
 2\phi_{(AB}{}^{GH}B_{CF)GH}= \kappa_A{}^D\phi_{(BC}{}^{GH}\phi_{FD)GH}+\kappa_B{}^D\phi_{(AC}{}^{GH}\phi_{FD)GH}\\+\kappa_C{}^D\phi_{(AB}{}^{GH}\phi_{FD)GH}+\kappa_F{}^D\phi_{(BC}{}^{GH}\phi_{AD)GH}.\label{Eq:UsefulIdentity1}
  \end{multline}
-Using this, along with the irreducible decomposition
+Using this, along with the irreducible decomposition\mnotex{Can shorten this}
 \begin{align*}
 \phi_{ABCD} \phi_{FGH}{}^{D} &= \tfrac{1}{24} \phi_{DLMP} \phi^{DLMP} \epsilon_{AH} \epsilon_{BG} \epsilon_{CF} + \tfrac{1}{24} \phi_{DLMP} \phi^{DLMP} \epsilon_{AG} \epsilon_{BH} \epsilon_{CF} \\
 & + \tfrac{1}{24} \phi_{DLMP} \phi^{DLMP} \epsilon_{AH} \epsilon_{BF} \epsilon_{CG} + \tfrac{1}{24} \phi_{DLMP} \phi^{DLMP} \epsilon_{AF} \epsilon_{BH} \epsilon_{CG} \\
@@ -1971,7 +1973,7 @@ Substituting the above identities \eqref{Eq:UsefulIdentity1}--\eqref{Eq:UsefulId
 
 \begin{remark}{\em}\mnotex{Check that the signs are correct}
 The Lie derivative doesn't extend to spinor fields, but let us define
-\[ \mathcal{L}_{\bm\xi}\phi_{ABCD} = \nabla_{\bm\xi}\phi_{ABCD} + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'},\]
+\[ \mathcal{L}_{\bm\xi}\phi_{ABCD} := \nabla_{\bm\xi}\phi_{ABCD} + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'},\]
 this is simply the spinorialised counterpart of $\mathcal{L}_{\bm\xi}d_{abcd}$. One can then show the following:
 \begin{align*}
     \mathcal{L}_{\bm\xi}\phi_{ABCD}&\equiv  \nabla_{\bm\xi}\phi_{ABCD} + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'} \\
@@ -1980,15 +1982,14 @@ this is simply the spinorialised counterpart of $\mathcal{L}_{\bm\xi}d_{abcd}$. 
 Q_{D)}{}^{F}\\
     &= \nabla_{\bm\xi}\phi_{ABCD}-6\Lambda B_{ABCD} - 3\Xi \phi_{(AB}{}^{FG}B_{CD)FG} + \tfrac{1}{4}\phi_{F(ABC}Q_{D)}{}^F
 \end{align*}
-where we are using \eqref{Eq:DecompGradXi}, along with the identity
-\[\kappa^{DG}\phi_{(ABC}{}^{H}\phi_{F)DGH} = 2 \
-B_{(AB}{}^{DG}\phi_{CF)DG}. \]
-Given a Killing spinor $\kappa_{AB}$, we have  $B_{ABCD}=H_{A'ABC}=Q_{AB}=0$ and hence it follows from \eqref{Eq:SecondWaveEqForB} that
+where we are using \eqref{Eq:DecompGradXi}, along with the identity \eqref{Eq:UsefulIdentity2}. Given a Killing spinor $\kappa_{AB}$, we have  $B_{ABCD}=H_{A'ABC}=Q_{AB}=0$ and hence it follows from \eqref{Eq:SecondWaveEqForB} that
 \[\mathcal{L}_{\bm\xi}\phi_{ABCD} = \nabla_{\bm\xi}\phi_{ABCD} =0.\]
 In particular, we recover the well-known fact that, in the physical spacetime $\mathcal{L}_{\bm{\tilde{\xi}}}\tilde{C}_{abcd}=0$ as $\tilde{\xi}_{AA'}$ is a Killing vector. 
 \end{remark}
 
-At this point we note that there are no derivatives of zero quantities appearing on the right-hand-side of \eqref{Eq:SecondWaveEqForB}. This, combined with the fact that $\nabla^A{}_{A'}\phi_{ABCD}=0$, suggests that by applying $\nabla^A{}_{A'}$ to \eqref{Eq:SecondWaveEqForB} we will be able to derive a wave equation for $F_{A'BCD}$. We will see that this does indeed work; the only essential difficulty is in showing that $\nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD}$ is expressible in terms of the zero quantities $\bmH, \bmB, \bmF$ and their first derivatives only. First, we note the following identities:
+At this point we note that there are no derivatives of zero quantities appearing on the right-hand-side of \eqref{Eq:SecondWaveEqForB}. This, combined with the fact that $\nabla^A{}_{A'}\phi_{ABCD}=0$, suggests that by applying $\nabla^A{}_{A'}$ to \eqref{Eq:SecondWaveEqForB} we will be able to derive a wave equation for $F_{A'BCD}$. We will see that this does indeed work; the only essential difficulty is in showing that $\nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD}$ is expressible in terms of the zero quantities $\bmH, \bmB, \bmF$ and their first derivatives only. \\
+
+First, we note some useful identities.\mnotex{Put in appendix?}
 \begin{equation}
  \kappa^{CD} \nabla_{DG'}\phi_{ABFC} = 2 \xi^{C}{}_{G'} \phi_{ABFC} +  \phi_{CD(AB} H_{\vert G'\vert F)}{}^{CD} - 4 F_{G'ABF}\label{Eq:MiscIdentity}
  \end{equation}
@@ -2010,14 +2011,14 @@ Using the irreducible decomposition
 \begin{equation}
 \phi_{ABCD} \phi_{FG}{}^{CD} = \tfrac{1}{6} \phi_{CDHL} \phi^{CDHL} \epsilon_{AG} \epsilon_{BF} + \tfrac{1}{6} \phi_{CDHL} \phi^{CDHL} \epsilon_{AF} \epsilon_{BG} + \phi_{(AB}{}^{CD}\phi_{FG)CD} \label{Eq:DecompPhiSquared}
 \end{equation}
-we can show that
+we can show that\mnotex{Put derivation in an appendix?}
 \begin{align}
     \kappa^{AD} \phi_{AD}{}^{GH} \nabla_{HA'}\phi_{BCFG} &=  4 \xi^{A}{}_{A'}\phi_{(BC}{}^{DG}\phi_{F)ADG} + \tfrac{1}{2} \phi_{ADGH} \phi^{ADGH} H_{A'BCF} \nonumber\\  
     & - 4 B_{(B}{}^{ADG}\nabla_{|AA'|}\phi_{CF)DG} - 8 \phi_{(BC}{}^{AD}F_{|A'|F)ADG}\nonumber \\ 
     & - 4 \phi_{(B}{}^{ADG}\nabla_{|AA'|}B_{CF)DG}  - \tfrac{1}{3} \phi_{(BC}{}^{AD}\phi_{|AD}{}^{GH}H_{A'|F)GH}\nonumber \\
     & -  \tfrac{2}{3} \phi_{(B}{}^{ADG}\phi_{C|AD}{}^{H}H_{A'|F)GH} \label{Eq:MiscIdentity3}
 \end{align}
-We can then derive\mnotex{Check the last equality ---had to typeset manually}...
+We return now to the task of expressing $ \nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD}$ in terms of zero-quantities:\mnotex{Check the last equality ---had to typeset manually}...
 \begin{align}
     \nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD} &=  \nabla_{\bm\xi}(\nabla^A{}_{A'}\phi_{ABCD}) + (\nabla^A{}_{A'}\xi^{FF'})\nabla_{FF'} \phi_{ABCD} + \xi^{FF'}\left[\nabla^A{}_{A'}, \nabla_{FF'}\right]\phi_{ABCD}\nonumber\\
     & = (\nabla^A{}_{A'}\xi^{FF'})\nabla_{FF'} \phi_{ABCD} + \xi^{FF'}\left[\nabla^A{}_{A'}, \nabla_{FF'}\right]\phi_{ABCD}\nonumber\\
@@ -2035,7 +2036,7 @@ We can then derive\mnotex{Check the last equality ---had to typeset manually}...
     &\quad  - \tfrac{1}{2} \Phi ^{DF}{}_{A'}{}^{F'}\phi _{A(B|D}{}^{G}H_{F'|CF)G}+ \tfrac{1}{6}\Xi H_{A'A}{}^{DF}\phi_{(BC}{}^{GH}\phi_{DF)GH} \nonumber\\
     &\quad + \tfrac{1}{6}\Xi H_{A'B}{}^{DF}\phi_{(CA}{}^{GH}\phi_{DF)GH} + \tfrac{1}{6}\Xi H_{A'C}{}^{DF}\phi_{(AB}{}^{GH}\phi_{DF)GH} \label{Eq:CollineationIdentity}
 \end{align}
-where the third equality follows from \eqref{Eq:DecompGradXi},  $\Lambda _{CC'AB}=0$ and by expanding the commutator; the fourth equality follows from \eqref{Eq:MiscIdentity2}--\eqref{Eq:MiscIdentity3}. Note that the final expression is homogeneous in the zero quantities $(\bmH, \bmB,\bmF)$ and their first derivatives.\mnotex{This isn't necessarily in its simplest form.}
+where the third equality follows from \eqref{Eq:DecompGradXi},  the CFE $\Lambda _{CC'AB}=0$ and by expanding the commutator and the fourth equality follows from \eqref{Eq:MiscIdentity2}--\eqref{Eq:MiscIdentity3}. Note that the final expression is homogeneous in the zero quantities $(\bmH, \bmB,\bmF)$ and their first derivatives.\mnotex{This isn't necessarily in its simplest form.}
 \\
 
 Then, 
@@ -2054,7 +2055,7 @@ where we are using \eqref{Eq:SecondWaveEqForB} in the third line and in the four
   Given initial data for the conformal field equations on $\mathcal{U}\subseteq\mathcal{S}$
   where $\mathcal{S}$ is a spacelike
 hypersurface $\mathcal{S}$ with normal vector $\tau^{AA'}$, and
-associated normal derivative $\nabla_\tau \equiv
+associated normal derivative $\nabla_{\bm\tau} \equiv
 \tau^{AA'}\nabla_{AA'}$, the corresponding spacetime development
 admits a (valence-2) Killing spinor in $\mathcal{D}^{+}(\mathcal{U})$ ---the future domain of dependence of $\mathcal{U}$---  if and only if
 \begin{subequations}
@@ -2066,34 +2067,35 @@ admits a (valence-2) Killing spinor in $\mathcal{D}^{+}(\mathcal{U})$ ---the fut
  hold on $\mathcal{U}$.
 \end{proposition}
 
+To summarise: we have found necessary and sufficient conditions, namely \eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSInitialCondition2}, defined on $\mathcal{U}\subset \mathcal{S}$, for a given Killing spinor candidate, $\kappa_{AB}$, to give rise to a Killing spinor when evolved according to $Q_{AB}=0$. 
 
 \subsection{Intrinsic conditions}
 
-In this section, we aim to reduce \eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSInitialCondition2} to a set of intrinsic conditions ---that is to say, conditions on $\kappa_{AB}$ and its spatial derivatives that are computable at the level of initial data. We consider $\kappa_{AB}$ defined over $\mathcal{S}$ satisfying
+In this section, we aim to reduce \eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSInitialCondition2} to a set of intrinsic conditions ---that is to say, conditions on $\kappa_{AB}$ that are computable at the level of an initial data manifold. We consider $\kappa_{AB}$ defined over $\mathcal{S}$ satisfying
 \begin{subequations}
 \begin{eqnarray}
       && \tau_{(A}{}^{A'}H_{\vert A'\vert BCD)} \equiv  \mathcal{D}_{(AB}\kappa_{CD)}=0, \label{Eq:SpatialKS}\\
-      && B_{ABCD}\equiv \kappa_{(A}{}^F\phi_{BCD)F} = 0
+      && B_{ABCD}\equiv \kappa_{(A}{}^F\phi_{BCD)F} = 0 \label{Eq:VanishingBuchdahl}
 \end{eqnarray}
 \end{subequations}
 on $\mathcal{S}$. We evolve the Killing spinor candidate according to \eqref{Eq:WaveForKS} and the initial condition
 \begin{equation}
      \nabla_{\bm\tau} \kappa_{BC} = - \xi_{BC}\label{InitialCondition}
 \end{equation}
-on $\mathcal{S}$, with $\xi_{AB}:=\mathcal{D}_{(A}{}^C\kappa_{B)C}$. This can be easily shown to be equivalent to $\tau^{AA'}H_{A'ABC}=0$, and so \eqref{InitialCondition} and \eqref{Eq:SpatialKS} together encode $H_{A'ABC}=0$ on $\mathcal{S}$. Decomposing the covariant derivative, we have on $\mathcal{S}$
+on $\mathcal{S}$, with $\xi_{AB}:=\mathcal{D}_{(A}{}^C\kappa_{B)C}$. This can be easily shown to be equivalent to $\tau^{AA'}H_{A'ABC}=0$, and so \eqref{InitialCondition} and \eqref{Eq:SpatialKS} together encode $H_{A'ABC}\big\vert_{\mathcal{S}}=0$. Decomposing the covariant derivative, we have on $\mathcal{S}$
 \begin{align}
 \xi_{AB'} =  - \tau_{B}{}^{A'} \tau^{B}{}_{B'}\xi_{AA'} &=\tfrac{1}{2}\tau^{B}{}_{B'}\nabla_{\bm\tau}\kappa_{AB} + \
 \tau^{B}{}_{B'} \mathcal{D}_{BC}\kappa_{A}{}^{C}. \nonumber\\
 &=\tfrac{1}{2}\tau^{B}{}_{B'}\nabla_{\bm\tau}\kappa_{AB} - \tau^B{}_{B'}\xi_{AB} + \xi\tau_{AB'} \nonumber\\
-&= -\tfrac{3}{2} \tau^B{}_{B'}\xi_{AB} + \xi\tau_{AB'} \label{DecompXiOnSUsingInitialCondition}
+&= -\tfrac{3}{2} \tau^B{}_{B'}\xi_{AB} + \xi\tau_{AB'} \label{DecompXiOnSUsingInitialCondition},
 \end{align}
-where in the last line we are using \eqref{InitialCondition}. Starting from \eqref{IrrDecompCurlOfH}, and performing the decomposition of the covariant derivative, we get
+with $\xi:=\mathcal{D}^{AB}\kappa_{AB}$, and where in the last line we are using \eqref{InitialCondition}. Starting from \eqref{IrrDecompCurlOfH}, and performing the decomposition of the covariant derivative, we get
 \[ \nabla_{\bm\tau} H_{B'ABC} + 2 \tau^{D}{}_{B'} \tau^{FA'} \mathcal{D}_{DF}H_{A'ABC} = -12 \Xi \tau^{D}{}_{B'}B_{ABCD} + \tfrac{3}{2} \tau_{(A|B'|}Q_{BC)}.\]
-At this point we see that if ()--() hold then $\nabla_{\bm\tau} H_{B'ABC}=0$ on $\mathcal{S}$. Now we move onto $B_{ABCD}$. A similar computation to the twistor case yields
+At this point we see that if \eqref{Eq:SpatialKS}--\eqref{Eq:VanishingBuchdahl} hold, then $\nabla_{\bm\tau} H_{B'ABC}\big\vert_{\mathcal{S}}=0$. Now we move onto $B_{ABCD}$: a similar computation to the twistor case yields
 \begin{equation}
-    \nabla_{\bm\tau} B_{ABCD} = 2 \kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\label{EvolutionForBuchdahl}
+    \nabla_{\bm\tau} B_{ABCD} = 2 \kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}.\label{EvolutionForBuchdahl}
 \end{equation}
-Note that the quantity on the right-hand-side is intrinsic to $\mathcal{S}$; we add it to our list of conditions (for the meantime). Consider now the quantity $F_{A'ABC}$; by definition, $F_{A'ABC}=\nabla^D{}_{A'}B_{ABCD}$ and so, decomposing the covariant derivative
+Note that the quantity on the right-hand-side is intrinsic to $\mathcal{S}$; we add it to our list of conditions (for the meantime). Consider now the quantity $F_{A'ABC}$; recall that, by definition, $F_{A'ABC}=\nabla^D{}_{A'}B_{ABCD}$, and so decomposing the covariant derivative one obtains
 \[F_{A'BCD} = \tfrac{1}{2} \tau^{A}{}_{A'} \nabla_{\bm\tau} B_{ABCD}  -  \tau^{F}{}_{A'} \mathcal{D}^{A}{}_{F}B_{ABCD}.\]
 Hence, given the vanishing of $B_{ABCD}$ and the right-hand-side of \eqref{EvolutionForBuchdahl}, we see that $F_{A'ABC}=0$ on $\mathcal{S}$, too. Thus, all that's left is to find intrinsic conditions under which $\nabla_{\bm\tau}F_{A'ABC}=0$ on $\mathcal{S}$. Now, combining our two wave equations for $B_{ABCD}$, \eqref{Eq:FirstWaveEqForB} and \eqref{Eq:SecondWaveEqForB}, we see that 
 \begin{multline}
@@ -2104,11 +2106,11 @@ Decomposing the covariant derivative, we have
 \nabla_{\bm\tau} F_{B'BCD} + 2 \tau^{A}{}_{B'} \tau^{FA'} \mathcal{D}_{AF}F_{A'BCD} \\
 = \tau^{A}{}_{B'}\left(\tfrac{2}{3} \nabla_{\xi}{}\phi_{BCDA}  - 4 \Lambda  B_{BCDA} + 6 \Xi  B_{(BC}{}^{FG}  \phi_{D)AFG}  \right. \\ \left.  - 14 \Xi  B_{(BC}{}^{AG}\phi_{DA)FG}  -  \tfrac{1}{2}  \phi_{(BCD}{}^{F}Q_{A)F}   + \tfrac{2}{3}  H^{A'}{}_{(B}{}^{FG}\nabla_{|FA'|}\phi_{CDA)G}\right).
 \end{multline}
-Hence, if $F_{A'ABC}=H_{A,ABC}=B_{ABCD}=0$ on $\mathcal{S}$, then we will also have $\nabla_{\bm\tau}F_{A'ABC}\big\vert_{\mathcal{S}}=0$ if and only if  
+Hence, if $F_{A'ABC}\big\vert_{\mathcal{S}}=H_{A,ABC}\big\vert_{\mathcal{S}}=B_{ABCD}\big\vert_{\mathcal{S}}=0$, then $\nabla_{\bm\tau}F_{A'ABC}\big\vert_{\mathcal{S}}=0$ if and only if  
 \[ \nabla_{\bm\xi}\phi_{ABCD}\big\vert_{\mathcal{S}}=0.\]
 Decomposing the covariant derivative, using the evolution equation for rescaled Weyl \eqref{RescaledWeyl_evo_const}, along with \eqref{DecompXiOnSUsingInitialCondition} we have 
-\[ \nabla_{\bm\xi}\phi_{ABCD} =  \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F} + \tfrac{3}{2} \xi^{FG} \mathcal{D}_{FG}\phi_{ABCD} \]
-with $\xi:=\mathcal{D}^{AB}\kappa_{AB}$\mnotex{give decomposition of $\xi_{AA'}$}.  At this point then, we have reduced our initial conditions for the zero quantities to the following set of intrinsic conditions:
+\[ \nabla_{\bm\xi}\phi_{ABCD}\big\vert_{\mathcal{S}} =  \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F} + \tfrac{3}{2} \xi^{FG} \mathcal{D}_{FG}\phi_{ABCD}. \]
+At this point then, we have reduced our initial conditions for the zero quantities to the following set of intrinsic conditions:
 \begin{subequations}
 \begin{eqnarray}
     && \mathcal{D}_{(AB}\kappa_{CD)}=0,\\
