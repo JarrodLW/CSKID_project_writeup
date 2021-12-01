@@ -566,7 +566,7 @@ derived and discussed.}
 \section{Background}
 \subsection{Spinorial formalism in a nutshell}
 \label{NotationAndSpinorFormalism}
-
+\mnotex{Remark on signature of metric}
 \subsection*{Spacetime spinor formalism}
 Upper case Latin indices ~$_{ABC\cdots A'B'C'}$~ will be used as
 abstract indices of the \emph{spacetime spinor} algebra, and the bold
@@ -638,7 +638,7 @@ The \emph{Weingarten} spinor and the \emph{acceleration} of the
 congruence are then defined by
 \begin{align*}
 & K_{ABCD} \equiv \tau_{D}{}^{C'} \mathcal{D}_{AB}\tau_{CC'},\\ &
-  K_{AB} \equiv \tau_{B}{}^{C'} \mathcal{P}\tau_{AC'}.
+  K_{AB} \equiv \tau_{B}{}^{C'} \nabla_{\bm\tau}\tau_{AC'}.
 \end{align*}
 The above can be inverted to obtain the following formulae which will
 prove useful in the sequel
@@ -998,10 +998,10 @@ article, the spinorial version of the CFEs will be used. The spinorial
 
 \begin{subequations}
 \begin{flalign}
-    Z_{AA'BB'}  = & - \Xi \Phi _{ABA'B'}  - s \epsilon _{AB} \epsilon
-  _{A'B'} + \Xi \Lambda \epsilon _{AB} \epsilon _{A'B'} +
-  \nabla_{BB'}\nabla_{AA'}\Xi \label{Def_ConfFactor_CFE_zeroquant}\\
-  Z_{AA'}  =& \Lambda  \nabla_{AA'}\Xi  + \nabla_{AA'}s  - \Phi _{ABA'B'} \nabla^{BB'}\Xi \label{Def_s_CFE_zeroquant}\\
+    Z_{AA'BB'}  = &  \nabla_{AA'}\nabla_{BB'}\Xi - \Xi \Phi _{ABA'B'}  - s \epsilon _{AB} \epsilon
+  _{A'B'} + \Xi \Lambda \epsilon _{AB} \epsilon _{A'B'} 
+  \label{Def_ConfFactor_CFE_zeroquant}\\
+  Z_{AA'}  =& \nabla_{AA'}s + \Lambda  \nabla_{AA'}\Xi   - \Phi _{ABA'B'} \nabla^{BB'}\Xi \label{Def_s_CFE_zeroquant}\\
   %%  Z_{AA'BB'CC'}  =& \epsilon _{BC} \epsilon _{B'C'} \nabla_{AA'}\Lambda
   %% - \nabla_{AA'}\Phi _{BCB'C'}   - \epsilon _{AC} \epsilon _{A'C'} \nabla_{BB'}\Lambda
   %% \\ &   + \nabla_{BB'}\Phi _{ACA'C'}
@@ -1865,7 +1865,7 @@ The given in this section can be summarised in the following
 \begin{theorem}\label{Theorem_twistor}
 Consider an initial data set for the vacuum conformal Einstein
 field equations, as encoded in the CFE zero-quantities
-\eqref{Def_ConfFactor_CFE_zeroquant}-\eqref{Def_cons_CFE_zeroquant},
+\eqref{Def_ConfFactor_CFE_zeroquant}--\eqref{Def_cons_CFE_zeroquant},
 on a spacelike hypersurface $\mathcal{S}$ and let
 $\mathcal{U}\subset\mathcal{S}$ denote an open set.
 The development
@@ -1920,7 +1920,7 @@ We will see that, unlike the twistor case, one cannot obtain a closed homogeneou
 \end{equation}
 We shall see that one can derive a closed homogeneous wave system for $(\bmh, \bmB, \bmF)$. \mnotex{Add factor of one half into def of $Q$.}
 \begin{equation}
- Q_{BC} := \nabla^{AA'}H_{A'ABC} \equiv  2(\square \kappa_{BC} + 4 \Lambda\kappa_{BC}  - \Xi \kappa^{AD} \phi_{BCAD})=0. \label{Eq:WaveForKS}
+ Q_{BC} := \nabla^{AA'}H_{A'ABC} \equiv  2(\square \kappa_{BC} + 4 \Lambda\kappa_{BC}  - \Xi  \phi_{BCAD}\kappa^{AD})=0. \label{Eq:WaveForKS}
 \end{equation}
 The wave equation for the Killing spinor candidate will then be imposed by setting $Q_{AB}=0$. It will also prove convenient to define the auxiliary spinor $\xi_{AA'} := \nabla^{B}{}_{A'}\kappa_{AB}$  
 in terms of which
@@ -2103,7 +2103,7 @@ Hence, given the vanishing of $B_{ABCD}$ and the right-hand-side of \eqref{Evolu
 \begin{multline}
      \nabla_{FA'}F^{A'}{}_{BCD} = \tfrac{1}{3} \nabla_{\xi}{}\phi_{BCDF} - 2 \Lambda B_{BCDF} + 3\Xi B_{(BC}{}^{AG}  \phi_{D)FAG}  - 7 \Xi B_{(BC}{}^{AG}\phi_{DF)AG} \\-  \tfrac{1}{4} \phi_{(BCD}{}^{A}Q_{F)A} + \tfrac{1}{3} H^{A'}{}_{(B}{}^{AG}\nabla_{|AA'|}\phi_{CDF)G}\label{CurlOfFInTermsOfCollineation}. 
 \end{multline}
-Decomposing the covariant derivative, we have 
+Decomposing the covariant derivative, we get 
 \begin{multline}
 \nabla_{\bm\tau} F_{B'BCD} + 2 \tau^{A}{}_{B'} \tau^{FA'} \mathcal{D}_{AF}F_{A'BCD} \\
 = \tau^{A}{}_{B'}\left(\tfrac{2}{3} \nabla_{\xi}{}\phi_{BCDA}  - 4 \Lambda  B_{BCDA} + 6 \Xi  B_{(BC}{}^{FG}  \phi_{D)AFG}  \right. \\ \left.  - 14 \Xi  B_{(BC}{}^{AG}\phi_{DA)FG}  -  \tfrac{1}{2}  \phi_{(BCD}{}^{F}Q_{A)F}   + \tfrac{2}{3}  H^{A'}{}_{(B}{}^{FG}\nabla_{|FA'|}\phi_{CDA)G}\right).
@@ -2122,6 +2122,31 @@ At this point then, we have reduced our initial conditions for the zero quantiti
 \end{eqnarray}
 \end{subequations}
 We will now explore potential redundancy in the above conditions...
+
+\begin{theorem}\label{Theorem_KS}
+Consider an initial data set for the vacuum conformal Einstein
+field equations, as encoded in the CFE zero-quantities
+\eqref{Def_ConfFactor_CFE_zeroquant}--\eqref{Def_cons_CFE_zeroquant},
+on a spacelike hypersurface $\mathcal{S}$ and let
+$\mathcal{U}\subset\mathcal{S}$ denote an open set.
+The development
+of the initial data set will have a
+(valence-2) Killing spinor in the domain of
+dependence of $\mathcal{U}$ if and only if
+\\
+
+are satisfied on $\mathcal{U}$. The Killing spinor is obtained by 
+evolving according to the wave equation:
+\begin{align} \label{Wave_eq_KS_theo}
+\square \kappa _{AB} = -4 \Lambda \kappa _{AB} + \Xi \phi_{ABCD}\kappa^{CD}.
+\end{align}
+with initial data satisfying conditions in equation
+\eqref{CS-KID_twistor} and
+\begin{equation}
+  \nabla_{\bm\tau} \kappa _{AB} = -\mathcal{D} _{(A}{}^C \kappa_{B)C}.
+\end{equation}
+\end{theorem}
+
 
 \section*{Conclusions}
 
