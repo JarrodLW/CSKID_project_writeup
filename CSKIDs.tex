@@ -794,6 +794,7 @@ restricted to be of Petrov type D, N or O.
 
 \medskip
 
+\textcolor{blue}{
 At first glance, the conformal invariance property of the
 %(valence-$q$)
 Killing spinor equation would seem to indicate that the
@@ -832,7 +833,7 @@ in the physical (non-conformal) set up if one is to include matter
 such as the Maxwell field and the analysis of \cite{GarVal08c} does
 not straighfowardly apply since further conditions (the matter
 alignment conditions) ---see \cite{ValCol16}--- need to be propagated.
-
+}
 
 
 \begin{remark}
@@ -860,7 +861,7 @@ solution $\tilde{\bmg}$ to the vacuum Einstein field equations
 \eqref{EFEVacuum}.  Similarly $(\mathcal{M},\bmg)$ will be used to
 represent the \emph{unphysical spacetime} related to
 $(\tilde{\mathcal{M}},\tilde{\bmg})$ via $\bmg=\Xi^2\tilde{\bmg}$.
----in a slight abuse of notation $\varphi(\tilde{\mathcal{M}})$ and
+---in a slight abuse\mnotex{One should be a proper subset of the other, not equal?} of notation $\varphi(\tilde{\mathcal{M}})$ and
 $\mathcal{M}$ will be identified so that the mapping $\varphi:
 \tilde{\mathcal{M}}\rightarrow\mathcal{M}$ can be omitted.
 
@@ -1106,8 +1107,7 @@ with the standard first order formulation CFEs can be found in \cite{GasVal15}.}
 \textcolor{red}{It is worth noting here that} one of the tools used in \cite{GasVal15} to show the
 equivalence between the spinorial CFE wave equations and the original spinorial CFEs \eqref{Def_ConfFactor_CFE_zeroquant}--\eqref{Def_cons_CFE_zeroquant} \sout{these two set of equations} is the uniqueness
 property of solutions to a certain class of wave equations. This same result from
-the theory of partial differential equations will be used to obtain
-the main theorem of this article, and so we \sout{in the following} quote it here:
+the theory of partial differential equations will be used in the proof of the main theorem of this article, and so we \sout{in the following} quote it here:
 %%%%%%%
 %One of the main tools used in the latter reference
 %to show the equivalence between these two set of equations
@@ -1125,6 +1125,7 @@ the main theorem of this article, and so we \sout{in the following} quote it her
 
 
 \mnotex{Technical pde theorem moved here}
+\mnotex{Need to give better accreditation?}
 \begin{theorem}
 \label{TheoremHomogeneousWave}
  Let $\mathcal{M}$ be a smooth manifold equipped with a 
@@ -2010,7 +2011,7 @@ where we are using \eqref{Eq:DecompGradXi}, along with the identity \eqref{Eq:Us
 In particular, we recover the well-known fact that, in the physical spacetime $\mathcal{L}_{\bm{\tilde{\xi}}}\tilde{C}_{abcd}=0$ as $\tilde{\xi}_{AA'}$ is a Killing vector. 
 \end{remark}
 
-At this point we note that there are no derivatives of zero quantities appearing on the right-hand-side of \eqref{Eq:SecondWaveEqForB}. This, combined with the fact that $\nabla^A{}_{A'}\phi_{ABCD}=0$, suggests that by applying $\nabla^A{}_{A'}$ to \eqref{Eq:SecondWaveEqForB} we will be able to derive a wave equation for $F_{A'BCD}$. We will see that this does indeed work; the only essential difficulty is in showing that $\nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD}$ is expressible in terms of the zero quantities $\bmH, \bmB, \bmF$ and their first derivatives only. \\
+At this point we note that there are no derivatives of zero quantities appearing on the right-hand-side of \eqref{Eq:SecondWaveEqForB}. This, combined with the fact that $\nabla^A{}_{A'}\phi_{ABCD}=0$, suggests that by applying $\nabla^A{}_{A'}$ to \eqref{Eq:SecondWaveEqForB} we will be able to derive a wave equation for $F_{A'BCD}$. We will see that this does indeed work; the hard part is in showing that $\nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD}$ is expressible in terms of the zero quantities $\bmH, \bmB, \bmF$ and their first derivatives, only. \\
 
 First, we note some useful identities.\mnotex{Put in appendix?}
 \begin{equation}
@@ -2092,7 +2093,7 @@ admits a (valence-2) Killing spinor in $\mathcal{D}^{+}(\mathcal{U})$ ---the fut
 
 To summarise: we have found necessary and sufficient conditions, namely \eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSInitialCondition2}, defined on $\mathcal{U}\subset \mathcal{S}$, for a given Killing spinor candidate, $\kappa_{AB}$, to give rise to a Killing spinor when evolved according to $Q_{AB}=0$. 
 
-\subsection{Intrinsic conditions}
+\subsection{Intrinsic CKSID conditions}
 
 In this section, we aim to reduce \eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSInitialCondition2} to a set of intrinsic conditions ---that is to say, conditions on $\kappa_{AB}$ that are computable at the level of an initial data manifold. We consider $\kappa_{AB}$ defined over $\mathcal{S}$ satisfying
 \begin{subequations}
