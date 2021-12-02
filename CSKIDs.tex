@@ -934,7 +934,7 @@ Einstein field equations are encoded in the following zero-quantities
 && \delta_{bac} \equiv \nabla_{b}L_{ac}-\nabla_{a}L_{bc} -
  d_{abcd}\nabla^d{}\Xi =0 , \label{standardCEFESchouten}\\
 && \lambda_{abc}\equiv \nabla_{e}d_{abc}{}^{e}=0 , \label{standardCEFErescaledWeyl}\\
-&& Z \equiv \lambda - 6 \Xi s + 3 \nabla_{a}\Xi \nabla^{a}\Xi
+&& Z \equiv \lambda - 6 \Xi s + 3 \nabla_{a}\Xi \nabla^{a}\Xi,
 \label{standardCFEconstraintFriedrichScalar}
 \end{eqnarray}
 \end{subequations}
@@ -1005,20 +1005,20 @@ Since we are concerned here with spinor fields, we will need the spinorial trans
  translation of the above CFEs zero-quantities render}
 which reads as follows}
 \begin{subequations}
-\begin{flalign}
-    Z_{AA'BB'}  = &  \nabla_{AA'}\nabla_{BB'}\Xi - \Xi \Phi _{ABA'B'}  - s \epsilon _{AB} \epsilon
-  _{A'B'} + \Xi \Lambda \epsilon _{AB} \epsilon _{A'B'} 
+\begin{eqnarray}
+   &&  Z_{AA'BB'}  =  \nabla_{AA'}\nabla_{BB'}\Xi - \Xi \Phi _{ABA'B'}  - s \epsilon _{AB} \epsilon
+  _{A'B'} + \Xi \Lambda \epsilon _{AB} \epsilon _{A'B'} ,
   \label{Def_ConfFactor_CFE_zeroquant}\\
-  Z_{AA'}  =& \nabla_{AA'}s + \Lambda  \nabla_{AA'}\Xi   - \Phi _{ABA'B'} \nabla^{BB'}\Xi \label{Def_s_CFE_zeroquant}\\
+  && Z_{AA'}  = \nabla_{AA'}s + \Lambda  \nabla_{AA'}\Xi   - \Phi _{ABA'B'} \nabla^{BB'}\Xi ,\label{Def_s_CFE_zeroquant}\\
   %%  Z_{AA'BB'CC'}  =& \epsilon _{BC} \epsilon _{B'C'} \nabla_{AA'}\Lambda
   %% - \nabla_{AA'}\Phi _{BCB'C'}   - \epsilon _{AC} \epsilon _{A'C'} \nabla_{BB'}\Lambda
   %% \\ &   + \nabla_{BB'}\Phi _{ACA'C'}
   %% - \bar{\phi }_{A'B'C'D'} \epsilon _{AB} \nabla_{C}{}^{D'}\Xi
   %% - \phi _{ABCD} \epsilon _{A'B'} \nabla^{D}{}_{C'}\Xi\\
-  \delta_{ABCC'} = &  \nabla_{A'(A}\Phi _{B)CC'}{}^{A'} - \epsilon _{C(A} \nabla_{B)C'}\Lambda   +  \phi _{ABCD} \nabla^{D}{}_{C'}\Xi \label{Def_delta_CFE_zeroquant} \\
-  \Lambda _{CC'AB}  =& \nabla_{DC'}\phi _{ABC}{}^{D} \label{Def_Lambda_CFE_zeroquant}\\
-    Z  =& \lambda   -6 \Xi  s + 3 \nabla_{AA'}\Xi  \nabla^{AA'}\Xi \label{Def_cons_CFE_zeroquant}
-\end{flalign}
+ &&  \delta_{ABCC'} =   \nabla_{A'(A}\Phi _{B)CC'}{}^{A'} - \epsilon _{C(A} \nabla_{B)C'}\Lambda   +  \phi _{ABCD} \nabla^{D}{}_{C'}\Xi ,\label{Def_delta_CFE_zeroquant} \\
+  && \Lambda _{CC'AB}  = \nabla_{DC'}\phi _{ABC}{}^{D}, \label{Def_Lambda_CFE_zeroquant}\\
+   && Z  = \lambda   -6 \Xi  s + 3 \nabla_{AA'}\Xi  \nabla^{AA'}\Xi \label{Def_cons_CFE_zeroquant}
+\end{eqnarray}
 \end{subequations}
 ---see \cite{CFEbook} for further details.
 \mnotex{I think the original $Z_{AA'BB'CC'}$ does not
@@ -1130,7 +1130,7 @@ the theory of partial differential equations will be used in the proof of the ma
 \label{TheoremHomogeneousWave}
  Let $\mathcal{M}$ be a smooth manifold equipped with a 
 Lorentzian metric $\bmg$ and consider the wave equation
-\[\square \underline{u}=h\left(\underline{u},~\partial\underline{u}\right)\]
+\[\square \underline{u}=h (\underline{u},\partial\underline{u})\]
 where $\underline{u}\in\mathbb{C}^m$ is a complex vector-valued function
 on $\mathcal{M}$, 
 $h:\mathbb{C}^{2m}\rightarrow\mathbb{C}^m$ is a smooth homogeneous
@@ -1139,7 +1139,7 @@ Let $\mathcal{U}\subset\mathcal{S}$ be an open set and $\mathcal{S}\subset \math
 $\tau^{a}$ respect to $\bmg$. Then the Cauchy problem
 \begin{align*}
 \square
-\underline{u}&=h\left(\underline{u},~\partial\underline{u}\right),\\ \underline{u}\left|_{\mathcal{U}}\right.&=\underline{u}_0,
+\underline{u}&=h (\underline{u}, \partial\underline{u}),\\ \underline{u}\left|_{\mathcal{U}}\right.&=\underline{u}_0,
 \quad
 \nabla_{\bm\tau}\underline{u}\left|_{\mathcal{U}}\right.=\underline{u}_1,
 \end{align*} 
@@ -1154,8 +1154,8 @@ We refer the reader to
 \emph{ Recall that an equation of the
 above form are said to be \textit{homogeneous in} $\underline{u}$
 \textit{and its first derivatives} if
-$h\left(\lambda\underline{u},~\lambda\partial\underline{u}\right)=\lambda
-h\left(\underline{u},~\partial\underline{u}\right)$ for all
+$h (\lambda\underline{u},\lambda\partial\underline{u})=\lambda
+h(\underline{u}, \partial\underline{u})$ for all
 $\lambda\in\mathbb{C}$. }
 \end{remark}
 
@@ -1615,8 +1615,8 @@ determined by $\Xi=0$ is a submanifold of $(\mathcal{M},\bmg)$. This
 allows, in particular, to consider the $\Xi=0$ hypersurface as a
 legitimate hypersurface to prescribe data which can be evolved using
 regular ---without $\Xi^{-1}$-terms--- evolution equations.  This set up is
-particularly atractive to study spacetimes with $\lambda>0$ in which
----given the appropriate conditions--- the conformal boundary $\mathscr{I}$
+particularly atractive to study spacetimes with $\lambda>0$ in which, given the appropriate conditions,
+ the conformal boundary $\mathscr{I}$
 is a spacelike hypersurface and hence one can pose \emph{an asymptotic
 initial value problem}: an initial value problem where the initial
 hypersurface is $\mathscr{I}$.
@@ -1679,7 +1679,7 @@ closes with $\tilde{H}_{A'AB}$ alone.
 
 \medskip
 
-In the other hand, if one tries to follow the same strategy in the unphysical set up
+On the other hand, if one tries to follow the same strategy in the unphysical set up
 ---with $(\mathcal{M},\bmg)$ satisfying the CFEs--- one ends up with a
 formally singular equation. To see this, observe that starting from
 the identity \eqref{Box_H_alone} and using equation \eqref{Def_rescaled_Weyl_spinor}
@@ -1687,10 +1687,9 @@ along the CFEs zero-quantities
 \[ \delta_{ABCC'}=0, \qquad \Lambda_{CC'AB}=0,\]
 as defined in equations \eqref{Def_delta_CFE_zeroquant}-\eqref{Def_Lambda_CFE_zeroquant},
 a calculation gives
-
 \begin{align}\label{WaveH_twistor_singular}
-  \square H_{A'AB} = & - \frac{2 \nabla^{C}{}_{A'}\Xi
-    \nabla_{(A}{}^{B'}H_{|B'|BC)}}{\Xi } + 6 \Lambda H_{A'AB} -2 \Xi
+  \square H_{A'AB} = & - 2\Xi^{-1} (\nabla^{C}{}_{A'}\Xi)
+    \nabla_{(A}{}^{B'}H_{|B'|BC)}+ 6 \Lambda H_{A'AB} -2 \Xi
   \phi _{ABCD}H_{A'}{}^{CD} -4
   \Phi_{(A}{}^{C}{}_{|A'}{}^{B'}H_{B'|B)C} \nonumber \\ & +
   \tfrac{4}{3} \nabla_{(A|A'|}Q_{B)}.
@@ -1736,7 +1735,7 @@ In this section, the conformal twistor initial data conditions of
 proposition \ref{Prop:Propagation_twistor} are written in terms of
 intrinsic quantities at $\mathcal{S}$.  To understand the need of the
 calculation to be carried out in this section observe that, although
-the conditions of proposition \ref{Prop:Propagation_twistor} are given
+the conditions of Proposition \ref{Prop:Propagation_twistor} are given
 on $\mathcal{S}$, they contains not only derivatives tangential to
 $\mathcal{S}$ but also normal to it. Hence, to obtain genuine
 intrinsic conditions on $\mathcal{S}$ one needs to remove these normal
