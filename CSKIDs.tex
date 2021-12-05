@@ -1610,7 +1610,7 @@ $\kappa_{A}$ solves the twistor equation on $\mathcal{D}^{+}(\mathcal{U})$.
 \subsection{Comparison between the Killing initial data conditions
   in the physical and unphysical pictures}
 
-The main advantage of the conformal (unphysical) approach to the
+The main advantage of the conformal (unphysical) approach to the\mnotex{Absorb into intro}
 Einstein field equations is that the conformal boundary $\mathscr{I}$
 determined by $\Xi=0$ is a submanifold of $(\mathcal{M},\bmg)$. This
 allows, in particular, to consider the $\Xi=0$ hypersurface as a
@@ -1994,7 +1994,8 @@ Substituting the above identities \eqref{Eq:UsefulIdentity1}--\eqref{Eq:UsefulId
     \square B_{ABCD} = \tfrac{2}{3}\nabla_{\bm\xi}\phi_{ABCD} + 8\Lambda B_{ABCD} - 14\Xi \phi_{(AB}{}^{FG}B_{CD)FG} + \tfrac{2}{3}(\nabla_{FA'}\phi_{G(ABC})H^{A'}{}_{D)}{}^{FG}\label{Eq:SecondWaveEqForB}
 \end{equation}
 
-\begin{remark}{\em}\mnotex{Check that the signs are correct}
+\begin{remark}{\em}\mnotex{Query about Weyl versus rescaled Weyl in physical spacetime}\mnotex{Check that the signs are correct}
+\mnotex{Add comment that there's no reason to expect $\xi$ to be collineation in general, but it is!}
 The Lie derivative doesn't extend to spinor fields, but let us define
 \[ \mathcal{L}_{\bm\xi}\phi_{ABCD} := \nabla_{\bm\xi}\phi_{ABCD} + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'},\]
 this is simply the spinorialised counterpart of $\mathcal{L}_{\bm\xi}d_{abcd}$. One can then show the following:
@@ -2007,7 +2008,7 @@ Q_{D)}{}^{F}\\
 \end{align*}
 where we are using \eqref{Eq:DecompGradXi}, along with the identity \eqref{Eq:UsefulIdentity2}. Given a Killing spinor $\kappa_{AB}$, we have  $B_{ABCD}=H_{A'ABC}=Q_{AB}=0$ and hence it follows from \eqref{Eq:SecondWaveEqForB} that
 \[\mathcal{L}_{\bm\xi}\phi_{ABCD} = \nabla_{\bm\xi}\phi_{ABCD} =0.\]
-In particular, we recover the well-known fact that, in the physical spacetime $\mathcal{L}_{\bm{\tilde{\xi}}}\tilde{C}_{abcd}=0$ as $\tilde{\xi}_{AA'}$ is a Killing vector. 
+In particular, we recover the well-known fact that, in the physical spacetime $\mathcal{L}_{\bm{\tilde{\xi}}}C_{abc}{}^{d}=0$ as $\tilde{\xi}_{AA'}$ is a Killing vector. 
 \end{remark}
 
 At this point we note that there are no derivatives of zero quantities appearing on the right-hand-side of \eqref{Eq:SecondWaveEqForB}. This, combined with the fact that $\nabla^A{}_{A'}\phi_{ABCD}=0$, suggests that by applying $\nabla^A{}_{A'}$ to \eqref{Eq:SecondWaveEqForB} we will be able to derive a wave equation for $F_{A'BCD}$. We will see that this does indeed work; the hard part is in showing that $\nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD}$ is expressible in terms of the zero quantities $\bmH, \bmB, \bmF$ and their first derivatives, only. \\
@@ -2260,7 +2261,7 @@ Then,
 &=\tfrac{1}{48} e^{\varkappa} \phi \iota^{A} \mathcal{D}_{AB}\iota^{B} -  \tfrac{1}{48} e^{\varkappa} o^{A} \phi \iota^{B} \iota^{C} \mathcal{D}_{AC}\iota_{B} + \tfrac{1}{48} e^{\varkappa} \phi \iota^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}o_{A}\\
 &=\tfrac{1}{48} e^{\varkappa} \phi \iota^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}o_{A} -  \tfrac{1}{48} e^{\varkappa} o^{A} \phi \iota^{B} \iota^{C} \mathcal{D}_{BC}\iota_{A}\\
 &=0,\\
-\iota^A \iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) &= - \tfrac{1}{2} e^{\aleph} \phi \iota^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}\iota_{A}=0.
+\iota^A \iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) &= - \tfrac{1}{2} e^{\varkappa} \phi \iota^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}\iota_{A}=0.
 \end{align*}
 
 \section*{Conclusions}
