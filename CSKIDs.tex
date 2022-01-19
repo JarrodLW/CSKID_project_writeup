@@ -5,7 +5,7 @@
 %%%%%%%
 %%%%%%%
 %%%%%%% Started on: 11.9.2016
-%%%%%%% Current version: 10 Dec 2021 
+%%%%%%% Current version: 18 Jan 2022 
 %%%%%%%
 
 \documentclass[10pt,a4paper]{article}
@@ -220,7 +220,8 @@ $\!\!\!\!\!\!\,\bullet$\themnotecount: #1} }
 \begin{document}
 
 
-\title{\textbf{Fucking GIT. The conformal Killing spinor initial data equations}}
+\title{\textbf{The conformal Killing spinor initial and boundary data equations}}
+
 
 \author[1]{E. Gasper\'in \footnote{E-mail address:{\tt edgar.gasperin@tecnico.ulisboa.pt}}}
 \author[2]{J. L. Williams \footnote{E-mail address:{\tt jlw31@bath.ac.uk}}}
@@ -232,23 +233,48 @@ $\!\!\!\!\!\!\,\bullet$\themnotecount: #1} }
 
 
 \maketitle
+\mnotex{Title needs to be modified to account for the timelike case?}
 \begin{abstract}
- We obtain necessary and sufficient conditions for an initial data set
- for the \emph{vacuum conformal Einstein field equations} to give rise
- to a spacetime development possessing a Killing spinor.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This  constitutes the conformal analogue of the Killing spinor initial data
-% equations derived in \cite{GarVal08c}.
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The fact that the conformal
- Einstein field equations are used in our derivation allows for the
- possibility that the initial hypersurface $\mathcal{S}$ be (part of)
- the conformal boundary $\mathscr{I}$.  For conciseness, these
- conditions are derived assuming that the initial hypersurface is
- spacelike. Consequently\mnotex{Not restricted to this, right? EG: a bit
-   yes because we made a 3+1 split assuming $||\tau||=2$ and the
-   technical theorem assumes that as well.}, these equations encode necessary and sufficient
- conditions for the existence of a Killing spinor in the development
- of asymptotic initial data on spacelike components of $\mathscr{I}$.
+  %%%%%%%%%%%%%%%%%%%%
+ %% We obtain necessary and sufficient conditions for an initial data set
+%%  for the \emph{vacuum conformal Einstein field equations} to give rise
+%%  to a spacetime development possessing a Killing spinor.
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% % This  constitutes the conformal analogue of the Killing spinor initial data
+%% % equations derived in \cite{GarVal08c}.
+%%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  The fact that the conformal
+%%  Einstein field equations are used in our derivation allows for the
+%%  possibility that the initial hypersurface $\mathcal{S}$ be (part of)
+%%  the conformal boundary $\mathscr{I}$.  For conciseness, these
+%%  conditions are derived assuming that the initial hypersurface is
+%%  spacelike. Consequently\mnotex{Not restricted to this, right? EG:
+%%    I've changed the 3+1 split to $||n||=2\epsilon$ to incorporate the
+%%    spacelike and timelike cases, I haven't found a clean version of
+%%    the Technical thm for the IBVP.}, these equations encode necessary
+%%  and sufficient conditions for the existence of a Killing spinor in
+%%  the development of asymptotic initial data on spacelike components of
+  %%  $\mathscr{I}$.
+  %%%%%%%%%%%%%%%%%%%%
+
+  \mnotex{EG: old abstract inside tex file.  I've changed the abstract
+    to accound for the timelike case and adapted the 3+1 split to
+    $||n||=2\epsilon$ to incorporate the spacelike and timelike cases,
+    I haven't found a clean version of the Technical thm for the
+    IBVP.}
+  \mnotex{To be discussed if the IVBP can be incorporated easily or not...
+  I am assuming it is possible and carrying the changes to account for this case}
+%% We obtain the necessary and sufficient conditions at the level of initial data and
+%% boundary data for the conformal Einstein field equations to give rise
+%% to a spacetime development possessing a Killing spinor.  
+  We obtain necessary and sufficient conditions for the initial value
+  problem and the initial boundary value problem for the \emph{vacuum
+    conformal Einstein field equations} to give rise to a spacetime
+  development possessing a Killing spinor.  The fact that the
+  conformal Einstein field equations are used in our derivation allows
+  for the the initial hypersurface $\mathcal{S}$ in the former case and the
+  boundary hypersurface $\mathcal{T}$ in the latter case, to correspond to
+  the conformal boundary $\mathscr{I}$.
 \end{abstract}
 
 
@@ -360,17 +386,30 @@ stability of the de Sitter and Minkowski spacetimes, respectively.
 \medskip
 
 The main advantage of the conformal (unphysical) approach to
-the\mnotex{\sout{Absorb into intro}} Einstein field equations is that the
-conformal boundary $\mathscr{I}$ determined by $\Xi=0$ is a
+the\mnotex{\sout{Absorb into intro}} Einstein field equations is that
+the conformal boundary $\mathscr{I}$ determined by $\Xi=0$ is a
 submanifold of $(\mathcal{M},\bmg)$. This allows, in particular, to
 consider the $\Xi=0$ hypersurface as a legitimate hypersurface to
 prescribe data which can be evolved using regular ---without
-$\Xi^{-1}$-terms--- evolution equations.  This set up is particularly
-atractive to study spacetimes with $\lambda>0$ in which, given the
-appropriate conditions, the conformal boundary $\mathscr{I}$ is a
-spacelike hypersurface and hence one can pose \emph{an asymptotic
-  initial value problem}: an initial value problem where the initial
-hypersurface is $\mathscr{I}$.
+$\Xi^{-1}$-terms--- evolution equations.  This can be exploited in
+different setups.  \mnotex{text adapted to discuss applicability in
+  $\lambda>0$, $\lambda<0$ and $\lambda=0$ as well} In the $\lambda>0$
+it allows to pose asymptotic initial value problems, namely an initial
+value problem where the initial hypersurface is $\mathscr{I}$
+(spacelike hypersurface) ---see for instance \cite{GasVal17, LueVal09,
+  Fri86a}.  In the $\lambda<0$ it can be used to pose an initial
+boundary value problem where the timelike boundary corresponds to
+$\mathscr{I}$ ---see for example \cite{CarVal19, Fri95}. Finally, in
+the $\lambda=0$ it can be used in characteristic initial value problems where one of
+the null hypersurfaces corresponds to $\mathscr{I}$ ---see for
+instance \cite{ZhaHilVal21}.
+
+%% This set up is particularly
+%% atractive to study spacetimes with $\lambda>0$ in which, given the
+%% appropriate conditions, the conformal boundary $\mathscr{I}$ is a
+%% spacelike hypersurface and hence one can pose \emph{an asymptotic
+%%   initial value problem}: an initial value problem where the initial
+%% hypersurface is $\mathscr{I}$.
 
 
 \medskip
@@ -389,7 +428,8 @@ particular, allows $\mathcal{S}$ to be determined by $\Xi=0$ so that
 it to corresponds to the conformal boundary $\mathscr{I}$.  The
 unphysical Killing vector initial data equations have been derived for
 the characteristic initial value problem on a cone in \cite{Pae14a}
-and on a spacelike conformal boundary in \cite{Pae14}.
+on a spacelike conformal boundary in \cite{Pae14} and on a timelike
+conformal boundary in \cite{CarVal18}.
 
 
 \medskip
@@ -509,24 +549,26 @@ of Killing spinors with the Petrov type of $(\mathcal{M},\bmg)$.
 
 \medskip
 
-   The core of the proof of the main theorem of this article
-   is obtaining a closed system of
-   homogeneous wave equations for fields encoding the existence of a
-   Killing spinors, although these hold regardless of the causal
-   Character of $\mathcal{S}$, to obtain intrinsic conditions to
-   $\mathcal{S}$ we assume, for conciseness that $\mathcal{S}$ is
-   spacelike.
-   %For    conciseness, we only derive the conformal Killing spinor
-   %initial data equations for a spacelike hypersurface $\mathcal{S}$.
-   Nonetheless, a
-   similar computation can be performed on an hypersurface
-   $\mathcal{S}$ with a different causal character.  The conditions
-   found in this article have potential applications for the black
-   hole uniqueness problem.  In particular, they can be used for an
-   asymptotic characterisation of the Kerr-de Sitter spacetime analogous to
-   \cite{MarPaeSenSim16} in terms of the existence of Killing spinors at
-   the conformal boundary $\mathscr{I}$.\mnotex{Move this earlier,
-     as motivation?}
+   The core of the proof of the main theorem of this article is
+   obtaining a closed system of homogeneous wave equations for fields
+   encoding the existence of a Killing spinors. Although these wave
+   equations hold regardless of the causal character of $\mathscr{I}$,
+   to obtain intrinsic conditions on $\mathcal{S}$ ---which can be
+   chose to be $\mathscr{I}$--- a $3+1$ split of the equations is
+   required, hence we focus on the spacelike and timelike cases.
+   \mnotex{sentence changed to include the timelike case}
+   %% to obtain intrinsic  conditions to
+   %% $\mathcal{S}$ we assume, for conciseness that    $\mathcal{S}$ is
+   %% spacelike.    Nonetheless, a  similar
+   %% computation can be performed on an hypersurface   $\mathcal{S}$
+   %% with a different causal character.
+   The conditions found in this
+   article have potential applications for the black hole uniqueness
+   problem.  In particular, in the $\lambda>0$ case they can be used
+   for an asymptotic characterisation of the Kerr-de Sitter spacetime
+   analogous to \cite{MarPaeSenSim16} in terms of the existence of
+   Killing spinors at the conformal boundary
+   $\mathscr{I}$.\mnotex{Move this earlier, as motivation?}
 
 \medskip
 
@@ -542,9 +584,21 @@ on an open set $\mathcal{U}\subset \mathcal{S}$, where
  $\mathcal{S}$ is a spacelike hypersurface on which initial data for 
 the conformal Einstein field equations has been prescribed,
  then, the domain of dependence of $\mathcal{U}$  possesses a Killing spinor.
-%% Moreover, assuming conditions \eqref{CS-KID1}, \eqref{CS-KID2} to hold, 
-%% condition \eqref{CS-KID3} is equivalent to the vanishing of certain components
-%%  of the Cotton spinor, with respect to a suitably-adapted spin dyad.
+\end{main}
+
+\mnotex{EG: Added a version of the same theorem but for the
+  IVBP. Unsure of this... need to be discussed}
+
+\begin{main}\label{TheoremSummary_timelike}
+If the conformal Killing spinor initial data equations
+\eqref{CS-KID1}--\eqref{CS-KID3} and the Killing spinor boundary data
+equations \eqref{} are satisfied on $\mathcal{U}\subset\mathcal{S}$
+and $\mathcal{V}\subset\mathcal{T}$ respectively, where $\mathcal{S}$
+and $\mathcal{T}$ are spacelike and timelike hypersurfaces with
+$\mathcal{U}\cap\mathcal{V} \neq \emptyset$, for the which, initial
+and boundary data for the conformal Einstein field equations have been
+prescribed, then, the spacetime development possesses a Killing
+spinor.
 \end{main}
 
 
@@ -679,7 +733,9 @@ where
 \end{eqnarray}
 \end{subequations}
 where $\Psi_{ABCD}$ and $\Phi_{AA'BB'}$ and $\Lambda$ are curvature spinors.
- The above identities can be extended to higher valence spinors in the obvious way ---further discussion (albeit using slightly different conventions) can be found in \cite{Ste91}. A related identity which will be systematically used in the
+The above identities can be extended to higher valence spinors in the obvious way
+---further discussion (albeit using slightly different conventions)
+can be found in \cite{Ste91}. A related identity which will be systematically used in the
  following discussion is
 \begin{equation}\label{DecomposeDoubleDerivativeContracted}
 \nabla_{AQ'}\nabla_{B}{}^{Q'}=\square_{AB}+
@@ -691,35 +747,59 @@ $\square \equiv \nabla_{AA'}\nabla^{AA'}.$
 
 %\subsection*{Space spinor formalism}
 
-To have a self-contained discussion in this section the space spinor
-formalism, originally introduced in \cite{Som80}, is briefly recalled
----see also \cite{GarVal08c,BaeVal10b,CFEbook}.  Let $\tau^{AA'}$
-denote the spinorial counterpart of a timelike vector $\tau^{a}$,
-normal to a spacelike hypersurface $\mathcal{S}$ and normalised so
-that $\tau_{a}\tau^{a}=2$.  Then, it follows that
-$\tau_{AA'}\tau^{AA'}=2$ and, consequently,
-\[\tau_{AA'}\tau_B{}^{A'}=\epsilon_{AB}.\]  
-The covariant derivative $\nabla_{AA'}$ is then decomposed into the
+To have a self-contained discussion in this section the
+%%%%
+%space spinor formalism,
+%%%%
+1+3 spinor split, originally introduced in \cite{Som80} ---see also
+\cite{GarVal08c,BaeVal10b,CFEbook}--- is briefly recalled and adapted
+to consider both spacelike and timelike hypersurfaces.
+\mnotex{adapted to incorporate the timelike case} Let $n^{AA'}$ denote
+the spinorial counterpart of a vector $n^{a}$, normal to a
+hypersurface $\Sigma$ and normalised so that $n_{a}n^{a}=2\epsilon$
+with $\epsilon=1$ if $\Sigma$ is spacelike and $\epsilon=-1$ if
+$\Sigma$ is timelike.  Then, it follows that
+$n_{AA'}n^{AA'}=2\epsilon$ and, consequently,
+\[n_{AA'}n_B{}^{A'}=\epsilon \; \epsilon_{AB}.\]
+Notationally, we will use $\tau^a$ and $\rho^a$ to denote, the normal
+to a spacelike hypersurface $\mathcal{S}$ and a timelike hypersurface
+$\mathcal{T}$, respectively.
+\medskip
+The induced metric on $\Sigma$ is given by \[h_{ab}=g_{ab}-\epsilon n_an_b.\]
+In the 1+3 spinor split, spacetime spinors are decomposed
+into normal and tangential parts to $n^a$
+by means of projection with $n^{AA'}$ and symmetrations.
+A spacetime spinor $W_{AA'}$ is decomposed as follows
+\[\epsilon W_{AA'}= \frac{1}{2}n_{AA'}W-n^{B}{}_{A'}\mathcal{W}_{AB}\]
+where $W=n^{AA'}W_{AA'}$ and $\mathcal{W}_{AB}=n_{(A}{}^{A'}W_{B)A'}$.
+Similarly, the covariant derivative $\nabla_{AA'}$ is then decomposed into the
 \emph{normal} and \emph{Sen} derivatives:
 \begin{align*}
-  %& \mathcal{P}
-  &\nabla_{\bm\tau} \equiv \tau^{AA'}\nabla_{AA'},\\ & \mathcal{D}_{AB}\equiv
-  \tau_{(A}{}^{A'}\nabla_{B)A'}.
+  &\nabla_{\bmn} \equiv n^{AA'}\nabla_{AA'},\\ & \mathcal{D}_{AB}\equiv
+  n_{(A}{}^{A'}\nabla_{B)A'}.
 \end{align*}
+%% These definitions imply entail the following decomposition
+%% \begin{align*}
+%%   \epsilon \nabla_{AA'}\eta _{B} = \tfrac{1}{2}  n_{AA'}   \nabla_{n}{}\eta _{B}
+%%   -   n^{C}{}_{A'} \mathcal{D} _{AC}\eta _{B}.
+%% \end{align*}
 The \emph{Weingarten} spinor and the \emph{acceleration} of the
 congruence are then defined by
 \begin{align*}
-& K_{ABCD} \equiv \tau_{D}{}^{C'} \mathcal{D}_{AB}\tau_{CC'},\\ &
-  K_{AB} \equiv \tau_{B}{}^{C'} \nabla_{\bm\tau}\tau_{AC'}.
+& K_{ABCD} \equiv n_{D}{}^{C'} \mathcal{D}_{AB}\tau_{CC'},\\ &
+  K_{AB} \equiv n_{B}{}^{C'} \nabla_{\bm\tau}\tau_{AC'}.
 \end{align*}
-The above can be inverted to obtain the following formulae which will
-prove useful in the sequel
+The above can be inverted to obtain
+\mnotex{removed sentence emphasising their importance
+  because it seems we never really use the
+  expressions for the extrinsic curvature}
+%the following formulae which will prove useful in the sequel
 \begin{align*}
   %& \mathcal{P}
-  & \nabla_{\bm\tau} \tau_{CC'}=- K_{CD} \tau^{D}{}_{C'},\\ &
-  \mathcal{D}_{AB}\tau_{CA'} = - K_{ABCD} \tau^{D}{}_{A'}.
+  & \nabla_{\bmn} n_{CC'}=- \epsilon K_{CD} \tau^{D}{}_{C'},\\ &
+  \mathcal{D}_{AB}n_{CA'} = - \epsilon K_{ABCD} \tau^{D}{}_{A'}.
 \end{align*}
-The distribution induced by $\tau_{AA'}$ is integrable if and only
+The distribution induced by $n_{AA'}$ is integrable if and only
 $K^D{}_{(AB)D}=0$, in which case $K_{ABCD}$ describes the extrinsic
 curvature of the resulting foliation.
  Nevertheless, this is not required for our subsequent discussion.
@@ -1220,8 +1300,12 @@ quote it here:
 
 
 
-\mnotex{Technical pde theorem moved here}
-\mnotex{Need to give better accreditation?}
+%\mnotex{Technical pde theorem moved here}
+\mnotex{Need to give better accreditation?: removed the CFEbook from
+  the references and pointed to Taylor's book. The exact proposition
+  is 3.2}
+\mnotex{For the IVBP this is more of a problem. The refence given in Diego-Juan's paper
+does not give the thm in the same format...}
 \begin{theorem}
 \label{TheoremHomogeneousWave}
  Let $\mathcal{M}$ be a smooth manifold equipped with a 
@@ -1235,7 +1319,8 @@ Let $\mathcal{U}\subset\mathcal{S}$ be an open set and $\mathcal{S}\subset \math
 $\tau^{a}$ respect to $\bmg$. Then the Cauchy problem
 \begin{align*}
 \square
-\underline{u}&=h (\underline{u}, \partial\underline{u}),\\ \underline{u}\left|_{\mathcal{U}}\right.&=\underline{u}_0,
+\underline{u}&=h (\underline{u}, \partial\underline{u}),\\
+\underline{u}\left|_{\mathcal{U}}\right.&=\underline{u}_0,
 \quad
 \nabla_{\bm\tau}\underline{u}\left|_{\mathcal{U}}\right.=\underline{u}_1,
 \end{align*} 
@@ -1244,7 +1329,9 @@ smooth on $\mathcal{U}$ and $\nabla_{\bm\tau}\equiv \tau^\mu\nabla_\mu$,
  has a unique solution $\underline{u}$ in the domain of dependence of $\mathcal{U}$.
 \end{theorem}
 We refer the reader to
-\cite{CFEbook,Tay96c} for a proof ---see also Theorem 1 in \cite{GarVal08c}.  
+\cite{Tay96c} for a proof ---see also Theorem 1 in \cite{GarVal08c}.
+%\cite{CFEbook,Tay96c} for a proof ---see also Theorem 1 in \cite{GarVal08c}.
+
 
 \begin{remark}
 \emph{ Recall that an equation of the
@@ -1255,6 +1342,46 @@ h(\underline{u}, \partial\underline{u})$ for all
 $\lambda\in\mathbb{C}$. }
 \end{remark}
 
+\mnotex{Ideally the trivial initial data should be a remark and the
+  uniqueness property for the IVBP that Diego and Juan use their
+  article should be given in a theorem with the same format as
+  \ref{TheoremHomogeneousWave}. I haven't been able to find a
+  reference where it is presented as such... }
+
+{\color{blue}{
+
+\begin{remark}
+  \em{ If trivial intial data is given
+    $\underline{u}_{0}=\underline{u}_{1}=0$ then theorem
+    \ref{TheoremHomogeneousWave} implies that the solution is trivial, namely
+    $\underline{u}=0$, on the domain of dependence of $\mathcal{U}$.  This set
+    up is suited for the asymptotic initial value problem for
+    de-Sitter like spacetimes since one can take $\mathcal{S}$ to
+    correspond to $\mathscr{I}$.  On the other hand, for the
+    applications in the anti-de Sitter like setting one needs to
+    consider a initial boundary value problem: initial data given
+    on a spacelike hypersurface $\mathcal{S}$  and boundary data given on a timelike
+    hypersurface $\mathcal{T}$ with $\mathcal{S} \cap \mathcal{T} \neq \emptyset$.
+    In this case, the main advantage of the conformal approach in
+    that the timelike boundary $\mathcal{T}$ can be chosen to be $\mathscr{I}$.  In
+    this setup, the analysis of \cite{DafHru86} implies that if
+    trivial intial data
+  \[
+  \underline{u}\left|_{\mathcal{S}}\right.&=0, \quad
+  \nabla_{\bm\tau}\underline{u}\left|_{\mathcal{S}}\right.=0,
+  \]
+  and trivial (Dirichlet) boundary data are prescribed
+  \[
+\underline{u}|_{\mathcal{T}}=0,
+  \]
+  then the uniqueness property ensures that the solution $\underline{u}$ to the
+  wave equations of theorem \ref{TheoremHomogeneousWave}, is the
+  trivial solution.  This has
+  been used, for instance, to analyse the Killing vector initial data equations
+   at $\mathscr{I}$ in the anti-de Sitter like setting in \cite{CarVal18}.  }
+\end{remark}
+
+}}
 
 
 %% \subsection{The alternative conformal Einstein field equations}
