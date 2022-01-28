@@ -5,7 +5,7 @@
 %%%%%%%
 %%%%%%%
 %%%%%%% Started on: 11.9.2016
-%%%%%%% Current version: 18 Jan 2022 
+%%%%%%% Current version: 28 Jan 2022 
 %%%%%%%
 
 \documentclass[10pt,a4paper]{article}
@@ -233,48 +233,18 @@ $\!\!\!\!\!\!\,\bullet$\themnotecount: #1} }
 
 
 \maketitle
-\mnotex{Title needs to be modified to account for the timelike case?}
 \begin{abstract}
-  %%%%%%%%%%%%%%%%%%%%
- %% We obtain necessary and sufficient conditions for an initial data set
-%%  for the \emph{vacuum conformal Einstein field equations} to give rise
-%%  to a spacetime development possessing a Killing spinor.
-%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% % This  constitutes the conformal analogue of the Killing spinor initial data
-%% % equations derived in \cite{GarVal08c}.
-%%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%  The fact that the conformal
-%%  Einstein field equations are used in our derivation allows for the
-%%  possibility that the initial hypersurface $\mathcal{S}$ be (part of)
-%%  the conformal boundary $\mathscr{I}$.  For conciseness, these
-%%  conditions are derived assuming that the initial hypersurface is
-%%  spacelike. Consequently\mnotex{Not restricted to this, right? EG:
-%%    I've changed the 3+1 split to $||n||=2\epsilon$ to incorporate the
-%%    spacelike and timelike cases, I haven't found a clean version of
-%%    the Technical thm for the IBVP.}, these equations encode necessary
-%%  and sufficient conditions for the existence of a Killing spinor in
-%%  the development of asymptotic initial data on spacelike components of
-  %%  $\mathscr{I}$.
-  %%%%%%%%%%%%%%%%%%%%
-
-  \mnotex{EG: old abstract inside tex file.  I've changed the abstract
-    to accound for the timelike case and adapted the 3+1 split to
-    $||n||=2\epsilon$ to incorporate the spacelike and timelike cases,
-    I haven't found a clean version of the Technical thm for the
-    IBVP.}
-  \mnotex{To be discussed if the IVBP can be incorporated easily or not...
-  I am assuming it is possible and carrying the changes to account for this case}
-%% We obtain the necessary and sufficient conditions at the level of initial data and
-%% boundary data for the conformal Einstein field equations to give rise
-%% to a spacetime development possessing a Killing spinor.  
-  We obtain necessary and sufficient conditions for the initial value
-  problem and the initial boundary value problem for the \emph{vacuum
-    conformal Einstein field equations} to give rise to a spacetime
-  development possessing a Killing spinor.  The fact that the
-  conformal Einstein field equations are used in our derivation allows
-  for the the initial hypersurface $\mathcal{S}$ in the former case and the
-  boundary hypersurface $\mathcal{T}$ in the latter case, to correspond to
-  the conformal boundary $\mathscr{I}$.
+  We obtain necessary and sufficient conditions for an initial data
+  set for the \emph{vacuum conformal Einstein field equations} to give
+  rise to a spacetime development possessing a Killing spinor.  The
+  fact that the conformal Einstein field equations are used in our
+  derivation allows for the possibility that the initial hypersurface
+  $\mathcal{S}$ be (part of) the conformal boundary $\mathscr{I}$.
+  For conciseness, these conditions are derived assuming that the
+  initial hypersurface is spacelike. Consequently, these equations
+  encode necessary and sufficient conditions for the existence of a
+  Killing spinor in the development of asymptotic initial data on
+  spacelike components of $\mathscr{I}$.
 \end{abstract}
 
 
@@ -301,55 +271,48 @@ Symmetry assumptions are usually incorporated into
  of solutions to the Einstein field equations usually exploit the
  symmetries of the spacetime in one way or another, e.g., in the
  characterisations of the Kerr spacetime via the \emph{Mars-Simon
-   tensor} ---see \cite{Mar99,Mar00,Sim84}.  On the other hand, from
- the point of view of the Cauchy problem, symmetry assumptions should
- be imposed only at the level of initial data. In this regard,
- symmetry assumptions can be phrased in terms of the \emph{Killing
-   vector initial data}.  The Killing vector initial data equations
- constitute a set of conditions that an initial data set
+ tensor} ---see \cite{Mar99,Mar00,Sim84}.  On the other hand, from the
+ point of view of the Cauchy problem, symmetry assumptions should be
+ imposed only at the level of initial data. In this regard, symmetry
+ assumptions can be phrased in terms of the \emph{Killing vector
+ initial data}.  The Killing vector initial data equations constitute
+ a set of conditions that an initial data set
  $(\tilde{\mathcal{S}},\tilde{\bmh},\tilde{\bmK})$ ---where
  $\tilde{\mathcal{S}}$ is a 3-dimensional manifold with metric
  $\tilde{\bmh}$ and $\tilde{\bmK}$ denotes the second fundamental
- form--- for the Einstein
- field equations has to satisfy to ensure that the development will
- contain a Killing vector ---see \cite{BeiChr97b}.  Nevertheless,
- despite the fact that the existence of Killing vector plays a
-central  role in the discussion of the symmetries, the
- existence of Killing vectors is sometimes not enough to encode all
- the symmetries and conserved quantities that a spacetime can posses,
- e.g., the Carter constant in the Kerr spacetime. To unravel some of
- these \emph{hidden symmetries} one has analyse the existence of a
- more fundamental type of objects; \emph{Killing spinors}
- $\tilde{\kappa}_{AB}$. In vacuum spacetimes, the existence of a
- Killing spinor directly implies the existence of a Killing
- vector. The \emph{Killing spinor initial data equations} have been
- derived in the \emph{physical framework} ---governed by the Einstein field
-   equations--- in \cite{GarVal08c}.  These equations have been
- employed in the construction of a geometric invariant
- which detects whether or not an initial data set corresponds to
- initial data for the Kerr spacetime ---see
- \cite{BaeVal10a,BaeVal10b,BaeVal11b}.
-This analysis has also been extended to include suitable classes of
-matter ---see \cite{ValCol16} for an analogous characterisation of
-initial data for the Kerr-Newman spacetime.  In these
-characterisations, some asymptotic conditions on the initial data are
-required. These conditions  usually take the form of decay assumptions
-on   $\tilde{\bmh}$, $\tilde{\bmK}$ and $\tilde{\bm\kappa}$ on
-$\tilde{\mathcal{S}}$, given in terms
-of asymptotically Cartesian coordinates.  Nonetheless, in other
-approaches, the asymptotic behaviour of the spacetime can be studied in
-a geometric way through conformal compactifications.
-%%%%
-%The latter is sometimes referred as the Penrose proposal.
-%\mnotex{I think the Penrose proposal has a null conformal boundary sort of assumed}
-%%%
-In this approach one
-starts with a \emph{physical spacetime}
-$(\tilde{\mathcal{M}},\tilde{\bmg})$ where $\tilde{\mathcal{M}}$ is a
-4-dimensional manifold and $\tilde{\bmg}$ is a Lorentzian metric which
-is a solution to the Einstein field equations.  Then, one introduces a
-\emph{unphysical spacetime} $(\mathcal{M},\bmg)$ into which
-$(\tilde{\mathcal{M}},\tilde{\bmg})$ is conformally embedded.
+ form--- for the Einstein field equations has to satisfy to ensure
+ that the development will contain a Killing vector ---see
+ \cite{BeiChr97b}.  Nevertheless, despite the fact that the existence
+ of Killing vector plays a central role in the discussion of the
+ symmetries, the existence of Killing vectors is sometimes not enough
+ to encode all the symmetries and conserved quantities that a
+ spacetime can posses, e.g., the Carter constant in the Kerr
+ spacetime. To unravel some of these \emph{hidden symmetries} one has
+ analyse the existence of a more fundamental type of objects;
+ \emph{Killing spinors} $\tilde{\kappa}_{AB}$. For vacuum spacetimes,
+ the existence of a Killing spinor directly implies the existence of a
+ Killing vector. The \emph{Killing spinor initial data equations} have
+ been derived in the \emph{physical framework} ---governed by the
+ Einstein field equations--- in \cite{GarVal08c}.  These equations
+ have been employed in the construction of a geometric invariant which
+ detects whether or not an initial data set corresponds to initial
+ data for the Kerr spacetime ---see
+ \cite{BaeVal10a,BaeVal10b,BaeVal11b}.  This analysis has also been
+ extended to include suitable classes of matter ---see \cite{ValCol16}
+ for an analogous characterisation of initial data for the Kerr-Newman
+ spacetime.  In these characterisations, some asymptotic conditions on
+ the initial data are required. These conditions usually take the form
+ of decay assumptions on $\tilde{\bmh}$, $\tilde{\bmK}$ and
+ $\tilde{\bm\kappa}$ on $\tilde{\mathcal{S}}$, given in terms of
+ asymptotically Cartesian coordinates.  Nonetheless, following
+ Penrose's proposal, the asymptotic region of the spacetime is to be
+ studied in a geometric way through conformal compactifications.  In
+ this approach one starts with a \emph{physical spacetime}
+ $(\tilde{\mathcal{M}},\tilde{\bmg})$ where $\tilde{\mathcal{M}}$ is a
+ 4-dimensional manifold and $\tilde{\bmg}$ is a Lorentzian metric
+ which is a solution to the Einstein field equations.  Then, one
+ introduces a \emph{unphysical spacetime} $(\mathcal{M},\bmg)$ into
+ which $(\tilde{\mathcal{M}},\tilde{\bmg})$ is conformally embedded.
 Accordingly, there exists an embedding $\varphi: \tilde{\mathcal{M}}
 \rightarrow \mathcal{M}$ such that
 \begin{equation} \label{eqn:Chapter:Introduction:ConformalRescaling}
@@ -361,7 +324,7 @@ Accordingly, there exists an embedding $\varphi: \tilde{\mathcal{M}}
  at infinity from the physical spacetime perspective.
 \noindent The set
 \[
- \mathscr{I} \equiv \big\{p \in \mathcal{M} \hspace{0.2cm}| \hspace{0.2cm} \Xi(p)=0
+ \mathscr{I} := \big\{p \in \mathcal{M} \hspace{0.2cm}| \hspace{0.2cm} \Xi(p)=0
  , \hspace{0.2cm} \mathbf{d}\Xi(p) \neq0\big\}
 \]
 is called the conformal boundary.  However, it can be readily
@@ -372,7 +335,7 @@ Einstein field equations \eqref{EFEVacuum} lead to an equation which
 is formally singular at the conformal boundary.  An approach to deal
 with this problem was given in \cite{Fri81a} where a regular set of
 equations for the unphysical metric was derived. These equations are
-known as the \emph{conformal Einstein field equations}.  The crucial
+known as the \emph{conformal Einstein field equations} (CFEs).  The crucial
 property of these equations is that they are regular at the points
 where $\Xi=0$ and a solution thereof implies whenever $\Xi\neq 0$ a
 solution to the Einstein field equations ---see \cite{Fri81a,Fri83}
@@ -382,76 +345,53 @@ and spinorial formulations. These equations have been mainly used in
 the stability analysis of spacetimes ---see for instance \cite{Fri86b,
   Fri86c} for the proof of the global and semiglobal non-linear
 stability of the de Sitter and Minkowski spacetimes, respectively.
-
-\medskip
-
-The main advantage of the conformal (unphysical) approach to
-the Einstein field equations is that
-the conformal boundary $\mathscr{I}$ determined by $\Xi=0$ is a
+Expressed in a nutshell, the main advantage of the conformal
+(unphysical) approach to the Einstein field equations is that the
+conformal boundary $\mathscr{I}$, determined by $\Xi=0$, is a
 submanifold of $(\mathcal{M},\bmg)$. This allows, in particular, to
 consider the $\Xi=0$ hypersurface as a legitimate hypersurface to
 prescribe data which can be evolved using regular ---without
-$\Xi^{-1}$-terms--- evolution equations.  This can be exploited in
-different setups.  \mnotex{text adapted to discuss applicability in
-  $\lambda>0$, $\lambda<0$ and $\lambda=0$ as well} In the $\lambda>0$
-it allows to pose asymptotic initial value problems, namely an initial
-value problem where the initial hypersurface is $\mathscr{I}$
-(spacelike hypersurface) ---see for instance \cite{GasVal17, LueVal09,
-  Fri86a}.  In the $\lambda<0$ it can be used to pose an initial
-boundary value problem where the timelike boundary corresponds to
-$\mathscr{I}$ ---see for example \cite{CarVal19, Fri95}. Finally, in
-the $\lambda=0$ it can be used in characteristic initial value problems where one of
-the null hypersurfaces corresponds to $\mathscr{I}$ ---see for
-instance \cite{ZhaHilVal21}.
-
-%% This set up is particularly
-%% atractive to study spacetimes with $\lambda>0$ in which, given the
-%% appropriate conditions, the conformal boundary $\mathscr{I}$ is a
-%% spacelike hypersurface and hence one can pose \emph{an asymptotic
-%%   initial value problem}: an initial value problem where the initial
-%% hypersurface is $\mathscr{I}$.
-
+$\Xi^{-1}$-terms--- evolution equations. 
+This set up is particularly atractive to study
+spacetimes with $\lambda>0$ in which, given the appropriate
+conditions, the conformal boundary is a spacelike
+hypersurface and hence one can pose \emph{an asymptotic initial value
+problem}: an initial value problem where the initial hypersurface is
+$\mathscr{I}$ ---see \cite{GasVal17,MarPaeSenSim16, LueVal09}.
 
 \medskip
 
-A conformal version of the Killing vector initial data equations using
-the metric formulation of the conformal Einstein field equations has
-been obtained in \cite{Pae14a}.  In the latter reference, intrinsic
-conditions on an initial hypersurface $\mathcal{S}\subset \mathcal{M}$
-of the unphysical spacetime are found such that the development of the
-data ---in the unphysical setting the evolution is governed by the
-conformal Einstein field equations--- gives rise to a conformal
-Killing vector of the unphysical spacetime $(\mathcal{M},\bmg)$ which, in
-turn, corresponds to a Killing vector of the physical spacetime
-$(\tilde{\mathcal{M}},\tilde{\bmg})$.  Notice that this approach, in
-particular, allows $\mathcal{S}$ to be determined by $\Xi=0$ so that
-it to corresponds to the conformal boundary $\mathscr{I}$.  The
-unphysical Killing vector initial data equations have been derived for
-the characteristic initial value problem on a cone in \cite{Pae14a}
-on a spacelike conformal boundary in \cite{Pae14} and on a timelike
-conformal boundary in \cite{CarVal18}.
-
-
-\medskip
-
-For applications involving the the conformal Einstein field equations
----say in its spinorial formulation, one frequently has to fix the
-gauge and write the equations in components.  Despite the fact that,
-at first glance, the conformal Einstein field equations expressed in
-components with respect to an arbitrary spin frame seem to be
-overwhelmingly complicated, as shown in \cite{GasVal17}, symmetry
-assumptions (spherical symmetry in the latter case) greatly reduce the
-number of equations to be analysed.  In the case of Petrov type D
-spacetimes, e.g.the Kerr-de Sitter spacetime, the symmetries of the
-spacetime are closely related to the existence of Killing spinors.
-Therefore, a natural question in this setting is whether a conformal
-version of the Killing spinor initial data equations introduced in
-\cite{GarVal08c} can be found. In other words, what are the extra
-conditions that one has to impose on an initial data set for the
-conformal Einstein field equations so that the arising development
-contains a Killing spinor?  This question is answered in this article
-by deriving such conditions which we call the \emph{conformal Killing
-  spinor initial data equations}
+The conformal counterpart of the Killing vector initial data equations
+\cite{BeiChr97b} was derived in \cite{Pae14a}.  In the latter
+reference, intrinsic conditions on an initial hypersurface
+$\mathcal{S}\subset \mathcal{M}$ of the unphysical spacetime are found
+such that the development of the data gives rise to a conformal
+Killing vector of the unphysical spacetime $(\mathcal{M},\bmg)$ which,
+in turn, corresponds to a Killing vector of the physical spacetime
+$(\tilde{\mathcal{M}},\tilde{\bmg})$.  Notice that this construction
+allows $\mathcal{S}$ to be determined by $\Xi=0$ so that it to
+corresponds to $\mathscr{I}$.  To avoid confusion, we emphasise that
+the equations of \cite{Pae14a} are derived in the \emph{unphysical
+framework} ---governed by the CFEs---
+and are not the same as those derived in \cite{GarKha19} which
+represent restrictions on the initial data for the physical spacetime
+$(\tilde{\mathcal{M}},\tilde{\bmg})$ to give rise to a conformal
+Killing vector.
+%%%%%%%%%%%%%%%%%%%%%%%%
+%\mnotex{I added this reference because Alfonso
+% could be one of the referees of our paper}
+%%%%%%%%%%%%%%%%%%%%%%%%
+On the other hand, as previously mentioned, in the case of Petrov type
+D spacetimes such as the Kerr-de Sitter spacetime, the symmetries of
+the spacetime are closely related to the existence of Killing spinors.
+Hence, a natural question in this setting is whether a conformal
+counterpart ---in the unphysical framework--- of the Killing spinor
+initial data equations introduced in \cite{GarVal08c} can be
+obtained. In other words, what are the extra conditions that one has
+to impose on an initial data set for the CFEs so that the arising
+development contains a Killing spinor?  This question is answered in
+this article by deriving such conditions which we call the
+\emph{conformal Killing spinor initial data equations}.
 
 \medskip
 
@@ -459,123 +399,69 @@ Although the Killing spinor equation is conformally invariant, it is
 not a priori clear whether the conditions of \cite{GarVal08c,
   BaeVal10b} may be translated directly into the unphysical setting.
 Indeed, one expects this not to be the case, since the Einstein field
-equations are not conformally invariant.
-%%%%%%%%%%%%%%%%%%%%
-%Moreover, one consideration that is
-%exploited in the discussion of \cite{GarVal08c} is based on the fact
-%that, on an Einstein spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$, a
-%Killing spinor $\tilde{\kappa}_{AB}$ gives rise to a Killing vector
-%$\tilde{\xi}_{a}$ whose spinorial counterpart is given by
-%$\tilde{\xi}_{AA'}=\tilde{\nabla}_{A'}{}^{Q}\tilde{\kappa}_{QA}$. Nevertheless,
-%this property does not hold in general.
-%
-%\medskip
-%
-%The analysis carried out in this article can be considered as the
-%conformal analogue of the Killing spinor initial data equations
-%derived in \cite{GarVal08c}.
-%%%%%%%%%%%%%%%%%%
-The results of \cite{GarVal08c} may be recovered from the analysis
-presented here by setting $\Xi = 1$, however, an important difference
-is that the set of variables that allow to obtain a closed system of
-homogeneous wave equations in the present case are different. The need
-for a different set of \emph{Killing spinor zero-quantities} %to be
-propagated in the conformal case, can be traced back to the %previous
-observation that in $(\mathcal{M},\bmg)$ the vector
+equations are not conformally invariant.  Although the results of
+\cite{GarVal08c} may be recovered from the analysis presented here by
+setting $\Xi = 1$, an important difference is that the set of
+variables that allow to obtain a closed system of homogeneous wave
+equations in the present case are different. The need for a different
+set of \emph{Killing spinor zero-quantities} propagated in the
+conformal case, can be traced back to the observation that in
+$(\mathcal{M},\bmg)$ the vector
 $\xi_{AA'}=\nabla_{A'}{}^{Q}\kappa_{QA}$ does not correspond to a
-(conformal) Killing vector. However, as by product of the present
-analysis it is shwon that $\xi_{AA'}$ is a Weyl collineation ---see
-\cite{KatLevDav69} for definitions of curvature collineations.  Once
-the existence of a Killing spinor is established one can use the
-conformal factor $\Xi$, the Killing spinor $\kappa_{AB}$ and
-$\xi_{AA'}$, to construct a conformal Killing vector $X_{a}$
-associated to a Killing vector $\tilde{X}_{a}$ of the physical
-spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$.  In the analysis of
+(conformal) Killing vector. Although for a general Lorentzian manifold
+this vector appears not to have any clear geometric significance, a
+by-product of the present analysis is that, for conformally Einstein
+manifolds ---namely, solutions to the CFEs---
+the vector $\xi_{AA'}$ represents a \emph{Weyl
+collineation} ---see \cite{KatLevDav69} for definitions of curvature
+collineations.  Once the existence of a Killing spinor is established
+one can use the conformal factor $\Xi$, the Killing spinor
+$\kappa_{AB}$ and $\xi_{AA'}$, to construct a conformal Killing vector
+$X_{a}$ associated to a Killing vector $\tilde{X}_{a}$ of the physical
+spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$. In the analysis of
 \cite{GarVal08c} the fact that
 $\tilde{\xi}_{AA'}=\tilde{\nabla}_{A'}{}^{Q}\tilde{\kappa}_{QA}$ is a
 Killing vector is crucial and one propagates off the initial
 hypersurface, simultaneously, $\tilde{\kappa}_{AA'}$ and
 $\tilde{\xi}^{AA'}$.  The latter motivates the introduction of
-$\tilde{S}_{ab} \equiv \tilde{\nabla}_{(a}\tilde{\xi}_{b)}$ as a
-zero-quantity in the physical set up of \cite{GarVal08c}.  %%%%%%%
-Similarly, in the work of \cite{ValCol16} where the results of
-\cite{GarVal08c} are generalised to the case where
-$(\tilde{\mathcal{M}},\tilde{\bmg})$ satisfies the Einstein-Maxwell
-equations, the condition $\tilde{S}_{ab}=0$ is verified by virtue of
-the so-called \emph{matter aligment condition}.  In the conformal
-setting analysed in this article, the analogous quantity $S_{ab}$ is
-not as geometrically motivated as in the previous cases and its usage
-as a variable in the system does not lead to a closed system of
-explicitly regular homogeneous wave equations. Here the adjective
-regular refers to the absence of formally singular terms, such as
-$\Xi^{-1}$, in the equations. Instead, the variable that is central
-for the present analysis turns out to be the so-called \emph{Buchdahl
-  constraint} (and derivatives thereof), which relates the existence
-of Killing spinors with the Petrov type of $(\mathcal{M},\bmg)$.
+$\tilde{S}_{ab} := \tilde{\nabla}_{(a}\tilde{\xi}_{b)}$ as a
+zero-quantity in the physical framework of \cite{GarVal08c}.  Similarly,
+in the work of \cite{ValCol16} where the results of \cite{GarVal08c}
+are generalised to the case where $(\tilde{\mathcal{M}},\tilde{\bmg})$
+satisfies the Einstein-Maxwell equations, the condition
+$\tilde{S}_{ab}=0$ is verified by virtue of the so-called \emph{matter
+aligment condition}.  In the conformal setting analysed in this
+article, the analogous quantity $S_{ab}$ is not as geometrically
+motivated as in the physical cases and its usage as a variable in the
+system does not lead to a closed system of explicitly regular
+homogeneous wave equations. Here the adjective regular refers to the
+absence of formally singular terms, such as $\Xi^{-1}$, in the
+equations. Instead, the variable that is central for the present
+analysis turns out to be the so-called \emph{Buchdahl constraint} (and
+derivatives thereof), which relates the existence of Killing spinors
+with the Petrov type of $(\mathcal{M},\bmg)$.
 
-    %%%%%%%%%%%
-%
-%% In other words, if
-%% $(\mathcal{M},\bmg)$, where $\bmg$ is not assumed to satisfy the
-%% Einstein field equations, possess a Killing spinor $\kappa_{AB}$, then
-%% the analogous concomitant $\xi_{AA'}=\nabla_{A'}{}^{Q}\kappa_{QA}$
-%% does not correspond to a Killing vector ---not even a conformal Killing vector.
-%% This situation is not ameliorated if one assumes that
-%% $(\mathcal{M},\bmg)$ satisfies the conformal Einstein field equations.
-
-%% Nevertheless, as discussed in this article, in the latter
-%% case one can show that it corresponds to
-%% a Weyl curvature collineation and using the conformal factor $\Xi$, the Killing
-%% spinor $\kappa_{AB}$ and the \emph{auxiliary vector} $\xi_{a}$, one
-%% can construct a conformal Killing vector $X_{a}$ associated to a
-%% Killing vector $\tilde{X}_{a}$ of the physical spacetime
-%% $(\tilde{\mathcal{M}},\tilde{\bmg})$.
-
-%% The conditions of \cite{GarVal08c, BaeVal10b}
-%% may be recovered from the results presented here by setting $\Xi = 1$.
-%
-%
-%\medskip
-%%%%%%%%
-
-   %% An interesting feature of our analysis is the fact that we make use of an
-   %% alternative representation of the conformal Einstein field
-   %% equations.  In
-   %% principle, one could use the standard representation of the
-   %% conformal Einstein field equations, however, some
-   %% experimentation reveals that the latter approach leads to 
-   %% Fuchsian systems of equations ---formally singular at the conformal
-   %% boundary--- for quantities associated to the Killing spinor.
 
 \medskip
-
    The core of the proof of the main theorem of this article is
    obtaining a closed system of homogeneous wave equations for fields
    encoding the existence of a Killing spinors. Although these wave
    equations hold regardless of the causal character of $\mathscr{I}$,
-   to obtain intrinsic conditions on $\mathcal{S}$ ---which can be
-   chose to be $\mathscr{I}$--- a $3+1$ split of the equations is
-   required, hence we focus on the spacelike and timelike cases.
-   \mnotex{sentence changed to include the timelike case}
-   %% to obtain intrinsic  conditions to
-   %% $\mathcal{S}$ we assume, for conciseness that    $\mathcal{S}$ is
-   %% spacelike.    Nonetheless, a  similar
-   %% computation can be performed on an hypersurface   $\mathcal{S}$
-   %% with a different causal character.
-   The conditions found in this
-   article have potential applications for the black hole uniqueness
-   problem.  In particular, in the $\lambda>0$ case they can be used
-   for an asymptotic characterisation of the Kerr-de Sitter spacetime
-   analogous to \cite{MarPaeSenSim16} in terms of the existence of
-   Killing spinors at the conformal boundary
-   $\mathscr{I}$.\mnotex{Move this earlier, as motivation?}
+   to obtain intrinsic conditions to $\mathcal{S}$ we assume, for conciseness
+   that $\mathcal{S}$ is spacelike.  Nonetheless, a similar
+   computation can be performed on an hypersurface $\mathcal{S}$ with
+   a different causal character. Therefore, the conditions found in this article
+   have potential applications for the black hole uniqueness problem.
+   In particular, they can be used for an asymptotic characterisation
+   of the Kerr-de Sitter spacetime analogous to \cite{MarPaeSenSim16}
+   in terms of the existence of Killing spinors at the conformal
+   boundary $\mathscr{I}$.
 
 \medskip
 
 The main result of this article ---the more precise statement of which
-can be found in Theorem \ref{Theorem_KS}--- are summarised informally
+can be found in Theorem \ref{Theorem_KS}--- is summarised informally
 in the following:
-
 
 \begin{main}\label{TheoremSummary}
 If the conformal Killing spinor initial data equations
@@ -586,57 +472,23 @@ the conformal Einstein field equations has been prescribed,
  then, the domain of dependence of $\mathcal{U}$  possesses a Killing spinor.
 \end{main}
 
-\mnotex{EG: Added a version of the same theorem but for the
-  IVBP. Unsure of this... need to be discussed}
-
-\begin{main}\label{TheoremSummary_timelike}
-If the conformal Killing spinor initial data equations
-\eqref{CS-KID1}--\eqref{CS-KID3} and the Killing spinor boundary data
-equations \eqref{} are satisfied on $\mathcal{U}\subset\mathcal{S}$
-and $\mathcal{V}\subset\mathcal{T}$ respectively, where $\mathcal{S}$
-and $\mathcal{T}$ are spacelike and timelike hypersurfaces with
-$\mathcal{U}\cap\mathcal{V} \neq \emptyset$, for the which, initial
-and boundary data for the conformal Einstein field equations have been
-prescribed, then, the spacetime development possesses a Killing
-spinor.
-\end{main}
-
-
-
-    Although the main
-   objective of the present paper is deriving the valence-2 Killing spinor initial
-   data in the conformal setting $(\mathcal{M},\bmg)$,
-    the analogous conditions encoding the
-    existence of a valence-1 Killing spinor are also derived.   The latter serves as a
-    warm-up exercise for the valence-2 case where one can
-    already observe the above discussed features and understand
-    differences between the derivation of the conditions on
+    Although the main objective of the present paper is deriving the
+    valence-2 Killing spinor initial data in the conformal setting
+    $(\mathcal{M},\bmg)$, the analogous conditions encoding the
+    existence of a valence-1 Killing spinor are also derived.  The
+    latter serves as a warm-up exercise for the valence-2 case where
+    one can already observe the above discussed features and
+    understand differences between the derivation of the conditions on
     $(\tilde{\mathcal{M}},\tilde{\bmg})$ and those on
     $(\mathcal{M},\bmg)$ in a simpler arena.
 
 \medskip
 
 
-
-%% On the other hand, the conformal (valence-1 Killing spinor) twistor conditions
-%% of proposition \eqref{Prop:Propagation_twistor} allows to identify
-%% asymptotic initial data  whose development will
-%% contain a twistor. Although the twistor case is too restrictive to
-%% characterise black hole spacetimes
-%% %%%%
-%% % (since the Buchdahl constraint forces the manifold $(\bmg, \mathcal{M})$
-%% % to be of Petrov type N orO),
-%% %%%
-%% it is still illustrative to compare the derivation of the physical
-%% twistor initial data conditions on
-%% $(\tilde{\mathcal{M}},\tilde{\bmg})$ and that leading to proposition
-%% \eqref{Prop:Propagation_twistor}.
-
 Involved computations throughout this article were facilitated through
 the suite {\tt xAct} in {\tt Mathematica}.
 
 
-%\newpage
 
 \subsection*{Overview of the article}
   Section \ref{Background} summarises relevant background material:
@@ -658,53 +510,36 @@ derived and discussed.
 Throughout this article, $(\mathcal{M}, \bmg)$ will denote a
 4-dimensional manifold equipped with a Lorentzian metric $\bmg$ of
 signature $(+, -, -, -)$, with associated Levi-Civita connection
-$\tilde{\nabla}$. We moreover assume $(\mathcal{M}, \bmg)$ to be
-globally-hyperbolic.  Upper case Latin indices ~$_{ABC\cdots A'B'C'}$~
+$\tilde{\nabla}$.   We moreover assume $(\mathcal{M}, \bmg)$ to be
+globally-hyperbolic. The Upper case Latin indices ~$_{ABC\cdots A'B'C'}$~
 will be used as abstract indices of the \emph{spacetime spinor}
 algebra, and the bold numerals ~$_{\bm0\bm1\bm2\cdots}$~ denote
-components with respect to a fixed spin dyad $ o^A\equiv
-\epsilon_{\bm0}{}^A,\iota^A\equiv\epsilon_{\bm1}{}^A $ ---see Penrose
+components with respect to a fixed spin dyad $ o^A:=
+\epsilon_{\bm0}{}^A,\iota^A:=\epsilon_{\bm1}{}^A $ ---see Penrose
 \& Rindler \cite{PenRin84} for further details.
-%\sout{Although spinor
-%  notation will be preferred, for certain computations tensors will be
-%  employed.}\mnotex{I think we do everything with spinors...}
-Lower
-case Latin indices $_{a,b,c...}$ will be used as abstract tensor
+Lower case Latin indices $_{a,b,c...}$ will be used as abstract tensor
 indices.  For tensors, our curvature conventions are fixed by
 \[\nabla_{a}\nabla_{b}\kappa^c-\nabla_{b}\nabla_{a}\kappa^c=R_{ab}{}^{c}{}_{d}\kappa^{d}.\]
+The future domain of dependence of an achronal set $\mathcal{A}$ will be denoted
+by $\mathcal{D}^{+}(\mathcal{A})$.
 
-
-%% Section
-%% \ref{Sec:KillinSpinorZeroQuantities} introduces the main objects of
-%% interest in the propagation of Killing spinor data, namely the
-%% \emph{Killing spinor zero-quantities}. In Section
-%% \ref{Sec:PropagationEquations} we construct conformally-regular wave
-%% equations for the zero-quantities, leading to necessary and sufficient
-%% conditions for the existence of a Killing spinor ---see Proposition
-%% \ref{Prop:Propagation}. In Section \ref{Sec:IntrinsicConditions} the
-%% latter conditions and the space spinor formalism are used to obtain 
-%% the conformal Killing spinor initial data equations
-%%  on spacelike hypersurfaces---see
-%%  Theorem \ref{MainTheorem}.
-%% % % Finally, in Section
-% % \ref{Sec:FurtherAnalysis} the latter equations are analysed with respect to
-% % an adapted spin dyad and the implied restrictions on the Cotton
-% % spinor are presented ---see Proposition
-% % \ref{PropositionRestrictionOnCotton}.
 
 \section{Background}
 \label{Background}
 
 In this section, we give an abridged recap of spacetime and space spinor
 calculus, in addition to giving a brief introduction to Killing
-spinors and the conformal Einstein field equations.\mnotex{$\bmn$ or $\bm\tau$ for the normal?}
+spinors and the conformal Einstein field equations.
 
 \subsection{Spinorial formalism in a nutshell}
 \label{NotationAndSpinorFormalism}
 
 Since $(\mathcal{M}, \bmg)$ is, by assumption, globally-hyperbolic, it
 admits a spinor structure ---see Proposition $4$ in
-\cite{CFEbook}.
+\cite{CFEbook}. The use of the spinor structure of $(\mathcal{M},
+\bmg)$ fixes the signature to $(+, -, -, -)$.
+
+\medskip
 
 For spinors, the curvature conventions are fixed via the spinorial
 Ricci identities which will be written in accordance with the above
@@ -717,7 +552,7 @@ in terms of the symmetric operator $\square_{AB}$ as
 \]
 where
 \[
-\square_{AB} \equiv \nabla_{Q'(A} \nabla_{B)}{}^{Q'}.
+\square_{AB} := \nabla_{Q'(A} \nabla_{B)}{}^{Q'}.
 \]
  The action of the symmetric operator $\square_{AB}$ on valence-1
  spinors is encoded in the spinorial Ricci identities
@@ -730,143 +565,84 @@ where
 \label{SpinorialRicciIdentities2}
 \end{eqnarray}
 \end{subequations}
-where $\Psi_{ABCD}$ and $\Phi_{AA'BB'}$ and $\Lambda$ are curvature spinors.
-The above identities can be extended to higher valence spinors in the obvious way
----further discussion (albeit using slightly different conventions)
-can be found in \cite{Ste91}. A related identity which will be systematically used in the
- following discussion is
+where $\Psi_{ABCD}$ and $\Phi_{AA'BB'}$ and $\Lambda$ are curvature
+spinors.  The above identities can be extended to higher valence
+spinors in the obvious way ---further discussion (albeit using
+slightly different conventions) can be found in \cite{Ste91}. A
+related identity which will be systematically used in the following
+discussion is
 \begin{equation}\label{DecomposeDoubleDerivativeContracted}
 \nabla_{AQ'}\nabla_{B}{}^{Q'}=\square_{AB}+
 \frac{1}{2}\epsilon_{AB}\square,
 \end{equation}
 where $\square_{AB}$ is the symmetric operator defined above and
-$\square \equiv \nabla_{AA'}\nabla^{AA'}.$
+$\square := \nabla_{AA'}\nabla^{AA'}.$
 
-
-%\subsection*{Space spinor formalism}
-
-To have a self-contained discussion in this section the
-%%%%
-%space spinor formalism,
-%%%%
-1+3 spinor split, originally introduced in \cite{Som80} ---see also
-\cite{GarVal08c,BaeVal10b,CFEbook}--- is briefly recalled and adapted
-to consider both spacelike and timelike hypersurfaces.
-\mnotex{adapted to incorporate the timelike case} Let $n^{AA'}$ denote
-the spinorial counterpart of a vector $n^{a}$, normal to a
-hypersurface $\Sigma$ and normalised so that $n_{a}n^{a}=2\epsilon$
-with $\epsilon=1$ if $\Sigma$ is spacelike and $\epsilon=-1$ if
-$\Sigma$ is timelike.  Then, it follows that
-$n_{AA'}n^{AA'}=2\epsilon$ and, consequently,
-\[n_{AA'}n_B{}^{A'}=\epsilon \; \epsilon_{AB}.\]
-Notationally, we will use $\tau^a$ and $\rho^a$ to denote, the normal
-to a spacelike hypersurface $\mathcal{S}$ and a timelike hypersurface
-$\mathcal{T}$, respectively.
-\medskip
-
-The induced metric on $\Sigma$ is given by 
-\[h_{ab}=g_{ab}-\epsilon n_an_b.\]
-In the 1+3 spinor split, spacetime spinors are decomposed
-into normal and tangential parts to $n^a$
-by means of projection with $n^{AA'}$ and symmetrations.
-A spacetime spinor $W_{AA'}$ is decomposed as follows
-\[\epsilon W_{AA'}= \frac{1}{2}n_{AA'}W-n^{B}{}_{A'}\mathcal{W}_{AB}\]
-where $W=n^{AA'}W_{AA'}$ and $\mathcal{W}_{AB}=n_{(A}{}^{A'}W_{B)A'}$.
-Similarly, the covariant derivative $\nabla_{AA'}$ is then decomposed into the
+To have a self-contained discussion the space spinor
+formalism, originally introduced in \cite{Som80}, is briefly recalled
+---see also \cite{GarVal08c,BaeVal10b,CFEbook}.  Let $\tau^{AA'}$
+denote the spinorial counterpart of a timelike vector $\tau^{a}$,
+normal to a spacelike hypersurface $\mathcal{S}$ and normalised so
+that $\tau_{a}\tau^{a}=2$.  Then, it follows that
+$\tau_{AA'}\tau^{AA'}=2$ and, consequently,
+\[\tau_{AA'}\tau_B{}^{A'}=\epsilon_{AB}.\]
+Given a spacetime spinor $u_{AA'}$, its space spinor decomposition
+reads
+\[
+u_{AA'}= \frac{1}{2}\tau_{AA'}u-\tau^{B}{}_{A'}u_{(AB)},
+\]
+where $u:=\tau^{AA'}W_{AA'}$ and $u_{(AB)}:=\tau_{(A}{}^{B'}u_{B)B'}$.
+This split extends to higher valence spinors in an analogous way
+---see \cite{GarVal08c,BaeVal10b,CFEbook}. Similarly,
+the covariant derivative $\nabla_{AA'}$ is then decomposed into the
 \emph{normal} and \emph{Sen} derivatives:
 \begin{align*}
-  &\nabla_{\bmn} \equiv n^{AA'}\nabla_{AA'},\\ & \mathcal{D}_{AB}\equiv
-  n_{(A}{}^{A'}\nabla_{B)A'}.
+  %& \mathcal{P}
+  &\nabla_{\bm\tau} := \tau^{AA'}\nabla_{AA'},\\ & \mathcal{D}_{AB}:=
+  \tau_{(A}{}^{A'}\nabla_{B)A'}.
 \end{align*}
-%% These definitions imply entail the following decomposition
-%% \begin{align*}
-%%   \epsilon \nabla_{AA'}\eta _{B} = \tfrac{1}{2}  n_{AA'}   \nabla_{n}{}\eta _{B}
-%%   -   n^{C}{}_{A'} \mathcal{D} _{AC}\eta _{B}.
-%% \end{align*}
 The \emph{Weingarten} spinor and the \emph{acceleration} of the
 congruence are then defined by
 \begin{align*}
-& K_{ABCD} \equiv n_{D}{}^{C'} \mathcal{D}_{AB}\tau_{CC'},\\ &
-  K_{AB} \equiv n_{B}{}^{C'} \nabla_{\bm\tau}\tau_{AC'}.
+& K_{ABCD} := \tau_{D}{}^{C'} \mathcal{D}_{AB}\tau_{CC'},\\ &
+  K_{AB} := \tau_{B}{}^{C'} \nabla_{\bm\tau}\tau_{AC'}.
 \end{align*}
-The above can be inverted to obtain
-\mnotex{removed sentence emphasising their importance
-  because it seems we never really use the
-  expressions for the extrinsic curvature}
-%the following formulae which will prove useful in the sequel
-\begin{align*}
-  %& \mathcal{P}
-  & \nabla_{\bmn} n_{CC'}=- \epsilon K_{CD} \tau^{D}{}_{C'},\\ &
-  \mathcal{D}_{AB}n_{CA'} = - \epsilon K_{ABCD} \tau^{D}{}_{A'}.
-\end{align*}
-The distribution induced by $n_{AA'}$ is integrable if and only
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\mnotex{these are not really used so
+%% I cutted some of the discussion to make it more brief}
+%% The above can be inverted to obtain the following formulae which will
+%% prove useful in the sequel
+%% \begin{align*}
+%%   & \nabla_{\bm\tau} \tau_{CC'}=- K_{CD} \tau^{D}{}_{C'},\\ &
+%%   \mathcal{D}_{AB}\tau_{CA'} = - K_{ABCD} \tau^{D}{}_{A'}.
+%% \end{align*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The distribution induced by $\tau_{AA'}$ is integrable if and only
 $K^D{}_{(AB)D}=0$, in which case $K_{ABCD}$ describes the extrinsic
 curvature of the resulting foliation.
  Nevertheless, this is not required for our subsequent discussion.
 In other words, we will allow
  the possibility that the distribution is non-integrable
 ---i.e. the spinor $ K^D{}_{(AB)D}$ will not be assumed
-to vanish. 
-
-\medskip
-
-Defining the spinors $\chi_{AB}\equiv K^D{}_{(AB)D}$,
-$\chi_{ABCD}\equiv K_{(ABCD)}$ and $\chi\equiv K_{AB}{}^{AB}$, the
-Weingarten spinor decomposes as follows
-\begin{equation}
-\label{ExtrinsicCurvatureSplit}
-K_{ABCD} = \chi_{ABCD} - \tfrac{1}{2} \epsilon_{A(C}\chi_{D)B} -
-\tfrac{1}{2} \epsilon_{B(C}\chi_{D)A} - \tfrac{1}{3} \chi
-\epsilon_{A(C} \epsilon_{D)B}.
-\end{equation}
-
-
-
-%% For the following discussion we will also need the commutators form with
-%% %$\mathcal{P},~\mathcal{D}_{AB}$.
-%% $\nabla_{\bm\tau},~\mathcal{D}_{AB}$.
-%% To write these commutators in a
-%% succinct way, first define
-%% \[\widehat{\square}_{AB}\equiv \tau_A{}^{A'}\tau_B{}^{B'}\square_{A'B'}\]
-%% from which, proceeding analogously as in \cite{BaeVal10b}, one obtains\mnotex{Are we actually using these?}
-%% \begin{align}
-%%  \left[\nabla_{\bm\tau} ,\mathcal{D}_{AB}
-%%    \right]&=-\tfrac{1}{2}\chi_{AB}-\square_{AB}+\widehat{\square}_{AB}
-%% +K_{(A}{}^D\mathcal{D}_{B)D}-K_{AB}{}^{FG}\mathcal{D}_{FG}, \label{CommutatorNormalSenDeriv}
-%% \\ \left[\mathcal{D}_{AB},\mathcal{D}_{CD}\right]&=
-%% \tfrac{1}{2}\left(\epsilon_{A(C}\square_{D)B}+\epsilon_{B(C}\square_{D)A}\right)
-%% +\tfrac{1}{2}\left(\epsilon_{A(C}\widehat{\square}_{D)B}+\epsilon_{B(C}\widehat{\square}_{D)A}\right)
-%%  \nonumber \\ &
-%%  +\tfrac{1}{2}\left(K_{CDAB}-K_{ABCD}\right)\nabla_{\bm\tau}
-%% +K_{CDF(A}\mathcal{D}_{B)}{}^F-K_{ABF(C}\mathcal{D}_{D)}{}^F \label{CommutatorSenSenDeriv}
-%% \end{align}
+to vanish.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\mnotex{these are not really used so
+%% I cutted some of the discussion to make it more brief}
+%% \medskip
+%%
+%% Defining the spinors $\chi_{AB}:= K^D{}_{(AB)D}$,
+%% $\chi_{ABCD}:= K_{(ABCD)}$ and $\chi:= K_{AB}{}^{AB}$, the
+%% Weingarten spinor decomposes as follows
+%% \begin{equation}
+%% \label{ExtrinsicCurvatureSplit}
+%% K_{ABCD} = \chi_{ABCD} - \tfrac{1}{2} \epsilon_{A(C}\chi_{D)B} -
+%% \tfrac{1}{2} \epsilon_{B(C}\chi_{D)A} - \tfrac{1}{3} \chi
+%% \epsilon_{A(C} \epsilon_{D)B}.
+%% \end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%% \begin{align}
-%%  \left[\mathcal{P},\mathcal{D}_{AB}
-%%    \right]&=-\tfrac{1}{2}\chi_{AB}-\square_{AB}+\widehat{\square}_{AB}
-%% +K_{(A}{}^D\mathcal{D}_{B)D}-K_{AB}{}^{FG}\mathcal{D}_{FG}, \label{CommutatorNormalSenDeriv}
-%% \\ \left[\mathcal{D}_{AB},\mathcal{D}_{CD}\right]&=
-%% \tfrac{1}{2}\left(\epsilon_{A(C}\square_{D)B}+\epsilon_{B(C}\square_{D)A}\right)
-%% +\tfrac{1}{2}\left(\epsilon_{A(C}\widehat{\square}_{D)B}+\epsilon_{B(C}\widehat{\square}_{D)A}\right)
-%%  \nonumber \\ &
-%%  +\tfrac{1}{2}\left(K_{CDAB}\mathcal{P}-K_{ABCD}\mathcal{P}\right)
-%% +K_{CDF(A}\mathcal{D}_{B)}{}^F-K_{ABF(C}\mathcal{D}_{D)}{}^F \label{CommutatorSenSenDeriv}
-%% \end{align}
-
-%% It will also prove convenient to decompose the tracefree Ricci spinor,
-%% $\Phi_{AA'BB'}$ in space spinor form. To do so, introduce its space
-%% spinor counterpart $\Phi_{ABCD}\equiv\tau_{B}{}^{B'} \tau_{D}{}^{D'}
-%% \Phi_{ACB'D'}$.  The latter can be decomposed as
-%% \begin{align}
-%% \label{RicciSpaceSpinorSplit}
-%% \Phi_{ABCD}& = \Xi_{ABCD} + \tfrac{1}{2}
-%% \left(\epsilon_{C(B}\Phi_{D)A} + \epsilon_{A(B}\Phi_{D)C}\right) -
-%% \tfrac{1}{3} \Phi \epsilon_{A(B}\epsilon_{D)C}
-%% \end{align}
-%% where
-%% \[ \Phi \equiv \Phi_{A}{}^{A}{}_{B}{}^{B},\qquad \Phi_{AB} \equiv \Phi_{(AB)C}{}^{C},\qquad
-%%  \Xi_{ABCD} \equiv \Phi_{(ABCD)}\]
 
 
 \subsection{Killing spinors}\label{Sec:KillingSpinors}
@@ -884,44 +660,27 @@ that, in the present section, no such restriction is necessary.
 
 A totally symmetric
 $\tilde{\kappa}_{A_1...A_p}=\tilde{\kappa}_{(A_1...A_p)}$ valence$-p$
-spinor is said to be a (valence$-p$) \emph{Killing spinor}
-if is satisfies the following equation 
+spinor is said to be a (valence$-p$) \emph{Killing spinor} if is
+satisfies the following equation
 \begin{equation}\label{qValenceKillingspinor}
 \tilde{\nabla}_{Q'(Q}\tilde{\kappa}_{A_1...A_p)}=0.
 \end{equation}
 An important property of the Killing spinor equation is that it is
 conformally-invariant, in other words if $\bmg$ is conformally related
-to $\tilde{\bmg}$, namely $\bmg=\Xi^2\tilde{\bmg}$ then
+to $\tilde{\bmg}$ ---namely $\bmg=\Xi^2\tilde{\bmg}$--- then
 ${\kappa}_{A_1...A_q}=\Xi^2 \tilde{\kappa}_{A_1...A_q}$ satisfies
-\[{\nabla}_{Q'(Q}{\kappa}_{A_1...A_p)}=0,\]
-%%%
-%where ${\nabla}$ is the Levi--Civita connection of ${\bmg}$.
-%\mnotex{Already clear?. Yes, I think it is}
-%%%%
+\[{\nabla}_{Q'(Q}{\kappa}_{A_1...A_p)}=0.\]
 \medskip
-\noindent In this paper we will only focus only the case $p=1$ and $p=2$.
-If $p=1$, the equation
-%%%%
-%then a valence$-1$ Killing spinor $\tilde{\kappa}_A$ satisfies the equation
-%%%
+\noindent In this paper we will only focus only the case $p=1$ and
+$p=2$.  If $p=1$, the equation
 \begin{equation}\label{TwistorEq}
   \tilde{\nabla}_{Q'(Q}\tilde{\kappa}_{A)}=0.
 \end{equation}
-%%%
-% which
-%%%
 is usually referred as the \emph{twistor equation}, and a solution
 referred to as a \emph{twistor}; we will follow this naming convention
-here.
-%%%%%%%
-%\sout{Since only the cases $p=1$ and $p=2$ will be discussed in
-%this paper, we will refer to the case $p=1$ as the twistor case
-%and the $p=2$ as the Killing spinor case. }
-%%%%%%%
-The valence-2 case, on the other hand, will be referred to simply as
-the \emph{Killing spinor case}.
-Namely,
-we will say that a symmetric valence$-2$ spinor,
+here.  The valence-2 case, on the other hand, will be referred to
+simply as the \emph{Killing spinor case}.  Namely, we will say that a
+symmetric valence$-2$ spinor,
 $\tilde{\kappa}_{AB}=\tilde{\kappa}_{(AB)}$, is a \textit{Killing
   spinor} if it satisfies the equation
 \begin{equation}
@@ -943,47 +702,40 @@ adquires the form
 where $\Psi_{ABCD}$ denotes the conformally invariant Weyl spinor.
 The latter condition restricts $\Psi_{ABCD}$ to be algebraically
 special.  In the twistor case the spacetime is necessarity of Petrov
-type N or O, hence restricting its applicability for characterisation of
-black holes.  In the Killing spinor case the spacetime is only
+type N or O, hence restricting its applicability for characterisation
+of black holes.  In the Killing spinor case the spacetime is only
 restricted to be of Petrov type D, N or O.
 
 \medskip
 
-At first glance, the conformal invariance property of the
-%(valence-$q$)
-Killing spinor equation would seem to indicate that the
-approach leading to the Killing spinor initial data conditions derived
-in \cite{GarVal08c} would identically apply for $(\mathcal{M},\bmg)$
-with $\tilde\bmg=\Xi^2\tilde{\bmg}$. This is not the case simply
-because the Einstein field equations are not conformally invariant.
-In other words, in the analysis of \cite{GarVal08c} the vacuum
-Einstein field equations \eqref{EFEVacuum}
-%%%%%%%%%%%%%%%%%
-%\mnotex{Did Juan and Alfonso's set up was with $\lamda$ arbitrary? or $\lambda=0$}
-%with vanishing cosmological constant
-%$\tilde{R}_{ab}=0$
-%%%%%%%%%%%%%%%
-were used, and, despite
-that one can relate $R_{ab}$ with $\tilde{R}_{ab}$ this leads to
-formally singular terms (terms containing $\Xi^{-1}$). Moreover, even if one
-is willing to work with formally singular equations it is not a priori clear
-that the choice of variables made in \cite{GarVal08c} will form a
-closed homogeneous system in the conformal setting.  To see why this is the case,
-notice that for general manifold with
-metric $(\tilde{\mathcal{M}},\tilde{\bmg})$ ---namely $\tilde{\bmg}$
-not satifying any field equation--- the existence of a Killing spinor
-$\tilde{\kappa}_{AB}$ is not related directly to the existence of a
+At first glance, the conformal invariance property of the Killing
+spinor equation would seem to indicate that the approach leading to
+the Killing spinor initial data conditions derived in \cite{GarVal08c}
+would identically apply for $(\mathcal{M},\bmg)$ with
+$\tilde\bmg=\Xi^2\tilde{\bmg}$. This is not the case simply because
+the Einstein field equations are not conformally invariant.  In other
+words, in the analysis of \cite{GarVal08c} the vacuum Einstein field
+equations \eqref{EFEVacuum} were used, and, despite that one can
+relate $R_{ab}$ with $\tilde{R}_{ab}$ this leads to formally singular
+terms (terms containing $\Xi^{-1}$). Moreover, even if one is willing
+to work with formally singular equations it is not a priori clear that
+the choice of variables made in \cite{GarVal08c} will form a closed
+homogeneous system in the conformal setting.  To see why this is the
+case, notice that for general manifold with metric
+$(\tilde{\mathcal{M}},\tilde{\bmg})$ ---namely $\tilde{\bmg}$ not
+satifying any field equation--- the existence of a Killing spinor
+$\tilde{\kappa}_{AB}$ is not related to the existence of a
 Killing vector.
 Nevertheless, if one assumes that $\tilde{\bmg}$
 satisfies the vacuum Einstein field equations \eqref{EFEVacuum} then
 the concomitant
 \begin{equation*}
-\tilde{\xi}_{AA'} \equiv \tilde{\nabla}^{B}{}_{A'}\tilde{\kappa}_{AB},
+\tilde{\xi}_{AA'} := \tilde{\nabla}^{B}{}_{A'}\tilde{\kappa}_{AB},
 \end{equation*}
 represents the spinorial counterpart of a complex Killing vector of
 the spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$ ---see
 \cite{GarVal08c} for further discussion. This point is subtle and even
-in the physical (non-conformal) set up if one is to include matter
+in the physical (non-conformal) framework if one is to include matter
 such as the Maxwell field and the analysis of \cite{GarVal08c} does
 not straighfowardly apply since further conditions (the matter
 alignment conditions) ---see \cite{ValCol16}--- need to be propagated.
@@ -1014,66 +766,53 @@ $\tilde{ \quad}$ will be added to those fields associated with a
 solution $\tilde{\bmg}$ to the vacuum Einstein field equations
 \eqref{EFEVacuum}.  Similarly $(\mathcal{M},\bmg)$ will be used to
 represent the \emph{unphysical spacetime} related to
-$(\tilde{\mathcal{M}},\tilde{\bmg})$ via $\bmg=\Xi^2\tilde{\bmg}$.
----in a slight abuse\mnotex{One should be a proper subset of the other, not equal?} of notation $\varphi(\tilde{\mathcal{M}})$ and
-$\mathcal{M}$ will be identified so that the mapping $\varphi:
-\tilde{\mathcal{M}}\rightarrow\mathcal{M}$ can be omitted.
+$(\tilde{\mathcal{M}},\tilde{\bmg})$ via $\bmg=\Xi^2\tilde{\bmg}$
+---as customary, in a slight abuse of notation, the pullback $\varphi^*$ of the
+ embedding
+%%%%%%%%%%%%%%%
+%$\varphi(\tilde{\mathcal{M}})$ and
+%$\mathcal{M}$ will be identified so that
+%the mapping
+%%%%%%%%%%%%%%
+$\varphi:
+\tilde{\mathcal{M}}\rightarrow\mathcal{M}$ will be omitted.
 
 
 
 \subsection{The  conformal Einstein field equations}
 \label{Sec:CFEs}
 
-%% As discussed in the introduction, for the derivation of the conformal
-%% Killing initial data equations, an appropriate formulation of the
-%% conformal Einstein field equations will be required.
 
- %In this section
- %we begin, for the sake of completeness, with a discussion of the standard
- %conformal field equations (CFEs) originally introduced in
- %\cite{Fri81a} by H. Friedrich ---see also \cite{CFEbook}.
+\medskip
+
+This section contains an abriged discussion of the conformal Einstein
+field equations.  At the end of this section the main technical
+tool from the theory of partial
+differential equations to be used for deriving the Killing spinor
+intial data equations is given.
+
+\medskip
  
 
-%% Then, an
-%% alternative formulation to these equations are presented.  The main
-%% benefit of these equations, which we refer to as the \emph{alternative
-%%   CFEs}, in our context is that the so-called \emph{rescaled Weyl
-%%   tensor} is replaced by the \emph{Weyl tensor} through the
-%% introduction of the \emph{Cotton tensor} as an additional unknown.
-%% This latter approach was first proposed in \cite{Pae14a} by T. Paetz.
-
-
-%%  The use of the alternative CFEs is vindicated by our final result
-%% which indicates that the existence of a Killing spinor necessarily
-%% places restrictions on the components of the Cotton spinor at
-%% the level of the initial data ---see Theorem \ref{TheoremSummary},
-%% Proposition \ref{PropositionRestrictionOnCotton}.
-
+The conformal Einstein field equations (CFEs) are a conformal
+formulation of the Einstein field equations. In other words, given a
+spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$ satisfying the Einstein
+field equations, the CFEs
 %%%%%%%%
-%\subsection{The standard conformal Einstein field equations}
+%conformal Einstein field equations
 %%%%%%%
-
-
-\medskip
-
-This section contains an abriged discussion of the CFEs in first and second order form.
-At the end of this section the main technical tool from the theory of partial differential
-equations to be used for deriving the Killing spinor intial data equations is given.
-
-\medskip
- 
-
-The conformal Einstein field equations are a conformal formulation of
-the Einstein field equations. In other words, given a spacetime
-$(\tilde{\mathcal{M}},\tilde{\bmg})$ satisfying the Einstein field
-equations, the conformal Einstein field equations encode a system of
-differential conditions for the curvature and concomitants of the
-conformal factor associated with $(\mathcal{M},\bmg)$ where
-$\bmg=\Xi^2\tilde{\bmg}$. The key property of these equations is that
-they are regular even at the conformal boundary $\mathscr{I}$, where
-$\Xi=0$.  This formulation of the conformal Einstein field equations
-was first given in \cite{Fri81a} ---see also \cite{CFEbook} for a
+encode a system of differential conditions for the curvature and
+concomitants of the conformal factor associated with
+$(\mathcal{M},\bmg)$ where $\bmg=\Xi^2\tilde{\bmg}$. The key property
+of these equations is that they are regular even at the conformal
+boundary $\mathscr{I}$, where $\Xi=0$.  The CFEs were derived originally
+in \cite{Fri81a} ---see also \cite{CFEbook} for a
 comprehensive discussion.
+%%%%%%%%%%%%%%%
+%% This formulation of the CFEs  conformal Einstein field equations
+%% was first given in \cite{Fri81a} ---see also \cite{CFEbook} for a
+%% comprehensive discussion.
+%%%%%%%%%%%%%%%
 
 \medskip
 
@@ -1082,13 +821,13 @@ Einstein field equations are encoded in the following zero-quantities
   ---see \cite{Fri81a,Fri81b,Fri82,Fri83}:
 \begin{subequations}\label{CFE_tensor_zeroquants}
 \begin{eqnarray}
-&& Z_{ab} \equiv \nabla_{a}\nabla_{b}\Xi  +\Xi L_{ab} - s g_{ab}=0 ,
+&& Z_{ab} := \nabla_{a}\nabla_{b}\Xi  +\Xi L_{ab} - s g_{ab}=0 ,
  \label{StandardCEFEsecondderivativeCF}\\
-&& Z_{a} \equiv \nabla_{a}s +L_{ac} \nabla ^{c}\Xi=0 , \label{standardCEFEs}\\
-&& \delta_{bac} \equiv \nabla_{b}L_{ac}-\nabla_{a}L_{bc} -
+&& Z_{a} := \nabla_{a}s +L_{ac} \nabla ^{c}\Xi=0 , \label{standardCEFEs}\\
+&& \delta_{bac} := \nabla_{b}L_{ac}-\nabla_{a}L_{bc} -
  d_{abcd}\nabla^d{}\Xi =0 , \label{standardCEFESchouten}\\
-&& \lambda_{abc}\equiv \nabla_{e}d_{abc}{}^{e}=0 , \label{standardCEFErescaledWeyl}\\
-&& Z \equiv \lambda - 6 \Xi s + 3 \nabla_{a}\Xi \nabla^{a}\Xi,
+&& \lambda_{abc}:= \nabla_{e}d_{abc}{}^{e}=0 , \label{standardCEFErescaledWeyl}\\
+&& Z := \lambda - 6 \Xi s + 3 \nabla_{a}\Xi \nabla^{a}\Xi,
 \label{standardCFEconstraintFriedrichScalar}
 \end{eqnarray}
 \end{subequations}
@@ -1100,7 +839,7 @@ L_{ab}=\frac{1}{2}R_{ab}-\frac{1}{12}Rg_{ab},
 \end{equation}
  $s$ is the so-called \emph{Friedrich scalar} defined as
 \begin{equation}\label{s-definition}
-s\equiv \tfrac{1}{4}\nabla_{a}\nabla^{a}\Xi + \tfrac{1}{24}R\Xi
+s:= \tfrac{1}{4}\nabla_{a}\nabla^{a}\Xi + \tfrac{1}{24}R\Xi,
 \end{equation}
 and $d^{a}{}_{bcd}$ denotes the \emph{rescaled Weyl tensor}, defined
 as
@@ -1125,6 +864,21 @@ satisfying
   Z_{ab}=0, \quad Z_{a}=0, \quad \delta_{abc}=0, \quad \lambda_{abc}=0, \quad Z=0.
 \end{equation}
 
+%% \begin{remark}
+%% \emph{ In the metric formulation of the CFEs
+%%   equations one needs to supplement the system encoded in the zero
+%%   quantities defined above with an equation for the unphysical metric
+%%   $g_{ab}$. To do so, one considers equation
+%%   \eqref{SchoutenDefinition} expressed in some local coordinates
+%%   $(x^{\mu})$. Recalling that in local coordinates the components of
+%%   the Ricci tensor can be written as second order derivatives of the
+%%   metric, one obtains the required equation for the unphysical metric.
+%%   A hyperbolic reduction can be obtained through the use of
+%%   gauge source functions or other hyperbolic reduction stratagies
+%%   used in standard formulations of the Einstein field equations.
+%% }
+%% \end{remark}
+
 
  \begin{remark}
    \emph{ If one opts to use the Ricci tensor $R_{ab}$ instead of the
@@ -1136,43 +890,20 @@ satisfying
      of the formulation.}
  \end{remark}
 
-%% \begin{remark}
-%% \emph{ In the metric formulation of the standard conformal Einstein field
-%%   equations one needs to supplement the system encoded in the zero
-%%   quantities defined above with an equation for the unphysical metric
-%%   $g_{ab}$. To do so, one considers equation
-%%   \eqref{SchoutenDefinition} expressed in some local coordinates
-%%   $(x^{\mu})$. Recalling that in local coordinates the components of
-%%   the Ricci tensor can be written as second order derivatives of the
-%%   metric, one obtains the required equation for the unphysical metric.
-%% % % This observation applies also for the subsequent
-%% % % discussion of the alternative conformal Einstein field equations.
-%% }
-%% \end{remark}
-
-
-Since we are concerned here with spinor fields, we will need the spinorial transcription of the CFEs,which reads as follows
+\noindent Since we are concerned here with spinor fields, we will need the
+spinorial transcription of the CFEs,which reads as follows
 \begin{subequations}
 \begin{eqnarray}
    &&  Z_{AA'BB'}  =  \nabla_{AA'}\nabla_{BB'}\Xi - \Xi \Phi _{ABA'B'}  - s \epsilon _{AB} \epsilon
   _{A'B'} + \Xi \Lambda \epsilon _{AB} \epsilon _{A'B'} ,
   \label{Def_ConfFactor_CFE_zeroquant}\\
   && Z_{AA'}  = \nabla_{AA'}s + \Lambda  \nabla_{AA'}\Xi   - \Phi _{ABA'B'} \nabla^{BB'}\Xi ,\label{Def_s_CFE_zeroquant}\\
-  %%  Z_{AA'BB'CC'}  =& \epsilon _{BC} \epsilon _{B'C'} \nabla_{AA'}\Lambda
-  %% - \nabla_{AA'}\Phi _{BCB'C'}   - \epsilon _{AC} \epsilon _{A'C'} \nabla_{BB'}\Lambda
-  %% \\ &   + \nabla_{BB'}\Phi _{ACA'C'}
-  %% - \bar{\phi }_{A'B'C'D'} \epsilon _{AB} \nabla_{C}{}^{D'}\Xi
-  %% - \phi _{ABCD} \epsilon _{A'B'} \nabla^{D}{}_{C'}\Xi\\
  &&  \delta_{ABCC'} =   \nabla_{A'(A}\Phi _{B)CC'}{}^{A'} - \epsilon _{C(A} \nabla_{B)C'}\Lambda   +  \phi _{ABCD} \nabla^{D}{}_{C'}\Xi ,\label{Def_delta_CFE_zeroquant} \\
   && \Lambda _{C'ABC}  = \nabla_{DC'}\phi _{ABC}{}^{D}, \label{Def_Lambda_CFE_zeroquant}\\
    && Z  = \lambda   -6 \Xi  s + 3 \nabla_{AA'}\Xi  \nabla^{AA'}\Xi. \label{Def_cons_CFE_zeroquant}
 \end{eqnarray}
 \end{subequations}
 See \cite{CFEbook} for further details.
-%%%
-%\mnotex{I think the original $Z_{AA'BB'CC'}$ does not
-%  contain more information than what $\delta_{ABCC'}$ encodes.   }
-%%
 As in the tensorial case, one can choose the
 Schouten (tensor) spinor or the Ricci (tensor) spinor as a variable.
 Here the equations have been expressed
@@ -1182,143 +913,127 @@ $\Lambda$ ---in fact $R= 24\Lambda$--- and the Weyl spinor
 $\Psi_{ABCD}$ which enters via the \emph{rescaled Weyl spinor}, $\phi_{ABCD}$,
 defined as 
 \begin{equation}\label{Def_rescaled_Weyl_spinor}
-\phi_{ABCD} \equiv \Xi^{-1} \Psi_{ABCD}
+\phi_{ABCD} := \Xi^{-1} \Psi_{ABCD}
 \end{equation}
  ---see \cite{Ste91, PenRin84} for more details. 
  \begin{remark}
-   \mnotex{Pad this out
-     more? EG: I added some text for specific to the asymptotic initial
-     value set-up.  I'm a bit confused by the first sentence.  It
-     sounds as if $\phi$ was not dynamical. Here you mean that $\phi|_{\mathcal{S}}$
-     is determined by $\bmh$ and $\bmK$ right? In the Cauchy case the
-     magnetic part is fixed by the extrinsic curvature and the
-     electric part is fixed by $\Omega$ and $r_{\{ij\}}$ the t-f-Ricci tensor of $\bmh$....
-     right? ... I don't remember exactly ...}
-   \emph{ \sout{It is important to note that $\phi_{ABCD}$ is
-       computable at the level of initial data.}  In the CFE evolution
-     problem, determining data for $\phi_{ABCD}$ depends on the
-     particular set-up for $(\mathcal{S},\bmh)$.  For instance, for
-     the asymptotic initial value problem, the initial data for the
-     magnetic part of the rescaled Weyl tensor is determined by the
-     $y_{ij}$, the Bach tensor of $h_{ij}$, while the
-     electric part of the rescaled Weyl tensor satisfies
-     $D^id_{ij}=0$ ---see \cite{CFEBook}. For the discussion of this paper we will assume
-     that such data has been already determined} 
+   \emph{ The initial data for $\phi_{ABCD}$ are in general determined
+   through the Gauss-Codazzi and Codazzi-Mainardi equations by the
+   initial data $(\mathcal{S}, \bmh, \bmK, \Omega, \Sigma)$. Here
+   $\mathcal{S}$ is a 3-dimensional manifold with Riemannian metric
+   $\bmh$, second fundamental form $\bmK$, while $\Omega$ and $\Sigma$
+   are the initial data for the conformal factor and its normal derivative respectively.
+   \mnotex{EG: Not sure if that is the
+     ``minimal'' set of ID. This probably needs fixing.}
+   %%%%%%%%%%%%%%%%%%%%%%%%
+   %% In the CFE evolution
+   %%   problem, determining data for $\phi_{ABCD}$ depends on the
+   %%   particular set-up for initial value problem in question.
+   %%%%%%%%%%%%%%%%%%%%%%%%%
+   %%In particular,
+   For the asymptotic initial value problem, the constraint equations
+   implied by the CFEs adquire a particularly simple form so that
+   initial data for the magnetic part of the rescaled Weyl tensor is
+   determined algebraically by 
+   %%%%
+   %%$y_{ij}$,
+   %%%
+   the Bach tensor of $h_{ij}$, while the
+   electric part of the rescaled Weyl tensor satisfies $D^id_{ij}=0$
+   where $D_i$ is the Levi-Civita connection of $h_{ij}$ ---see
+   \cite{CFEbook, GasVal17a}. For the discussion of this paper we will
+   assume that such data has been already determined.}
 \end{remark}
 
 The CFEs as previously presented can be regarded as a set of covariant
-conditions for geometric fields on $(\mathcal{M},\bmg)$ and, hence, they do
-not have a particular PDE character.  However, there are, depending on
-the gauge fixing procedure, different hyperbolic reduction strategies
-to extract a set of evolution and constraint equations.
-For the subsequent discussion only the evolution and constraint equations
-implied by the $\Lambda_{C'ABC}=0$ equation will play a role.
-A direct calculation using the space spinor formalism shows that
-$\Lambda_{CC'AB}=0$ can be recast as the following system of evolution equation and
-constraint equations
+conditions for geometric fields on $(\mathcal{M},\bmg)$ and, hence,
+they do not have a particular PDE character.  However, there are,
+depending on the gauge fixing procedure, different hyperbolic
+reduction strategies to extract a set of evolution and constraint
+equations.  For the subsequent discussion only the evolution and
+constraint equations implied by the $\Lambda_{C'ABC}=0$ equation will
+play a role.  A direct calculation using the space spinor formalism
+shows that $\Lambda_{CC'AB}=0$ can be recast as the following system
+of evolution equation and constraint equations
 \begin{align}\label{RescaledWeyl_evo_const}
-  %\nabla_{\bm\tau} \phi _{ABCD} = -2 \mathcal{D} _{DF}\phi _{ABC}{}^{F}
-  & \nabla_{\bm\tau} \phi _{ABCD} =  2 \mathcal{D} _{(A}{}^{F}\phi _{BCD)F}, % \label{RescaledWeyl_evo}\\
-  %& \qquad
-  \qquad \mathcal{D} ^{CD}\phi _{CDAB} = 0. 
-  %\label{RescaledWeyl_const}
+%%\nabla_{\bm\tau} \phi _{ABCD} = -2 \mathcal{D} _{DF}\phi _{ABC}{}^{F}
+  & \nabla_{\bm\tau} \phi _{ABCD} = 2 \mathcal{D} _{(A}{}^{F}\phi_{BCD)F},
+%% \label{RescaledWeyl_evo}\\
+%%& \qquad
+  \qquad \mathcal{D} ^{CD}\phi _{CDAB} = 0.
+ %%\label{RescaledWeyl_const}
 \end{align}
-The evolution and constraint equations associated to the
-other zero-quantities depend on the particular gauge fixing strategy
-and will not play a relevant role for the discussion in the forthcoming sections.
+The evolution and constraint equations associated to the other
+zero-quantities depend on the particular gauge fixing strategy and
+will not play a relevant role for the discussion in the forthcoming
+sections.
 
+\medskip
 
 The CFEs are usually presented as the first-order system
 \eqref{vanishing_CFEs_tensorial_zq} with the definitions
 \eqref{CFE_tensor_zeroquants}. However, for several applications it is
 convenient to use a second-order formulation of the equations. In
-\cite{Pae13} the tensorial version of the CFEs was recast as a set
-of (tensorial) wave equations.
-%%%%%
-%However, as
-%previously discussed several structural properties of the CFEs are
-%better expressed in spinorial formalism, with this motivation,
-%%%%%
-Analogously, in \cite{GasVal15} a second-order form of the spinorial
-formulation of the CFEs ---the \emph{spinorial CFE wave equations} ---was obtained.  This version of the CFEs is
-particularly suited for the applications of this article; though, in
-fact, only one of those equations ---that for the rescaled Weyl
-spinor--- will be needed. \mnotex{Double check this is true}
+\cite{Pae13} the tensorial version of the CFEs was recast as a set of
+(tensorial) wave equations.  Analogously, in \cite{GasVal15} a
+second-order form of the spinorial formulation of the CFEs ---the
+\emph{spinorial CFE wave equations} ---was obtained.  This version of
+the CFEs is particularly suited for the applications of this article;
+though, in fact, only one of those equations ---that for the rescaled
+Weyl spinor--- will be needed.
+%%%%%%%%
+%%\mnotex{Double check this is true}
+%%\mnotex{EG: I checked in the notebook and only WaveSpinorialCFE4 was used.
+%% (the other wave eqs are WaveSpinorialCFE1, WaveSpinorialCFE2 and
+%% WaveSpinorialCFE3 which are never used in the derivations )}
+%%%%%%%%
 This equation reads as follows
 \begin{eqnarray}
-  \square \phi _{ABCF} = 12 \Lambda  \phi _{ABCF}  -6 \Xi  \phi _{(AB}{}^{DG}\phi _{CF)DG},
+  \square \phi _{ABCF} = 12 \Lambda \phi _{ABCF} -6 \Xi \phi
+  _{(AB}{}^{DG}\phi _{CF)DG}.
   \label{Wave_eq_CFE_Weyl}
 \end{eqnarray}
-%%%%%%%%%%%
-%Since, only not all of the equations
-%will be needed, this section presents only those which are used in the
-%calculations of the subsequent sections of this paper.
-%%%%%%%%%%%
-%\sout{The wave equation for the rescaled Weyl spinor can easily be obtained}
-its derivation following from  $\nabla^{QC'}\Lambda _{C'ABC}=0$
-by a straightforward calculation using the identity
-\eqref{DecomposeDoubleDerivativeContracted}.\mnotex{Still needs rewording...}
-%\sout{A similar calculation can be carried out for the other equations in comprising the CFEs.
-%A full discussion of the \emph{spinorial CFE wave equations} and their equivalence
-%with the standard first order formulation CFEs can be found in \cite{GasVal15}.}
-%\mnotex{Repetitive? yes :)}
-%
-%
-%\medskip
-%
+The last equation follows from considering $\nabla^{QC'}\Lambda
+_{C'ABC}=0$ and applying the identity
+\eqref{DecomposeDoubleDerivativeContracted}.
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% its derivation following from  $\nabla^{QC'}\Lambda _{C'ABC}=0$
+%% by a straightforward calculation using the identity
+%% \eqref{DecomposeDoubleDerivativeContracted}.\mnotex{Still needs rewording...}
+%%%%%%%%%%%%%%%%%%%%%%%
 It is worth noting here that one of the tools used in \cite{GasVal15}
 to show the equivalence between the spinorial CFE wave equations and
 the original spinorial CFEs
 \eqref{Def_ConfFactor_CFE_zeroquant}--\eqref{Def_cons_CFE_zeroquant}
-\sout{these two set of equations} is the uniqueness property of
-solutions to a certain class of wave equations. This same result from
-the theory of partial differential equations will be used in the proof
-of the main theorem of this article, and so we quote it here:
-%%%%%%%
-%One of the main tools used in the latter reference
-%to show the equivalence between these two set of equations
-%is the following result from the theory of partial differential equations which
-%will be also used to obtain the main result of this article.
-%%%%%
-%This theorem will also be used in for de
-% %The main tool from the theory of partial differential equations
-%that will be used in the next sections is that of the uniqueness property for
-%solutions to a certain class of wave equations.
-%
-%This theorem will be also used in the proof of the main result of this article.
-%%%%%
-%\mnotex{Technical pde theorem moved here}
-\mnotex{Need to give better accreditation?: removed the CFEbook from
-  the references and pointed to Taylor's book. The exact proposition
-  is 3.2}
-\mnotex{For the IVBP this is more of a problem. The reference given in Diego-Juan's paper
-does not give the thm in the same format...}
+is the uniqueness property of solutions to a certain class of wave
+equations. This same result from the theory of partial differential
+equations will be used in the proof of the main theorem of this
+article, and so we quote it here:
 \begin{theorem}
 \label{TheoremHomogeneousWave}
- Let $\mathcal{M}$ be a smooth manifold equipped with a 
-Lorentzian metric $\bmg$ and consider the wave equation
+ Let $\mathcal{M}$ be a smooth manifold equipped with a Lorentzian
+ metric $\bmg$ and consider the wave equation
 \[\square \underline{u}=h (\underline{u},\partial\underline{u})\]
-where $\underline{u}\in\mathbb{C}^m$ is a complex vector-valued function
-on $\mathcal{M}$, 
-$h:\mathbb{C}^{2m}\rightarrow\mathbb{C}^m$ is a smooth homogeneous
-function of its arguments and $\square=g^{ab}\nabla_{a}\nabla_{b}$.
-Let $\mathcal{U}\subset\mathcal{S}$ be an open set and $\mathcal{S}\subset \mathcal{M}$ be a spacelike hypersurface with normal
-$\tau^{a}$ respect to $\bmg$. Then the Cauchy problem
+where $\underline{u}\in\mathbb{C}^m$ is a complex vector-valued
+function on $\mathcal{M}$, $h:\mathbb{C}^{2m}\rightarrow\mathbb{C}^m$
+is a smooth homogeneous function of its arguments and
+$\square=g^{ab}\nabla_{a}\nabla_{b}$.  Let
+$\mathcal{U}\subset\mathcal{S}$ be an open set and $\mathcal{S}\subset
+\mathcal{M}$ be a spacelike hypersurface with normal $\tau^{a}$
+respect to $\bmg$. Then the Cauchy problem
 \begin{align*}
-\square
-\underline{u}&=h (\underline{u}, \partial\underline{u}),\\
-\underline{u}\left|_{\mathcal{U}}\right.&=\underline{u}_0,
+\square \underline{u}&=h (\underline{u},
+\partial\underline{u}),\\ \underline{u}\left|_{\mathcal{U}}\right.&=\underline{u}_0,
 \quad
 \nabla_{\bm\tau}\underline{u}\left|_{\mathcal{U}}\right.=\underline{u}_1,
 \end{align*} 
-where $\underline{u}_{0}$ and $\underline{u}_{1}$  are 
-smooth on $\mathcal{U}$ and $\nabla_{\bm\tau}\equiv \tau^\mu\nabla_\mu$,
- has a unique solution $\underline{u}$ in the domain of dependence of $\mathcal{U}$.
+where $\underline{u}_{0}$ and $\underline{u}_{1}$ are smooth on
+$\mathcal{U}$ and $\nabla_{\bm\tau}:= \tau^\mu\nabla_\mu$, has a
+unique solution $\underline{u}$ in the domain of dependence of
+$\mathcal{U}$.
 \end{theorem}
-We refer the reader to
-\cite{Tay96c} for a proof ---see also Theorem 1 in \cite{GarVal08c}.
-%\cite{CFEbook,Tay96c} for a proof ---see also Theorem 1 in \cite{GarVal08c}.
-
+We refer the reader to Proposition 3.2 of \cite{Tay96c} for a proof
+---see also Theorem 1 in \cite{GarVal08c}.
 
 \begin{remark}
 \emph{ Recall that an equation of the
@@ -1329,54 +1044,14 @@ h(\underline{u}, \partial\underline{u})$ for all
 $\mu\in\mathbb{C}$. }
 \end{remark}
 
-\mnotex{Ideally the trivial initial data should be a remark and the
-  uniqueness property for the IVBP that Diego and Juan use their
-  article should be given in a theorem with the same format as
-  \ref{TheoremHomogeneousWave}. I haven't been able to find a
-  reference where it is presented as such... }
-
-{\color{blue}{
-
-\begin{remark}
-  \em{ If trivial intial data is given
-    $\underline{u}_{0}=\underline{u}_{1}=0$ then Theorem
-    \ref{TheoremHomogeneousWave} implies that the solution is trivial, namely
-    $\underline{u}=0$, in the domain of dependence of $\mathcal{U}$.  This set
-    up is suited for the asymptotic initial value problem for
-    de-Sitter like spacetimes since one can take $\mathcal{S}$ to
-    correspond to $\mathscr{I}$.  On the other hand, for the
-    applications in the anti-de Sitter like setting one needs to
-    consider a initial boundary value problem: initial data given
-    on a spacelike hypersurface $\mathcal{S}$  and boundary data given on a timelike
-    hypersurface $\mathcal{T}$ with $\mathcal{S} \cap \mathcal{T} \neq \emptyset$.
-    In this case, the main advantage of the conformal approach in
-    that the timelike boundary $\mathcal{T}$ can be chosen to be $\mathscr{I}$.  In
-    this setup, the analysis of \cite{DafHru86} implies that if
-    trivial initial data
- \[
-  \underline{u}\vert_{\mathcal{S}}=0, \quad \nabla_{\bm\tau}\underline{u}\vert_{\mathcal{S}}=0,\]
-  and trivial (Dirichlet) boundary data are prescribed
-  \[
-\underline{u}|_{\mathcal{T}}=0,
-  \]
-  then the uniqueness property ensures that the solution $\underline{u}$ to the
-  wave equations of theorem \ref{TheoremHomogeneousWave}, is the
-  trivial solution.  This has
-  been used, for instance, to analyse the Killing vector initial data equations
-   at $\mathscr{I}$ in the anti-de Sitter like setting in \cite{CarVal18}.  }
-\end{remark}
-
-}}
-
-
 
   \section{Conformal twistor initial data}
   \label{conformalTwistorKID}
   In this section, the conformal twistor initial data equations are
   derived.  Although the main result of this article is on the
-  conformal valence-2 Killing spinor initial data equations, the twistor
-  case discussed in this section illustrates the main
-  features of the calculation of the next section in a simpler setting.
+  conformal  Killing spinor initial data equations, the twistor case
+    illustrates the main features of the calculation for the Killing
+  spinor case of section \ref{conformalKSKID} in a simpler setting.
 \subsection{Twistor zero-quantities}
 \label{Sec:TwistorZeroQuantities}
 
@@ -1384,9 +1059,9 @@ For the following discussion is convenient to make the following
 \emph{zero-quantities}
 \begin{subequations}
   \begin{eqnarray}
-   && H_{A'AB} \equiv 2
+   && H_{A'AB} := 2
     \nabla_{A'(A}\kappa_{B)},\label{Def_H_twistor}\\ && B_{ABC}
-    \equiv \phi_{ABCD}\kappa^D.\label{Def_B_twistor}
+    := \phi_{ABCD}\kappa^D.\label{Def_B_twistor}
     \end{eqnarray}
 \end{subequations}
 The spinors $H_{A'AB}$ and $B_{ABC}$ will be denoted in index free
@@ -1394,7 +1069,7 @@ notation as $\bmH$ and $\bmB$ and will be called the twistor
 zero-quantity and the Buchdahl zero-quantity respectively.  The
 Buchdahl zero-quantity arises as an integrability condition of the
 twistor equation.  To see this, notice that, taking the following
-derivative of $\bmH$ and substituting the definition
+derivative of $\bmH$ and substituting definition
 \eqref{Def_H_twistor} one obtains
   \begin{equation}\label{curl_H_twistor}
   \nabla_{AA'}H^{A'}{}_{BC}= 2 \nabla_{AA'}\nabla_{(B}{}^{A'}\kappa
@@ -1409,15 +1084,15 @@ derivative of $\bmH$ and substituting the definition
   The vanishing of the right-hand side of latter equation encodes the
   Buchdahl constraint, namely the fact that if $(\mathcal{M},\bmg)$
   admits a twistor then it is necesarilly of Petrov type N or O. To
-  write this in the variables appearing in the conformal Einstein
-  field equations, using the definition of the rescaled Weyl spinor
+  write this in the variables appearing in the CFEs,
+  using the definition of the rescaled Weyl spinor
   yields
   \begin{equation}\label{Curl_H_sym_toB_twistor}
   \nabla_{(A}{}^{A'}H_{|A'|BC)} = 2\Xi B_{ABC},
   \end{equation}
   which motivates the name for the zero-quantity $\bmB$.
   Thus, with this notation, it is clear that if the unphysical spacetime
-  $(\mathcal{M},\bmg)$ admits a twistor (valence-1 Killing spinor) then following
+  $(\mathcal{M},\bmg)$ admits a twistor  then following
   zero-quantities vanish
   \begin{equation}
 H_{A'AB}=0, \qquad B_{ABC}=0.
@@ -1426,11 +1101,11 @@ H_{A'AB}=0, \qquad B_{ABC}=0.
 \subsection{Twistor auxiliary quantities and the twistor candidate equation}
   
  A useful bookkeeping device for the subsequent
-calculations are the definitions of following \emph{auxiliary quantities}:
-\begin{subequations}
+calculations are the definitions of the following \emph{auxiliary quantities}:
+\begin{subequations}\label{def_twistor_aux_quants}
   \begin{eqnarray}
-      && Q_{A}  \equiv \nabla^{QA'}H_{A'QA}, \label{def_Q_twistor} \\
-      && \xi_{A'} \equiv \nabla^B{}_{A'}\kappa_B. \label{def_xi_twistor}
+      && Q_{A}  := \nabla^{QA'}H_{A'QA}, \label{def_Q_twistor} \\
+      && \xi_{A'} := \nabla^B{}_{A'}\kappa_B. \label{def_xi_twistor}
   \end{eqnarray}
 \end{subequations}
   The \emph{auxiliary spinor} $\xi_{A'}$ is merely a convenient
@@ -1443,15 +1118,15 @@ calculations are the definitions of following \emph{auxiliary quantities}:
   \end{align}
 It is nevertheless illustrative to introduce this
   shorthand since the analogous quantity in the Killing spinor case
-  ($p=2$) will have some geometrical significance.
+  will play an important role in the calculation.
 
   \medskip
   
   On the other hand, the \emph{auxiliary quantity}
   $Q_A$ will be central for the following discussion since it
   encodes a wave equation for $\kappa_A$. To see this, observe that
-  tracing the identity \eqref{curl_H_twistor} and substituting the
-  definition \eqref{def_Q_twistor} gives,
+  tracing the identity \eqref{curl_H_twistor} and substituting 
+  definition \eqref{def_Q_twistor} gives
 \begin{equation}\label{Q_to_box_twistor_candidate}
 Q_{A} = 3 \Lambda \kappa _{A} + \tfrac{3}{2} \square \kappa _{A}.
 \end{equation}
@@ -1500,13 +1175,13 @@ $\nabla_D{}^{A'}H_{A'AB}$,
 \nabla_{CA'}H^{A'}{}_{A}{}^{C} + \tfrac{1}{3} \epsilon _{AD}
 \nabla_{CA'}H^{A'}{}_{B}{}^{C} + \nabla_{(A}{}^{A'}H_{|A'|BD)},
 \]
-and the definitions \eqref{def_Q_twistor} and equation
-\eqref{Curl_H_sym_toB_twistor} one has that
+ along with definition \eqref{def_Q_twistor} and equation
+\eqref{Curl_H_sym_toB_twistor} it follows that
 \begin{align}\label{derH_twistor_toBandQ}
 \nabla_{D}{}^{A'}H_{A'AB} = 2 B_{ABD} \Xi + \tfrac{1}{3} Q_{B}
 \epsilon _{AD} + \tfrac{1}{3} Q_{A} \epsilon _{BD}
 \end{align}
-Applying $\nabla_{D}{}^{B'}$ to the last expression, and using the
+Applying $\nabla_{D}{}^{B'}$ to the last expression, and using
 identity \eqref{DecomposeDoubleDerivativeContracted} along with the
 spinorial Ricci identities
 \eqref{SpinorialRicciIdentities1}-\eqref{SpinorialRicciIdentities2},
@@ -1519,7 +1194,7 @@ renders
 \end{equation}
 
 \noindent To derive a wave equation for $\bmB$, one applies the D'Alembertian operator
-$\square$ to the definition in equation \eqref{Def_B_twistor} to obtain
+$\square$ to the definition \eqref{Def_B_twistor} to obtain
 \begin{align}\label{pre_wave_B_twistor}
 \square B_{ABC} = \kappa ^{D} \square \phi _{ABCD} + \phi _{ABCD}
 \square \kappa ^{D} + 2 \nabla_{FA'}\phi _{ABCD} \nabla^{FA'}\kappa
@@ -1532,7 +1207,7 @@ the rescaled Weyl spinor \eqref{Wave_eq_CFE_Weyl} into the last expression gives
 \square B_{ABC} = 10 B_{ABC} \Lambda + H^{A'DF} \nabla_{FA'}\phi _{ABCD}  -6 \Xi B_{(A}{}^{DF}\phi
 _{BC)DF} + \tfrac{2}{3} \phi _{ABCD} Q^{D}
 \end{equation}
-Observe that if $Q_{A}=0$, namely if the twistor candidate wave equation is imposed then,
+Observe that if $Q_{A}=0$, namely if the twistor candidate wave equation is imposed, then,
 $\bmH$ and $\bmB$ satisfy the following set of wave equations
 \begin{subequations}
 \begin{eqnarray}
@@ -1545,7 +1220,7 @@ _{BC)DF}  \label{Hom_wave_HandB2}
 \end{subequations}
 Notice that the only place where the CFEs ---in their wave equation form---
 have been used was in equation \eqref{pre_wave_B_twistor}
-to substitute the term $\square \phi _{ABCD}$.
+to substitute for the term $\square \phi _{ABCD}$.
 
 The relevant observation about equations
 \eqref{Hom_wave_HandB1}-\eqref{Hom_wave_HandB2} is that they
@@ -1575,9 +1250,10 @@ This discussion is summarised in the following:
   Given initial data for the conformal field equations on $\mathcal{U}\subseteq\mathcal{S}$
   where $\mathcal{S}$ is a spacelike
 hypersurface $\mathcal{S}$ with normal vector $\tau^{AA'}$, and
-associated normal derivative $\nabla_{\bm\tau} \equiv
+associated normal derivative $\nabla_{\bm\tau} :=
 \tau^{AA'}\nabla_{AA'}$, the corresponding spacetime development
-admits a twistor (valence-1 Killing spinor) in $\mathcal{D}^{+}(\mathcal{U})$ ---the future domain of dependence of $\mathcal{U}$---  if and only if
+admits a twistor (valence-1 Killing spinor) in $\mathcal{D}^{+}(\mathcal{U})$
+if and only if
 \begin{subequations}
 \begin{eqnarray}
   && H_{A'AB}=B_{ABC}=0,\label{eq:VanishingOfH_twistor}\\ 
@@ -1614,25 +1290,31 @@ $\kappa_{A}$ solves the twistor equation on $\mathcal{D}^{+}(\mathcal{U})$.
 \begin{remark}
 \em{
 For the twistor case, one important difference between discussion in
-\cite{GasVal15} using the vacuum Einstein field equations in  $(\tilde{\mathcal{M}},\tilde{\bmg})$
+\cite{GasVal15}
+%%---performed in the physical framework---
+using the vacuum Einstein field equations in  $(\tilde{\mathcal{M}},\tilde{\bmg})$
 is that the system closes with $\tilde{H}_{A'AB}$ alone and there is no need
 to introduce the analogous physical Buchdahl zero-quantity $\tilde{B}_{ABC}$.
 Therefore it is interesting to check if in the conformal case
-% discussed in the previous sections
+%%---unphysical framework---
 one can also close the system with $H_{A'AB}$ alone.
 To do so, observe that, substituting the expression for
 the Buchdahl constraint into equation
-\eqref{Hom_wave_HandB1} and using the CFEs a gives
+\eqref{Hom_wave_HandB1} and using the CFEs, gives
 \begin{multline}\label{WaveH_twistor_singular}
   \square H_{A'AB} =  - 2\Xi^{-1} (\nabla^{C}{}_{A'}\Xi)
     \nabla_{(A}{}^{B'}H_{|B'|BC)}+ 6 \Lambda H_{A'AB} \\-2 \Xi
   \phi _{ABCD}H_{A'}{}^{CD} -4
   \Phi_{(A}{}^{C}{}_{|A'}{}^{B'}H_{B'|B)C}.
+  %%%%%
   %\nonumber \\ & +
   %\tfrac{4}{3} \nabla_{(A|A'|}Q_{B)}.
+  %%%%
 \end{multline}
+%%%%%%%%
 %\noindent
 % Hence, setting $Q_{A}=0$,
+%%%%%%%
 Hence, $\bmH$ satisfies  an homogeneous but
 \emph{singular equation}, due to the $\Xi^{-1}$ coefficient,
 for $H_{A'AB}$, a situation to which Theorem
@@ -1660,10 +1342,10 @@ only the Buchdahl zero-quantity but also its derivative.}
 
 In this section, the conformal twistor initial data conditions of
 proposition \ref{Prop:Propagation_twistor} are written in terms of
-intrinsic quantities at $\mathcal{S}$.  To understand the need of the
+intrinsic quantities at $\mathcal{S}$.  To understand the need for the
 calculation to be carried out in this section observe that, although
 the conditions of Proposition \ref{Prop:Propagation_twistor} are given
-on $\mathcal{S}$, they contains not only derivatives tangential to
+on $\mathcal{S}$, they contain not only derivatives tangential to
 $\mathcal{S}$ but also normal to it. Hence, to obtain genuine
 intrinsic conditions on $\mathcal{S}$ one needs to remove these normal
 derivatives.
@@ -1673,10 +1355,10 @@ derivatives.
 Introducing the following definitions:
 \begin{align}
   %H_{CAB} \eqref \tau _{C}{}^{A'} H_{A'AB}, \qquad
-  %\mathcal{H} _{ABC} \equiv H_{(ABC)},
-  %\qquad \mathcal{H} _{A} \equiv H^{D}{}_{AD}.
-  \mathcal{H} _{ABC}  \equiv \tau _{(A}{}^{A'}H_{|A'|BC)}, \qquad
-  \mathcal{H}_{A}  \equiv  \tau^{QA'} H_{A'AQ},
+  %\mathcal{H} _{ABC} := H_{(ABC)},
+  %\qquad \mathcal{H} _{A} := H^{D}{}_{AD}.
+  \mathcal{H} _{ABC}  := \tau _{(A}{}^{A'}H_{|A'|BC)}, \qquad
+  \mathcal{H}_{A}  :=  \tau^{QA'} H_{A'AQ},
 \end{align}
 the space spinor split of $H_{A'AB}$ reads
 \begin{align}
@@ -1687,10 +1369,10 @@ the space spinor split of $H_{A'AB}$ reads
 Hence, the space spinors $\mathcal{H} _{ABC}$ and $\mathcal{H}_{A}$
 contain all the information of $H_{A'AB}$. In other words,
 \[
-H_{A'ABC}=0 \quad                   %|_{\mathcal{S}}=0
-\iff \quad \mathcal{H} _{A}=0      %|_{\mathcal{S}} =0
+H_{A'ABC}=0 \quad                 
+\iff \quad \mathcal{H} _{A}=0    
 \quad
-\& \quad \mathcal{H}_{ABC}=0  %|_{\mathcal{S}}=0
+\& \quad \mathcal{H}_{ABC}=0  
 \]
 Substituting the definition \eqref{Def_H_twistor} one obtains
 \begin{align}\label{spacespinordecompHtotwistorders}
@@ -1754,17 +1436,20 @@ $\mathcal{S}$. This substitution renders,
 \begin{align}\label{normalderB_twistor_exp}
 \nabla_{\tau}B_{ABC}|_{\mathcal{S}}= -2\kappa ^{D} \mathcal{D}
 _{DF}\phi _{ABC}{}^{F} + \tfrac{2}{3} \phi _{ABCD} \mathcal{D}
-^{D}{}_{F}\kappa ^{F} + \tfrac{2}{3}\phi_{ABCD}\mathcal{H}^D = 0 \qquad \text{on} \qquad \mathcal{S}.
+^{D}{}_{F}\kappa ^{F} + \tfrac{2}{3}\phi_{ABCD}\mathcal{H}^D = 0
+\qquad \text{on} \qquad \mathcal{S}.
 \end{align}
 In fact, the latter expression can be completly rewritten in terms of
-$\mathcal{H}_A|_{\mathcal{S}}$, $\mathcal{H}_{ABC}|_{\mathcal{S}}$
-and $B_{ABC}|_{\mathcal{S}}$. This can be done as follows: swapping indices $D$ and $A$ in equation
-\eqref{normalderB_twistor_exp}, and exploiting the constraint equation for the rescaled Weyl spinor in expression
-\eqref{RescaledWeyl_evo_const} gives
+$\mathcal{H}_A|_{\mathcal{S}}$, $\mathcal{H}_{ABC}|_{\mathcal{S}}$ and
+$B_{ABC}|_{\mathcal{S}}$. This can be done as follows: swapping
+indices $D$ and $A$ in equation \eqref{normalderB_twistor_exp}, and
+exploiting the constraint equation for the rescaled Weyl spinor in
+expression \eqref{RescaledWeyl_evo_const} gives
 \begin{align}\label{normalderB_twistor_exp2}
-\nabla_{\tau}B_{ABC}|_{\mathcal{S}}= -2 \kappa ^{D} \mathcal{D} _{AF}\phi _{DBC}{}^{F} + \tfrac{2}{3} \phi _{ABCD}
-\mathcal{D} ^{D}{}_{F}\kappa ^{F} + \tfrac{2}{3}\phi_{ABCD}\mathcal{H}^D = 0 \qquad \text{on} \qquad
-\mathcal{S}.
+\nabla_{\tau}B_{ABC}|_{\mathcal{S}}= -2 \kappa ^{D} \mathcal{D}
+_{AF}\phi _{DBC}{}^{F} + \tfrac{2}{3} \phi _{ABCD} \mathcal{D}
+^{D}{}_{F}\kappa ^{F} + \tfrac{2}{3}\phi_{ABCD}\mathcal{H}^D = 0
+\qquad \text{on} \qquad \mathcal{S}.
 \end{align}
 Applying a $\mathcal{D}_{FQ}$ to the definition \eqref{Def_B_twistor}
 and using the Leibnitz rule, one can replace the first term in the
@@ -1772,7 +1457,8 @@ last equation to obtain
 \begin{multline}\label{normalderB_twistor_exp3}
 \nabla_{\tau}B_{ABC}|_{\mathcal{S}}= -2 \mathcal{D} _{AD}B_{BC}{}^{D}
 -2 \phi _{BCDF} \mathcal{D} _{A}{}^{F}\kappa ^{D} \\+\tfrac{2}{3} \phi
-_{ABCF} \mathcal{D} _{D}{}^{F}\kappa ^{D} + \tfrac{2}{3}\phi_{ABCD}\mathcal{H}^D = 0 \quad \text{on} \quad
+_{ABCF} \mathcal{D} _{D}{}^{F}\kappa ^{D} +
+\tfrac{2}{3}\phi_{ABCD}\mathcal{H}^D = 0 \quad \text{on} \quad
 \mathcal{S}.
 \end{multline}
 From the irreducible decomposition of $\mathcal{D} _{AB}\kappa _{C}$
@@ -1787,13 +1473,12 @@ Substituting decomposition \eqref{decompSenKappa} into equation
 \eqref{normalderB_twistor_exp3} renders
 \begin{align}
 \nabla_{\tau}B_{ABC}|_{\mathcal{S}}=- \phi _{BCDF} \mathcal{H}
-_{A}{}^{DF} -2 \mathcal{D} _{AD}B_{BC}{}^{D} + \tfrac{2}{3}\phi_{ABCD}\mathcal{H}^D = 0 \quad \text{on} \quad
+_{A}{}^{DF} -2 \mathcal{D} _{AD}B_{BC}{}^{D} +
+\tfrac{2}{3}\phi_{ABCD}\mathcal{H}^D = 0 \quad \text{on} \quad
 \mathcal{S}
 \end{align}
-Hence, overall, the only independent conditions to be
-imposed are $H_{A'AB}|_{\mathcal{S}}=0$ and
-$B_{ABC}|_{\mathcal{S}}=0$.
-\\
+Hence, overall, the only independent conditions to be imposed are
+$H_{A'AB}|_{\mathcal{S}}=0$ and $B_{ABC}|_{\mathcal{S}}=0$.  \\
 
 The discussion of this section can be summarised in the following:
 \begin{theorem}\label{Theorem_twistor}
@@ -1803,15 +1488,16 @@ field equations, as encoded in the CFE zero-quantities
 on a spacelike hypersurface $\mathcal{S}$ and let
 $\mathcal{U}\subset\mathcal{S}$ be an open set.
 The development
-of the initial data set will have a twistor
-(valence-1 Killing spinor) in the domain of
-dependence of $\mathcal{U}$ if and only if there exists a solution $\kappa_A$ to the equations
+of the initial data set will have a twistor (valence-1 Killing spinor)
+in the domain of dependence of $\mathcal{U}$ if and only if there
+exists a solution $\kappa_A$ to the equations
 \begin{flalign}
-   \mathcal{D} _{(AB}\kappa _{C)}=0 , %\label{CS-KID1_twistor}
-  \qquad \phi_{ABCD}\kappa^D=0,  \label{CS-KID_twistor} 
+  \mathcal{D} _{(AB}\kappa _{C)}=0 , %\label{CS-KID1_twistor}
+    \qquad
+   \phi_{ABCD}\kappa^D=0, \label{CS-KID_twistor}
 \end{flalign}
-on $\mathcal{U}$. The twistor is obtained
-evolving according to the wave equation:
+on $\mathcal{U}$. The twistor is obtained by evolving according
+to the wave equation:
 \begin{align} \label{Wave_eq_twistor_candidate_theo}
 \square \kappa _{A} = -2 \Lambda \kappa _{A}.
 \end{align}
@@ -1823,19 +1509,22 @@ with initial data satisfying conditions in equation
 \end{theorem}
 
 \begin{proof}
-The analysis of the last subsection shows that  conditions
+The analysis of the last subsection shows that conditions
 \begin{eqnarray*}
- H_{A'AB}=0, \quad \nabla_{\bm\tau}  H_{A'AB}=0, \quad B_{ABC}=0, \quad \nabla_{\bm\tau}  B_{ABC}=0
+ H_{A'AB}=0, \quad \nabla_{\bm\tau} H_{A'AB}=0, \quad B_{ABC}=0, \quad
+ \nabla_{\bm\tau} B_{ABC}=0
 \end{eqnarray*}
-on $\mathcal{U}\subset \mathcal{S}$ are equivalent to the conditions \eqref{CS-KID_twistor}. 
-Hence, using Proposition \ref{Prop:Propagation_twistor} one concludes that if equations \eqref{CS-KID_twistor}
-hold on $\mathcal{U}$, then the domain of dependence of $\mathcal{U}$ is endowed with a twistor.  
+on $\mathcal{U}\subset \mathcal{S}$ are equivalent to the conditions
+\eqref{CS-KID_twistor}.  Hence, using Proposition
+\ref{Prop:Propagation_twistor} one concludes that if equations
+\eqref{CS-KID_twistor} hold on $\mathcal{U}$, then the domain of
+dependence of $\mathcal{U}$ is endowed with a twistor.
 \end{proof}
 
 \begin{remark}
   \emph{
   Since the fields comprising initial data for the CFEs contain the
-  rescaled Weyl tensor, one can use the initial datum
+  rescaled Weyl spinor, one can use the initial datum
   $\phi_{ABCD}|_{\mathcal{S}}$ to formally define the Petrov type of
   an initial data set for the CFEs. Therefore, Theorem
   \ref{Theorem_twistor} can be phrased as saying that intial data which
@@ -1844,31 +1533,66 @@ hold on $\mathcal{U}$, then the domain of dependence of $\mathcal{U}$ is endowed
   }
 \end{remark}
 
+\mnotex{Killing spinor $\implies$ special Petrov type.  (Buchdahl constraint) \checkmark}
+\mnotex{ For the \textbf{physical spacetime},
+  special Petrov type  $\implies$ Killing spinor \checkmark.
+  See references inside tex file. Is this also true for the unphysical spacetime?
+  I think it is not true in general but it is true in our conformal set up
+  ... replacing $\psi$ with $\phi$, the proof should be identical...
+   see Vol2 of \cite{PenRin84} page 107 and references there in.
+  To be discussed. }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% References %%%%%%
+%%%%%%%% https://arxiv.org/pdf/2101.00856.pdf
+%%%%%%%% https://arxiv.org/pdf/1010.2421.pdf
+%%%%%%%% See page 107-108, section Killing spinors for type {22} vacuums of \cite{PenRin84}
+%%%%%%%% Lemma 1 of https://link.springer.com/article/10.1007/BF01649445
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
   
 \section{Conformal Killing spinor initial data}
   \label{conformalKSKID}
 
-In this section, the conformal (valence-2) Killing spinor initial data equations are derived. Broadly speaking, we will follow the same strategy as in the twistor case, though the calculations will be somewhat more involved. 
+In this section, the conformal (valence-2) Killing spinor initial data
+equations are derived.  Although the calculations will be substatially
+more involved, broadly speaking, we follow the same strategy discussed
+in the twistor case.
+%% Broadly speaking, we will follow the same
+%% strategy as in the twistor case, although the calculations will be
+%% somewhat more involved.
 
 \subsection{Killing spinor zero quantities}
 
 Analogous to the twistor case, we define the zero quantities:
-\[H_{A'ABC}=3\nabla_{A'(A}\kappa_{BC)}, \qquad B_{ABCD}=\kappa_{(A}{}^Q\phi_{BCD)Q}. \]
+\[H_{A'ABC}:=3\nabla_{A'(A}\kappa_{BC)}, \qquad B_{ABCD}:=\kappa_{(A}{}^Q\phi_{BCD)Q}. \]
 A short computation shows that
 \begin{equation}
-\nabla_{(A}{}^{A'}H_{\vert A'\vert BCD)} = 6\Xi B_{ABCD}. \label{Eq:BuchdahlAsCurlOfH}
+\nabla_{(A}{}^{A'}H_{\vert A'\vert BCD)} = 6\Xi
+B_{ABCD}. \label{Eq:BuchdahlAsCurlOfH}
 \end{equation}
-We will see that, unlike the twistor case, one cannot obtain a closed homogeneous wave system in terms of these variables alone and we shall need the following additional zero quantity\mnotex{We should be consistent with notation for definitions}
+%%%
+%We will see that,
+%%%
+Despite the formal resemblence with the equations of section
+\eqref{Sec:TwistorZeroQuantities}, the following discussion
+will show that, unlike the twistor case, one cannot obtain a closed
+homogeneous wave system in terms of these variables alone and we shall
+need the following additional zero quantity\mnotex{We should be
+  consistent with notation for definitions}
 \begin{equation}
  F_{A'BCD}:=\nabla^Q{}_{A'}B_{QBCD}.\label{Eq:DefZeroQuantityF}
 \end{equation}
-We shall see that one can derive a closed homogeneous wave system for $(\bmH, \bmB, \bmF)$. \mnotex{Add factor of one half into def of $Q$.}
+In the following,
+we shall see that one can derive
+a closed homogeneous wave system for $(\bmH, \bmB, \bmF)$. \mnotex{Add
+  factor of one half into def of $Q$.}
 
 
 \subsection{Auxiliary quantities and the Killing spinor candidate equation}\mnotex{Is the term candidate equation used anywhere (in twistor case, too)?}
 
 \begin{equation}
- Q_{BC} := \nabla^{AA'}H_{A'ABC} \equiv  2(\square \kappa_{BC} + 4 \Lambda\kappa_{BC}  - \Xi  \phi_{BCAD}\kappa^{AD})=0. \label{Eq:WaveForKS}
+ Q_{BC} := \nabla^{AA'}H_{A'ABC} :=  2(\square \kappa_{BC} + 4 \Lambda\kappa_{BC}  - \Xi  \phi_{BCAD}\kappa^{AD})=0. \label{Eq:WaveForKS}
 \end{equation}
 The wave equation for the Killing spinor candidate will then be imposed by setting $Q_{AB}=0$. It will also prove convenient to define the auxiliary spinor $\xi_{AA'} := \nabla^{B}{}_{A'}\kappa_{AB}$  
 in terms of which
@@ -1935,7 +1659,7 @@ extend to spinor fields [], but let us define
 this is simply the spinorialised counterpart of
 $\mathcal{L}_{\bm\xi}d_{abcd}$. One can then show the following:
 \begin{align*}
-    \mathcal{L}_{\bm\xi}\phi_{ABCD}&\equiv \nabla_{\bm\xi}\phi_{ABCD}
+    \mathcal{L}_{\bm\xi}\phi_{ABCD}&:= \nabla_{\bm\xi}\phi_{ABCD}
     + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'} \\ &=
     \nabla_{\bm\xi}\phi_{ABCD}-6\Lambda \kappa_{(D}{}^{F} \phi_{ABC)F}
     - \tfrac{3}{2} \Xi \ \kappa^{FG} \phi_{(ABC}{}^{H} \phi_{D)FGH} +
@@ -1962,7 +1686,7 @@ $\mathcal{L}_{\bm{\tilde{\xi}}}C_{abcd}=0$, trivially.
 \end{remark}
 \begin{remark} \emph{
   If $\tilde{\kappa}_{AB}$ is a Killing spinor in the the physical
-  spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$ then $\tilde{X}_{AA'} \equiv
+  spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$ then $\tilde{X}_{AA'} :=
   \nabla_A{}^{Q'}\tilde{\kappa}_{BA'}$  is a Killing
   vector in the physical spacetime.  It is direct to check that
   $X_{AA'}=\Xi^2 \tilde{X}_{AA'}$ is a conformal Killing vector in the
@@ -2081,7 +1805,7 @@ where we are using \eqref{Eq:SecondWaveEqForB} in the third line and in the four
   Given initial data for the conformal field equations on $\mathcal{U}\subseteq\mathcal{S}$
   where $\mathcal{S}$ is a spacelike
 hypersurface $\mathcal{S}$ with normal vector $\tau^{AA'}$, and
-associated normal derivative $\nabla_{\bm\tau} \equiv
+associated normal derivative $\nabla_{\bm\tau} :=
 \tau^{AA'}\nabla_{AA'}$, the corresponding spacetime development
 admits a (valence-2) Killing spinor in $\mathcal{D}^{+}(\mathcal{U})$ ---the future domain of dependence of $\mathcal{U}$---  if and only if
 \begin{subequations}
@@ -2100,8 +1824,8 @@ To summarise: we have found necessary and sufficient conditions, namely \eqref{E
 In this section, we aim to reduce \eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSInitialCondition2} to a set of intrinsic conditions ---that is to say, conditions on $\kappa_{AB}$ that are computable at the level of an initial data manifold. We consider $\kappa_{AB}$ defined over $\mathcal{U}\subset\mathcal{S}$, satisfying
 \begin{subequations}
 \begin{eqnarray}
-      && \tau_{(A}{}^{A'}H_{\vert A'\vert BCD)} \equiv  \mathcal{D}_{(AB}\kappa_{CD)}=0, \label{Eq:SpatialKS}\\
-      && B_{ABCD}\equiv \kappa_{(A}{}^F\phi_{BCD)F} = 0 \label{Eq:VanishingBuchdahl}
+      && \tau_{(A}{}^{A'}H_{\vert A'\vert BCD)} :=  \mathcal{D}_{(AB}\kappa_{CD)}=0, \label{Eq:SpatialKS}\\
+      && B_{ABCD}:= \kappa_{(A}{}^F\phi_{BCD)F} = 0 \label{Eq:VanishingBuchdahl}
 \end{eqnarray}
 \end{subequations}
 on $\mathcal{S}$. We evolve the Killing spinor candidate according to \eqref{Eq:WaveForKS} and the initial condition
@@ -2147,11 +1871,11 @@ At this point then, we have reduced our initial conditions for the zero quantiti
 \end{subequations}
 We will now explore potential redundancy in the above conditions. We will see shortly that the following holds:
 \begin{proposition}
-Suppose that either $\kappa_{AB}\kappa^{AB}\equiv 0$ on $\mathcal{U}$ or that $\kappa_{AB}\kappa^{AB}\neq 0$ everywhere on $\mathcal{U}$, then conditions \eqref{RedundantCondition1} and \eqref{RedundantCondition2} are redundant in the sense that they are automatically satisfied by $\kappa_{AB}$ by virtue of the first two conditions.
+Suppose that either $\kappa_{AB}\kappa^{AB}:= 0$ on $\mathcal{U}$ or that $\kappa_{AB}\kappa^{AB}\neq 0$ everywhere on $\mathcal{U}$, then conditions \eqref{RedundantCondition1} and \eqref{RedundantCondition2} are redundant in the sense that they are automatically satisfied by $\kappa_{AB}$ by virtue of the first two conditions.
 \end{proposition}
 
 \begin{remark}{\em 
-Note that if it is not the case that $\kappa_{AB}\kappa^{AB}\equiv 0$ on $\mathcal{U}$, then there must exist an open subset $\tilde{\mathcal{U}}\subset\mathcal{U}$ on which $\kappa_{AB}\kappa^{AB}$ is nowhere zero, since the vanishing of $\kappa_{AB}\kappa^{AB}$ is a closed condition, by the assumed continuity (in fact, differentiability) of the Killing spinor candidate. Hence, the above proposition covers all eventualities, with the small caveat that one may have to restrict $\mathcal{U}$.  
+Note that if it is not the case that $\kappa_{AB}\kappa^{AB}:= 0$ on $\mathcal{U}$, then there must exist an open subset $\tilde{\mathcal{U}}\subset\mathcal{U}$ on which $\kappa_{AB}\kappa^{AB}$ is nowhere zero, since the vanishing of $\kappa_{AB}\kappa^{AB}$ is a closed condition, by the assumed continuity (in fact, differentiability) of the Killing spinor candidate. Hence, the above proposition covers all eventualities, with the small caveat that one may have to restrict $\mathcal{U}$.  
 }
 \end{remark}
 
@@ -2339,8 +2063,8 @@ para a Ci\^encia e a Tecnologia (Portugal) ---FCT-2020.03845.CEECIND---
 during its completion. J. L. Williams acknowledges support from COST action...\mnotex{Code needed...} 
 
 % 
-\bibliographystyle{/home/gasperin/Academic/References/reporthack}
-\bibliography{/home/gasperin/Academic/References/GRbibJune2021a}
+\bibliographystyle{/home/egarcia/Dropbox/References/reporthack}
+\bibliography{/home/egarcia/Dropbox/References/GRbibJune2021a}
 %
 
 %% \begin{thebibliography}{10}
