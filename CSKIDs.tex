@@ -484,7 +484,7 @@ propagated in the conformal case, can be traced back to the %previous
 observation that in $(\mathcal{M},\bmg)$ the vector
 $\xi_{AA'}=\nabla_{A'}{}^{Q}\kappa_{QA}$ does not correspond to a
 (conformal) Killing vector. However, as by product of the present
-analysis it is shwon that $\xi_{AA'}$ is a Weyl collineation ---see
+analysis it is shown that $\xi_{AA'}$ is a Weyl collineation\mnotex{we could briefly define this, rather than/in addition to a reference} ---see
 \cite{KatLevDav69} for definitions of curvature collineations.  Once
 the existence of a Killing spinor is established one can use the
 conformal factor $\Xi$, the Killing spinor $\kappa_{AB}$ and
@@ -1847,7 +1847,7 @@ hold on $\mathcal{U}$, then the domain of dependence of $\mathcal{U}$ is endowed
   
 \section{Conformal Killing spinor initial data}
   \label{conformalKSKID}
-
+\mnotex{change vert S to vert U everywhere}
 In this section, the conformal (valence-2) Killing spinor initial data equations are derived. Broadly speaking, we will follow the same strategy as in the twistor case, though the calculations will be somewhat more involved. 
 
 \subsection{Killing spinor zero quantities}
@@ -1916,11 +1916,11 @@ we derive the identity
 \begin{align}
      \kappa^{DG}\phi_{(ABC}{}^H\phi_{F)HDG}&=2\phi_{(AB}{}^{GH}B_{CF)GH}. \label{Eq:UsefulIdentity2}
 \end{align}
-Using the definition of the Buchdahl zero quantity, using the CFE for $\phi_{ABCD}$, the CFE $\Lambda _{C'ABC}=0$, along with its wave equation \eqref{Wave_eq_CFE_Weyl}, and using the decomposition \eqref{Eq:DecompGradKS} we get 
+Using the definition of the Buchdahl zero quantity, the CFE for $\phi_{ABCD}$, $\Lambda _{C'ABC}=0$, along with its wave equation \eqref{Wave_eq_CFE_Weyl}, and using the decomposition \eqref{Eq:DecompGradKS}, we get 
 \begin{multline} 
 \square B_{ABCD} = \tfrac{2}{3}  \nabla_{\bm\xi}\phi_{ABCD} + 8 \Lambda B_{ABCD} -  \tfrac{1}{2} \phi_{(ABC}{}^{F}Q_{D)F} + \tfrac{2}{3} H^{A'}{}_{(A}{}^{FG}\nabla_{|FA'|}\phi_{BCD)G} \\ - 6 \Xi \kappa_{(A}{}^{F}\phi_{BC}{}^{GH}\phi_{D)FGH} -  \Xi \kappa^{FG}\phi_{(ABC}{}^{H}\phi_{D)FGH}.
 \end{multline}
-Substituting the above identities \eqref{Eq:UsefulIdentity1}--\eqref{Eq:UsefulIdentity2}, we can derive the following alternative (non-homogeneous) wave equation for $B_{ABCD}$:
+Substituting the identities \eqref{Eq:UsefulIdentity1} and \eqref{Eq:UsefulIdentity2}, we can derive the following alternative \emph{non-homogeneous} wave equation for $B_{ABCD}$:
 \begin{equation}
     \square B_{ABCD} = \tfrac{2}{3}\nabla_{\bm\xi}\phi_{ABCD} + 8\Lambda B_{ABCD} - 14\Xi \phi_{(AB}{}^{FG}B_{CD)FG} + \tfrac{2}{3}(\nabla_{FA'}\phi_{G(ABC})H^{A'}{}_{D)}{}^{FG}\label{Eq:SecondWaveEqForB}
 \end{equation}
@@ -1929,11 +1929,10 @@ Substituting the above identities \eqref{Eq:UsefulIdentity1}--\eqref{Eq:UsefulId
   \emph{
     \mnotex{Query about Weyl versus rescaled Weyl in physical spacetime. EG: I think it was correct as you originally wrote it :)  }
   \mnotex{Check that the signs are correct}
-The Lie derivative does not
-extend to spinor fields [], but let us define
-\[ \mathcal{L}_{\bm\xi}\phi_{ABCD} := \nabla_{\bm\xi}\phi_{ABCD} + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'},\]
-this is simply the spinorialised counterpart of
-$\mathcal{L}_{\bm\xi}d_{abcd}$. One can then show the following:
+Equation \eqref{Eq:SecondWaveEqForB} actually encodes the fact that, \emph{given a Killing spinor} $\kappa_{AB}$, the field $\xi_{AA'}$ is a collineation for the rescaled Weyl tensor ---i.e. that
+\[  \mathcal{L}_{\bm\xi}\phi_{ABCD} := \nabla_{\bm\xi}\phi_{ABCD} + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'}=0,\] 
+the definition\footnote{The Lie derivative does not extend to spinor fields, in general [].} of the ``Lie derivative" being derived from the spinorialised counterpart of
+$\mathcal{L}_{\bm\xi}d_{abcd}$. Indeed, this fact follows from a straightforward calculation
 \begin{align*}
     \mathcal{L}_{\bm\xi}\phi_{ABCD}&\equiv \nabla_{\bm\xi}\phi_{ABCD}
     + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'} \\ &=
@@ -1941,9 +1940,9 @@ $\mathcal{L}_{\bm\xi}d_{abcd}$. One can then show the following:
     - \tfrac{3}{2} \Xi \ \kappa^{FG} \phi_{(ABC}{}^{H} \phi_{D)FGH} +
     \tfrac{1}{4} \phi_{F(ABC} \ Q_{D)}{}^{F}\\ &=
     \nabla_{\bm\xi}\phi_{ABCD}-6\Lambda B_{ABCD} - 3\Xi
-    \phi_{(AB}{}^{FG}B_{CD)FG} + \tfrac{1}{4}\phi_{F(ABC}Q_{D)}{}^F
+    \phi_{(AB}{}^{FG}B_{CD)FG} + \tfrac{1}{4}\phi_{F(ABC}Q_{D)}{}^F,
 \end{align*}
-where we are using \eqref{Eq:DecompGradXi}, along with the identity
+where we are using \eqref{Eq:DecompGradXi} along with the identity
 \eqref{Eq:UsefulIdentity2}. Given a Killing spinor $\kappa_{AB}$, the resulting zero quantities vanish:
 $B_{ABCD}=H_{A'ABC}=Q_{AB}=0$, and hence it follows from
 \eqref{Eq:SecondWaveEqForB} that
@@ -1954,13 +1953,13 @@ admits a Killing spinor, then the Weyl-collineation condition
 \eqref{Collineation} is satisfied.  This is not trivial since the
 vector $\xi_{AA'}$ is not, in general, a
 conformal Killing vector. In contrast,
-for the physical spacetime is clear that this condition holds 
+for the physical spacetime it is clear that this condition holds 
 since in that case $\tilde{\xi}_{AA'}$ is a Killing vector and thus
 $\mathcal{L}_{\bm{\tilde{\xi}}}C_{abcd}=0$, trivially.
 }
 
 \end{remark}
-\begin{remark} \emph{
+\begin{remark}\mnotex{Is this the right place for this remark? It kind of disrupts the flow, I think.} \emph{
   If $\tilde{\kappa}_{AB}$ is a Killing spinor in the the physical
   spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$ then $\tilde{X}_{AA'} \equiv
   \nabla_A{}^{Q'}\tilde{\kappa}_{BA'}$  is a Killing
@@ -2008,7 +2007,7 @@ X_{AA'}=\Xi \xi_{AA'} - 3 \kappa_{AQ}\nabla_{A'}{}^{Q}\Xi
 %% \]
 \end{remark}
 
-At this point we note that there are no derivatives of zero quantities appearing on the right-hand-side of \eqref{Eq:SecondWaveEqForB}. This, combined with the fact that $\nabla^A{}_{A'}\phi_{ABCD}=0$, suggests that by applying $\nabla^A{}_{A'}$ to \eqref{Eq:SecondWaveEqForB} we may be able to derive a wave equation for $F_{A'BCD}$ with the desired properties, namely being homogeneous in $(\bmH, \bmH, \bmF)$ and their first derivatives (apart from the D'Alembertian term). We will see that this does indeed work; the hard part is in deriving a suitable expression for $\nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD}$ in terms of the zero quantities. \\
+At this point we note that there are no derivatives of zero quantities appearing on the right-hand-side of \eqref{Eq:SecondWaveEqForB}. This, combined with the fact that $\nabla^A{}_{A'}\phi_{ABCD}=0$, suggests that by applying $\nabla^A{}_{A'}$ to \eqref{Eq:SecondWaveEqForB} we may be able to derive a wave equation for $F_{A'BCD}$ with the desired properties, namely being homogeneous in $(\bmH, \bmB, \bmF)$ and their first derivatives (apart from the D'Alembertian term). We will see that this does indeed work; the hard part is in deriving a suitable expression for $\nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD}$ in terms of the zero quantities. \\
 
 First, we note some useful identities.\mnotex{Put in appendix?}
 \begin{equation}
@@ -2121,9 +2120,13 @@ At this point we see that if \eqref{Eq:SpatialKS}--\eqref{Eq:VanishingBuchdahl} 
 \begin{equation}
     \nabla_{\bm\tau} B_{ABCD} = 2 \kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}.\label{EvolutionForBuchdahl}
 \end{equation}
-Note that the quantity on the right-hand-side is intrinsic to $\mathcal{S}$; we add it to our list of conditions (for the meantime). Consider now the quantity $F_{A'ABC}$; recall that, by definition, $F_{A'ABC}=\nabla^D{}_{A'}B_{ABCD}$, and so decomposing the covariant derivative one obtains
+Note that the quantity on the right-hand-side is intrinsic to $\mathcal{S}$; we append 
+\begin{equation}
+2 \kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}=0\label{IntrinsicCondition3}
+\end{equation}
+to our list of intrinsic conditions. Consider now the quantity $F_{A'ABC}$; recall that, by definition, $F_{A'ABC}=\nabla^D{}_{A'}B_{ABCD}$, and so decomposing the covariant derivative one obtains
 \[F_{A'BCD} = \tfrac{1}{2} \tau^{A}{}_{A'} \nabla_{\bm\tau} B_{ABCD}  -  \tau^{F}{}_{A'} \mathcal{D}^{A}{}_{F}B_{ABCD}.\]
-Hence, given the vanishing of $B_{ABCD}$ and the right-hand-side of \eqref{EvolutionForBuchdahl}, we see that $F_{A'ABC}=0$ on $\mathcal{S}$, too. Thus, all that's left is to find intrinsic conditions under which $\nabla_{\bm\tau}F_{A'ABC}=0$ on $\mathcal{S}$. Now, combining our two wave equations for $B_{ABCD}$, \eqref{Eq:FirstWaveEqForB} and \eqref{Eq:SecondWaveEqForB}, we see that 
+Hence, given the vanishing of $B_{ABCD}$ and \eqref{IntrinsicCondition3}, we see that $F_{A'ABC}=0$ on $\mathcal{S}$, too. Thus, all that is left is to find intrinsic conditions under which $\nabla_{\bm\tau}F_{A'ABC}=0$ on $\mathcal{S}$. Now, combining our two wave equations for $B_{ABCD}$, \eqref{Eq:FirstWaveEqForB} and \eqref{Eq:SecondWaveEqForB}, we see that 
 \begin{multline}
      \nabla_{FA'}F^{A'}{}_{BCD} = \tfrac{1}{3} \nabla_{\xi}{}\phi_{BCDF} - 2 \Lambda B_{BCDF} + 3\Xi B_{(BC}{}^{AG}  \phi_{D)FAG}  - 7 \Xi B_{(BC}{}^{AG}\phi_{DF)AG} \\-  \tfrac{1}{4} \phi_{(BCD}{}^{A}Q_{F)A} + \tfrac{1}{3} H^{A'}{}_{(B}{}^{AG}\nabla_{|AA'|}\phi_{CDF)G}\label{CurlOfFInTermsOfCollineation}. 
 \end{multline}
@@ -2136,7 +2139,7 @@ Hence, if $F_{A'ABC}\big\vert_{\mathcal{S}}=H_{A,ABC}\big\vert_{\mathcal{S}}=B_{
 \[ \nabla_{\bm\xi}\phi_{ABCD}\big\vert_{\mathcal{S}}=0.\]
 Decomposing the covariant derivative, using the evolution equation for rescaled Weyl \eqref{RescaledWeyl_evo_const}, along with \eqref{DecompXiOnSUsingInitialCondition} we have 
 \[ \nabla_{\bm\xi}\phi_{ABCD}\big\vert_{\mathcal{S}} =  \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F} + \tfrac{3}{2} \xi^{FG} \mathcal{D}_{FG}\phi_{ABCD}. \]
-At this point then, we have reduced our initial conditions for the zero quantities to the following set of intrinsic conditions:
+At this point then, we have shown that \eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSInitialCondition2} are equivalent to the to the following set of conditions, intrinsic to $\mathcal{S}$:
 \begin{subequations}
 \begin{eqnarray}
     && \mathcal{D}_{(AB}\kappa_{CD)}=0,\\
@@ -2180,15 +2183,15 @@ with initial data satisfying conditions in equation\mnotex{Rewording needed}
 \end{equation}
 \end{theorem}
 
-\subsubsection{Petrov type N: $\kappa_{AB}\kappa^{AB}=0$}
+\subsubsection{Case I: $\kappa_{AB}\kappa^{AB}=0$ on $\mathcal{U}$}
 
 \mnotex{Not an open condition...what if it vanishes somewhere on $\mathcal{U}$ but not everywhere?}
 \mnotex{Recovers twistor case, right?}
-The assumption that $\kappa_{AB}\kappa^{AB}=0$, in which case there exists a spin dyad $\lbrace \bm\omicron, \bm\iota\rbrace$ such that $\kappa_{AB}=\omicron_A\omicron_B$. The Buchdahl constraint then implies that 
+The assumption that $\kappa_{AB}\kappa^{AB}=0$ on $\mathcal{U}$ implied that there exists a spin dyad $\lbrace \bm\omicron, \bm\iota\rbrace$ on $\mathcal{U}$ such that $\kappa_{AB}=\omicron_A\omicron_B$. The Buchdahl constraint then implies that 
 \begin{equation}
 \phi_{ABCD}=\phi \omicron_A\omicron_B\omicron_C\omicron_D
 \end{equation}
-for some scalar field $\phi:\mathcal{U}\rightarrow\mathbb{C}$. Note that $\phi_{ABCD}\omicron^D=0$. The equation $\mathcal{D}_{(AB}\kappa_{CD)}=0$ implies 
+for some scalar field $\phi:\mathcal{U}\rightarrow\mathbb{C}$ and hence that the curvature is of Petrov type N on $\mathcal{U}$. Note that $\phi_{ABCD}\omicron^D=0$. The equation $\mathcal{D}_{(AB}\kappa_{CD)}=0$ implies 
 \begin{equation*}
  \omicron^A \omicron^B \omicron^C \mathcal{D}_{AB}\omicron_C= \omicron^A \omicron^B \iota^C\mathcal{D}_{(AB}\omicron_{C)}= \omicron^A \iota^B \iota^C\mathcal{D}_{(AB}\omicron_{C)}= \iota^A \iota^B \iota^C\mathcal{D}_{AB}\omicron_{C}=0,
 \end{equation*}
@@ -2227,11 +2230,11 @@ while, finally,
 where in the third equality we are using the identity $\omicron_A\iota_C=\iota_A\omicron_C + \epsilon_{AC}$ on the second term, in the fourth we are substituting \eqref{TypeNweylConstraint} and the final equality follows from skew-symmetry. All other components vanishing trivially. Hence, in this case, \eqref{RedundantCondition1} and \eqref{RedundantCondition2} trivialise. 
 
 
-\subsubsection{Petrov type D: $\kappa_{AB}\kappa^{AB}\neq 0$}
+\subsubsection{Case II: $\kappa_{AB}\kappa^{AB}\neq 0$ on $\mathcal{U}$}
 
 There exists a spin dyad $\lbrace \bm\omicron, \bm\iota\rbrace$ such that $\kappa_{AB} = e^{\varkappa} \omicron_{(A}\iota_{B)}$ for some $\varkappa:\mathcal{U}\rightarrow\mathbb{C}$. The Buchdahl constraint then implies that the rescaled Weyl spinor takes the form
 \[ \phi_{ABCD}= \phi \omicron_{(A}\omicron_B\iota_C\iota_{D)}\]
-for some scalar field $\phi:\mathcal{U}\rightarrow\mathbb{C}$. The equation $\mathcal{D}_{(AB}\kappa_{CD)}=0$ is equivalent to 
+for some scalar field $\phi:\mathcal{U}\rightarrow\mathbb{C}$ and hence that the curvature is of Petrov type D on $\mathcal{U}$. The equation $\mathcal{D}_{(AB}\kappa_{CD)}=0$ is equivalent to 
 \begin{subequations}
 \begin{eqnarray}
 && \omicron^A\omicron^B\omicron^C\mathcal{D}_{AB}\omicron_C=0,\label{SpatialSenTypeD0000}\\
