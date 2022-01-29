@@ -2103,11 +2103,11 @@ In this section, we aim to reduce \eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSIn
       && B_{ABCD}\equiv \kappa_{(A}{}^F\phi_{BCD)F} = 0 \label{Eq:VanishingBuchdahl}
 \end{eqnarray}
 \end{subequations}
-on $\mathcal{S}$. We evolve the Killing spinor candidate according to \eqref{Eq:WaveForKS} and the initial condition
+on $\mathcal{U}$. We evolve the Killing spinor candidate according to \eqref{Eq:WaveForKS} and the initial condition
 \begin{equation}
      \nabla_{\bm\tau} \kappa_{BC} = - \xi_{BC}\label{InitialCondition}
 \end{equation}
-on $\mathcal{S}$, with $\xi_{AB}:=\mathcal{D}_{(A}{}^C\kappa_{B)C}$. This can be easily shown to be equivalent to $\tau^{AA'}H_{A'ABC}=0$, and so \eqref{InitialCondition} and \eqref{Eq:SpatialKS} together encode $H_{A'ABC}\big\vert_{\mathcal{S}}=0$. Decomposing the covariant derivative, we have on $\mathcal{S}$
+on $\mathcal{U}$, with $\xi_{AB}:=\mathcal{D}_{(A}{}^C\kappa_{B)C}$. This can be easily shown to be equivalent to $\tau^{AA'}H_{A'ABC}=0$, and so \eqref{InitialCondition} and \eqref{Eq:SpatialKS} together encode $H_{A'ABC}\big\vert_{\mathcal{S}}=0$. Decomposing the covariant derivative, we have on $\mathcal{S}$
 \begin{align}
 \xi_{AB'} =  - \tau_{B}{}^{A'} \tau^{B}{}_{B'}\xi_{AA'} &=\tfrac{1}{2}\tau^{B}{}_{B'}\nabla_{\bm\tau}\kappa_{AB} + \
 \tau^{B}{}_{B'} \mathcal{D}_{BC}\kappa_{A}{}^{C}. \nonumber\\
@@ -2138,7 +2138,7 @@ Decomposing the covariant derivative, we get
 Hence, if $F_{A'ABC}\big\vert_{\mathcal{S}}=H_{A,ABC}\big\vert_{\mathcal{S}}=B_{ABCD}\big\vert_{\mathcal{S}}=0$, then $\nabla_{\bm\tau}F_{A'ABC}\big\vert_{\mathcal{S}}=0$ if and only if  
 \[ \nabla_{\bm\xi}\phi_{ABCD}\big\vert_{\mathcal{S}}=0.\]
 Decomposing the covariant derivative, using the evolution equation for rescaled Weyl \eqref{RescaledWeyl_evo_const}, along with \eqref{DecompXiOnSUsingInitialCondition} we have 
-\[ \nabla_{\bm\xi}\phi_{ABCD}\big\vert_{\mathcal{S}} =  \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F} + \tfrac{3}{2} \xi^{FG} \mathcal{D}_{FG}\phi_{ABCD}. \]
+\[ \nabla_{\bm\xi}\phi_{ABCD}\big\vert_{\mathcal{S}} = \tfrac{3}{2} \xi^{FG} \mathcal{D}_{FG}\phi_{ABCD} +  \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F} . \]
 At this point then, we have shown that \eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSInitialCondition2} are equivalent to the to the following set of conditions, intrinsic to $\mathcal{S}$:
 \begin{subequations}
 \begin{eqnarray}
@@ -2187,7 +2187,7 @@ with initial data satisfying conditions in equation\mnotex{Rewording needed}
 
 \mnotex{Not an open condition...what if it vanishes somewhere on $\mathcal{U}$ but not everywhere?}
 \mnotex{Recovers twistor case, right?}
-The assumption that $\kappa_{AB}\kappa^{AB}=0$ on $\mathcal{U}$ implied that there exists a spin dyad $\lbrace \bm\omicron, \bm\iota\rbrace$ on $\mathcal{U}$ such that $\kappa_{AB}=\omicron_A\omicron_B$. The Buchdahl constraint then implies that 
+The assumption that $\kappa_{AB}\kappa^{AB}=0$ on $\mathcal{U}$ implies that there exists a spin dyad $\lbrace \bm\omicron, \bm\iota\rbrace$ on $\mathcal{U}$ such that $\kappa_{AB}=\omicron_A\omicron_B$. The Buchdahl constraint then implies that 
 \begin{equation}
 \phi_{ABCD}=\phi \omicron_A\omicron_B\omicron_C\omicron_D
 \end{equation}
