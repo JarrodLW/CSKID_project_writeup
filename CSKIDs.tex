@@ -1188,7 +1188,7 @@ $\nabla_D{}^{A'}H_{A'AB}$,
  along with definition \eqref{def_Q_twistor} and equation
 \eqref{Curl_H_sym_toB_twistor} it follows that
 \begin{align}\label{derH_twistor_toBandQ}
-\nabla_{D}{}^{A'}H_{A'AB} = 2 B_{ABD} \Xi + \tfrac{1}{3} Q_{B}
+\nabla_{D}{}^{A'}H_{A'AB} = 2 \Xi B_{ABD}  + \tfrac{1}{3} Q_{B}
 \epsilon _{AD} + \tfrac{1}{3} Q_{A} \epsilon _{BD}
 \end{align}
 Applying $\nabla_{D}{}^{B'}$ to the last expression, and using
@@ -1202,8 +1202,7 @@ renders
   \Phi_{(A}{}^{D}{}_{|B'}{}^{A'}H_{A'|B)D} + \tfrac{4}{3}
   \nabla_{(A|B'|}Q_{B)}
 \end{equation}
-
-\noindent To derive a wave equation for $\bmB$, one applies the D'Alembertian operator
+To derive a wave equation for $\bmB$, one applies the D'Alembertian operator
 $\square$ to the definition \eqref{Def_B_twistor} to obtain
 \begin{align}\label{pre_wave_B_twistor}
 \square B_{ABC} = \kappa ^{D} \square \phi _{ABCD} + \phi _{ABCD}
@@ -1214,7 +1213,7 @@ Substituting the definition \eqref{Def_B_twistor}, the identity
 \eqref{Q_to_box_twistor_candidate}, and the wave equation satisfied by
 the rescaled Weyl spinor \eqref{Wave_eq_CFE_Weyl} into the last expression gives
 \begin{equation}\label{wave_B_twistor}
-\square B_{ABC} = 10 B_{ABC} \Lambda + H^{A'DF} \nabla_{FA'}\phi _{ABCD}  -6 \Xi B_{(A}{}^{DF}\phi
+\square B_{ABC} = 10 \Lambda B_{ABC}  + H^{A'DF} \nabla_{FA'}\phi _{ABCD}  -6 \Xi B_{(A}{}^{DF}\phi
 _{BC)DF} + \tfrac{2}{3} \phi _{ABCD} Q^{D}
 \end{equation}
 Observe that if $Q_{A}=0$, namely if the twistor candidate wave equation is imposed, then,
@@ -1722,9 +1721,7 @@ that $\bmX$ is a conformal Killing vector of the unphysical spacetime $(\mathcal
 \end{remark}
 
 \subsection{Wave equations for the zero-quantities}
-%%%%%%%%%
-%Contracting with $\nabla^A{}_{B'}$ we then derive the following wave equation:
-%%%%%%%%%%%%
+
 Applying $\nabla^A{}_{B'}$ to equation
 \eqref{eq:non-KillingVectorExplained} one obtains the following wave
 equation:
@@ -1742,9 +1739,6 @@ following wave equation for $B_{ABCD}$: \mnotex{I haven't carried the
 \end{equation}
 The task remaining is to derive a wave equation for $F_{A'ABC}$.  To
 do so, we will need some ancilliary identities first.
-%%%%%%
-%%let us first consider some useful identities:
-%%%%%
 A direct calculation shows that
 \begin{multline}
 2\phi_{(AB}{}^{GH}B_{CF)GH}=
