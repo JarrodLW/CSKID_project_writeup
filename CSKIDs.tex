@@ -1610,10 +1610,7 @@ a closed homogeneous wave system for $(\bmH, \bmB, \bmF)$. \mnotex{Add
   factor of one half into def of $Q$.}
 
 \subsection{Auxiliary quantities and the Killing spinor candidate equation}
-%%%%%%%%%%%%%%%%%%%%%%
-%\mnotex{Is the term candidate equation used anywhere (in twistor case, too)?
-%EG: yes the same terminology was used}
-%%%%%%%%%%%%%%%%%%%%%
+
 Analogously as in the twistor case, it will prove useful to define the
 following auxiliary quantity,
 \begin{equation}
@@ -1623,7 +1620,7 @@ following auxiliary quantity,
 %%\phi_{BCAD}\kappa^{AD})=0.
   \label{Eq:WaveForKS_DefinitionQ}
 \end{equation}
-A direct calculation shows that the auxiliary quantity $\bmQ$ encodes
+A direct calculation shows that the auxiliary quantity $\mathcal{Q}_{AB}$ encodes
 a wave equation for $\bm\kappa$.
 \begin{equation}
   \mathcal{Q}_{BC} = \square \kappa_{BC} + 4 \Lambda\kappa_{BC} - \Xi
@@ -2445,10 +2442,8 @@ Observe that for Type $O$, for which $\bm\phi=0$,
 the proof of \ref{prop_remove_redundant_conditions} trivialises,
 so only the type $N$ and $D$ are needed.
 
-\subsection{Petrov type N: $\kappa_{AB}\kappa^{AB}=0$}
-=======
-\subsubsection{Case I: $\kappa_{AB}\kappa^{AB}=0$ on $\mathcal{U}$}
->>>>>>> main
+
+\subsection{Case I: $\kappa_{AB}\kappa^{AB}=0$ on $\mathcal{U}$}
 
 \mnotex{Not an open condition...what if it vanishes somewhere on $\mathcal{U}$ but not everywhere?}
 \mnotex{Recovers twistor case, right?}
@@ -2502,7 +2497,7 @@ while, finally,
 where in the third equality we are using the identity $\omicron_A\iota_C=\iota_A\omicron_C + \epsilon_{AC}$ on the second term, in the fourth we are substituting \eqref{TypeNweylConstraint} and the final equality follows from skew-symmetry. All other components vanishing trivially. Hence, in this case, \eqref{RedundantCondition1} and \eqref{RedundantCondition2} trivialise. 
 
 
-\subsubsection{Case II: $\kappa_{AB}\kappa^{AB}\neq 0$ on $\mathcal{U}$}
+\subsection{Case II: $\kappa_{AB}\kappa^{AB}\neq 0$ on $\mathcal{U}$}
 
 There exists a spin dyad $\lbrace \bm\omicron, \bm\iota\rbrace$ such that $\kappa_{AB} = e^{\varkappa} \omicron_{(A}\iota_{B)}$ for some $\varkappa:\mathcal{U}\rightarrow\mathbb{C}$. The Buchdahl constraint then implies that the rescaled Weyl spinor takes the form
 \[ \phi_{ABCD}= \phi \omicron_{(A}\omicron_B\iota_C\iota_{D)}\]
