@@ -602,7 +602,7 @@ the covariant derivative $\nabla_{AA'}$ is then decomposed into the
   &\nabla_{\bm\tau} := \tau^{AA'}\nabla_{AA'},\\ & \mathcal{D}_{AB}:=
   \tau_{(A}{}^{A'}\nabla_{B)A'}.
 \end{align*}
-The \emph{Weingarten} spinor and the \emph{acceleration} of the
+Though we will not need them here, for completeness we note that the \emph{Weingarten} spinor and the \emph{acceleration} of the
 congruence are then defined by
 \begin{align*}
 & K_{ABCD} := \tau_{D}{}^{C'} \mathcal{D}_{AB}\tau_{CC'},\\ &
@@ -647,7 +647,7 @@ to vanish.
 
 
 \subsection{Killing spinors}\label{Sec:KillingSpinors}
-\mnotex{Give explicit expressions for Killing spinors in type D and N spacetimes., to be referenced later when discussing propagation of Petrov type.}
+
 To start the discussion it is convenient to introduce some notation
 and definitions. Let $(\tilde{\mathcal{M}},\tilde{\bmg})$ be a
 4-dimensional manifold equipped with a Lorentzian metric
@@ -696,16 +696,24 @@ the form
 \tilde{\kappa}^D\Psi_{ABCD}=0,
 \]
 while in the Killing spinor case ($p=2$) the Buchdahl constraint
-adquires the form
+takes the form
 \[
 \tilde{\kappa}_{(A}{}^Q\Psi_{BCD)Q}=0,
 \]
 where $\Psi_{ABCD}$ denotes the conformally invariant Weyl spinor.
 The latter condition restricts $\Psi_{ABCD}$ to be algebraically
-special.  In the twistor case the spacetime is necessarity of Petrov
+special.  In the twistor case the spacetime is necessarily of Petrov
 type N or O, hence restricting its applicability for characterisation
 of black holes.  In the Killing spinor case the spacetime is only
-restricted to be of Petrov type D, N or O.
+restricted to be of Petrov type D, N or O. In the type N case, choosing an 
+adapted dyad $\lbrace \bmo, \bm\iota\rbrace$ for which $\psi_{ABCD}=o_Ao_Bo_Co_D$, 
+a Killing twistor and spinor are given explicitly 
+by 
+\[\tilde{\kappa}_A=o_A, \qquad\text{and}\qquad  \tilde{\kappa}_{AB}=o_Ao_B.\]
+In the type D case, choosing an 
+adapted dyad $\lbrace \bmo, \bm\iota\rbrace$ for which $\psi_{ABCD}=\psi o_{(A}o_{B}\iota_C\iota_{D)}$
+\[\tilde{\kappa}_{AB} = \psi^{-1/3}o_{(A}\iota_{B)}\]
+is a Killing spinor. Indeed, the fact that the Killing spinor equation is satisfied follows from the Bianchi identity $\nabla^A{}_{A'}\Psi_{ABCD}=0$ ---see \cite{WalkerPenrose70} for more details. 
 
 \medskip
 
@@ -860,8 +868,7 @@ fields
 \{g_{ab}, \; \Xi, \; \nabla_{a}\Xi,s\;,L_{ab},\; d_{abcd}\}
 \]
 satisfying
-
-\begin{equation}\label{vanishing_CFEs_tensorial_zq}
+\begin{equation}%\label{vanishing_CFEs_tensorial_zq}
   Z_{ab}=0, \quad Z_{a}=0, \quad \delta_{abc}=0, \quad \lambda_{abc}=0, \quad Z=0.
 \end{equation}
 
@@ -919,8 +926,18 @@ defined as
  ---see \cite{Ste91, PenRin84} for more details. 
  \begin{remark}
  \label{G-C-M-Remark}
-   \emph{ The initial data for $\phi_{ABCD}$ are in general determined
-   through the Gauss-Codazzi and Codazzi-Mainardi equations by the
+   \emph{The initial data for $\phi_{ABCD}$ is determined using the Gauss-Codazzi and Codazzi-Mainardi equations. First decompose 
+   \[ \phi_{ABCD}=d_{ABCD}+id^*_{ABCD}\]
+where $\bmd$ and $\bmd^*$ are the \textit{electric} and \textit{magnetic} parts
+   \[
+   d_{ABCD} := \phi_{ABCD} + i\hat{\phi}_{ABCD},\qquad d^*_{ABCD} := \phi_{ABCD} - i\hat{\phi}_{ABCD},
+  \]
+  with $\hat{\phi}_{ABCD}:=\tau_A{}^{A'}\tau_B{}^{B'}\tau_C{}^{C'}\tau_D{}^{D'}\bar{\phi}_{A'B'C'D'}$. The fields $\bmd,\bmd^*$ are the spinorial counterparts of the electric and magnetic parts of the rescaled Weyl tensor
+   \begin{eqnarray*}
+  && d_{ij} = r_{\lbrace ij\rbrace} + KK_{\lbrace ij\rbrace} - K_{\lbrace i}{}^k K_{j\rbrace k},\\
+  && d^*_{ij} = 
+   \end{eqnarray*}
+   by the
    initial data $(\mathcal{S}, \bmh, \bmK, \Omega, \Sigma)$. Here
    $\mathcal{S}$ is a 3-dimensional manifold with Riemannian metric
    $\bmh$, second fundamental form $\bmK$, while $\Omega$ and $\Sigma$
@@ -943,7 +960,12 @@ defined as
    the Bach tensor of $h_{ij}$, while the
    electric part of the rescaled Weyl tensor satisfies $D^id_{ij}=0$
    where $D_i$ is the Levi-Civita connection of $h_{ij}$ ---see
-   \cite{CFEbook, GasVal17a}. For the discussion of this paper we will
+   \cite{CFEbook, GasVal17a}. More precisely, $\bmd,\bmd^*$ take the forms
+   \begin{eqnarray*}
+   && d_{ij} = ,\\
+   && d^*_{ij} = 
+   \end{eqnarray*}
+   For the discussion of this paper we will
    assume that such data has been already determined.}
 \end{remark}
 
@@ -955,7 +977,7 @@ reduction strategies to extract a set of evolution and constraint
 equations.  For the subsequent discussion only the evolution and
 constraint equations implied by the $\Lambda_{C'ABC}=0$ equation, namely,
 \begin{equation}\label{RescaledWeylEquationDisplayed}
- \nabla_{DC'}\phi _{ABC}{}^{D}=0,
+ \nabla^D{}_{C'}\phi _{ABCD}=0,
 \end{equation}
 %%%% \mnotex{Equation displayed explicitly for making
 %%%% reference to it in a succint way in the text in section 4}
@@ -964,7 +986,7 @@ the space spinor formalism
 shows that equation \eqref{RescaledWeylEquationDisplayed}
 %%$\Lambda_{CC'AB}=0$
 can be recast as the following system
-of evolution equation and constraint equations
+of evolution and constraint equations
 \begin{align}\label{RescaledWeyl_evo_const}
 %%\nabla_{\bm\tau} \phi _{ABCD} = -2 \mathcal{D} _{DF}\phi _{ABC}{}^{F}
   & \nabla_{\bm\tau} \phi _{ABCD} = 2 \mathcal{D} _{(A}{}^{F}\phi_{BCD)F},
@@ -1015,8 +1037,18 @@ It is worth noting here that one of the tools used in \cite{GasVal15}
 to show the equivalence between the spinorial CFE wave equations and
 the original spinorial CFEs
 \eqref{Def_ConfFactor_CFE_zeroquant}--\eqref{Def_cons_CFE_zeroquant}
-is the uniqueness property of solutions to a certain class of wave
-equations. This same result from the theory of partial differential
+is the uniqueness property of solutions to a certain class of \textit{homogeneous} wave
+equations. 
+
+\begin{definition}
+{\em An operator $h$ is said to be \textit{homogeneous in} $\underline{u}$
+\textit{and its first derivatives} if
+$h (\mu\underline{u},\mu\partial\underline{u})=\mu
+h(\underline{u}, \partial\underline{u})$ for all
+$\mu\in\mathbb{C}$. }
+\end{definition}
+
+This same result from the theory of partial differential
 equations will be used in the proof of the main theorem of this
 article, and so we quote it here:
 \begin{theorem}
@@ -1045,15 +1077,18 @@ $\mathcal{U}$.
 We refer the reader to Proposition 3.2 of \cite{Tay96c} for a proof
 ---see also Theorem 1 in \cite{GarVal08c}.
 
-\begin{remark}
-\emph{ Recall that an equation of the
-above form are said to be \textit{homogeneous in} $\underline{u}$
-\textit{and its first derivatives} if
-$h (\mu\underline{u},\mu\partial\underline{u})=\mu
-h(\underline{u}, \partial\underline{u})$ for all
-$\mu\in\mathbb{C}$. }
+\begin{remark}{\em 
+Analogous to the physical case, given an algebraically-special $\phi_{ABCD}$, 
+one can give an explicit construction of a Killing spinor, namely
+\begin{align*}
+& \kappa_{AB} = o_A o_B && (\textbf{Type N}),\\
+& \kappa_{AB} = \psi^{-1/3}o_{(A}o_B\iota_C\iota_{D)} && (\textbf{Type D}),
+\end{align*}
+in terms of the relevant adapted spin dyad $\lbrace \bmo, \bm\iota\rbrace$. This can be seen directly 
+by noting that the identity \eqref{RescaledWeylEquationDisplayed} satisfied by $\phi_{ABCD}$ is formally 
+identical to the Bianchi constraint and so the same computations as in \cite{WalkerPenrose70} follow through.
+An alternative approach to the construction of Killing spinor initial data equations would be attempt to determine under what conditions the Petrov type\mnotex{Need to move definition of Petrov type here} of the (rescaled) Weyl tensor restricted to $\mathcal{S}$ is propagated into the spacetime development. Later, we shall see that such a result follows as a product of our analysis ---see Corollary \ref{Corollary:PetrovPropagation}.}
 \end{remark}
-
 
   \section{Conformal twistor initial data}
   \label{conformalTwistorKID}
@@ -1233,7 +1268,7 @@ to substitute for the term $\square \phi _{ABCD}$.
 
 The relevant observation about equations
 \eqref{Hom_wave_HandB1}-\eqref{Hom_wave_HandB2} is that they
-constitute a closed system of \emph{regular and homogeneous}
+comprise a closed system of \emph{regular and homogeneous}
 wave equations for $\bmH$ and $\bmB$.
 Hence prescribing trivial intial data
 \[
@@ -1334,7 +1369,7 @@ discussed in \cite{GasVal15} simply by adding a tilde to the fields and
 setting $\Xi=1$.
 
 Arguably, one could try
-to use the theory of Fuchsian systems to see if the analogous of
+to use the theory of \textit{Fuchsian systems}, as used in \cite{ChrPaetz13,Pae14a}, to see if the analogous of
 Theorem \ref{TheoremHomogeneousWave} applies for the singular equation
 \eqref{WaveH_twistor_singular}.  However, one of the advantages of the
 conformal approach of the CFEs is that one deals with formally regular equations.
@@ -1924,8 +1959,7 @@ from which follows
 
 We return now to the task of expressing $
 \nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD}$ in terms of
-zero-quantities.\mnotex{Check the last equality ---had to typeset
-  manually} First, commuting derivatives and using equation
+zero-quantities. First, commuting derivatives and using equation
 \eqref{RescaledWeylEquationDisplayed} gives
 \mnotex{Problems with indices all over the place, here!}
 \begin{align}
@@ -2231,7 +2265,7 @@ Note that we recover the conditions from [], namely
 when $\Xi\neq 0$ on $\mathcal{U}$ (i.e. when $\mathcal{U}\cap \mathscr{I} = \emptyset $). On the other hand, note that the condition $\kappa_{(A}{}^F\Psi_{BCD)F}=0$ would trivialise if one were to evaluate it at some $p\in \mathscr{I}$, since the existence of a regular compactification necessarily implies that $\Psi_{ABCD}=0$ on $\mathscr{I}$.
 }
 \end{remark}
-
+\mnotex{Remove intrinsic Petrov type stuff to background sections.}
 \begin{remark}
   \emph{
   Since the fields comprising initial data for the CFEs contain the
@@ -2262,7 +2296,7 @@ when $\Xi\neq 0$ on $\mathcal{U}$ (i.e. when $\mathcal{U}\cap \mathscr{I} = \emp
 %%%%%%%% Lemma 1 of https://link.springer.com/article/10.1007/BF01649445
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{corollary}
+\begin{corollary}\label{Corollary:PetrovPropagation}
 Suppose that $\phi_{ABCD}$ is either Petrov (i) type N or (ii) type D on $\mathcal{U}$ and that 
 \begin{enumerate}[(i)]
 \item hello
@@ -2270,9 +2304,16 @@ Suppose that $\phi_{ABCD}$ is either Petrov (i) type N or (ii) type D on $\mathc
 \end{enumerate}
 Then, the spacetime development $\mathcal{D}^+(\mathcal{U})$ is of Petrov (i) type N, (ii) type D. 
 \end{corollary}
-
+\begin{proof}
+Hello world
+\end{proof}
 \begin{remark}{\em 
-The Petrov type can be encoded covariantly through the electric and magnetic parts as follows:
+Special Petrov type on $\mathcal{S}$ can be expressed covariantly using the electric and magnetic parts as $I^3 - 6J^2=0$ where
+\begin{align*}
+I &:= \phi_{ABCD}\phi^{ABCD} \equiv E_{ij}E^{ij} - B_{ij}B^{ij} + 2i E_{ij}B^{ij},\\
+J &:= \phi_{ABCD}\phi_{FG}{}^{CD}\phi^{ABFG} \equiv (E_{ij}E_k{}^jE^{ik} - 3E_{ij}B_k{}^jB^{ik}) + i(3B_{ij}E_j{}^jE^{ik} - B_{ij}B_k{}^kB^{ik}),
+\end{align*}
+with $E_{ij}, B_{ij}$ denoting the electric and magnetic parts of the rescaled Weyl tensor, respectively. Type $N$ corresponds to the special case $I=J=0$. 
 }
 \end{remark}
 
@@ -2366,7 +2407,7 @@ conformal boundary.
 
 \medskip
 
-Moreover, the applications of the core analysis of this artticle
+Moreover, the applications of the core analysis of this article
 are not restricted to the study of de Sitter-like spacetimes since the most delicate part of the analysis
 consisted on finding a system of homogeneous wave equations for
 $H_{A'ABC}$ and $B_{ABCD}$ and $F_{A'ABC}$ which are irrespective of
@@ -2376,7 +2417,7 @@ uniqueness result for wave equations of Theorem
 $\mathcal{S}$ is provided then $H_{A'ABC}$, $B_{ABCD}$ and $F_{A'ABC}$
 vanish on the domain of dependence of the data which constitutes the
 of the main technical tool to derive the main result.
-Nontheless, analogous theorems for the characteristic problem or
+Nonetheless, analogous theorems for the characteristic problem or
 the initial boundary value problem could be used to obtain similar
 conditions considering a null or timelike hypersurface as it has been done
 some applications of the Killing vector initial data equations and the
@@ -2580,6 +2621,11 @@ D.~A. Carranza \& J.~A. Valiente~Kroon,
 \newblock {\em Killing boundary data for anti-de Sitter-like spacetimes},
 \newblock Classical and Quantum Gravity {\bf 35}(15), 155011 (Jul 2018).
 
+\bibitem{ChrPaetz13}
+P.~T.~Chru\'{s}ciel \& T.-T.~Paetz, 
+\newblock {\em KIDs like cones},
+\newblock Classical and Quantum Gravity 30.23 (2013): 235036.
+
 \bibitem{ColRacVal18}
 M.~J. Cole, I.~Rácz, \& J.~A. Valiente~Kroon,
 \newblock {\em Killing spinor data on distorted black hole horizons and the
@@ -2741,6 +2787,11 @@ M.~E. Taylor,
 J.~A. {Valiente Kroon},
 \newblock {\em Conformal methods in General Relativity},
 \newblock Cambridge University Press, 2016.
+
+\bibitem{WalkerPenrose70}
+M.~Walker \& R.~Penrose,
+\newblock {\em On quadratic first integrals of the geodesic equations for type {22} spacetimes.}
+\newblock Communications in Mathematical Physics 18.4 (1970): 265-274.
 
 \bibitem{Wei90a}
 G.~Weinstein,
