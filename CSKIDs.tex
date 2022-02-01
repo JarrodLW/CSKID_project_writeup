@@ -854,7 +854,7 @@ $\delta_{abc}=0$ and $\lambda_{abc}=0$ encode the contracted second
 Bianchi identity. Finally, $Z=0$ is a constraint in the sense that if
 it is verified at one point $p\in\mathcal{M}$ then $Z=0$ holds in
 $\mathcal{M}$ by virtue of the previous equations.  A solution to the
-metric conformal Einstein field equations consist of a collection of
+metric conformal Einstein field equations consists of a collection of
 fields
 \[
 \{g_{ab}, \; \Xi, \; \nabla_{a}\Xi,s\;,L_{ab},\; d_{abcd}\}
@@ -1189,7 +1189,7 @@ $\nabla_D{}^{A'}H_{A'AB}$,
 \eqref{Curl_H_sym_toB_twistor} it follows that
 \begin{align}\label{derH_twistor_toBandQ}
 \nabla_{D}{}^{A'}H_{A'AB} = 2 \Xi B_{ABD}  + \tfrac{1}{3} Q_{B}
-\epsilon _{AD} + \tfrac{1}{3} Q_{A} \epsilon _{BD}
+\epsilon _{AD} + \tfrac{1}{3} Q_{A} \epsilon _{BD}.
 \end{align}
 Applying $\nabla_{D}{}^{B'}$ to the last expression, and using
 identity \eqref{DecomposeDoubleDerivativeContracted} along with the
@@ -1200,31 +1200,31 @@ renders
   \square H_{B'AB} = 6 \Lambda H_{B'AB} + 4 \Xi
   \nabla_{DB'}B_{AB}{}^{D} -4 B_{ABD} \nabla^{D}{}_{B'}\Xi -4
   \Phi_{(A}{}^{D}{}_{|B'}{}^{A'}H_{A'|B)D} + \tfrac{4}{3}
-  \nabla_{(A|B'|}Q_{B)}
+  \nabla_{(A|B'|}Q_{B)}.
 \end{equation}
 To derive a wave equation for $\bmB$, one applies the D'Alembertian operator
 $\square$ to the definition \eqref{Def_B_twistor} to obtain
 \begin{align}\label{pre_wave_B_twistor}
 \square B_{ABC} = \kappa ^{D} \square \phi _{ABCD} + \phi _{ABCD}
 \square \kappa ^{D} + 2 \nabla_{FA'}\phi _{ABCD} \nabla^{FA'}\kappa
-^{D}
+^{D}.
 \end{align}
 Substituting the definition \eqref{Def_B_twistor}, the identity
 \eqref{Q_to_box_twistor_candidate}, and the wave equation satisfied by
 the rescaled Weyl spinor \eqref{Wave_eq_CFE_Weyl} into the last expression gives
 \begin{equation}\label{wave_B_twistor}
 \square B_{ABC} = 10 \Lambda B_{ABC}  + H^{A'DF} \nabla_{FA'}\phi _{ABCD}  -6 \Xi B_{(A}{}^{DF}\phi
-_{BC)DF} + \tfrac{2}{3} \phi _{ABCD} Q^{D}
+_{BC)DF} + \tfrac{2}{3} \phi _{ABCD} Q^{D}.
 \end{equation}
 Observe that if $Q_{A}=0$, namely if the twistor candidate wave equation is imposed, then,
 $\bmH$ and $\bmB$ satisfy the following set of wave equations
 \begin{subequations}
 \begin{eqnarray}
   && \square H_{B'AB} = 6 \Lambda H_{B'AB} + 4 \Xi
-  \nabla_{DB'}B_{AB}{}^{D}  -4 B_{ABD} \nabla^{D}{}_{B'}\Xi   -4 \Phi_{(A}{}^{D}{}_{|B'}{}^{A'}H_{A'|B)D}
+  \nabla_{DB'}B_{AB}{}^{D}  -4 B_{ABD} \nabla^{D}{}_{B'}\Xi   -4 \Phi_{(A}{}^{D}{}_{|B'}{}^{A'}H_{A'|B)D},
    \label{Hom_wave_HandB1} \\
  && \square B_{ABC} = 10\Lambda B_{ABC} + H^{A'DF} \nabla_{FA'}\phi _{ABCD}  -6 \Xi B_{(A}{}^{DF}\phi
-_{BC)DF}  \label{Hom_wave_HandB2}
+_{BC)DF}.  \label{Hom_wave_HandB2}
 \end{eqnarray}
 \end{subequations}
 Notice that the only place where the CFEs ---in their wave equation form---
@@ -1609,7 +1609,7 @@ a closed homogeneous wave system for $(\bmH, \bmB, \bmF)$.
 
 \subsection{Auxiliary quantities and the Killing spinor candidate equation}
 
-Analogously as in the twistor case, it will prove useful to define the
+By analogy with the twistor case, it will prove useful to define the
 following auxiliary quantity,
 \begin{equation}
   \mathcal{Q}_{BC} := \tfrac{1}{2}\nabla^{AA'}H_{A'ABC}.
@@ -1712,7 +1712,7 @@ factor $\Xi$ encoded in the CFE zero quantity
 %%%%%%%%%%%%%%%%%%%%
 \begin{multline}\label{conformalKillingvector}
   \nabla_{AA'}X_{BB'}+\nabla_{BB'}X_{AA'}-\tfrac{1}{2}\epsilon_{AB}\epsilon_{A'B'}\nabla^{CC'}X_{CC'}
-  =-\Xi \nabla^Q{}_{(A'}H_{B')(AB)Q} + 2H_{(A'|(AB)}{}^{C}\nabla_{C|B')}\Xi.
+  =-\Xi \nabla^Q{}_{(A'}H_{B')(AB)Q} + 2\nabla_{C(A'}H_{B')AB}{}^{C}.
 \end{multline}
 Therefore, if $\bm\kappa$ is a Killing spinor of $(\mathcal{M},\bmg)$ then
 the zero-quantities $\bmH$ and $\bmQ$ vanish and hence the right-hand
@@ -1726,7 +1726,7 @@ Applying $\nabla^A{}_{B'}$ to equation
 \eqref{eq:non-KillingVectorExplained} one obtains the following wave
 equation:
 \begin{multline}
-    \square H_{B'ABC} = 6 \Lambda H_{B'ABC} - 12 \Xi F_{B'ABC} - 12 B_{ABCD} \nabla^{D}{}_{B'}\Xi \\+ 3\nabla_{(A|B'|}\mathcal{Q}_{BC)} - 6 \Phi_{(A}{}^{D}{}_{|B'}{}^{A'}H_{A'|BC)D}
+    \square H_{B'ABC} = 6 \Lambda H_{B'ABC} - 12 \Xi F_{B'ABC} - 12 B_{ABCD} \nabla^{D}{}_{B'}\Xi \\+ 3\nabla_{(A|B'|}\mathcal{Q}_{BC)} - 6 \Phi_{(A}{}^{D}{}_{|B'}{}^{A'}H_{A'|BC)D}.
 \end{multline}
 Similarly, applying $\nabla_A{}^{A'}$ to equation
 \eqref{Eq:DefZeroQuantityF}, it is straightforward to verify the
@@ -1784,7 +1784,7 @@ $B_{ABCD}$:
 \begin{equation}
     \square B_{ABCD} = \tfrac{2}{3}\nabla_{\bm\xi}\phi_{ABCD} +
     8\Lambda B_{ABCD} - 14\Xi \phi_{(AB}{}^{FG}B_{CD)FG} +
-    \tfrac{2}{3}(\nabla_{FA'}\phi_{G(ABC})H^{A'}{}_{D)}{}^{FG}\label{Eq:SecondWaveEqForB}
+    \tfrac{2}{3}(\nabla_{FA'}\phi_{G(ABC})H^{A'}{}_{D)}{}^{FG}. \label{Eq:SecondWaveEqForB}
 \end{equation}
 %%%%%%
 %%\mnotex{EG: moved remarks to the end of the section to make the text better flow}
@@ -1819,7 +1819,6 @@ $B_{ABCD}$:
 \begin{remark}
   \emph{
     \mnotex{Query about Weyl versus rescaled Weyl in physical spacetime. EG: I think it was correct as you originally wrote it :)  }
-  \mnotex{Check that the signs are correct}
 Equation \eqref{Eq:SecondWaveEqForB} actually encodes the fact that, \emph{given a Killing spinor} $\kappa_{AB}$, the field $\xi_{AA'}$ is a collineation for the rescaled Weyl tensor ---i.e. that
 \[  \mathcal{L}_{\bm\xi}\phi_{ABCD} := \nabla_{\bm\xi}\phi_{ABCD} + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'}=0,\] 
 the definition\footnote{The Lie derivative does not extend to spinor fields, in general [].} of the ``Lie derivative" being derived from the spinorialised counterpart of
@@ -1848,27 +1847,26 @@ for the physical spacetime it is clear that this condition holds
 since in that case $\tilde{\xi}_{AA'}$ is a Killing vector and thus
 $\mathcal{L}_{\bm{\tilde{\xi}}}C_{abcd}=0$, trivially.\mnotex{Should be a tilde over the C?}
 }
-
 \end{remark}
-\begin{remark}\mnotex{Is this the right place for this remark? It kind of disrupts the flow, I think.} \emph{
-  If $\tilde{\kappa}_{AB}$ is a Killing spinor in the the physical
-  spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$ then $\tilde{X}_{AA'} :=
-  \nabla_A{}^{Q'}\tilde{\kappa}_{BA'}$  is a Killing
-  vector in the physical spacetime.  It is direct to check that
-  $X_{AA'}=\Xi^2 \tilde{X}_{AA'}$ is a conformal Killing vector in the
-  unphysical spacetime $(\mathcal{M},\bmg)$ with
-  $\bmg=\Xi^2\tilde{\bmg}$.  Hence, given that
-  $\kappa_{AB}=\Xi^{2}\tilde{\kappa}_{AB}$ a calculation using the
-  conformal transformation rules for the connection gives the following expression for the 
-  conformal Killing vector on the unphysical spacetime:
-\[
-X_{AA'}=\Xi \xi_{AA'} - 3 \kappa_{AQ}\nabla_{A'}{}^{Q}\Xi.
-\]
-Indeed, one finds
-\[\nabla_{AA'}X_{BB'}+\nabla_{BB'}X_{AA'} - \tfrac{1}{2}\epsilon_{AB}\epsilon_{A'B'}\nabla^{CC'}X_{CC'} = 2(\nabla_{C(A'}\Xi)H_{B')AB}{}^C - \Xi \nabla^C{}_{(A'}H_{B')ABC} \]
-by a straightforward calculation. 
-}
-\end{remark}
+%\begin{remark}\mnotex{Is this the right place for this remark? It kind of disrupts the flow, I think.} \emph{
+%  If $\tilde{\kappa}_{AB}$ is a Killing spinor in the the physical
+%  spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$ then $\tilde{X}_{AA'} :=
+%  \nabla_A{}^{Q'}\tilde{\kappa}_{BA'}$  is a Killing
+%  vector in the physical spacetime.  It is direct to check that
+%  $X_{AA'}=\Xi^2 \tilde{X}_{AA'}$ is a conformal Killing vector in the
+%  unphysical spacetime $(\mathcal{M},\bmg)$ with
+%  $\bmg=\Xi^2\tilde{\bmg}$.  Hence, given that
+%  $\kappa_{AB}=\Xi^{2}\tilde{\kappa}_{AB}$ a calculation using the
+%  conformal transformation rules for the connection gives the following expression for the 
+%  conformal Killing vector on the unphysical spacetime:
+%\[
+%X_{AA'}=\Xi \xi_{AA'} - 3 \kappa_{AQ}\nabla_{A'}{}^{Q}\Xi.
+%\]
+%Indeed, one finds
+%\[\nabla_{AA'}X_{BB'}+\nabla_{BB'}X_{AA'} - \tfrac{1}{2}\epsilon_{AB}\epsilon_{A'B'}\nabla^{CC'}X_{CC'} = 2(\nabla_{C(A'}\Xi)H_{B')AB}{}^C - \Xi \nabla^C{}_{(A'}H_{B')ABC} \]
+%by a straightforward calculation. 
+%}
+%\end{remark}
 
 %\begin{remark}
 %  \emph{
@@ -2054,45 +2052,45 @@ evolved according to the Killing spinor candidate wave equation encoded in $Q_{A
 
 
 
-\begin{remark}
+%\begin{remark}
   %%%%
   %%%% \mnotex{Check that the signs are correct. EG: it is}
   %%%%
-  \emph{
-  In general, the Lie derivative (along non-conformal Killing vectors) 
-  does not extend to spinor fields   ---see
-  \cite{PenRin86} for a discussion. Nontheless, one can
-  define the following shorthand
-\[ \mathcal{L}_{\bm\xi}\phi_{ABCD} := \nabla_{\bm\xi}\phi_{ABCD} + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'},\]
-which is simply the spinorialised counterpart of
-$\mathcal{L}_{\bm\xi}d_{abcd}$. One can then show the following
-relation between this shorthand and the Killing spinor zero-quantities,
-\begin{align*}
-    \mathcal{L}_{\bm\xi}\phi_{ABCD}&:= \nabla_{\bm\xi}\phi_{ABCD}
-    + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'} \\ &=
-    \nabla_{\bm\xi}\phi_{ABCD}-6\Lambda \kappa_{(D}{}^{F} \phi_{ABC)F}
-    - \tfrac{3}{2} \Xi \ \kappa^{FG} \phi_{(ABC}{}^{H} \phi_{D)FGH} +
-    \tfrac{1}{4} \phi_{F(ABC} \ Q_{D)}{}^{F}\\ &=
-    \nabla_{\bm\xi}\phi_{ABCD}-6\Lambda B_{ABCD} - 3\Xi
-    \phi_{(AB}{}^{FG}B_{CD)FG} + \tfrac{1}{4}\phi_{F(ABC}Q_{D)}{}^F
-\end{align*}
-where we are using equation \eqref{Eq:DecompGradXi}, along with the identity
-\eqref{Eq:UsefulIdentity2}. Therefore, given a Killing spinor $\kappa_{AB}$,
-the resulting zero quantities vanish:
-$B_{ABCD}=H_{A'ABC}=Q_{AB}=0$, and hence it follows from
-\eqref{Eq:SecondWaveEqForB} that
-\begin{equation}\mathcal{L}_{\bm\xi}\phi_{ABCD} = \nabla_{\bm\xi}\phi_{ABCD} =0. \label{Collineation}
-\end{equation}
-Thus, a sub-product of our analysis is that if $(\mathcal{M},\bmg)$
-admits a Killing spinor, then the Weyl-collineation condition
-\eqref{Collineation} is satisfied.  This is not trivial since the
-vector $\xi_{AA'}$ is not, in general, a
-conformal Killing vector. In contrast,
-for the physical spacetime is clear that this condition holds 
-since in that case $\tilde{\xi}_{AA'}$ is a Killing vector and thus
-$\mathcal{L}_{\bm{\tilde{\xi}}}C_{abcd}=0$, trivially.
-}
-\end{remark}
+%  \emph{
+ % In general, the Lie derivative (along non-conformal Killing vectors) 
+%  does not extend to spinor fields   ---see
+%  \cite{PenRin86} for a discussion. Nontheless, one can
+%  define the following shorthand
+% \[ \mathcal{L}_{\bm\xi}\phi_{ABCD} := \nabla_{\bm\xi}\phi_{ABCD} + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'},\]
+% which is simply the spinorialised counterpart of
+% $\mathcal{L}_{\bm\xi}d_{abcd}$. One can then show the following
+% relation between this shorthand and the Killing spinor zero-quantities,
+% \begin{align*}
+%    \mathcal{L}_{\bm\xi}\phi_{ABCD}&:= \nabla_{\bm\xi}\phi_{ABCD}
+%    + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'} \\ &=
+%    \nabla_{\bm\xi}\phi_{ABCD}-6\Lambda \kappa_{(D}{}^{F} \phi_{ABC)F}
+%    - \tfrac{3}{2} \Xi \ \kappa^{FG} \phi_{(ABC}{}^{H} \phi_{D)FGH} +
+%    \tfrac{1}{4} \phi_{F(ABC} \ Q_{D)}{}^{F}\\ &=
+%    \nabla_{\bm\xi}\phi_{ABCD}-6\Lambda B_{ABCD} - 3\Xi
+%    \phi_{(AB}{}^{FG}B_{CD)FG} + \tfrac{1}{4}\phi_{F(ABC}Q_{D)}{}^F
+%\end{align*}
+%where we are using equation \eqref{Eq:DecompGradXi}, along with the identity
+%\eqref{Eq:UsefulIdentity2}. Therefore, given a Killing spinor $\kappa_{AB}$,
+%the resulting zero quantities vanish:
+%$B_{ABCD}=H_{A'ABC}=Q_{AB}=0$, and hence it follows from
+%\eqref{Eq:SecondWaveEqForB} that
+%\begin{equation}\mathcal{L}_{\bm\xi}\phi_{ABCD} = \nabla_{\bm\xi}\phi_{ABCD} =0. \label{Collineation}
+%\end{equation}
+%Thus, a sub-product of our analysis is that if $(\mathcal{M},\bmg)$
+%admits a Killing spinor, then the Weyl-collineation condition
+%\eqref{Collineation} is satisfied.  This is not trivial since the
+%vector $\xi_{AA'}$ is not, in general, a
+%conformal Killing vector. In contrast,
+%for the physical spacetime is clear that this condition holds 
+%since in that case $\tilde{\xi}_{AA'}$ is a Killing vector and thus
+%$\mathcal{L}_{\bm{\tilde{\xi}}}C_{abcd}=0$, trivially.
+%}
+%\end{remark}
 
 \subsection{Intrinsic (CKSID) conditions}
 \label{IntrinsicCKSID}
@@ -2141,7 +2139,6 @@ $\nabla_{\bm\tau} H_{B'ABC}\big\vert_{\mathcal{S}}=0$.
 Now we move onto analysing the constraints imposed by $B_{ABCD}$ and
 its time derivative on $\mathcal{S}$.  A similar computation to the
 twistor case yields
->>>>>>> main
 \begin{equation}
     \nabla_{\bm\tau} B_{ABCD} = 2
     \kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} +
