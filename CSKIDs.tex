@@ -574,10 +574,11 @@ related identity which will be systematically used in the following
 discussion is
 \begin{equation}\label{DecomposeDoubleDerivativeContracted}
 \nabla_{AQ'}\nabla_{B}{}^{Q'}=\square_{AB}+
-\frac{1}{2}\epsilon_{AB}\square,
+\tfrac{1}{2}\epsilon_{AB}\square,
 \end{equation}
 where $\square_{AB}$ is the symmetric operator defined above and
 $\square := \nabla_{AA'}\nabla^{AA'}.$
+\medskip 
 
 To have a self-contained discussion the space spinor
 formalism, originally introduced in \cite{Som80}, is briefly recalled
@@ -590,7 +591,7 @@ $\tau_{AA'}\tau^{AA'}=2$ and, consequently,
 Given a spacetime spinor $u_{AA'}$, its space spinor decomposition
 reads
 \[
-u_{AA'}= \frac{1}{2}\tau_{AA'}u-\tau^{B}{}_{A'}u_{(AB)},
+u_{AA'}= \tfrac{1}{2}\tau_{AA'}u-\tau^{B}{}_{A'}u_{(AB)},
 \]
 where $u:=\tau^{AA'}W_{AA'}$ and $u_{(AB)}:=\tau_{(A}{}^{B'}u_{B)B'}$.
 This split extends to higher valence spinors in an analogous way
@@ -599,15 +600,13 @@ the covariant derivative $\nabla_{AA'}$ is then decomposed into the
 \emph{normal} and \emph{Sen} derivatives:
 \begin{align*}
   %& \mathcal{P}
-  &\nabla_{\bm\tau} := \tau^{AA'}\nabla_{AA'},\\ & \mathcal{D}_{AB}:=
+  \nabla_{\bm\tau} := \tau^{AA'}\nabla_{AA'},\qquad  \mathcal{D}_{AB}:=
   \tau_{(A}{}^{A'}\nabla_{B)A'}.
 \end{align*}
 Though we will not need them here, for completeness we note that the \emph{Weingarten} spinor and the \emph{acceleration} of the
 congruence are then defined by
-\begin{align*}
-& K_{ABCD} := \tau_{D}{}^{C'} \mathcal{D}_{AB}\tau_{CC'},\\ &
-  K_{AB} := \tau_{B}{}^{C'} \nabla_{\bm\tau}\tau_{AC'}.
-\end{align*}
+\[K_{ABCD} := \tau_{D}{}^{C'} \mathcal{D}_{AB}\tau_{CC'},\qquad K_{AB} := \tau_{B}{}^{C'} \nabla_{\bm\tau}\tau_{AC'}.
+\]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%\mnotex{these are not really used so
 %% I cutted some of the discussion to make it more brief}
@@ -618,15 +617,12 @@ congruence are then defined by
 %%   \mathcal{D}_{AB}\tau_{CA'} = - K_{ABCD} \tau^{D}{}_{A'}.
 %% \end{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 The distribution induced by $\tau_{AA'}$ is integrable if and only
 $K^D{}_{(AB)D}=0$, in which case $K_{ABCD}$ describes the extrinsic
-curvature of the resulting foliation.
- Nevertheless, this is not required for our subsequent discussion.
-In other words, we will allow
- the possibility that the distribution is non-integrable
----i.e. the spinor $ K^D{}_{(AB)D}$ will not be assumed
-to vanish.
+curvature of the resulting foliation. Nevertheless, this is not required for our subsequent discussion; we will allow
+ for the possibility that the distribution is non-integrable.\mnotex{Is this true? Do we really not need an integrable manifold.}
+%---i.e. the spinor $ K^D{}_{(AB)D}$ will not be assumed
+%to vanish.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%\mnotex{these are not really used so
 %% I cutted some of the discussion to make it more brief}
@@ -656,7 +652,6 @@ Levi-Civita connection.  Later, we will reserve the $\tilde{\cdot}$
 notation for a vacuum spacetime ---that is to say, a solution of the
 vacuum Einstein field equations \eqref{EFEVacuum}. We note however
 that, in the present section, no such restriction is necessary.
-
 \medskip
 
 A totally symmetric
@@ -687,7 +682,6 @@ $\tilde{\kappa}_{AB}=\tilde{\kappa}_{(AB)}$, is a \textit{Killing
 \begin{equation}
 \tilde{\nabla}_{A'(A}\tilde{\kappa}_{BC)}=0.
 \end{equation}
-
 The Killing spinor equation and twistor equations are, in general,
 overdetermined; in particular, they imply the so-called
 \textit{Buchdahl constraint}.  In the twistor case ($p=1$) this has
@@ -713,8 +707,7 @@ by
 In the type D case, choosing an 
 adapted dyad $\lbrace \bmo, \bm\iota\rbrace$ for which $\psi_{ABCD}=\psi o_{(A}o_{B}\iota_C\iota_{D)}$
 \[\tilde{\kappa}_{AB} = \psi^{-1/3}o_{(A}\iota_{B)}\]
-is a Killing spinor. Indeed, the fact that the Killing spinor equation is satisfied follows from the Bianchi identity $\nabla^A{}_{A'}\Psi_{ABCD}=0$ ---see \cite{WalkerPenrose70} for more details. 
-
+is a Killing spinor. Indeed, the fact that the Killing spinor equation is satisfied follows from the Bianchi identity $\tilde{\nabla}^A{}_{A'}\Psi_{ABCD}=0$ ---see \cite{WalkerPenrose70} for more details. 
 \medskip
 
 At first glance, the conformal invariance property of the Killing
@@ -748,9 +741,6 @@ in the physical (non-conformal) framework if one is to include matter
 such as the Maxwell field and the analysis of \cite{GarVal08c} does
 not straighfowardly apply since further conditions (the matter
 alignment conditions) ---see \cite{ValCol16}--- need to be propagated.
-
-
-
 \begin{remark}
   \emph{
   The notion of Killing spinors is related to that
@@ -765,8 +755,6 @@ $\tilde{\nabla}_{(a}\tilde{\Upsilon}_{b)c}=0$--- as follows
 given a Killing--Yano tensor, one can construct a Killing spinor
 ---see \cite{ValCol16,McLBer93,PenRin86}.}
 \end{remark}
-
-
 \medskip
 
 From now on, $(\tilde{\mathcal{M}},\tilde{\bmg})$ will be reserved to
@@ -790,9 +778,6 @@ $\varphi:
 
 \subsection{The  conformal Einstein field equations}
 \label{Sec:CFEs}
-
-
-\medskip
 
 This section contains an abriged discussion of the conformal Einstein
 field equations.  At the end of this section the main technical
@@ -844,7 +829,7 @@ where $\Xi$ is the conformal factor, $L_{ab}$ is the Schouten tensor,
 defined in terms of the Ricci tensor $R_{ab}$ and the Ricci scalar $R$
 via
 \begin{equation}\label{SchoutenDefinition}
-L_{ab}=\frac{1}{2}R_{ab}-\frac{1}{12}Rg_{ab},
+L_{ab}=\tfrac{1}{2}R_{ab}-\tfrac{1}{12}Rg_{ab},
 \end{equation}
  $s$ is the so-called \emph{Friedrich scalar} defined as
 \begin{equation}\label{s-definition}
@@ -968,7 +953,6 @@ where $\bmd$ and $\bmd^*$ are the \textit{electric} and \textit{magnetic} parts
    For the discussion of this paper we will
    assume that such data has been already determined.}
 \end{remark}
-
 The CFEs as previously presented can be regarded as a set of covariant
 conditions for geometric fields on $(\mathcal{M},\bmg)$ and, hence,
 they do not have a particular PDE character.  However, there are,
@@ -999,7 +983,6 @@ The evolution and constraint equations associated to the other
 zero-quantities depend on the particular gauge fixing strategy and
 will not play a relevant role for the discussion in the forthcoming
 sections.
-
 \medskip
 
 The CFEs are usually presented as the first-order system
@@ -1082,7 +1065,7 @@ Analogous to the physical case, given an algebraically-special $\phi_{ABCD}$,
 one can give an explicit construction of a Killing spinor, namely
 \begin{align*}
 & \kappa_{AB} = o_A o_B && (\textbf{Type N}),\\
-& \kappa_{AB} = \psi^{-1/3}o_{(A}o_B\iota_C\iota_{D)} && (\textbf{Type D}),
+& \kappa_{AB} = \phi^{-1/3}o_{(A}o_B\iota_C\iota_{D)} && (\textbf{Type D}),
 \end{align*}
 in terms of the relevant adapted spin dyad $\lbrace \bmo, \bm\iota\rbrace$. This can be seen directly 
 by noting that the identity \eqref{RescaledWeylEquationDisplayed} satisfied by $\phi_{ABCD}$ is formally 
@@ -1723,8 +1706,8 @@ factor $\Xi$ encoded in the CFE zero quantity
 \end{multline}
 Therefore, if $\bm\kappa$ is a Killing spinor of $(\mathcal{M},\bmg)$ then
 the zero-quantities $\bmH$ and $\bmQ$ vanish and hence the right-hand
-side of equation \eqref{conformalKillingvector} vanishes which implies
-that $\bmX$ is a conformal Killing vector of the unphysical spacetime $(\mathcal{M},\bmg)$.  }
+side of equation \eqref{conformalKillingvector} vanishes, implying
+that $\bmX$ is a conformal Killing vector for the unphysical spacetime $(\mathcal{M},\bmg)$.  }
 \end{remark}
 
 \subsection{Wave equations for the zero-quantities}
@@ -1733,7 +1716,7 @@ Applying $\nabla^A{}_{B'}$ to equation
 \eqref{eq:non-KillingVectorExplained} one obtains the following wave
 equation:
 \begin{multline}
-    \square H_{B'ABC} = 6 \Lambda H_{B'ABC} - 12 \Xi F_{B'ABC} - 12 B_{ABCD} \nabla^{D}{}_{B'}\Xi \\+ 3\nabla_{(A|B'|}\mathcal{Q}_{BC)} - 6 \Phi_{(A}{}^{D}{}_{|B'}{}^{A'}H_{A'|BC)D}.
+    \square H_{B'ABC} = 6 \Lambda H_{B'ABC} - 12 \Xi F_{B'ABC} - 12\nabla^{D}{}_{B'}\Xi  B_{ABCD} \\+ 3\nabla_{(A|B'|}\mathcal{Q}_{BC)} - 6 \Phi_{(A}{}^{D}{}_{|B'}{}^{A'}H_{A'|BC)D}.
 \end{multline}
 Similarly, applying $\nabla_A{}^{A'}$ to equation
 \eqref{Eq:DefZeroQuantityF}, it is straightforward to verify the
