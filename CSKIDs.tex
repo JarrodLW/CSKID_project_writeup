@@ -270,7 +270,7 @@ Symmetry assumptions are usually incorporated into
  uniqueness results such as \cite{Rob75b}.  Closely related to the
  black hole uniqueness problem, characterisations and classifications
  of solutions to the Einstein field equations usually exploit the
- symmetries of the spacetime in one way or another, e.g., in the
+ symmetries of the spacetime in one way or another, e.g. in the
  characterisations of the Kerr spacetime via the \emph{Mars-Simon
  tensor} ---see \cite{Mar99,Mar00,Sim84}.  On the other hand, from the
  point of view of the Cauchy problem, symmetry assumptions should be
@@ -707,7 +707,7 @@ by
 In the type D case, choosing an 
 adapted dyad $\lbrace \bmo, \bm\iota\rbrace$ for which $\psi_{ABCD}=\psi o_{(A}o_{B}\iota_C\iota_{D)}$
 \[\tilde{\kappa}_{AB} = \psi^{-1/3}o_{(A}\iota_{B)}\]
-is a Killing spinor. Indeed, the fact that the Killing spinor equation is satisfied follows from the Bianchi identity $\tilde{\nabla}^A{}_{A'}\Psi_{ABCD}=0$ ---see \cite{WalkerPenrose70} for more details. 
+is a Killing spinor. Indeed, the fact that the Killing spinor equation is satisfied follows from the Bianchi identity $\tilde{\nabla}^A{}_{A'}\Psi_{ABCD}=0$ ---see \cite{PenRin84, WalkerPenrose70} for more details. 
 \medskip
 
 At first glance, the conformal invariance property of the Killing
@@ -911,16 +911,17 @@ defined as
  ---see \cite{Ste91, PenRin84} for more details. 
  \begin{remark}
  \label{G-C-M-Remark}
+ \mnotex{Change to $E, B$}
    \emph{The initial data for $\phi_{ABCD}$ is determined using the Gauss-Codazzi and Codazzi-Mainardi equations. First decompose 
    \[ \phi_{ABCD}=d_{ABCD}+id^*_{ABCD}\]
 where $\bmd$ and $\bmd^*$ are the \textit{electric} and \textit{magnetic} parts
    \[
    d_{ABCD} := \phi_{ABCD} + i\hat{\phi}_{ABCD},\qquad d^*_{ABCD} := \phi_{ABCD} - i\hat{\phi}_{ABCD},
   \]
-  with $\hat{\phi}_{ABCD}:=\tau_A{}^{A'}\tau_B{}^{B'}\tau_C{}^{C'}\tau_D{}^{D'}\bar{\phi}_{A'B'C'D'}$. The fields $\bmd,\bmd^*$ are the spinorial counterparts of the electric and magnetic parts of the rescaled Weyl tensor
+  with $\hat{\phi}_{ABCD}:=\tau_A{}^{A'}\tau_B{}^{B'}\tau_C{}^{C'}\tau_D{}^{D'}\bar{\phi}_{A'B'C'D'}$. The fields $\bmd,\bmd^*$ are the spinorial counterparts of the electric and magnetic parts of the rescaled Weyl tensor, which away from $\mathscr{I}$ are determined by the Gauss--Codazzi--Mainardi equations
    \begin{eqnarray*}
-  && d_{ij} = r_{\lbrace ij\rbrace} + KK_{\lbrace ij\rbrace} - K_{\lbrace i}{}^k K_{j\rbrace k},\\
-  && d^*_{ij} = 
+  && d_{ij} = \Xi^{-1}(r_{\lbrace ij\rbrace} + KK_{\lbrace ij\rbrace} - K_{\lbrace i}{}^k K_{j\rbrace k}),\\
+  && d^*_{ij} = \Xi^{-1}()
    \end{eqnarray*}
    by the
    initial data $(\mathcal{S}, \bmh, \bmK, \Omega, \Sigma)$. Here
@@ -936,22 +937,20 @@ where $\bmd$ and $\bmd^*$ are the \textit{electric} and \textit{magnetic} parts
    %%%%%%%%%%%%%%%%%%%%%%%%%
    %%In particular,
    For the asymptotic initial value problem, the constraint equations
-   implied by the CFEs adquire a particularly simple form so that
+   implied by the CFEs acquire a particularly simple form so that
    initial data for the magnetic part of the rescaled Weyl tensor is
    determined algebraically by 
    %%%%
    %%$y_{ij}$,
    %%%
-   the Bach tensor of $h_{ij}$, while the
-   electric part of the rescaled Weyl tensor satisfies $D^id_{ij}=0$
+   the Bach tensor of $h_{ij}$ as follows
+   \[d^*_{ij} =  \]
+   while the
+   electric part of the rescaled Weyl tenso, prescribed as initial data, is a solution to $D^id_{ij}=0$ (i.e. a \textit{TT} tensor)
    where $D_i$ is the Levi-Civita connection of $h_{ij}$ ---see
-   \cite{CFEbook, GasVal17a}. More precisely, $\bmd,\bmd^*$ take the forms
-   \begin{eqnarray*}
-   && d_{ij} = ,\\
-   && d^*_{ij} = 
-   \end{eqnarray*}
+   \cite{CFEbook, GasVal17a}.
    For the discussion of this paper we will
-   assume that such data has been already determined.}
+   assume that such data $\bmd, \bmd^*$ has been already determined.}
 \end{remark}
 The CFEs as previously presented can be regarded as a set of covariant
 conditions for geometric fields on $(\mathcal{M},\bmg)$ and, hence,
@@ -1070,7 +1069,7 @@ one can give an explicit construction of a Killing spinor, namely
 in terms of the relevant adapted spin dyad $\lbrace \bmo, \bm\iota\rbrace$. This can be seen directly 
 by noting that the identity \eqref{RescaledWeylEquationDisplayed} satisfied by $\phi_{ABCD}$ is formally 
 identical to the Bianchi constraint and so the same computations as in \cite{WalkerPenrose70} follow through.
-An alternative approach to the construction of Killing spinor initial data equations would be attempt to determine under what conditions the Petrov type\mnotex{Need to move definition of Petrov type here} of the (rescaled) Weyl tensor restricted to $\mathcal{S}$ is propagated into the spacetime development. Later, we shall see that such a result follows as a product of our analysis ---see Corollary \ref{Corollary:PetrovPropagation}.}
+An alternative approach to the construction of Killing spinor initial data equations would be attempt to determine under what conditions the Petrov type of the (rescaled) Weyl tensor restricted to $\mathcal{S}$ is propagated into the spacetime development. Later, we shall see that such a result follows as a product of our analysis ---see Corollary \ref{Corollary:PetrovPropagation}.}
 \end{remark}
 
   \section{Conformal twistor initial data}
@@ -2243,34 +2242,31 @@ Hello world
 \end{proof}
 
 \begin{remark}{\em 
-Note that we recover the conditions from [], namely 
-\[\tilde{\mathcal{D}}_{(AB}\tilde{\kappa}_{CD)}=0, \qquad \tilde{\kappa}_{(A}{}^F\tilde{\Psi}_{BCD)F}=0, \]
+Note that we recover the conditions from \cite{BaeVal10a}, namely 
+\[\tilde{\mathcal{D}}_{(AB}\tilde{\kappa}_{CD)}=0, \qquad \tilde{\kappa}_{(A}{}^F
+\Psi_{BCD)F}=0, \]
 when $\Xi\neq 0$ on $\mathcal{U}$ (i.e. when $\mathcal{U}\cap \mathscr{I} = \emptyset $). On the other hand, note that the condition $\kappa_{(A}{}^F\Psi_{BCD)F}=0$ would trivialise if one were to evaluate it at some $p\in \mathscr{I}$, since the existence of a regular compactification necessarily implies that $\Psi_{ABCD}=0$ on $\mathscr{I}$.
 }
 \end{remark}
-\mnotex{Remove intrinsic Petrov type stuff to background sections.}
 \begin{remark}
   \emph{
   Since the fields comprising initial data for the CFEs contain the
   rescaled Weyl spinor, one can use the initial datum
   $\phi_{ABCD}|_{\mathcal{S}}$ to formally define the Petrov type of
-  an initial data set for the CFEs. If $\phi_{ABCD}$ is of type N or D on $\mathcal{U}$, then 
+  an initial data set for the CFEs. This can be expressed covariantly using the electric and magnetic parts as $I^3 - 6J^2=0$, where
+\begin{align*}
+I &:= \phi_{ABCD}\phi^{ABCD} \equiv E_{ij}E^{ij} - B_{ij}B^{ij} + 2i E_{ij}B^{ij},\\
+J &:= \phi_{AB}{}^{CD}\phi_{CD}{}^{FG}\phi^{FG}{}^{AB} \equiv (E_{ij}E_k{}^jE^{ik} - 3E_{ij}B_k{}^jB^{ik}) + i(3B_{ij}E_j{}^jE^{ik} - B_{ij}B_k{}^kB^{ik}),
+\end{align*}
+with $E_{ij}, B_{ij}$ denoting the electric and magnetic parts of the rescaled Weyl tensor, respectively. Type $N$ corresponds to the special case $I=J=0$. If $\phi_{ABCD}$ is of type N or D on $\mathcal{U}$, then 
   it is tempting to make use of () and write the Killing spinor candidate explicitly as
-  \[\kappa_{AB} = \kappa_{A}\kappa_B = o_{A}o_{B}  \qquad (\textbf{Type N})\]
-  \[\kappa_{AB} = \phi^{-3/2} o_{(A}\iota_{B)} \qquad (\textbf{Type D})\] 
+%  \[\kappa_{AB} = \kappa_{A}\kappa_B = o_{A}o_{B}  \qquad (\textbf{Type N})\]
+%  \[\kappa_{AB} = \phi^{-3/2} o_{(A}\iota_{B)} \qquad (\textbf{Type D})\] 
   While the $\bm0\bm0\bm0\bm1$, $\bm0\bm0\bm1\bm1$ and $\bm0\bm1\bm1\bm1$ components of ()
   all vanish ---to see this, compare \eqref{SpatialSenTypeD0001}--\eqref{SpatialSenTypeD0111} and \eqref{WeylConstraint00}--\eqref{WeylConstraint11} in the appendix--- the extremal spin components of () are not guaranteed simply as a consequence of the above expression for $\kappa_{AB}$. Hence, the conditions of Theorem \ref{Theorem_KS} are more restrictive than simply assuming that the Petrov type on $\mathcal{U}$ be N or D. The remaining two components are however encoded by the $\bm0\bm0\bm0\bm0$ and $\bm1\bm1\bm1\bm1$-components of the evolution equation $\nabla_{\bm\tau}\phi_{ABCD}=2\mathcal{D}_{(A}{}^F\phi_{BCD)F}$ \emph{if} one assumes that the Petrov type extends to the spacetime development, which is of course against the spirit of what we are aiming for here. 
-    }\mnotex{I don't think this is quite right.}
+    }
 \end{remark}
 
-\mnotex{Killing spinor $\implies$ special Petrov type.  (Buchdahl constraint) \checkmark}
-\mnotex{ For the \textbf{physical spacetime},
-  special Petrov type  $\implies$ Killing spinor \checkmark.
-  See references inside tex file. Is this also true for the unphysical spacetime?
-  I think it is not true in general but it is true in our conformal set up
-  ... replacing $\psi$ with $\phi$, the proof should be identical...
-   see Vol2 of \cite{PenRin84} page 107 and references there in.
-  To be discussed. }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%% References %%%%%%
 %%%%%%%% https://arxiv.org/pdf/2101.00856.pdf
@@ -2290,15 +2286,6 @@ Then, the spacetime development $\mathcal{D}^+(\mathcal{U})$ is of Petrov (i) ty
 \begin{proof}
 Hello world
 \end{proof}
-\begin{remark}{\em 
-Special Petrov type on $\mathcal{S}$ can be expressed covariantly using the electric and magnetic parts as $I^3 - 6J^2=0$ where
-\begin{align*}
-I &:= \phi_{ABCD}\phi^{ABCD} \equiv E_{ij}E^{ij} - B_{ij}B^{ij} + 2i E_{ij}B^{ij},\\
-J &:= \phi_{ABCD}\phi_{FG}{}^{CD}\phi^{ABFG} \equiv (E_{ij}E_k{}^jE^{ik} - 3E_{ij}B_k{}^jB^{ik}) + i(3B_{ij}E_j{}^jE^{ik} - B_{ij}B_k{}^kB^{ik}),
-\end{align*}
-with $E_{ij}, B_{ij}$ denoting the electric and magnetic parts of the rescaled Weyl tensor, respectively. Type $N$ corresponds to the special case $I=J=0$. 
-}
-\end{remark}
 
 
 \section*{Conclusions}
@@ -2447,7 +2434,7 @@ during its completion. J. L. Williams acknowledges support from COST action...\m
 \epsilon_{AF} \epsilon_{BG} +
 \phi_{(AB}{}^{CD}\phi_{FG)CD} \label{Eq:DecompPhiSquared}
 \end{equation}
-we can show that\mnotex{Put derivation in an appendix?}
+we can show that
 \begin{align}
     \kappa^{AD} \phi_{AD}{}^{GH} \nabla_{HA'}\phi_{BCFG} &= 4
     \xi^{A}{}_{A'}\phi_{(BC}{}^{DG}\phi_{F)ADG} + \tfrac{1}{2}
@@ -2462,6 +2449,7 @@ we can show that\mnotex{Put derivation in an appendix?}
 
 
 \section{Appendix}\label{Appendix_B}
+
 In this appendix the proof of proposition
 \ref{prop_remove_redundant_conditions} is given.
 The Buchdahl constraint restricts the Petrov type of
@@ -2469,7 +2457,7 @@ $\bm\phi$ to be type $D$, $N$ or $O$.
 The calculation proceeds by expanding out the
 conditions \eqref{Raw_CSKID} in a spin dyad
 by considering separatedly each Petrov type.
-Observe that for Type $O$, for which $\bm\phi=0$,
+Observe that for Type $O$, for which $\phi_{ABCD}=0$,
 the proof of \ref{prop_remove_redundant_conditions} trivialises,
 so only the type $N$ and $D$ are needed.
 
