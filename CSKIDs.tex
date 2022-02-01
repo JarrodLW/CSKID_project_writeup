@@ -220,7 +220,7 @@ $\!\!\!\!\!\!\,\bullet$\themnotecount: #1} }
 \begin{document}
 
 
-\title{\textbf{The conformal Killing spinor initial and boundary data equations}}
+\title{\textbf{The conformal Killing spinor initial data equations}}
 
 
 \author[1]{E. Gasper\'in \footnote{E-mail address:{\tt edgar.gasperin@tecnico.ulisboa.pt}}}
@@ -1530,34 +1530,6 @@ on $\mathcal{U}\subset \mathcal{S}$ are equivalent to the conditions
 dependence of $\mathcal{U}$ is endowed with a twistor.
 \end{proof}
 
-\begin{remark}
-  \emph{
-  Since the fields comprising initial data for the CFEs contain the
-  rescaled Weyl spinor, one can use the initial datum
-  $\phi_{ABCD}|_{\mathcal{S}}$ to formally define the Petrov type of
-  an initial data set for the CFEs. Therefore, Theorem
-  \ref{Theorem_twistor} can be phrased as saying that intial data which
-  is of Petrov type N or O will give rise to a development with
-  is of Petrov type N or O.
-  }\mnotex{I don't think this is quite right.}
-\end{remark}
-
-\mnotex{Killing spinor $\implies$ special Petrov type.  (Buchdahl constraint) \checkmark}
-\mnotex{ For the \textbf{physical spacetime},
-  special Petrov type  $\implies$ Killing spinor \checkmark.
-  See references inside tex file. Is this also true for the unphysical spacetime?
-  I think it is not true in general but it is true in our conformal set up
-  ... replacing $\psi$ with $\phi$, the proof should be identical...
-   see Vol2 of \cite{PenRin84} page 107 and references there in.
-  To be discussed. }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%% References %%%%%%
-%%%%%%%% https://arxiv.org/pdf/2101.00856.pdf
-%%%%%%%% https://arxiv.org/pdf/1010.2421.pdf
-%%%%%%%% See page 107-108, section Killing spinors for type {22} vacuums of \cite{PenRin84}
-%%%%%%%% Lemma 1 of https://link.springer.com/article/10.1007/BF01649445
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
   
 \section{Conformal Killing spinor initial data}
@@ -1818,10 +1790,9 @@ $B_{ABCD}$:
 %%   }
 \begin{remark}
   \emph{
-    \mnotex{Query about Weyl versus rescaled Weyl in physical spacetime. EG: I think it was correct as you originally wrote it :)  }
 Equation \eqref{Eq:SecondWaveEqForB} actually encodes the fact that, \emph{given a Killing spinor} $\kappa_{AB}$, the field $\xi_{AA'}$ is a collineation for the rescaled Weyl tensor ---i.e. that
 \[  \mathcal{L}_{\bm\xi}\phi_{ABCD} := \nabla_{\bm\xi}\phi_{ABCD} + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'}=0,\] 
-the definition\footnote{The Lie derivative does not extend to spinor fields, in general [].} of the ``Lie derivative" being derived from the spinorialised counterpart of
+the definition\footnote{The Lie derivative does not extend to spinor fields. See \cite{PenRin86} for a discussion.} of the ``Lie derivative" being derived from the spinorialised counterpart of
 $\mathcal{L}_{\bm\xi}d_{abcd}$. Indeed, this fact follows from a straightforward calculation
 \begin{align*}
     \mathcal{L}_{\bm\xi}\phi_{ABCD}&:= \nabla_{\bm\xi}\phi_{ABCD}
@@ -1904,8 +1875,6 @@ At this point we note that there are no derivatives of zero quantities
 appearing on the right-hand-side of \eqref{Eq:SecondWaveEqForB}. This,
 combined with the conformal field equation satisfied by
 $\bm\phi$ as given in equation \eqref{RescaledWeylEquationDisplayed}
-%%fact that
-%%%$\nabla^A{}_{A'}\phi_{ABCD}=0$,
 suggests
 that by applying $\nabla^A{}_{A'}$ to equation
 \eqref{Eq:SecondWaveEqForB} we may be able to derive a wave equation
@@ -1918,14 +1887,7 @@ quantities.
 %%\\
 To do so, first, we note some useful identities.  From the definition
 of the zero-quantities $\bmH$, $\bmB$ and the auxiliary spinor
-$\bm\xi$ the following identity can be derived \mnotex{Put in
-  appendix?}
-\begin{equation}
- \kappa^{CD} \nabla_{DG'}\phi_{ABFC} = 2 \xi^{C}{}_{G'} \phi_{ABFC} +
- \phi_{CD(AB} H_{\vert G'\vert F)}{}^{CD} - 4
- F_{G'ABF}\label{Eq:MiscIdentity}
- \end{equation}
-which can be used to derive the more general identity
+$\bm\xi$ the following identity can be derived
 \begin{align}
     \kappa_{A}{}^{F} \nabla_{FF'}\phi_{BCDG} &=\kappa_{A}{}^{F}
     \nabla_{DF'}\phi_{BCGF} \nonumber\\ &= \tfrac{1}{3} \xi_{AF'}
@@ -1940,19 +1902,12 @@ which can be used to derive the more general identity
     \phi_{(BC}{}^{FH}H_{|F'DFH}\epsilon_{A|G)} \nonumber\\ & -
     \tfrac{1}{3} \phi_{(B|D}{}^{FH}H_{F'|C|FH}\epsilon_{A|G)} -
     \tfrac{1}{6}
-    \phi_{D(B}{}^{FH}H_{|F'|C|FH}\epsilon_{A|G)}.\label{Eq:MiscIdentity2}
+    \phi_{D(B}{}^{FH}H_{|F'|C|FH}\epsilon_{A|G)}\label{Eq:MiscIdentity2}
 \end{align}
+from which follows 
 % \begin{multline}
 %     \kappa^{AD} \phi_{AD}{}^{GH} \nabla_{HA'}\phi_{BCFG} =  4 \xi^{A}{}_{A'}\phi_{(BC}{}^{DG}\phi_{F)ADG} + \tfrac{1}{2} \phi_{ADGH} \phi^{ADGH} H_{A'BCF} \\ + 4 B_{(BC}{}^{AD}\nabla^{G}{}_{|A'|}\phi_{F)ADG} - 4 B_{(B}{}^{ADG}\nabla_{|AA'|}\phi_{CF)DG} \\- 8 \phi_{(BC}{}^{AD}\nabla^{G}{}_{|A'|}B_{F)ADG} - 4 \phi_{(B}{}^{ADG}\nabla_{|AA'|}B_{CF)DG}  \\-  \tfrac{1}{3} \phi_{(BC}{}^{AD}\phi_{|AD}{}^{GH}H_{A'|F)GH} -  \tfrac{2}{3} \phi_{(B}{}^{ADG}\phi_{C|AD}{}^{H}H_{A'|F)GH}
 % \end{multline}
-Using the irreducible decomposition
-\begin{equation}
-\phi_{ABCD} \phi_{FG}{}^{CD} = \tfrac{1}{6} \phi_{CDHL} \phi^{CDHL}
-\epsilon_{AG} \epsilon_{BF} + \tfrac{1}{6} \phi_{CDHL} \phi^{CDHL}
-\epsilon_{AF} \epsilon_{BG} +
-\phi_{(AB}{}^{CD}\phi_{FG)CD} \label{Eq:DecompPhiSquared}
-\end{equation}
-we can show that\mnotex{Put derivation in an appendix?}
 \begin{align}
     \kappa^{AD} \phi_{AD}{}^{GH} \nabla_{HA'}\phi_{BCFG} &= 4
     \xi^{A}{}_{A'}\phi_{(BC}{}^{DG}\phi_{F)ADG} + \tfrac{1}{2}
@@ -1964,6 +1919,9 @@ we can show that\mnotex{Put derivation in an appendix?}
     \tfrac{2}{3}
     \phi_{(B}{}^{ADG}\phi_{C|AD}{}^{H}H_{A'|F)GH} \label{Eq:MiscIdentity3}
 \end{align}
+---see Appendix \ref{Appendix_A} for details.
+\\
+
 We return now to the task of expressing $
 \nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD}$ in terms of
 zero-quantities.\mnotex{Check the last equality ---had to typeset
@@ -2222,7 +2180,7 @@ $\kappa_{AB}$ by virtue of the first two conditions.
 
 The proof of this proposition requires decomposing the fields respect to a spin dyad
 and considering the cases where $\bm\phi$ is of different Petrov types.
-This is a long but direct calculation that is given in the Appendix \ref{Appendix_A}.
+This is a long but direct calculation that is given in Appendix \ref{Appendix_A}.
 
 
 \begin{remark}{\em 
@@ -2271,6 +2229,50 @@ Hello world
 Note that we recover the conditions from [], namely 
 \[\tilde{\mathcal{D}}_{(AB}\tilde{\kappa}_{CD)}=0, \qquad \tilde{\kappa}_{(A}{}^F\tilde{\Psi}_{BCD)F}=0, \]
 when $\Xi\neq 0$ on $\mathcal{U}$ (i.e. when $\mathcal{U}\cap \mathscr{I} = \emptyset $). On the other hand, note that the condition $\kappa_{(A}{}^F\Psi_{BCD)F}=0$ would trivialise if one were to evaluate it at some $p\in \mathscr{I}$, since the existence of a regular compactification necessarily implies that $\Psi_{ABCD}=0$ on $\mathscr{I}$.
+}
+\end{remark}
+
+\begin{remark}
+  \emph{
+  Since the fields comprising initial data for the CFEs contain the
+  rescaled Weyl spinor, one can use the initial datum
+  $\phi_{ABCD}|_{\mathcal{S}}$ to formally define the Petrov type of
+  an initial data set for the CFEs. If $\phi_{ABCD}$ is of type N or D on $\mathcal{U}$, then 
+  it is tempting to make use of () and write the Killing spinor candidate explicitly as
+  \[\kappa_{AB} = \kappa_{A}\kappa_B = o_{A}o_{B}  \qquad (\textbf{Type N})\]
+  \[\kappa_{AB} = \phi^{-3/2} o_{(A}\iota_{B)} \qquad (\textbf{Type D})\] 
+  While the $\bm0\bm0\bm0\bm1$, $\bm0\bm0\bm1\bm1$ and $\bm0\bm1\bm1\bm1$ components of ()
+  all vanish ---to see this, compare \eqref{SpatialSenTypeD0001}--\eqref{SpatialSenTypeD0111} and \eqref{WeylConstraint00}--\eqref{WeylConstraint11} in the appendix--- the extremal spin components of () are not guaranteed simply as a consequence of the above expression for $\kappa_{AB}$. Hence, the conditions of Theorem \ref{Theorem_KS} are more restrictive than simply assuming that the Petrov type on $\mathcal{U}$ be N or D. The remaining two components are however encoded by the $\bm0\bm0\bm0\bm0$ and $\bm1\bm1\bm1\bm1$-components of the evolution equation $\nabla_{\bm\tau}\phi_{ABCD}=2\mathcal{D}_{(A}{}^F\phi_{BCD)F}$ \emph{if} one assumes that the Petrov type extends to the spacetime development, which is of course against the spirit of what we are aiming for here. 
+    }\mnotex{I don't think this is quite right.}
+\end{remark}
+
+\mnotex{Killing spinor $\implies$ special Petrov type.  (Buchdahl constraint) \checkmark}
+\mnotex{ For the \textbf{physical spacetime},
+  special Petrov type  $\implies$ Killing spinor \checkmark.
+  See references inside tex file. Is this also true for the unphysical spacetime?
+  I think it is not true in general but it is true in our conformal set up
+  ... replacing $\psi$ with $\phi$, the proof should be identical...
+   see Vol2 of \cite{PenRin84} page 107 and references there in.
+  To be discussed. }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% References %%%%%%
+%%%%%%%% https://arxiv.org/pdf/2101.00856.pdf
+%%%%%%%% https://arxiv.org/pdf/1010.2421.pdf
+%%%%%%%% See page 107-108, section Killing spinors for type {22} vacuums of \cite{PenRin84}
+%%%%%%%% Lemma 1 of https://link.springer.com/article/10.1007/BF01649445
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{corollary}
+Suppose that $\phi_{ABCD}$ is either Petrov (i) type N or (ii) type D on $\mathcal{U}$ and that 
+\begin{enumerate}[(i)]
+\item hello
+\item $o^A o^B o^C\mathcal{D}_{AB}o_C=\iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C=0$ on $\mathcal{U}$.
+\end{enumerate}
+Then, the spacetime development $\mathcal{D}^+(\mathcal{U})$ is of Petrov (i) type N, (ii) type D. 
+\end{corollary}
+
+\begin{remark}{\em 
+The Petrov type can be encoded covariantly through the electric and magnetic parts as follows:
 }
 \end{remark}
 
@@ -2407,6 +2409,35 @@ during its completion. J. L. Williams acknowledges support from COST action...\m
 \appendix
 
 \section{Appendix}\label{Appendix_A}
+
+\begin{equation}
+ \kappa^{CD} \nabla_{DG'}\phi_{ABFC} = 2 \xi^{C}{}_{G'} \phi_{ABFC} +
+ \phi_{CD(AB} H_{\vert G'\vert F)}{}^{CD} - 4
+ F_{G'ABF}\label{Eq:MiscIdentity}
+ \end{equation}
+ 
+ Using the irreducible decomposition
+\begin{equation}
+\phi_{ABCD} \phi_{FG}{}^{CD} = \tfrac{1}{6} \phi_{CDHL} \phi^{CDHL}
+\epsilon_{AG} \epsilon_{BF} + \tfrac{1}{6} \phi_{CDHL} \phi^{CDHL}
+\epsilon_{AF} \epsilon_{BG} +
+\phi_{(AB}{}^{CD}\phi_{FG)CD} \label{Eq:DecompPhiSquared}
+\end{equation}
+we can show that\mnotex{Put derivation in an appendix?}
+\begin{align}
+    \kappa^{AD} \phi_{AD}{}^{GH} \nabla_{HA'}\phi_{BCFG} &= 4
+    \xi^{A}{}_{A'}\phi_{(BC}{}^{DG}\phi_{F)ADG} + \tfrac{1}{2}
+    \phi_{ADGH} \phi^{ADGH} H_{A'BCF} \nonumber\\ & - 4
+    B_{(B}{}^{ADG}\nabla_{|AA'|}\phi_{CF)DG} - 8
+    \phi_{(BC}{}^{AD}F_{|A'|F)ADG}\nonumber \\ & - 4
+    \phi_{(B}{}^{ADG}\nabla_{|AA'|}B_{CF)DG} - \tfrac{1}{3}
+    \phi_{(BC}{}^{AD}\phi_{|AD}{}^{GH}H_{A'|F)GH}\nonumber \\ & -
+    \tfrac{2}{3}
+    \phi_{(B}{}^{ADG}\phi_{C|AD}{}^{H}H_{A'|F)GH} \label{Eq:MiscIdentity3}
+\end{align}
+
+
+\section{Appendix}\label{Appendix_B}
 In this appendix the proof of proposition
 \ref{prop_remove_redundant_conditions} is given.
 The Buchdahl constraint restricts the Petrov type of
@@ -2481,9 +2512,9 @@ for some scalar field $\phi:\mathcal{U}\rightarrow\mathbb{C}$ and hence that the
 \begin{subequations}
 \begin{eqnarray}
 && \omicron^A\omicron^B\omicron^C\mathcal{D}_{AB}\omicron_C=0,\label{SpatialSenTypeD0000}\\
-&& o^{A} o^{B} \mathcal{D}_{AB}\varkappa = -2 o^{A} o^{B} \iota^{C} \mathcal{D}_{BC}o_{A},\\
-&& o^{A} \iota^{B} \mathcal{D}_{AB}\varkappa = \tfrac{1}{2} o^{A} o^{B} \iota^{C} \mathcal{D}_{AB}\iota_{C} -  \tfrac{1}{2} o^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}o_{A},\\
-&& \iota^{A} \iota^{B} \mathcal{D}_{AB}\varkappa = 2 o^{A} \iota^{B} \iota^{C} \mathcal{D}_{AC}\iota_{B},\\
+&& o^{A} o^{B} \mathcal{D}_{AB}\varkappa = -2 o^{A} o^{B} \iota^{C} \mathcal{D}_{BC}o_{A}, \label{SpatialSenTypeD0001}\\
+&& o^{A} \iota^{B} \mathcal{D}_{AB}\varkappa = \tfrac{1}{2} o^{A} o^{B} \iota^{C} \mathcal{D}_{AB}\iota_{C} -  \tfrac{1}{2} o^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}o_{A},\label{SpatialSenTypeD0011}\\
+&& \iota^{A} \iota^{B} \mathcal{D}_{AB}\varkappa = 2 o^{A} \iota^{B} \iota^{C} \mathcal{D}_{AC}\iota_{B}, \label{SpatialSenTypeD0111}\\
 && \iota^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}\iota_{A} = 0.\label{SpatialSenTypeD1111}
 \end{eqnarray}
 \end{subequations}
@@ -2498,9 +2529,9 @@ The auxiliary spinors
 where the second equality follows from \eqref{SpatialSenTypeD0000}--\eqref{SpatialSenTypeD1111}. The constraint $\mathcal{D}^{CD}\phi_{CDAB}=0$ is equivalent to 
 \begin{subequations}
 \begin{align}
- o^{A} o^{B} \mathcal{D}_{AB}\phi &= 6\phi \iota^A o^B o^C\mathcal{D}_{AC}o_B,\\
+ o^{A} o^{B} \mathcal{D}_{AB}\phi &= 6\phi \iota^A o^B o^C\mathcal{D}_{AC}o_B, \label{WeylConstraint00}\\
  o^{A} \iota^{B} \mathcal{D}_{AB}\phi &= \tfrac{3}{2}\phi(\iota^A\iota^B o^C\mathcal{D}_{AB}o_C - \iota^A o^B o^C\mathcal{D}_{BC}\iota_A),\\
- \iota^{A} \iota^{B} \mathcal{D}_{AB}\phi &= -6 \phi \iota^A\iota^B o^C\mathcal{D}_{BC}\iota_A.
+ \iota^{A} \iota^{B} \mathcal{D}_{AB}\phi &= -6 \phi \iota^A\iota^B o^C\mathcal{D}_{BC}\iota_A. \label{WeylConstraint11}
 \end{align}
 \end{subequations}
 Then, 
