@@ -2248,7 +2248,8 @@ with $E_{ij}, B_{ij}$ denoting the electric and magnetic parts of the rescaled W
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{corollary}\label{Corollary:PetrovPropagation}
-Suppose that $\phi_{ABCD}$ is of Petrov type N on $\mathcal{U}\subset \mathcal{S}$, then $\phi_{ABCD}$ is of Petrov type N on an open\mnotex{is it open?} subset of the spacetime development, $\mathcal{D}^+(\mathcal{U})$,  as evidenced by the existence of a non-trivial twistor (i.e. valence-1 Killing spinor). Suppose that $\phi_{ABCD}$ is of Petrov type D on $\mathcal{U}\subset\mathcal{S}$ and suppose further that 
+%Suppose that $\phi_{ABCD}$ is of Petrov type N on $\mathcal{U}\subset \mathcal{S}$, then $\phi_{ABCD}$ is of Petrov type N on an open\mnotex{is it open?} subset of the spacetime development, $\mathcal{D}^+(\mathcal{U})$,  as evidenced by the existence of a non-trivial twistor (i.e. valence-1 Killing spinor). 
+Suppose that $\phi_{ABCD}$ is of Petrov type D on $\mathcal{U}\subset\mathcal{S}$ and suppose further that 
 \begin{equation} 
 \sigma\equiv - o^A o^B o^C\mathcal{D}_{AB}o_C=0 \quad \text{and}\quad \lambda\equiv \iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C=0\label{ShearConditions}
 \end{equation}
@@ -2256,16 +2257,21 @@ hold on $\mathcal{U}$, where $\lbrace \bmo, \bm\iota\rbrace$ is an adapted spin 
 Then, $\phi_{ABCD}$ is also of Petrov type D on an open subset of the spacetime development, $\mathcal{D}^+(\mathcal{U})$, as evidenced by the existence of a non-trivial (valence-2) Killing spinor satisfying $\kappa_{AB}\kappa^{AB}\neq 0$. 
 \end{corollary}
 \begin{proof}
-Suppose that $\phi_{ABCD}$ is of Petrov type N on $\mathcal{U}$, with $\lbrace \bmo, \bm\iota\rbrace$ an adapted spin dyad in terms of which $\phi_{ABCD} = \phi o_Ao_Bo_Co_D$ then as shown in \ref{TypeNCase} the 
-\medskip
-
-Suppose on the other hand that $\phi_{ABCD}$ is of Petrov type D on $\mathcal{U}$, with $\lbrace \bmo, \bm\iota\rbrace$ an adapted spin dyad in terms of which $\phi_{ABCD}=\phi o_{(A}o_B\iota_C\iota_{D)}$ for some field $\phi$. Define $\kappa_{AB}=\phi^{-1/3}o_{(A}\iota_{B)}$. The Buchdahl constraint is clearly satisfied. The equation () decomposes to give 
+%Suppose that $\phi_{ABCD}$ is of Petrov type N on $\mathcal{U}$, with $\lbrace \bmo, \bm\iota\rbrace$ an adapted spin dyad in terms of which $\phi_{ABCD} = \phi o_Ao_Bo_Co_D$ then as shown in \ref{TypeNCase} the 
+%\medskip
+Suppose that $\phi_{ABCD}$ is of Petrov type D on $\mathcal{U}$, with $\lbrace \bmo, \bm\iota\rbrace$ an adapted spin dyad in terms of which $\phi_{ABCD}=\phi o_{(A}o_B\iota_C\iota_{D)}$ for some field $\phi$. Define $\kappa_{AB}=\phi^{-1/3}o_{(A}\iota_{B)}$. The Buchdahl constraint is clearly satisfied. The equation $\mathcal{D}_{(AB}\kappa_{CD)}=0$ decomposes to give 
 \begin{eqnarray*}
-&&
+&& \sigma=0,\\
+&& \mathcal{D}_{\bm0\bm0}\phi = 3\phi(\kappa - \tau), \\
+&& \mathcal{D}_{\bm0\bm1}\phi = \tfrac{3}{2} \phi(\rho - \mu),\\
+&& \mathcal{D}_{\bm1\bm1}\phi = 3\phi(\nu - \pi), \\
+&& \lambda = 0.
 \end{eqnarray*}
-The equations implied by the constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$, namely  \eqref{WeylConstraint00}--\eqref{WeylConstraint11}, from which it is straightforward to show that 
-\[ o^Ao^Bo^C\iota^D\mathcal{D}_{(AB}\kappa_{CD)}=o^Ao^B\iota^C\iota^D\mathcal{D}_{(AB}\kappa_{CD)}=o^A\iota^B\iota^C\iota^D\mathcal{D}_{(AB}\kappa_{CD)}=0\]
-The remaining two components of () are given precisely by \eqref{ShearConditions}. Hence, the Killing spinor initial data conditions are met by $\kappa_{AB}$ and propagating we obtain a Killing spinor in some open subset of $\mathcal{D}^+(\mathcal{U})$, according to Theorem \ref{Theorem_KS}. Finally, since $\kappa_{AB}\kappa^{AB}\neq 0$ on $\mathcal{U}$ we have by continuous dependence on data that...
+To see this, substitute $e^{\varkappa}=\phi^{-1/3}$ in \eqref{SpatialSenTypeD0000}--\eqref{SpatialSenTypeD1111}.
+The first and last components are guaranteed by the assumption \eqref{ShearConditions}.
+The remaining equations are precisely those implied by the constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$, namely  \eqref{WeylConstraintTypeD}.
+%\[ o^Ao^Bo^C\iota^D\mathcal{D}_{(AB}\kappa_{CD)}=o^Ao^B\iota^C\iota^D\mathcal{D}_{(AB}\kappa_{CD)}=o^A\iota^B\iota^C\iota^D\mathcal{D}_{(AB}\kappa_{CD)}=0\]
+Hence, the Killing spinor initial data conditions are met by $\kappa_{AB}$ and propagating we obtain a Killing spinor in some open subset of $\mathcal{D}^+(\mathcal{U})$, according to Theorem \ref{Theorem_KS}. Finally, since $\kappa_{AB}\kappa^{AB}\neq 0$ on $\mathcal{U}$ we have by continuous dependence on data that...
 \end{proof}
 
 \begin{remark}{\em 
@@ -2508,9 +2514,9 @@ with all other components vanishing trivially. These are essentially the same co
 \begin{align*}
 \omicron^A\omicron^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)&=\tfrac{1}{3}\phi \xi \sigma=0,\\
 \omicron^A\iota^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)&= \tfrac{1}{2} \beta \mathcal{D}_{\bm0\bm0}\phi-2 \beta^2 \phi -  \tfrac{1}{2} \beta \kappa \phi - 2 \rho \sigma \phi + \tfrac{1}{2} \beta \tau \phi =0,\\
-\iota^A\iota^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right) &= 2 \rho \mathcal{D}_{\bm0\bm0}\phi-10 \beta \rho \phi =0
+\iota^A\iota^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right) &= 2 \rho \mathcal{D}_{\bm0\bm0}\phi-10 \beta \rho \phi =0,
 \end{align*}
-where we are again using \eqref{NPRelationsTypeN}. All other components vanishing trivially. Hence, in this case, both conditions \eqref{RedundantCondition1} and \eqref{RedundantCondition2} trivialise. 
+where we are again using \eqref{NPRelationsTypeN} and \eqref{TypeNweylConstraint}. All other components vanishing trivially. Hence, in this case, both conditions \eqref{RedundantCondition1} and \eqref{RedundantCondition2} trivialise. 
 
 
 \subsection{Case II: $\kappa_{AB}\kappa^{AB}\neq 0$ on $\mathcal{U}$}\label{TypeDCase}
