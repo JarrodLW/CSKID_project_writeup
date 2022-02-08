@@ -1330,7 +1330,7 @@ discussed in \cite{GasVal15} simply by adding a tilde to the fields and
 setting $\Xi=1$.
 
 Arguably, one could try
-to use the theory of \textit{Fuchsian systems}, as used in \cite{ChrPaetz13,Pae14a}, to see if the analogous of
+to use the theory of \textit{Fuchsian systems}, as used in \cite{ChrPaetz13,Pae14a}, to see if the analogue of
 Theorem \ref{TheoremHomogeneousWave} applies for the singular equation
 \eqref{WaveH_twistor_singular}.  However, one of the advantages of the
 conformal approach of the CFEs is that one deals with manifestly regular equations.
@@ -1443,7 +1443,7 @@ _{DF}\phi _{ABC}{}^{F} + \tfrac{2}{3} \phi _{ABCD} \mathcal{D}
 ^{D}{}_{F}\kappa ^{F} + \tfrac{2}{3}\phi_{ABCD}\mathcal{H}^D = 0
 \qquad \text{on} \qquad \mathcal{S}.
 \end{align}
-In fact, the latter expression can be completly rewritten in terms of
+In fact, the latter expression can be completely rewritten in terms of
 $\mathcal{H}_A|_{\mathcal{S}}$, $\mathcal{H}_{ABC}|_{\mathcal{S}}$ and
 $B_{ABC}|_{\mathcal{S}}$. This can be done as follows: swapping
 indices $D$ and $A$ in equation \eqref{normalderB_twistor_exp}, and
@@ -1474,7 +1474,7 @@ and using the expression for $\mathcal{H}_{ABC}$ equation
 \tfrac{1}{3} \epsilon _{AC} \mathcal{D} _{BD}\kappa ^{D}.
 \end{align}
 Substituting decomposition \eqref{decompSenKappa} into equation
-\eqref{normalderB_twistor_exp3} renders
+\eqref{normalderB_twistor_exp3} gives
 \begin{align}
 \nabla_{\tau}B_{ABC}|_{\mathcal{S}}=- \phi _{BCDF} \mathcal{H}
 _{A}{}^{DF} -2 \mathcal{D} _{AD}B_{BC}{}^{D} +
@@ -2052,7 +2052,7 @@ evolved according to the Killing spinor candidate wave equation encoded in $Q_{A
 %}
 %\end{remark}
 
-\subsection{Intrinsic (CKSID) conditions}
+\subsection{Intrinsic (``CKSID") conditions}
 \label{IntrinsicCKSID}
 
 In this section, we aim to reduce \eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSInitialCondition2} to a set of intrinsic conditions ---that is to say, conditions on $\kappa_{AB}$ that are computable at the level of an initial data manifold. Clearly the condition 
@@ -2239,7 +2239,7 @@ when $\Xi\neq 0$ on $\mathcal{U}$ (i.e. when $\mathcal{U}\cap \mathscr{I} = \emp
   Since the fields comprising initial data for the CFEs contain the
   rescaled Weyl spinor, one can use the initial datum
   $\phi_{ABCD}|_{\mathcal{S}}$ to formally define the Petrov type of
-  an initial data set for the CFEs. This can be expressed covariantly as $I^3 - 6J^2=0$, where
+  an initial data set for the CFEs. This can be expressed covariantly as $I^3 - 6J^2=0$, where $I,J$ are the complex-valued scalars
 \begin{align*}
 I &:= \phi_{ABCD}\phi^{ABCD} \equiv E_{ij}E^{ij} - B_{ij}B^{ij} + 2i E_{ij}B^{ij},\\
 J &:= \phi_{AB}{}^{CD}\phi_{CD}{}^{FG}\phi_{FG}{}^{AB} \equiv (E_{i}{}^jE_j{}^kE_{k}{}^i - 3E_{i}{}^jB_j{}^kB_{k}{}^i) + i(3B_{i}{}^jE_j{}^kE_k{}^{i} - B_{i}{}^jB_j{}^kB_k{}^i),
@@ -2280,7 +2280,7 @@ To see this, substitute $e^{\varkappa}=\phi^{-1/3}$ in \eqref{SpatialSenTypeD000
 The first and last components are guaranteed by the assumption \eqref{ShearConditions}.
 The remaining equations are precisely those implied by the constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$, namely  \eqref{WeylConstraintTypeD}.
 %\[ o^Ao^Bo^C\iota^D\mathcal{D}_{(AB}\kappa_{CD)}=o^Ao^B\iota^C\iota^D\mathcal{D}_{(AB}\kappa_{CD)}=o^A\iota^B\iota^C\iota^D\mathcal{D}_{(AB}\kappa_{CD)}=0\]
-Hence, the Killing spinor initial data conditions are met by $\kappa_{AB}$ and propagating we obtain a Killing spinor in some open subset of $\mathcal{D}^+(\mathcal{U})$, according to Theorem \ref{Theorem_KS}. Finally, since $\kappa_{AB}\kappa^{AB}\neq 0$ on $\mathcal{U}$ we have by continuous dependence on data that...
+Hence, the Killing spinor initial data conditions are met by $\kappa_{AB}$ and propagating we obtain a Killing spinor in some open subset of $\mathcal{D}^+(\mathcal{U})$, according to Theorem \ref{Theorem_KS}. Finally, $I\neq 0$ on $\mathcal{U}$ we have by continuous dependence on data that $I\neq 0$ on...
 \end{proof}
 
 \begin{remark}{\em 
@@ -2423,22 +2423,53 @@ during its completion. J. L. Williams acknowledges support from the COST grant C
 \section{Appendix}\label{Appendix_A}
 
 \subsection{Spinorial identities}
-
+\mnotex{Prepend equation numbers with ``A"}
+Here we give the derivation of identities \eqref{Eq:MiscIdentity2} and \eqref{Eq:MiscIdentity3}. First, by expanding out the definition of $B_{ABCD}$,
+\begin{align*}
+\nabla^D{}_{G'}B_{ABFD} &= - \tfrac{1}{4} \phi_{ABFD} \nabla_{CG'}\kappa^{CD} -  \tfrac{1}{4} \kappa_{F}{}^{C} \nabla_{DG'}\phi_{ABC}{}^{D} -  \tfrac{1}{4} \kappa^{CD} \nabla_{DG'}\phi_{ABFC} -  \tfrac{1}{4} \kappa_{B}{}^{C} \nabla_{DG'}\phi_{AFC}{}^{D} -  \tfrac{1}{4} \kappa_{A}{}^{C} \nabla_{DG'}\phi_{BFC}{}^{D} + \tfrac{1}{4} \phi_{BFCD} \nabla^{D}{}_{G'}\kappa_{A}{}^{C} + \tfrac{1}{4} \phi_{AFCD} \nabla^{D}{}_{G'}\kappa_{B}{}^{C} + \tfrac{1}{4} \phi_{ABCD} \nabla^{D}{}_{G'}\kappa_{F}{}^{C}\\
+&=- \tfrac{1}{4} \phi_{ABFD} \nabla_{CG'}\kappa^{CD}  -  \tfrac{1}{4} \kappa^{CD} \nabla_{DG'}\phi_{ABFC}  -  \tfrac{1}{4} \kappa_{A}{}^{C} \nabla_{DG'}\phi_{BFC}{}^{D} + \tfrac{1}{4} \phi_{BFCD} \nabla^{D}{}_{G'}\kappa_{A}{}^{C} + \tfrac{1}{4} \phi_{AFCD} \nabla^{D}{}_{G'}\kappa_{B}{}^{C} + \tfrac{1}{4} \phi_{ABCD} \nabla^{D}{}_{G'}\kappa_{F}{}^{C}
+\end{align*}
+the second equality following from $\nabla^A{}_{A'}\phi_{ABCD}=0$. Using \eqref{Eq:DecompGradKS}, the definition of $F_{A'ABC}$ and rearranging, 
 \begin{equation}
  \kappa^{CD} \nabla_{DG'}\phi_{ABFC} = 2 \xi^{C}{}_{G'} \phi_{ABFC} +
  \phi_{CD(AB} H_{\vert G'\vert F)}{}^{CD} - 4
  F_{G'ABF}\label{Eq:MiscIdentity}
  \end{equation}
- 
+Then, using the irreducible decomposition
+\begin{equation*}
+\kappa_{F}{}^{D} \phi_{ABCD} = B_{ABCF} + \tfrac{1}{4} \kappa^{DG} \phi_{BCDG} \epsilon_{AF} + \tfrac{1}{4} \kappa^{DG} \phi_{ACDG} \epsilon_{BF} + \tfrac{1}{4} \kappa^{DG} \phi_{ABDG} \epsilon_{CF},	
+\end{equation*}
+one calculates
+\begin{align*}
+	\kappa_{A}{}^{F} \nabla_{GF'}\phi_{BCDF} &= \nabla_{GF'}(\kappa_{A}{}^{F}\phi_{BCDF}) - \phi_{BCDF}\nabla_{GF'}\kappa_{A}{}^{F}\\
+	&= \nabla_{GF'}B_{ABCD} -  \phi_{BCDF} \nabla_{GF'}\kappa_{A}{}^{F} -  \tfrac{1}{4} \phi_{CDFH} \epsilon_{AB} \nabla_{GF'}\kappa^{FH} -  \tfrac{1}{4} \phi_{BDFH} \epsilon_{AC} \nabla_{GF'}\kappa^{FH} -  \tfrac{1}{4} \phi_{BCFH} \epsilon_{AD} \nabla_{GF'}\kappa^{FH} -  \tfrac{1}{4} \kappa^{FH} \epsilon_{AD} \nabla_{GF'}\phi_{BCFH} -  \tfrac{1}{4} \kappa^{FH} \epsilon_{AC} \nabla_{GF'}\phi_{BDFH} -  \tfrac{1}{4} \kappa^{FH} \epsilon_{AB} \nabla_{GF'}\phi_{CDFH},\\
+	&=\nabla_{GF'}B_{ABCD} + \tfrac{1}{3} \xi_{AF'} \phi_{BCDG} -  \tfrac{1}{3} \phi_{BCDF} H_{F'AG}{}^{F} + \tfrac{1}{6} \xi^{F}{}_{F'} \phi_{CDGF} \epsilon_{AB} -  \tfrac{1}{12} \phi_{CDFH} H_{F'G}{}^{FH} \epsilon_{AB} + \tfrac{1}{6} \xi^{F}{}_{F'} \phi_{BDGF} \epsilon_{AC} -  \tfrac{1}{12} \phi_{BDFH} H_{F'G}{}^{FH} \epsilon_{AC} + \tfrac{1}{6} \xi^{F}{}_{F'} \phi_{BCGF} \epsilon_{AD} -  \tfrac{1}{12} \phi_{BCFH} H_{F'G}{}^{FH} \epsilon_{AD} -  \tfrac{1}{3} \xi^{F}{}_{F'} \phi_{BCDF} \epsilon_{AG}  -  \tfrac{1}{4} \kappa^{FH} \epsilon_{AD} \nabla_{GF'}\phi_{BCFH} -  \tfrac{1}{4} \kappa^{FH} \epsilon_{AC} \nabla_{GF'}\phi_{BDFH} -  \tfrac{1}{4} \kappa^{FH} \epsilon_{AB} \nabla_{GF'}\phi_{CDFH}
+\end{align*}
+where the third equality follows from \eqref{Eq:DecompGradKS}. Then swapping indices on the $\nabla\bm\phi$ terms and using $\nabla^A{}_{A'}\phi_{ABCD}=0$, one obtains \eqref{Eq:MiscIdentity2}:
+\begin{align*}
+    \kappa_{A}{}^{F} \nabla_{FF'}\phi_{BCDG} &= \tfrac{1}{3} \xi_{AF'}
+    \phi_{BCDG} - \tfrac{1}{3} \xi^{F}{}_{F'} \phi_{BCGF}
+    \epsilon_{AD} - \tfrac{1}{3}
+    \xi^{F}{}_{F'}\phi_{(BC|DF}\epsilon_{A|G)} \nonumber \\ & -
+    \tfrac{2}{3} \xi^{F}{}_{F'}\phi_{(B|D|C|F}\epsilon_{A|G)} +
+    \epsilon_{AD} F_{F'BCG} + \nabla_{(B|F'}B_{A|CG)D} + \tfrac{1}{3}
+    \phi_{(BC|D}{}^{F}H_{F'A|G)F} \nonumber \\& + 2
+    \epsilon_{A(B}F_{|F'\vert CG)D} - \tfrac{1}{3}
+    \phi_{(BC}{}^{FH}H_{|F'|G)FH}\epsilon_{AD} - \tfrac{1}{6}
+    \phi_{(BC}{}^{FH}H_{|F'DFH}\epsilon_{A|G)} \nonumber\\ & -
+    \tfrac{1}{3} \phi_{(B|D}{}^{FH}H_{F'|C|FH}\epsilon_{A|G)} -
+    \tfrac{1}{6}
+    \phi_{D(B}{}^{FH}H_{|F'|C|FH}\epsilon_{A|G)}.
+\end{align*}
  Using the irreducible decomposition
-\begin{equation}
+\begin{equation*}
 \phi_{ABCD} \phi_{FG}{}^{CD} = \tfrac{1}{6} \phi_{CDHL} \phi^{CDHL}
 \epsilon_{AG} \epsilon_{BF} + \tfrac{1}{6} \phi_{CDHL} \phi^{CDHL}
 \epsilon_{AF} \epsilon_{BG} +
 \phi_{(AB}{}^{CD}\phi_{FG)CD} \label{Eq:DecompPhiSquared}
-\end{equation}
+\end{equation*}
 we can show that
-\begin{align}
+\begin{align*}
     \kappa^{AD} \phi_{AD}{}^{GH} \nabla_{HA'}\phi_{BCFG} &= 4
     \xi^{A}{}_{A'}\phi_{(BC}{}^{DG}\phi_{F)ADG} + \tfrac{1}{2}
     \phi_{ADGH} \phi^{ADGH} H_{A'BCF} \nonumber\\ & - 4
@@ -2448,7 +2479,7 @@ we can show that
     \phi_{(BC}{}^{AD}\phi_{|AD}{}^{GH}H_{A'|F)GH}\nonumber \\ & -
     \tfrac{2}{3}
     \phi_{(B}{}^{ADG}\phi_{C|AD}{}^{H}H_{A'|F)GH} \label{Eq:MiscIdentity3}
-\end{align}
+\end{align*}
 
 %\subsection{Spin dyad calculations}
 
@@ -2457,7 +2488,7 @@ we can show that
 \subsection{Proof of Proposition \ref{prop_remove_redundant_conditions}}
 \label{Sec:ProofOfProp3}
 
-In this section the proof of proposition
+In this section the proof of Proposition
 \ref{prop_remove_redundant_conditions} is given.
 The Buchdahl constraint restricts the Petrov type of
 $\bm\phi$ to be type $D$, $N$ or $O$.
@@ -2482,7 +2513,11 @@ Recalling that $\mathcal{D}_{AB}:= \tau_{(A}{}^{A'}\nabla_{B)A'}$, a straightfor
 & o^A\iota^B\iota^C\mathcal{D}_{AB} = \tfrac{1}{2}(\pi - \nu),\\
 & \iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C = \lambda	,
 \end{align*}
-where we are following the conventions of [] in the definition of the NP scalars $\alpha, \beta, \epsilon, \gamma, \kappa, \mu, 
+%\[o^Ao^Bo^C\mathcal{D}_{AB}o_C = -\sigma, \qquad o^A\iota^B o^C\mathcal{D}_{AB}o_C = \tfrac{1}{2}(\kappa - \tau), \qquad \iota^A\iota^B o^C\mathcal{D}_{AB}o_C = \rho,\]
+%\[o^A o^B\iota^C\mathcal{D}_{AB}\iota_C = \mu, \qquad o^A\iota^B\iota^C\mathcal{D}_{AB} = \tfrac{1}{2}(\pi - \nu), \qquad \iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C = \lambda	\]
+%\[o^Ao^B\iota^C\mathcal{D}_{AB}o_C=o^Ao^Bo^C\mathcal{D}_{AB}\iota_C=-\beta, \qquad o^A\iota^B\iota^C\mathcal{D}_{AB}o_C = o^A\iota^B o^C\mathcal{D}_{AB}\iota_C = \tfrac{1}{2}(\epsilon - \gamma), \]
+%\[\iota^A\iota^B\iota^C\mathcal{D}_{AB}o_C = \iota^A\iota^B o^C\mathcal{D}_{AB}\iota_C = \alpha, \]
+where we are following the conventions of [] in the definition of the Newmann--Penrose (NP) scalars $\alpha, \beta, \epsilon, \gamma, \kappa, \mu, 
 \lambda, \rho, \tau, \sigma, \nu, \pi.$
 \\
 
@@ -2582,7 +2617,7 @@ On the other hand, substituting \eqref{AuxSpinor1TypeD} and \eqref{AuxSpinor2Typ
 & \qquad\qquad\qquad\qquad\qquad =	\tfrac{1}{8} e^{\varkappa}  (\mu - \rho) \mathcal{D}_{\bm1\bm1}\phi  +  \tfrac{3}{8} e^{\varkappa} \phi(\mu-\rho) (\pi-\nu) + \tfrac{1}{2} e^{\varkappa}\phi (\kappa-\tau) \lambda    = 0,\\
 & \iota^A\iota^B\iota^C\iota^D(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3} \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F})  =	- \tfrac{1}{3}\phi \lambda \xi = 0.
 \end{align*}
-Hence, again, \eqref{RedundantCondition1} and \eqref{RedundantCondition2} trivialise. Combining the result of this section with the previous, Proposition \ref{prop_remove_redundant_conditions} follows.
+Hence, again, \eqref{RedundantCondition1} and \eqref{RedundantCondition2} trivialise. Combining the result of this section with the previous, Proposition \ref{prop_remove_redundant_conditions} follows immediately.
 
 
 %%%%%%%%%%%%%% 
