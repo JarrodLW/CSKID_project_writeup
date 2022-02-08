@@ -2429,7 +2429,7 @@ Here we give the derivation of some of the key identities used in Section \ref{S
 \mnotex{Prepend equation numbers with ``A"}
 Here we give the derivation of identities \eqref{Eq:MiscIdentity2} and \eqref{Eq:MiscIdentity3}. First, by expanding out the definition of $B_{ABCD}$,
 \begin{align*}
-\nabla^D{}_{G'}B_{ABFD} &= - \tfrac{1}{4} \phi_{ABFD} \nabla_{CG'}\kappa^{CD} -  \tfrac{1}{4} \kappa_{F}{}^{C} \nabla_{DG'}\phi_{ABC}{}^{D} -  \tfrac{1}{4} \kappa^{CD} \nabla_{DG'}\phi_{ABFC} -  \tfrac{1}{4} \kappa_{B}{}^{C} \nabla_{DG'}\phi_{AFC}{}^{D} -  \tfrac{1}{4} \kappa_{A}{}^{C} \nabla_{DG'}\phi_{BFC}{}^{D} + \tfrac{1}{4} \phi_{BFCD} \nabla^{D}{}_{G'}\kappa_{A}{}^{C} + \tfrac{1}{4} \phi_{AFCD} \nabla^{D}{}_{G'}\kappa_{B}{}^{C} + \tfrac{1}{4} \phi_{ABCD} \nabla^{D}{}_{G'}\kappa_{F}{}^{C}\\
+\nabla^D{}_{G'}B_{ABFD} &= - \tfrac{1}{4} \phi_{ABFD} \nabla_{CG'}\kappa^{CD}  -  \tfrac{3}{4} \kappa_{(A}{}^{C} \nabla_{\vert DG'\vert}\phi_{BF)C}{}^{D} -  \tfrac{1}{4} \kappa^{CD} \nabla_{DG'}\phi_{ABFC} + \tfrac{3}{4} \phi_{CD(AB} \nabla^{D}{}_{\vert G'\vert}\kappa_{F)}{}^{C} \\
 &=- \tfrac{1}{4} \phi_{ABFD} \nabla_{CG'}\kappa^{CD}  -  \tfrac{1}{4} \kappa^{CD} \nabla_{DG'}\phi_{ABFC}  -  \tfrac{1}{4} \kappa_{A}{}^{C} \nabla_{DG'}\phi_{BFC}{}^{D} + \tfrac{1}{4} \phi_{BFCD} \nabla^{D}{}_{G'}\kappa_{A}{}^{C} + \tfrac{1}{4} \phi_{AFCD} \nabla^{D}{}_{G'}\kappa_{B}{}^{C} + \tfrac{1}{4} \phi_{ABCD} \nabla^{D}{}_{G'}\kappa_{F}{}^{C}
 \end{align*}
 the second equality following from $\nabla^A{}_{A'}\phi_{ABCD}=0$. Using \eqref{Eq:DecompGradKS}, the definition of $F_{A'ABC}$ and rearranging, 
@@ -2445,8 +2445,10 @@ Then, using the irreducible decomposition
 one calculates
 \begin{align*}
 	\kappa_{A}{}^{F} \nabla_{GF'}\phi_{BCDF} &= \nabla_{GF'}(\kappa_{A}{}^{F}\phi_{BCDF}) - \phi_{BCDF}\nabla_{GF'}\kappa_{A}{}^{F}\\
-	&= \nabla_{GF'}B_{ABCD} -  \phi_{BCDF} \nabla_{GF'}\kappa_{A}{}^{F} -  \tfrac{1}{4} \phi_{CDFH} \epsilon_{AB} \nabla_{GF'}\kappa^{FH} -  \tfrac{1}{4} \phi_{BDFH} \epsilon_{AC} \nabla_{GF'}\kappa^{FH} -  \tfrac{1}{4} \phi_{BCFH} \epsilon_{AD} \nabla_{GF'}\kappa^{FH} -  \tfrac{1}{4} \kappa^{FH} \epsilon_{AD} \nabla_{GF'}\phi_{BCFH} -  \tfrac{1}{4} \kappa^{FH} \epsilon_{AC} \nabla_{GF'}\phi_{BDFH} -  \tfrac{1}{4} \kappa^{FH} \epsilon_{AB} \nabla_{GF'}\phi_{CDFH},\\
-	&=\nabla_{GF'}B_{ABCD} + \tfrac{1}{3} \xi_{AF'} \phi_{BCDG} -  \tfrac{1}{3} \phi_{BCDF} H_{F'AG}{}^{F} + \tfrac{1}{6} \xi^{F}{}_{F'} \phi_{CDGF} \epsilon_{AB} -  \tfrac{1}{12} \phi_{CDFH} H_{F'G}{}^{FH} \epsilon_{AB} + \tfrac{1}{6} \xi^{F}{}_{F'} \phi_{BDGF} \epsilon_{AC} -  \tfrac{1}{12} \phi_{BDFH} H_{F'G}{}^{FH} \epsilon_{AC} + \tfrac{1}{6} \xi^{F}{}_{F'} \phi_{BCGF} \epsilon_{AD} -  \tfrac{1}{12} \phi_{BCFH} H_{F'G}{}^{FH} \epsilon_{AD} -  \tfrac{1}{3} \xi^{F}{}_{F'} \phi_{BCDF} \epsilon_{AG}  -  \tfrac{1}{4} \kappa^{FH} \epsilon_{AD} \nabla_{GF'}\phi_{BCFH} -  \tfrac{1}{4} \kappa^{FH} \epsilon_{AC} \nabla_{GF'}\phi_{BDFH} -  \tfrac{1}{4} \kappa^{FH} \epsilon_{AB} \nabla_{GF'}\phi_{CDFH}
+	&= \nabla_{GF'}B_{ABCD} -     \tfrac{3}{4} \kappa^{FH} \epsilon_{A(B} \nabla_{\vert GF'\vert}\phi_{CD)FH}\\
+	&\qquad -  \phi_{BCDF} \nabla_{GF'}\kappa_{A}{}^{F} -  \tfrac{3}{4} \epsilon_{A(B}\phi_{CD)FH} \nabla_{GF'}\kappa^{FH}\\
+	&=\nabla_{GF'}B_{ABCD} + \tfrac{1}{3} \xi_{AF'} \phi_{BCDG} -  \tfrac{1}{3} \phi_{BCDF} H_{F'AG}{}^{F} + \tfrac{1}{2} \xi^{F}{}_{F'}\epsilon_{A(B} \phi_{CD)GF}  \\
+	&\qquad -  \tfrac{1}{4} \epsilon_{A(B}\phi_{CD)FH} H_{F'G}{}^{FH}   -  \tfrac{1}{3} \xi^{F}{}_{F'} \phi_{BCDF} \epsilon_{AG}  -  \tfrac{3}{4} \kappa^{FH} \epsilon_{A(B} \nabla_{\vert GF'\vert}\phi_{CD)FH}
 \end{align*}
 where the third equality follows from \eqref{Eq:DecompGradKS}. Then swapping indices on the $\nabla\bm\phi$ terms and using $\nabla^A{}_{A'}\phi_{ABCD}=0$, one obtains \eqref{Eq:MiscIdentity2}:
 \begin{align*}
