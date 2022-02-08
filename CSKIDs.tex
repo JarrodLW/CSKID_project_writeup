@@ -2427,10 +2427,12 @@ Here we give the derivation of some of the key identities used in Section \ref{S
 
 \subsection{Spinorial identities}
 \mnotex{Prepend equation numbers with ``A"}
+
 Here we give the derivation of identities \eqref{Eq:MiscIdentity2} and \eqref{Eq:MiscIdentity3}. First, by expanding out the definition of $B_{ABCD}$,
 \begin{align*}
-\nabla^D{}_{G'}B_{ABFD} &= - \tfrac{1}{4} \phi_{ABFD} \nabla_{CG'}\kappa^{CD}  -  \tfrac{3}{4} \kappa_{(A}{}^{C} \nabla_{\vert DG'\vert}\phi_{BF)C}{}^{D} -  \tfrac{1}{4} \kappa^{CD} \nabla_{DG'}\phi_{ABFC} + \tfrac{3}{4} \phi_{CD(AB} \nabla^{D}{}_{\vert G'\vert}\kappa_{F)}{}^{C} \\
-&=- \tfrac{1}{4} \phi_{ABFD} \nabla_{CG'}\kappa^{CD}  -  \tfrac{1}{4} \kappa^{CD} \nabla_{DG'}\phi_{ABFC}  -  \tfrac{1}{4} \kappa_{A}{}^{C} \nabla_{DG'}\phi_{BFC}{}^{D} + \tfrac{1}{4} \phi_{BFCD} \nabla^{D}{}_{G'}\kappa_{A}{}^{C} + \tfrac{1}{4} \phi_{AFCD} \nabla^{D}{}_{G'}\kappa_{B}{}^{C} + \tfrac{1}{4} \phi_{ABCD} \nabla^{D}{}_{G'}\kappa_{F}{}^{C}
+\nabla^D{}_{G'}B_{ABFD} &= - \tfrac{1}{4} \phi_{ABFD} \nabla_{CG'}\kappa^{CD}  -  \tfrac{3}{4} \kappa_{(A}{}^{C} \nabla_{\vert DG'\vert}\phi_{BF)C}{}^{D} \\
+&\qquad -  \tfrac{1}{4} \kappa^{CD} \nabla_{DG'}\phi_{ABFC} + \tfrac{3}{4} \phi_{CD(AB} \nabla^{D}{}_{\vert G'\vert}\kappa_{F)}{}^{C} \\
+&=\tfrac{1}{2} \xi^{C}{}_{G'} \phi_{ABFC} + \tfrac{1}{4} \phi_{CD(AB} H_{\vert G'\vert F)}{}^{CD}  -  \tfrac{1}{4} \kappa^{CD} \nabla_{DG'}\phi_{ABFC}
 \end{align*}
 the second equality following from $\nabla^A{}_{A'}\phi_{ABCD}=0$. Using \eqref{Eq:DecompGradKS}, the definition of $F_{A'ABC}$ and rearranging, 
 \begin{equation}
@@ -2448,7 +2450,7 @@ one calculates
 	&= \nabla_{GF'}B_{ABCD} -     \tfrac{3}{4} \kappa^{FH} \epsilon_{A(B} \nabla_{\vert GF'\vert}\phi_{CD)FH}\\
 	&\qquad -  \phi_{BCDF} \nabla_{GF'}\kappa_{A}{}^{F} -  \tfrac{3}{4} \epsilon_{A(B}\phi_{CD)FH} \nabla_{GF'}\kappa^{FH}\\
 	&=\nabla_{GF'}B_{ABCD} + \tfrac{1}{3} \xi_{AF'} \phi_{BCDG} -  \tfrac{1}{3} \phi_{BCDF} H_{F'AG}{}^{F} + \tfrac{1}{2} \xi^{F}{}_{F'}\epsilon_{A(B} \phi_{CD)GF}  \\
-	&\qquad -  \tfrac{1}{4} \epsilon_{A(B}\phi_{CD)FH} H_{F'G}{}^{FH}   -  \tfrac{1}{3} \xi^{F}{}_{F'} \phi_{BCDF} \epsilon_{AG}  -  \tfrac{3}{4} \kappa^{FH} \epsilon_{A(B} \nabla_{\vert GF'\vert}\phi_{CD)FH}
+	&\qquad -  \tfrac{1}{4} \epsilon_{A(B}\phi_{CD)FH} H_{F'G}{}^{FH}   -  \tfrac{1}{3} \xi^{F}{}_{F'} \phi_{BCDF} \epsilon_{AG}  -  \tfrac{3}{4} \kappa^{FH} \epsilon_{A(B} \nabla_{\vert GF'\vert}\phi_{CD)FH},
 \end{align*}
 where the third equality follows from \eqref{Eq:DecompGradKS}. Then swapping indices on the $\nabla\bm\phi$ terms and using $\nabla^A{}_{A'}\phi_{ABCD}=0$, one obtains \eqref{Eq:MiscIdentity2}:
 \begin{align*}
@@ -2467,13 +2469,22 @@ where the third equality follows from \eqref{Eq:DecompGradKS}. Then swapping ind
     \phi_{D(B}{}^{FH}H_{|F'|C|FH}\epsilon_{A|G)}.
 \end{align*}
 To show \eqref{Eq:MiscIdentity3}, we start with ...Using the irreducible decomposition
-\begin{equation*}
+\begin{equation}
 \phi_{ABCD} \phi_{FG}{}^{CD} = \tfrac{1}{6} \phi_{CDHL} \phi^{CDHL}
 \epsilon_{AG} \epsilon_{BF} + \tfrac{1}{6} \phi_{CDHL} \phi^{CDHL}
 \epsilon_{AF} \epsilon_{BG} +
 \phi_{(AB}{}^{CD}\phi_{FG)CD} \label{Eq:DecompPhiSquared}
-\end{equation*}
-we can show that
+\end{equation}
+Applying $\nabla^A{}_{A'}$ to identity \eqref{Eq:UsefulIdentity2}, using \eqref{Eq:DecompGradKS} and $\nabla^A{}_{A'}\phi_{ABCD}=0$, one obtains
+\begin{align*}
+&\tfrac{1}{2} \xi^{A}{}_{A'} \phi_{(BF}{}^{DG} \phi_{C)ADG} + \tfrac{1}{12} \
+\phi_{ADGH} \phi_{BCF}{}^{H} H_{A'}{}^{ADG} + \tfrac{1}{4} \
+\phi_{A(BF}{}^{H} \phi_{C)DGH} H_{A'}{}^{ADG}  \\
+&-  \tfrac{3}{4} \
+\kappa^{AD} \phi_{(CF}{}^{GH} \nabla_{\vert HA'\vert}\phi_{B)ADG} + \tfrac{1}{4} \
+\kappa^{AD} \phi_{AD}{}^{GH} \nabla_{HA'}\phi_{BCFG} = 2 \nabla^G{}_{A'}(B_{(BC}{}^{AD} \phi_{FG)}{}_{AD})	
+\end{align*}
+Then, using \eqref{Eq:MiscIdentity2}, \eqref{Eq:DecompPhiSquared} and rearranging, one finally obtains \eqref{Eq:MiscIdentity3} 
 \begin{align*}
     \kappa^{AD} \phi_{AD}{}^{GH} \nabla_{HA'}\phi_{BCFG} &= 4
     \xi^{A}{}_{A'}\phi_{(BC}{}^{DG}\phi_{F)ADG} + \tfrac{1}{2}
