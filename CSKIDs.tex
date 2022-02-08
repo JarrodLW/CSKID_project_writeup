@@ -1049,7 +1049,7 @@ one can give an explicit construction of a Killing spinor, namely
 in terms of the relevant adapted spin dyad $\lbrace \bmo, \bm\iota\rbrace$. This can be seen directly 
 by noting that the identity \eqref{RescaledWeylEquationDisplayed} satisfied by $\phi_{ABCD}$ is formally 
 identical to the Bianchi constraint and so the same computations as in \cite{WalkerPenrose70} follow through.
-An alternative approach to the construction of Killing spinor initial data equations would be attempt to determine under what conditions the Petrov type of the (rescaled) Weyl tensor restricted to $\mathcal{S}$ is propagated into the spacetime development. Later, we shall see that such a result follows as a product of our analysis ---see Corollary \ref{Corollary:PetrovPropagation}.}
+An alternative approach to the construction of Killing spinor initial data equations would be attempt to determine under what conditions the Petrov type of the (rescaled) Weyl tensor restricted to $\mathcal{S}$ is propagated into the spacetime development. Later, we shall see that such a result follows as a product of our analysis ---see Corollary \ref{Corollary:PetrovPropagation}.}\label{Remark:DyadExpressionForKillingSpinorInTypeD}
 \end{remark}
 
   \section{Conformal twistor initial data}
@@ -1602,11 +1602,19 @@ following decomposition
 \xi_{CA'} \epsilon_{AB} - \tfrac{1}{3} \xi_{BA'}
 \epsilon_{AC}.\label{Eq:DecompGradKS}
 \end{equation}
-Using the latter expression, we can show by a straightforward
+Using the latter expression, one can show by a straightforward
 computation that
 \begin{equation}\label{eq:non-KillingVectorExplained}
-  \nabla^Q{}_{A'}H_{B'ABQ} +  \mathcal{Q}_{AB} \epsilon_{A'B'} = \nabla_{AA'}\xi_{BB'} + \nabla_{BB'}\xi_{AA'} + 6 \kappa_{(A}{}^{Q} \Phi_{B)QA'B'} .
+  \nabla^Q{}_{A'}H_{B'ABQ} +  \mathcal{Q}_{AB} \epsilon_{A'B'} = \nabla_{AA'}\xi_{BB'} + \nabla_{BB'}\xi_{AA'} + 6 \kappa_{(A}{}^{Q} \Phi_{B)QA'B'},
 \end{equation}
+which in turn implies the following identity
+\begin{multline}
+\nabla_{AA'}\xi_{BB'} = - \tfrac{1}{2} \epsilon_{AB}
+\nabla^{C}{}_{(A'}\xi_{|C|B')}- 3 \kappa_{(A}{}^{C} \Phi_{B)CA'B'} - 3
+\Lambda \kappa_{AB} \epsilon_{A'B'} \\+ \tfrac{3}{4} \Xi \kappa^{CD}
+\phi_{ABCD} \epsilon_{A'B'} + \tfrac{1}{8} Q_{AB} \epsilon_{A'B'} +
+\tfrac{1}{2} \nabla^Q{}_{(A'}H_{B')ABC},\label{Eq:DecompGradXi}
+\end{multline}
 which will prove useful later. On the other hand, it is
 straightforward to show using equation \eqref{Eq:BuchdahlAsCurlOfH} that
 \begin{equation}
@@ -1940,7 +1948,7 @@ and expanding the commutator, renders
     &\quad -  \tfrac{3}{2} \kappa^{DF} \Phi_{D}{}^{G}{}_{A'}{}^{F'} \nabla_{FF'}\phi_{ABCG} -  \tfrac{3}{2} \kappa^{DF} \Phi_{D}{}^{G}{}_{A'}{}^{F'} \nabla_{GF'}\phi_{ABCF} \nonumber\\
     &\quad + \tfrac{3}{4} \Xi \kappa^{DF} \phi_{DF}{}^{GH} \nabla_{HA'}\phi_{ABCG} - \tfrac{1}{2}( \nabla_{FF'}\phi_{ABCD}) \nabla_{Q(A'}H_{F')F}{}^{DQ}.
 \end{align*}
-Finally, using equations\eqref{Eq:MiscIdentity2}--\eqref{Eq:MiscIdentity3}, one obtains
+Finally, using equations \eqref{Eq:MiscIdentity2}--\eqref{Eq:MiscIdentity3}, one obtains
 \begin{align}
 \nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD}  &= -3 \Phi _{A}{}^{D}{}_{A'}{}^{F'} F_{F'BCD}  - \tfrac{3}{8} \Xi  \phi _{DFGH} \phi ^{DFGH} H_{A'ABC} + \Lambda  \phi _{BCDF} H_{A'A}{}^{DF} \nonumber\\ 
     & \quad- \tfrac{1}{8} Q^{DF} \nabla_{FA'}\phi _{ABCD}   - \tfrac{3}{2} \Phi ^{DF}{}_{A'}{}^{F'} \nabla_{FF'}B_{ABCD} + \tfrac{1}{4} (\nabla_{DA'}H^{F'DFG}) \nabla_{GF'}\phi _{ABCF} \nonumber\\
@@ -2049,7 +2057,7 @@ evolved according to the Killing spinor candidate wave equation encoded in $Q_{A
 
 In this section, we aim to reduce \eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSInitialCondition2} to a set of intrinsic conditions ---that is to say, conditions on $\kappa_{AB}$ that are computable at the level of an initial data manifold. Clearly the condition 
 \begin{equation}
-B_{ABCD}\equiv \kappa_{(A}{}^F\phi_{BCD)F}=0. \label{Eq:SpatialKS}
+B_{ABCD}\equiv \kappa_{(A}{}^F\phi_{BCD)F}=0. \label{Eq:VanishingBuchdahl}
 \end{equation}
 is already intrinsic ---see Remark \ref{G-C-M-Remark}. 
 %\begin{subequations}
@@ -2083,8 +2091,8 @@ are using equation \eqref{InitialCondition}. Starting from
 covariant derivative, we get
 \[ \nabla_{\bm\tau} H_{B'ABC} + 2 \tau^{D}{}_{B'} \tau^{FA'} \mathcal{D}_{DF}H_{A'ABC} = -12 \Xi \tau^{D}{}_{B'}B_{ABCD} + \tfrac{3}{2} \tau_{(A|B'|}Q_{BC)}.\]
 At this point we see that if
-\eqref{Eq:SpatialKS}--\eqref{Eq:VanishingBuchdahl} hold, then
-$\nabla_{\bm\tau} H_{B'ABC}\big\vert_{\mathcal{S}}=0$.
+\eqref{Eq:VanishingBuchdahl}--\eqref{InitialCondition} hold, then
+$\nabla_{\bm\tau} H_{B'ABC}\big\vert_{\mathcal{S}}=0$ also.
 
 \medskip
 
@@ -2174,7 +2182,7 @@ $\kappa_{AB}$ by virtue of the first two conditions.
 
 The proof of this proposition requires decomposing the fields respect to a spin dyad
 and considering the cases where $\bm\phi$ is of different Petrov types.
-This is a long but direct calculation that is given in Appendix \ref{Appendix_A}.
+This is a long but direct calculation that is given in Appendix \ref{Sec:ProofOfProp3}.
 
 
 \begin{remark}{\em 
@@ -2216,7 +2224,7 @@ and subject to the initial condition
 \end{equation}
 \end{theorem}
 \begin{proof}
-Hello world
+Hello world\mnotex{Write-up of proof needed.}
 \end{proof}
 
 \begin{remark}{\em 
@@ -2277,8 +2285,8 @@ Hence, the Killing spinor initial data conditions are met by $\kappa_{AB}$ and p
 
 \begin{remark}{\em 
  While the constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$ implies that the $\bm0\bm0\bm0\bm1$, $\bm0\bm0\bm1\bm1$ and $\bm0\bm1\bm1\bm1$-components of $\mathcal{D}_{(AB}\kappa_{CD)}=0$
-  are all satisfied, as shown in the above proof, the extremal spin components of $\mathcal{D}_{(AB}\kappa_{CD)}=0$ are not guaranteed simply as a consequence of the above expression for $\kappa_{AB}$. Hence, the conditions of Theorem \ref{Theorem_KS} are more restrictive than simply assuming that the Petrov type on $\mathcal{U}$ be N or D. The remaining two extremal components are however implied by the $\bm0\bm0\bm0\bm0$ and $\bm1\bm1\bm1\bm1$-components of the \emph{evolution equation} $\nabla_{\bm\tau}\phi_{ABCD}=2\mathcal{D}_{(A}{}^F\phi_{BCD)F}$ \emph{if} one assumes that the Petrov type extends to the spacetime development, which is of course against the spirit of what we are aiming for here. 
-}
+  are all satisfied, as shown in the above proof, the extremal spin components of $\mathcal{D}_{(AB}\kappa_{CD)}=0$ are not guaranteed simply as a consequence of the above expression for $\kappa_{AB}$. Hence, the conditions of Theorem \ref{Theorem_KS} are more restrictive than simply assuming that $\bm\phi$ be of Petrov type D on $\mathcal{U}$. The remaining two extremal components are however implied by the $\bm0\bm0\bm0\bm0$ and $\bm1\bm1\bm1\bm1$-components of the \emph{evolution equation} $\nabla_{\bm\tau}\phi_{ABCD}=2\mathcal{D}_{(A}{}^F\phi_{BCD)F}$ \emph{if} one assumes that the Petrov type extends to the spacetime development, consistent with Remark \ref{Remark:DyadExpressionForKillingSpinorInTypeD}.
+  }
 \end{remark}
 
 
@@ -2414,6 +2422,8 @@ during its completion. J. L. Williams acknowledges support from the COST grant C
 
 \section{Appendix}\label{Appendix_A}
 
+\subsection{Spinorial identities}
+
 \begin{equation}
  \kappa^{CD} \nabla_{DG'}\phi_{ABFC} = 2 \xi^{C}{}_{G'} \phi_{ABFC} +
  \phi_{CD(AB} H_{\vert G'\vert F)}{}^{CD} - 4
@@ -2440,21 +2450,25 @@ we can show that
     \phi_{(B}{}^{ADG}\phi_{C|AD}{}^{H}H_{A'|F)GH} \label{Eq:MiscIdentity3}
 \end{align}
 
+%\subsection{Spin dyad calculations}
 
-\section{Appendix}\label{Appendix_B}
 
-In this appendix the proof of proposition
+
+\subsection{Proof of Proposition \ref{prop_remove_redundant_conditions}}
+\label{Sec:ProofOfProp3}
+
+In this section the proof of proposition
 \ref{prop_remove_redundant_conditions} is given.
 The Buchdahl constraint restricts the Petrov type of
 $\bm\phi$ to be type $D$, $N$ or $O$.
 The calculation proceeds by expanding out the
 conditions \eqref{Raw_CSKID} in a spin dyad
-by considering separatedly each Petrov type.
+by considering separately the cases $\kappa_{AB}\kappa^{AB}\equiv 0$
+and $\kappa_{AB}\kappa^{AB}\neq 0$ on $\mathcal{U}$, corresponding to Petrov types N and D, respectively.
 Observe that for Type $O$, for which $\phi_{ABCD}=0$,
 the proof of \ref{prop_remove_redundant_conditions} trivialises,
 so only the type $N$ and $D$ are needed.
-
-\subsection{NP scalars}
+\\
 
 Recalling that $\mathcal{D}_{AB}:= \tau_{(A}{}^{A'}\nabla_{B)A'}$, a straightforward computation yields 
 \begin{align*}
@@ -2481,8 +2495,7 @@ The following identities will be useful
 \end{subequations}
 and follow easily from $\epsilon_{AB}=o_A\iota_B - o_B\iota_A$. 
 
-
-\subsection{Case I: $\kappa_{AB}\kappa^{AB}=0$ on $\mathcal{U}$} \label{TypeNCase}
+\subsubsection{Case I: $\kappa_{AB}\kappa^{AB}\equiv 0$ on $\mathcal{U}$} \label{TypeNCase}
 
 \mnotex{Recovers twistor case, right?}
 The assumption that $\kappa_{AB}\kappa^{AB}=0$ on $\mathcal{U}$ implies that there exists a spin dyad $\lbrace \bm\omicron, \bm\iota\rbrace$ on $\mathcal{U}$ such that $\kappa_{AB}=\omicron_A\omicron_B$. The Buchdahl constraint then implies that 
@@ -2520,7 +2533,7 @@ with all other components vanishing trivially. These are essentially the same co
 where we are again using \eqref{NPRelationsTypeN} and \eqref{TypeNweylConstraint}. All other components vanishing trivially. Hence, in this case, both conditions \eqref{RedundantCondition1} and \eqref{RedundantCondition2} trivialise. 
 
 
-\subsection{Case II: $\kappa_{AB}\kappa^{AB}\neq 0$ on $\mathcal{U}$}\label{TypeDCase}
+\subsubsection{Case II: $\kappa_{AB}\kappa^{AB}\neq 0$ on $\mathcal{U}$}\label{TypeDCase}
 
 There exists a spin dyad $\lbrace \bm\omicron, \bm\iota\rbrace$ such that $\kappa_{AB} = e^{\varkappa} \omicron_{(A}\iota_{B)}$ for some $\varkappa:\mathcal{U}\rightarrow\mathbb{C}$. The Buchdahl constraint then implies that the rescaled Weyl spinor takes the form
 \[ \phi_{ABCD}= \phi \omicron_{(A}\omicron_B\iota_C\iota_{D)}\]
