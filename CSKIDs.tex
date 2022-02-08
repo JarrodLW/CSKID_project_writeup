@@ -344,7 +344,7 @@ and \cite{CFEbook} for a comprehensive discussion.  There are three
 ways in which these equations can be presented: the metric, the frame
 and spinorial formulations. These equations have been mainly used in
 the stability analysis of spacetimes ---see for instance \cite{Fri86b,
-  Fri86c} for the proof of the global and semiglobal non-linear
+  Fri86c} for the proof of the global and semi-global non-linear
 stability of the de Sitter and Minkowski spacetimes, respectively.
 Expressed in a nutshell, the main advantage of the conformal
 (unphysical) approach to the Einstein field equations is that the
@@ -353,7 +353,7 @@ submanifold of $(\mathcal{M},\bmg)$. This allows, in particular, to
 consider the $\Xi=0$ hypersurface as a legitimate hypersurface to
 prescribe data which can be evolved using regular ---without
 $\Xi^{-1}$-terms--- evolution equations. 
-This set up is particularly atractive to study
+This set up is particularly attractive to study
 spacetimes with $\lambda>0$ in which, given the appropriate
 conditions, the conformal boundary is a spacelike
 hypersurface and hence one can pose \emph{an asymptotic initial value
@@ -911,43 +911,22 @@ defined as
  ---see \cite{Ste91, PenRin84} for more details. 
  \begin{remark}
  \label{G-C-M-Remark}
- \mnotex{Change to $E, B$}
    \emph{The initial data for $\phi_{ABCD}$ is determined using the Gauss-Codazzi and Codazzi-Mainardi equations. First decompose 
    \[ \phi_{ABCD}=E_{ABCD}+iB_{ABCD}\]
 where $\bmE$ and $\bmB$ are the \textit{electric} and \textit{magnetic} parts
    \[
-   E_{ABCD} := \phi_{ABCD} + i\hat{\phi}_{ABCD},\qquad B_{ABCD} := \phi_{ABCD} - i\hat{\phi}_{ABCD},
+   E_{ABCD} := \tfrac{1}{2}(\phi_{ABCD} + \hat{\phi}_{ABCD}),\qquad B_{ABCD} := \tfrac{i}{2}(-\phi_{ABCD} + \hat{\phi}_{ABCD}),
   \]
-  with $\hat{\phi}_{ABCD}:=\tau_A{}^{A'}\tau_B{}^{B'}\tau_C{}^{C'}\tau_D{}^{D'}\bar{\phi}_{A'B'C'D'}$. The fields $\bmE,\bmB$ are the spinorial counterparts of the electric and magnetic parts of the rescaled Weyl tensor, which away from $\mathscr{I}$ are determined by the Gauss--Codazzi--Mainardi equations:
-   \begin{eqnarray*}
-  && E_{ij} = \Xi^{-1}(r_{\lbrace ij\rbrace} + KK_{\lbrace ij\rbrace} - K_{\lbrace i}{}^k K_{j\rbrace k}),\\
-  && B_{ij} = \Xi^{-1}()
-   \end{eqnarray*}
-   by the
-   initial data $(\mathcal{S}, \bmh, \bmK, \Omega, \Sigma)$. Here
-   $\mathcal{S}$ is a 3-dimensional manifold with Riemannian metric
-   $\bmh$, second fundamental form $\bmK$, while $\Omega$ and $\Sigma$
-   are the initial data for the conformal factor and its normal derivative respectively.
-   \mnotex{EG: Not sure if that is the
-     ``minimal'' set of ID. This probably needs fixing.}
-   %%%%%%%%%%%%%%%%%%%%%%%%
-   %% In the CFE evolution
-   %%   problem, determining data for $\phi_{ABCD}$ depends on the
-   %%   particular set-up for initial value problem in question.
-   %%%%%%%%%%%%%%%%%%%%%%%%%
-   %%In particular,
-   For the asymptotic initial value problem, the constraint equations
+  with $\hat{\phi}_{ABCD}:=\tau_A{}^{A'}\tau_B{}^{B'}\tau_C{}^{C'}\tau_D{}^{D'}\bar{\phi}_{A'B'C'D'}$. The fields $\bmE,\bmB$ are the spinorial counterparts of the electric and magnetic parts of the rescaled Weyl tensor and comprise initial data: away from $\mathscr{I}$ they are determined by the Gauss--Codazzi--Mainardi equations, while
+   for the asymptotic initial value problem, the constraint equations
    implied by the CFEs acquire a particularly simple form so that
-   initial data for the magnetic part of the rescaled Weyl tensor is
+   initial data for the magnetic part is
    determined algebraically by 
    %%%%
    %%$y_{ij}$,
    %%%
-   the Bach tensor of $h_{ij}$ as follows
-   \[B_{ij} =  \]
-   while the
-   electric part of the rescaled Weyl tensor, prescribed as initial data, is a solution to $D^iE_{ij}=0$ (i.e. a \textit{TT} tensor)
-   where $D_i$ is the Levi-Civita connection of $h_{ij}$ ---see
+   the Bach tensor of $h_{ij}$ and the
+   electric part is prescribed, the only constraint being that it satisfies the \textit{TT} condition with respect to $h_{ij}$---see
    \cite{CFEbook, GasVal17a}.
    For the discussion of this paper we will
    assume that such data $\bmE, \bmB$ has been already determined.}
@@ -1064,7 +1043,7 @@ Analogous to the physical case, given an algebraically-special $\phi_{ABCD}$,
 one can give an explicit construction of a Killing spinor, namely
 \begin{align*}
 & \kappa_{AB} = o_A o_B && (\textbf{Type N}),\\
-& \kappa_{AB} = \phi^{-1/3}o_{(A}o_B\iota_C\iota_{D)} && (\textbf{Type D}),
+& \kappa_{AB} = \phi^{-1/3}o_{(A}\iota_{B)} && (\textbf{Type D}),
 \end{align*}
 in terms of the relevant adapted spin dyad $\lbrace \bmo, \bm\iota\rbrace$. This can be seen directly 
 by noting that the identity \eqref{RescaledWeylEquationDisplayed} satisfied by $\phi_{ABCD}$ is formally 
@@ -1140,8 +1119,7 @@ calculations are the definitions of the following \emph{auxiliary quantities}:
   $\kappa_A$, such as
   \begin{align}\label{decomp_Der_kappa}
     \nabla_{AA'}\kappa _{B} & = \tfrac{1}{2} \epsilon _{AB}
-    \nabla_{CA'}\kappa ^{C} + \nabla_{(A|A'|}\kappa _{B)}\nonumber
- \\ & = \tfrac{1}{2} H_{A'AB} - \tfrac{1}{2} \xi _{A'} \epsilon_{AB}.
+    \nabla_{CA'}\kappa ^{C} + \nabla_{(A|A'|}\kappa _{B)} = \tfrac{1}{2} H_{A'AB} - \tfrac{1}{2} \xi _{A'} \epsilon_{AB}.
   \end{align}
 It is nevertheless illustrative to introduce this
   shorthand since the analogous quantity in the Killing spinor case
@@ -1175,8 +1153,8 @@ twistor equation. In other words,
 \[
 \bmH=0 \implies \bmQ =0, \qquad \text{but in general} \qquad \bmQ =0 \notimplies \bmH=0.
 \]
-However,  the initial data $(\nabla_{\bm\tau}
-\eta_A, \eta_A)|_{\mathcal{S}}$ for the wave equation
+However,  the initial data $(\eta_A, \nabla_{\bm\tau}
+\eta_A)|_{\mathcal{S}}$ for the wave equation
 \eqref{Wave_eq_twistor_candidate} has not been fixed yet. The aim of the following
 calculations is to determine the conditions on the initial data for the
 twistor candidate such that if propagated off $\mathcal{S}$, using
@@ -2272,7 +2250,7 @@ with $E_{ij}, B_{ij}$ denoting the electric and magnetic parts of the rescaled W
 \begin{corollary}\label{Corollary:PetrovPropagation}
 Suppose that $\phi_{ABCD}$ is of Petrov type N on $\mathcal{U}\subset \mathcal{S}$, then $\phi_{ABCD}$ is of Petrov type N on an open\mnotex{is it open?} subset of the spacetime development, $\mathcal{D}^+(\mathcal{U})$,  as evidenced by the existence of a non-trivial twistor (i.e. valence-1 Killing spinor). Suppose that $\phi_{ABCD}$ is of Petrov type D on $\mathcal{U}\subset\mathcal{S}$ and suppose further that 
 \begin{equation} 
-o^A o^B o^C\mathcal{D}_{AB}o_C=\iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C=0\label{ShearConditions}
+\sigma\equiv - o^A o^B o^C\mathcal{D}_{AB}o_C=0 \quad \text{and}\quad \lambda\equiv \iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C=0\label{ShearConditions}
 \end{equation}
 hold on $\mathcal{U}$, where $\lbrace \bmo, \bm\iota\rbrace$ is an adapted spin dyad in terms of which $\phi_{ABCD}=\phi o_{(A}o_B\iota_C\iota_{D)}$ for some field $\phi$.
 Then, $\phi_{ABCD}$ is also of Petrov type D on an open subset of the spacetime development, $\mathcal{D}^+(\mathcal{U})$, as evidenced by the existence of a non-trivial (valence-2) Killing spinor satisfying $\kappa_{AB}\kappa^{AB}\neq 0$. 
@@ -2291,8 +2269,8 @@ The remaining two components of () are given precisely by \eqref{ShearConditions
 \end{proof}
 
 \begin{remark}{\em 
- While the constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$ implies that the $\bm0\bm0\bm0\bm1$, $\bm0\bm0\bm1\bm1$ and $\bm0\bm1\bm1\bm1$ components of ()
-  are all satisfied ---to see this, compare \eqref{SpatialSenTypeD0001}--\eqref{SpatialSenTypeD0111} and \eqref{WeylConstraint00}--\eqref{WeylConstraint11} in the appendix--- the extremal spin components of () are not guaranteed simply as a consequence of the above expression for $\kappa_{AB}$. Hence, the conditions of Theorem \ref{Theorem_KS} are more restrictive than simply assuming that the Petrov type on $\mathcal{U}$ be N or D. The remaining two components are however encoded by the $\bm0\bm0\bm0\bm0$ and $\bm1\bm1\bm1\bm1$-components of the evolution equation $\nabla_{\bm\tau}\phi_{ABCD}=2\mathcal{D}_{(A}{}^F\phi_{BCD)F}$ \emph{if} one assumes that the Petrov type extends to the spacetime development, which is of course against the spirit of what we are aiming for here. 
+ While the constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$ implies that the $\bm0\bm0\bm0\bm1$, $\bm0\bm0\bm1\bm1$ and $\bm0\bm1\bm1\bm1$-components of $\mathcal{D}_{(AB}\kappa_{CD)}=0$
+  are all satisfied ---to see this, compare \eqref{SpatialSenTypeD0001}--\eqref{SpatialSenTypeD0111} and \eqref{WeylConstraintTypeD} in the appendix--- the extremal spin components of $\mathcal{D}_{(AB}\kappa_{CD)}=0$ are not guaranteed simply as a consequence of the above expression for $\kappa_{AB}$. Hence, the conditions of Theorem \ref{Theorem_KS} are more restrictive than simply assuming that the Petrov type on $\mathcal{U}$ be N or D. The remaining two extremal components are however encoded by the $\bm0\bm0\bm0\bm0$ and $\bm1\bm1\bm1\bm1$-components of the \emph{evolution equation} $\nabla_{\bm\tau}\phi_{ABCD}=2\mathcal{D}_{(A}{}^F\phi_{BCD)F}$ \emph{if} one assumes that the Petrov type extends to the spacetime development, which is of course against the spirit of what we are aiming for here. 
 }
 \end{remark}
 
@@ -2469,6 +2447,33 @@ Observe that for Type $O$, for which $\phi_{ABCD}=0$,
 the proof of \ref{prop_remove_redundant_conditions} trivialises,
 so only the type $N$ and $D$ are needed.
 
+\subsection{NP scalars}
+
+Recalling that $\mathcal{D}_{AB}:= \tau_{(A}{}^{A'}\nabla_{B)A'}$, a straightforward computation yields 
+\begin{align*}
+& o^Ao^Bo^C\mathcal{D}_{AB}o_C = -\sigma,\\
+& o^Ao^B\iota^C\mathcal{D}_{AB}o_C=o^Ao^Bo^C\mathcal{D}_{AB}\iota_C=-\beta,\\
+& o^A\iota^B o^C\mathcal{D}_{AB}o_C = \tfrac{1}{2}(\kappa - \tau),\\
+& o^A\iota^B\iota^C\mathcal{D}_{AB}o_C = o^A\iota^B o^C\mathcal{D}_{AB}\iota_C = \tfrac{1}{2}(\epsilon - \gamma),\\
+& \iota^A\iota^B o^C\mathcal{D}_{AB}o_C = \rho,\\
+& \iota^A\iota^B\iota^C\mathcal{D}_{AB}o_C = \iota^A\iota^B o^C\mathcal{D}_{AB}\iota_C = \alpha,\\
+& o^A o^B\iota^C\mathcal{D}_{AB}\iota_C = \mu,\\
+& o^A\iota^B\iota^C\mathcal{D}_{AB} = \tfrac{1}{2}(\pi - \nu),\\
+& \iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C = \lambda	,
+\end{align*}
+where we are following the conventions of [] in the definition of the NP scalars $\alpha, \beta, \epsilon, \gamma, \kappa, \mu, 
+\lambda, \rho, \tau, \sigma, \nu, \pi.$
+\\
+
+The following identities will be useful
+\begin{subequations}
+\begin{eqnarray}
+&& \mathcal{D}_{AB}o^B = o^Bo^C\mathcal{D}_{AC}\iota_B - \iota^B o^C\mathcal{D}_{AB}o_C,\\
+&& \mathcal{D}_{AB}\iota^B = \iota^B o^C(\mathcal{D}_{AC}\iota_B - \mathcal{D}_{AB}\iota_C),
+\end{eqnarray}
+\end{subequations}
+and follow easily from $\epsilon_{AB}=o_A\iota_B - o_B\iota_A$. 
+
 
 \subsection{Case I: $\kappa_{AB}\kappa^{AB}=0$ on $\mathcal{U}$} \label{TypeNCase}
 
@@ -2481,46 +2486,31 @@ for some scalar field $\phi:\mathcal{U}\rightarrow\mathbb{C}$ and hence that the
 \begin{equation*}
  \omicron^A \omicron^B \omicron^C \mathcal{D}_{AB}\omicron_C= \omicron^A \omicron^B \iota^C\mathcal{D}_{(AB}\omicron_{C)}= \omicron^A \iota^B \iota^C\mathcal{D}_{(AB}\omicron_{C)}= \iota^A \iota^B \iota^C\mathcal{D}_{AB}\omicron_{C}=0,
 \end{equation*}
-implying that $\mathcal{D}_{(AB}\omicron_{C)}=0$ ---that is to say that $\omicron_A$ is a twistor candidate. The following identities will be useful
-\begin{subequations}
-\begin{eqnarray}
-&& \mathcal{D}_{AB}o^B = o^Bo^C\mathcal{D}_{AC}\iota_B - \iota^B o^C\mathcal{D}_{AB}o_C,\\
-&& \mathcal{D}_{AB}\iota^B = \iota^B o^C(\mathcal{D}_{AC}\iota_B - \mathcal{D}_{AB}\iota_C)
-\end{eqnarray}
-\end{subequations}
-We also have 
-\begin{align*}
- \xi &= 2 o^{A} \mathcal{D}_{AB}o^{B},\\
- \xi_{AB} &= -  o^{C} \mathcal{D}_{C(A}o_{B)}  -  o_{(A} \mathcal{D}_{B)C}o^{C}= - \tfrac{4}{3} o_{(A} \mathcal{D}_{B)C}o^{C}.
-\end{align*}
+implying that $\mathcal{D}_{(AB}\omicron_{C)}=0$ ---that is to say that $\omicron_A$ is a twistor candidate. In terms of the NP scalars, the above read as follows 
+\begin{equation}\label{NPRelationsTypeN} 
+\sigma=- \beta + \kappa -  \tau=\epsilon -  \gamma + \rho=\alpha=0.
+\end{equation}	
+Using these relations, we obtain
+\begin{equation}\label{AuxSpinorsTypeN}
+ \xi = -3\beta,\qquad \xi_{AB} &= 2\rho o_Ao_B - 2\beta o_{(A}\iota_{B)}.
+\end{equation}
 The non-trivial component of the constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$ reduces to 
 \begin{equation}
- o^{A} o^{B} \mathcal{D}_{AB}\phi = -2 \phi  o^{A} \mathcal{D}_{AB}o^{B} - 2 \phi o^{A} o^{B}  \iota^{C} \mathcal{D}_{AB}o_{C}.\label{TypeNweylConstraint}
+ \mathcal{D}_{\bm0\bm0}\phi = \tfrac{5}{3}\phi (2\beta  +  \kappa -  \tau)=5\phi\beta.\label{TypeNweylConstraint}
 \end{equation}
-Then, 
+Then, substituting \eqref{AuxSpinorsTypeN}, condition \eqref{RedundantCondition1} reduces to
 \begin{align*}
-\omicron^A \iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) &=-\tfrac{1}{2}\phi \omicron^A \omicron^B \omicron^C\mathcal{D}_{AB}\omicron_C=0,\\
-\iota^A\iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) &=- \tfrac{1}{2} \phi o^{A}  \mathcal{D}_{AB}o^{B} -  \tfrac{1}{2} \phi o^{A} o^{B}  \iota^{C} \mathcal{D}_{AB}o_{C} -  \tfrac{5}{2}\phi o^{A} o^{B}  \iota^{C} \mathcal{D}_{BC}o_{A}\\
-&= -3 \phi o^{A} o^{B} \iota^{C} \mathcal{D}_{(AB}o_{C)} \\
-&= 0,
+\omicron^A \iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) &=\tfrac{1}{2}\phi\sigma =0,\\
+\iota^A\iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) &=\phi(\beta -  \kappa  + \tau) = 0
 \end{align*}
-with all other components vanishing trivially. These are essentially the same computations as in []. On the other hand,
+with the second equality following from \eqref{NPRelationsTypeN} and
+with all other components vanishing trivially. These are essentially the same computations as in []. On the other hand, substituting \eqref{AuxSpinorsTypeN}, condition \eqref{RedundantCondition2} reduces to
 \begin{align*}
-\omicron^A\omicron^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)&=-\tfrac{1}{3}\phi \xi \omicron^A\omicron^B\omicron^C\mathcal{D}_{AB}\omicron_C=0,\\
-\omicron^A\iota^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)&= - \phi\left(\tfrac{4}{3} \mathcal{D}_{A}{}^{D}o^{A} + 2 o^{A}  \iota^{D} \mathcal{D}_{AF}o^{F}\right) o^{B} o^{C}\mathcal{D}_{(BC}o_{D)}=0,
+\omicron^A\omicron^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)&=\tfrac{1}{3}\phi \xi \sigma=0,\\
+\omicron^A\iota^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)&= \tfrac{1}{2} \beta \mathcal{D}_{\bm0\bm0}\phi-2 \beta^2 \phi -  \tfrac{1}{2} \beta \kappa \phi - 2 \rho \sigma \phi + \tfrac{1}{2} \beta \tau \phi =0,\\
+\iota^A\iota^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right) &= 2 \rho \mathcal{D}_{\bm0\bm0}\phi-10 \beta \rho \phi =0
 \end{align*}
-while, finally, 
-\begin{align*}
-&\iota^A\iota^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)\\
-&\qquad=- \tfrac{16}{9} \phi (\mathcal{D}_{A}{}^{B}o^{A}) \mathcal{D}_{BC}o^{C} -  \tfrac{4}{3} o^{A} o^{B} \iota^{C} (\mathcal{D}_{AD}o^{D}) \mathcal{D}_{BC}\phi \\
-&\qquad\quad -  \tfrac{4}{3} o^{A} (\mathcal{D}_{AC}\phi) \mathcal{D}_{B}{}^{C}o^{B} -  \tfrac{40}{9} o^{A} \phi \iota^{B} (\mathcal{D}_{AC}o^{C}) \mathcal{D}_{BD}o^{D} \\
-&\qquad\quad -  \tfrac{16}{3} \phi o^{A}  \iota^{B} (\mathcal{D}_{C}{}^{D}o^{C}) \mathcal{D}_{(AB}o_{D)} - 4\phi  o^{A} o^{B} \iota^{C} \iota^{D} (\mathcal{D}_{AF}o^{F}) \mathcal{D}_{(BC}o_{D)}\\
-&\qquad =- \tfrac{16}{9} \phi (\mathcal{D}_{A}{}^{B}o^{A}) \mathcal{D}_{BC}o^{C} -  \tfrac{4}{3} o^{A} o^{B} \iota^{C} (\mathcal{D}_{AD}o^{D}) \mathcal{D}_{BC}\phi -  \tfrac{4}{3} o^{A} (\mathcal{D}_{AC}\phi) \mathcal{D}_{B}{}^{C}o^{B} -  \tfrac{40}{9}\phi  o^{A} \iota^{B} (\mathcal{D}_{AC}o^{C}) \mathcal{D}_{BD}o^{D}\\
-&\qquad =- \tfrac{16}{9} \phi (\mathcal{D}_{A}{}^{B}o^{A}) \mathcal{D}_{BC}o^{C} -  \tfrac{40}{9} o^{A} \phi \iota^{B} (\mathcal{D}_{AC}o^{C}) \mathcal{D}_{BD}o^{D} -  \tfrac{4}{3} o^{A} o^{B} \iota^{C} (\mathcal{D}_{AB}\phi) \mathcal{D}_{CD}o^{D}\\
-&\qquad =  - \tfrac{16}{9} \phi (\mathcal{D}_{A}{}^{B}o^{A}) \mathcal{D}_{BC}o^{C}\\
-&\qquad = 0,
-\end{align*}
-where in the third equality we are using the identity $\omicron_A\iota_C=\iota_A\omicron_C + \epsilon_{AC}$ on the second term, in the fourth we are substituting \eqref{TypeNweylConstraint} and the final equality follows from skew-symmetry. All other components vanishing trivially. Hence, in this case, \eqref{RedundantCondition1} and \eqref{RedundantCondition2} trivialise. 
+where we are again using \eqref{NPRelationsTypeN}. All other components vanishing trivially. Hence, in this case, both conditions \eqref{RedundantCondition1} and \eqref{RedundantCondition2} trivialise. 
 
 
 \subsection{Case II: $\kappa_{AB}\kappa^{AB}\neq 0$ on $\mathcal{U}$}\label{TypeDCase}
@@ -2530,39 +2520,50 @@ There exists a spin dyad $\lbrace \bm\omicron, \bm\iota\rbrace$ such that $\kapp
 for some scalar field $\phi:\mathcal{U}\rightarrow\mathbb{C}$ and hence that the curvature is of Petrov type D on $\mathcal{U}$. The equation $\mathcal{D}_{(AB}\kappa_{CD)}=0$ is equivalent to 
 \begin{subequations}
 \begin{eqnarray}
-&& \omicron^A\omicron^B\omicron^C\mathcal{D}_{AB}\omicron_C=0,\label{SpatialSenTypeD0000}\\
-&& o^{A} o^{B} \mathcal{D}_{AB}\varkappa = -2 o^{A} o^{B} \iota^{C} \mathcal{D}_{BC}o_{A}, \label{SpatialSenTypeD0001}\\
-&& o^{A} \iota^{B} \mathcal{D}_{AB}\varkappa = \tfrac{1}{2} o^{A} o^{B} \iota^{C} \mathcal{D}_{AB}\iota_{C} -  \tfrac{1}{2} o^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}o_{A},\label{SpatialSenTypeD0011}\\
-&& \iota^{A} \iota^{B} \mathcal{D}_{AB}\varkappa = 2 o^{A} \iota^{B} \iota^{C} \mathcal{D}_{AC}\iota_{B}, \label{SpatialSenTypeD0111}\\
-&& \iota^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}\iota_{A} = 0.\label{SpatialSenTypeD1111}
+&& \sigma=0,\label{SpatialSenTypeD0000}\\
+&& \mathcal{D}_{\bm0\bm0}\varkappa = \tau - \kappa, \label{SpatialSenTypeD0001}\\
+&& \mathcal{D}_{\bm0\bm1}\varkappa = \tfrac{1}{2} (\mu-\rho),\label{SpatialSenTypeD0011}\\
+&& \mathcal{D}_{\bm1\bm1}\varkappa = \pi - \nu, \label{SpatialSenTypeD0111}\\
+&& \lambda = 0.\label{SpatialSenTypeD1111}
 \end{eqnarray}
 \end{subequations}
-The auxiliary spinors 
-\begin{align*} 
-\xi &=\tfrac{3}{2}e^{\varkappa} (-\iota^A\iota^B o^C\mathcal{D}_{AB}o_C + \iota^Ao^B o^C\mathcal{D}_{BC}\iota_A) ,\\
-\xi_{AB} &= \\
-&= .
-%\xi_{AB} &= \tfrac{1}{2} e^{\varkappa} \left(-   o_{(A}\iota^{C}\mathcal{D}_{B)C}\varkappa-   o^{C}\iota_{(A}\mathcal{D}_{B)C}\varkappa\right.\\
-%& \qquad\qquad\left.+o_{(A}\mathcal{D}_{B)}{}^{C}\iota_{C} -  o^{C}\mathcal{D}_{(A|C|}\iota_{B)} + \iota_{(A}\mathcal{D}_{B)}{}^{C}o_{C} -  \iota^{C}\mathcal{D}_{(A|C|}o_{B)} \right).
-\end{align*}
-where the second equality follows from \eqref{SpatialSenTypeD0000}--\eqref{SpatialSenTypeD1111}. The constraint $\mathcal{D}^{CD}\phi_{CDAB}=0$ is equivalent to 
+Using the above, the auxiliary spinors can be written as 
 \begin{subequations}
-\begin{align}
- o^{A} o^{B} \mathcal{D}_{AB}\phi &= 6\phi \iota^A o^B o^C\mathcal{D}_{AC}o_B, \label{WeylConstraint00}\\
- o^{A} \iota^{B} \mathcal{D}_{AB}\phi &= \tfrac{3}{2}\phi(\iota^A\iota^B o^C\mathcal{D}_{AB}o_C - \iota^A o^B o^C\mathcal{D}_{BC}\iota_A),\\
- \iota^{A} \iota^{B} \mathcal{D}_{AB}\phi &= -6 \phi \iota^A\iota^B o^C\mathcal{D}_{BC}\iota_A. \label{WeylConstraint11}
-\end{align}
+\begin{eqnarray} 
+&& \xi =\tfrac{3}{2}e^{\varkappa}(\mu -  \rho), \label{AuxSpinor1TypeD}\\
+&& \xi_{AB} = e^{\varkappa} (\nu - \pi) o_{A} o_{B} + e^{\varkappa}(\mu + \rho) o_{(A}\iota_{B)} + e^{\varkappa} (\tau - \kappa) \iota_{A} \iota_{B}. \label{AuxSpinor2TypeD}
+\end{eqnarray}
 \end{subequations}
-Then, 
-\begin{eqnarray*}
-&& \omicron^A \omicron^B \omicron^C \omicron^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) = \tfrac{1}{2}\phi e^\varkappa \omicron^A \omicron^B \omicron^C\mathcal{D}_{AB}\omicron_C=0,\\
-&& \omicron^A \omicron^B \omicron^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) \\
-&&=\tfrac{1}{24}e^\varkappa o^A o^B\mathcal{D}_{AB}\phi - \tfrac{1}{4}\phi e^\varkappa \iota^A o^B o^C\mathcal{D}_{AC}o_B \\
-&&- \tfrac{1}{12}\phi e^\varkappa o^A o^B o^C \mathcal{D}_{BC}\iota_A + \tfrac{1}{12}\phi e^\varkappa \iota^A o^B o^C\mathcal{D}_{BC}o_A,\\
-&& \omicron^A \omicron^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) =,\\
-&& \omicron^A \iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) =\tfrac{1}{24}e^\varkappa \iota^A\iota^B\mathcal{D}_{AB}\phi + \tfrac{1}{4}\phi e^\varkappa\iota^A\iota^B o^C\mathcal{D}_{BC}\iota_A=0,\\
-&&\iota^A \iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) = - \tfrac{1}{2}\phi  e^{\varkappa}  \iota^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}\iota_{A}=0.
-\end{eqnarray*}
+The constraint $\mathcal{D}^{CD}\phi_{CDAB}=0$ is equivalent to 
+\begin{equation}\label{WeylConstraintTypeD}
+  \mathcal{D}_{\bm0\bm0}\phi = 3 \phi(\kappa - \tau), \qquad 
+  \mathcal{D}_{\bm0\bm1}\phi = \tfrac{3}{2}\phi(\rho -\mu), \qquad
+  \mathcal{D}_{\bm1\bm1}\phi = 3\phi (\nu  - \pi). 
+\end{equation}
+Then, substituting \eqref{AuxSpinor1TypeD} and \eqref{AuxSpinor2TypeD}, condition \eqref{RedundantCondition1} decomposes as follows
+\begin{align*}
+\omicron^A \omicron^B \omicron^C \omicron^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) 
+&=- \tfrac{1}{2} e^{\varkappa}\phi \sigma=0,\\
+\omicron^A \omicron^B \omicron^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) & =\tfrac{1}{24} e^{\varkappa} \mathcal{D}_{\bm0\bm0}\phi + \tfrac{1}{8} e^{\varkappa}\phi (\tau - \kappa)  =0,\\
+ \omicron^A \omicron^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) 
+& = \tfrac{1}{18} e^{\varkappa} \mathcal{D}_{\bm0\bm1}\phi + \tfrac{1}{12} e^{\varkappa}\phi (\mu - \rho)  = 0,\\
+ \omicron^A \iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) & =\tfrac{1}{24} e^{\varkappa} \mathcal{D}_{\bm1\bm1}\phi + \tfrac{1}{8} e^{\varkappa} \phi(\pi-\nu)  = 0,\\
+ \iota^A \iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) & = - \tfrac{1}{2} e^{\kappa} \phi \lambda = 0,
+\end{align*}
+the equality with zero following from \eqref{WeylConstraintTypeD}. 
+On the other hand, substituting \eqref{AuxSpinor1TypeD} and \eqref{AuxSpinor2TypeD} into \eqref{RedundantCondition2}, 
+\begin{align*}
+& o^Ao^Bo^Co^D(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3} \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F})  =\tfrac{1}{3} \phi \sigma  \xi =0,\\
+& o^Ao^Bo^C\iota^D(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3} \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F}) \\
+&\qquad\qquad\qquad\qquad\qquad = \tfrac{1}{8} e^{\varkappa} (\rho-\mu) \mathcal{D}_{\bm0\bm0}\phi + \tfrac{3}{8}e^{\varkappa}\phi  (\kappa-\tau)(\mu - \rho)  +  \tfrac{1}{2} e^{\varkappa}\phi(\pi-\nu) \sigma   = 0	,\\
+& o^Ao^B\iota^C\iota^D(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3} \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F})  \\
+&\qquad\qquad\qquad\qquad\qquad=	\tfrac{1}{6} e^{\varkappa}\left((\nu-\pi)\mathcal{D}_{\bm0\bm0}\phi + (\rho+\mu)\mathcal{D}_{\bm0\bm1}\phi + (\tau-\kappa)\mathcal{D}_{\bm1\bm1}\phi \right)  + \tfrac{1}{4} e^{\varkappa} \phi(\mu^2-\rho^2) = 0,\\
+& o^A\iota^B\iota^C\iota^D(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3} \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F})  \\
+& \qquad\qquad\qquad\qquad\qquad =	\tfrac{1}{8} e^{\varkappa}  (\mu - \rho) \mathcal{D}_{\bm1\bm1}\phi  +  \tfrac{3}{8} e^{\varkappa} \phi(\mu-\rho) (\pi-\nu) + \tfrac{1}{2} e^{\varkappa}\phi (\kappa-\tau) \lambda    = 0,\\
+& \iota^A\iota^B\iota^C\iota^D(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3} \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F})  =	- \tfrac{1}{3}\phi \lambda \xi = 0.
+\end{align*}
+Hence, again, \eqref{RedundantCondition1} and \eqref{RedundantCondition2} trivialise. Combining the result of this section with the previous, Proposition \ref{prop_remove_redundant_conditions} follows.
+
 
 %%%%%%%%%%%%%% 
 %% \bibliographystyle{/home/egarcia/Dropbox/References/reporthack}
