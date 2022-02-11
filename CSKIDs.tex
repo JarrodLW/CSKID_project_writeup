@@ -1408,7 +1408,7 @@ follows, exploting the identity \eqref{derH_twistor_toBandQ}, that
   _{B)D}\quad
 \end{align}
 Transvecting with $\tau^{D}{}_{B'}$ and rearranging gives
-\begin{align}
+\begin{align}\label{time-derHToBHQ}
 \nabla_{\bm\tau} H_{B'AB} = -4 B_{ABD} \Xi \tau ^{D}{}_{B'} -2 \tau ^{CA'}
 \tau ^{D}{}_{B'} \mathcal{D} _{DC}H_{A'AB} - \tfrac{4}{3} \tau
 ^{D}{}_{B'}Q_{(A}\epsilon _{B)D}
@@ -1424,7 +1424,7 @@ redundant if $H_{A'AB}|_{\mathcal{S}}=0$ and $
 B_{ABC}|_{\mathcal{S}}=0$ are satisfied.  Using the definition
 \eqref{Def_B_twistor}, the condition $B_{ABC}|_{\mathcal{S}}=0$ simply
 reads,
-\begin{align}
+\begin{align}\label{B_twistor_vanishes_ID}
   \phi_{ABCD}\kappa^D=0 \qquad \text{on} \qquad \mathcal{S}.
 \end{align}
 Finally, for the condition $\nabla_{\tau}B_{ABC}|_{\mathcal{S}}=0$ one
@@ -1480,7 +1480,7 @@ and using the expression for $\mathcal{H}_{ABC}$ equation
 \end{align}
 Substituting decomposition \eqref{decompSenKappa} into equation
 \eqref{normalderB_twistor_exp3} renders
-\begin{align}
+\begin{align}\label{time-derBToBH}
 \nabla_{\tau}B_{ABC}|_{\mathcal{S}}=- \phi _{BCDF} \mathcal{H}
 _{A}{}^{DF} -2 \mathcal{D} _{AD}B_{BC}{}^{D} +
 \tfrac{2}{3}\phi_{ABCD}\mathcal{H}^D = 0 \quad \text{on} \quad
@@ -1489,7 +1489,41 @@ _{A}{}^{DF} -2 \mathcal{D} _{AD}B_{BC}{}^{D} +
 Hence, overall, the only independent conditions to be imposed are
 $H_{A'AB}|_{\mathcal{S}}=0$ and $B_{ABC}|_{\mathcal{S}}=0$.  \\
 
-The discussion of this section can be summarised in the following:
+The discussion of this subsection can be summarised in the following lemma.
+
+
+\begin{lemma}\label{lemma:twistor_removing_redundancy}
+  Given initial data for the conformal field equations on $\mathcal{U}\subseteq\mathcal{S}$
+  where $\mathcal{S}$ is a spacelike
+hypersurface $\mathcal{S}$ with normal vector $\tau^{AA'}$, and
+associated normal derivative $\nabla_{\bm\tau} :=
+\tau^{AA'}\nabla_{AA'}$,
+If the twistor candiate equation encoded in
+$Q_A=0$ is satisfied in $\mathcal{D}^{+}(\mathcal{U})$ then
+\begin{equation}
+H_{A'AB}=B_{ABC}=0   \quad \text{on} \quad \mathcal{U} \quad \implies \quad
+\nabla_{\bm\tau}H_{A'AB}=\nabla_{\bm\tau} B_{ABC}=0  \quad \text{on} \quad \mathcal{U}.
+\end{equation} 
+\end{lemma}
+
+\begin{proof}
+  The lemma follows direcrtly from equations \eqref{time-derHToBHQ} and \eqref{time-derBToBH}.
+\end{proof}
+
+\begin{remark}\emph{
+Observe that equation \eqref{time-derHToBHQ} was derived without making use of
+the CFE while to derive \eqref{time-derBToBH} the CFE were used so the
+assumption of having initial data satisfying the CFE constraints cannot be removed from
+Lemma \ref{lemma:twistor_removing_redundancy}.
+}
+\end{remark}
+
+%% Lemma \ref{lemma:twistor_removing_redundancy} simply states that the
+%% conditions in expression \eqref{eq:VanishingOfNormalDerivB_twistor}
+%% in proposition \ref{Prop:Propagation_twistor} are redundant. Hence,
+%% combinging Proposition \ref{Prop:Propagation_twistor} and Lemma
+%% \ref{lemma:twistor_removing_redundancy} one obtains the following:
+
 \begin{theorem}\label{Theorem_twistor}
 Consider an initial data set for the vacuum conformal Einstein
 field equations, as encoded in the CFE zero-quantities
@@ -1503,9 +1537,9 @@ exists a solution $\kappa_A$ to the equations
 \begin{flalign}
   \mathcal{D} _{(AB}\kappa _{C)}=0 , %\label{CS-KID1_twistor}
     \qquad
-   \phi_{ABCD}\kappa^D=0, \label{CS-KID_twistor}
+   \phi_{ABCD}\kappa^D=0,   \qquad \text{on} \qquad \mathcal{U}.\label{CS-KID_twistor}
 \end{flalign}
-on $\mathcal{U}$. The twistor is obtained by evolving according
+ The twistor is obtained by evolving according
 to the wave equation:
 \begin{align} \label{Wave_eq_twistor_candidate_theo}
 \square \kappa _{A} = -2 \Lambda \kappa _{A}.
@@ -1513,21 +1547,21 @@ to the wave equation:
 with initial data satisfying conditions in equation
 \eqref{CS-KID_twistor} and
 \begin{equation}
-  \nabla_{\bm\tau} \kappa _{A} = \tfrac{2}{3} \mathcal{D} _{AB} \kappa^B.
+  \nabla_{\bm\tau} \kappa _{A} = \tfrac{2}{3} \mathcal{D} _{AB} \kappa^B
+  \qquad \text{on} \qquad \mathcal{U}.
 \end{equation}
 \end{theorem}
 
 \begin{proof}
-The analysis of the last subsection shows that conditions
-\begin{eqnarray*}
- H_{A'AB}=0, \quad \nabla_{\bm\tau} H_{A'AB}=0, \quad B_{ABC}=0, \quad
- \nabla_{\bm\tau} B_{ABC}=0
-\end{eqnarray*}
-on $\mathcal{U}\subset \mathcal{S}$ are equivalent to the conditions
-\eqref{CS-KID_twistor}.  Hence, using Proposition
-\ref{Prop:Propagation_twistor} one concludes that if equations
-\eqref{CS-KID_twistor} hold on $\mathcal{U}$, then the domain of
-dependence of $\mathcal{U}$ is endowed with a twistor.
+  Lemma \ref{lemma:twistor_removing_redundancy} implies that the
+  conditions \eqref{eq:VanishingOfNormalDerivB_twistor} can be removed
+  from Proposition \ref{Prop:Propagation_twistor}.  Hence, exploiting
+  the space spinor formalism to rewrite the conditions \eqref{eq:VanishingOfH_twistor}
+  as done in equations \eqref{H_twistor_vanishes_ID} and \eqref{B_twistor_vanishes_ID}, 
+  and using Proposition \ref{Prop:Propagation_twistor}, one
+  concludes that if equations \eqref{CS-KID_twistor} hold on
+  $\mathcal{U}$, then the domain of dependence of $\mathcal{U}$ is
+  endowed with a twistor.
 \end{proof}
 
 \begin{remark}
@@ -1575,6 +1609,7 @@ section \ref{conformalTwistorKID} for the twistor case.
 %% strategy as in the twistor case, although the calculations will be
 %% somewhat more involved.
 %%%%%%%%%%%%%%%%
+
 
 \subsection{Killing spinor zero quantities}
 
