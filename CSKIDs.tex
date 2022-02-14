@@ -220,7 +220,7 @@ $\!\!\!\!\!\!\,\bullet$\themnotecount: #1} }
 \begin{document}
 
 
-\title{\textbf{The conformal Killing spinor initial and boundary data equations}}
+\title{\textbf{The conformal Killing spinor initial data equations}}
 
 
 \author[1]{E. Gasper\'in \footnote{E-mail address:{\tt edgar.gasperin@tecnico.ulisboa.pt}}}
@@ -239,9 +239,9 @@ $\!\!\!\!\!\!\,\bullet$\themnotecount: #1} }
   rise to a spacetime development possessing a Killing spinor.  The
   fact that the conformal Einstein field equations are used in our
   derivation allows for the possibility that the initial hypersurface
-  $\mathcal{S}$ be (part of) the conformal boundary $\mathscr{I}$.
+  $\mathcal{S}$ intersect non-trivially with (or even be a subset of) the conformal boundary $\mathscr{I}$.
   For conciseness, these conditions are derived assuming that the
-  initial hypersurface is spacelike. Consequently, these equations
+  initial hypersurface is spacelike. In particular, these equations
   encode necessary and sufficient conditions for the existence of a
   Killing spinor in the development of asymptotic initial data on
   spacelike components of $\mathscr{I}$.
@@ -254,7 +254,7 @@ $\!\!\!\!\!\!\,\bullet$\themnotecount: #1} }
 
    
 The discussion of symmetries  in General
-Relativity is ubiquitous. From the question of integrability of the geodesic
+Relativity is ubiquitous. From the question of the integrability of the geodesic
 equations to the existence of explicit solutions to the Einstein field
 equations and the black hole uniqueness problem, symmetries play an important role.   
 Symmetry assumptions are usually incorporated into
@@ -270,7 +270,7 @@ Symmetry assumptions are usually incorporated into
  uniqueness results such as \cite{Rob75b}.  Closely related to the
  black hole uniqueness problem, characterisations and classifications
  of solutions to the Einstein field equations usually exploit the
- symmetries of the spacetime in one way or another, e.g., in the
+ symmetries of the spacetime in one way or another, e.g. in the
  characterisations of the Kerr spacetime via the \emph{Mars-Simon
  tensor} ---see \cite{Mar99,Mar00,Sim84}.  On the other hand, from the
  point of view of the Cauchy problem, symmetry assumptions should be
@@ -287,10 +287,10 @@ Symmetry assumptions are usually incorporated into
  of Killing vector plays a central role in the discussion of the
  symmetries, the existence of Killing vectors is sometimes not enough
  to encode all the symmetries and conserved quantities that a
- spacetime can posses, e.g., the Carter constant in the Kerr
+ spacetime can posses, e.g. the Carter constant in the Kerr
  spacetime. To unravel some of these \emph{hidden symmetries} one has
- analyse the existence of a more fundamental type of objects;
- \emph{Killing spinors} $\tilde{\kappa}_{AB}$. For vacuum spacetimes,
+ analyse the existence of a more fundamental type of objects, namely
+ \emph{Killing spinors}, denoted here by $\tilde{\kappa}_{AB}$. For vacuum spacetimes,
  the existence of a Killing spinor directly implies the existence of a
  Killing vector. The \emph{Killing spinor initial data equations} have
  been derived in the \emph{physical framework} ---governed by the
@@ -344,7 +344,7 @@ and \cite{CFEbook} for a comprehensive discussion.  There are three
 ways in which these equations can be presented: the metric, the frame
 and spinorial formulations. These equations have been mainly used in
 the stability analysis of spacetimes ---see for instance \cite{Fri86b,
-  Fri86c} for the proof of the global and semiglobal non-linear
+  Fri86c} for the proof of the global and semi-global non-linear
 stability of the de Sitter and Minkowski spacetimes, respectively.
 Expressed in a nutshell, the main advantage of the conformal
 (unphysical) approach to the Einstein field equations is that the
@@ -353,7 +353,7 @@ submanifold of $(\mathcal{M},\bmg)$. This allows, in particular, to
 consider the $\Xi=0$ hypersurface as a legitimate hypersurface to
 prescribe data which can be evolved using regular ---without
 $\Xi^{-1}$-terms--- evolution equations. 
-This set up is particularly atractive to study
+This set up is particularly attractive to study
 spacetimes with $\lambda>0$ in which, given the appropriate
 conditions, the conformal boundary is a spacelike
 hypersurface and hence one can pose \emph{an asymptotic initial value
@@ -487,7 +487,7 @@ the conformal Einstein field equations has been prescribed,
 
 
 Involved computations throughout this article were facilitated through
-the suite {\tt xAct} in {\tt Mathematica}.
+the suite {\tt xAct} in {\tt Mathematica}.\mnotex{Shall we link the notebook?}
 
 
 
@@ -574,10 +574,11 @@ related identity which will be systematically used in the following
 discussion is
 \begin{equation}\label{DecomposeDoubleDerivativeContracted}
 \nabla_{AQ'}\nabla_{B}{}^{Q'}=\square_{AB}+
-\frac{1}{2}\epsilon_{AB}\square,
+\tfrac{1}{2}\epsilon_{AB}\square,
 \end{equation}
 where $\square_{AB}$ is the symmetric operator defined above and
 $\square := \nabla_{AA'}\nabla^{AA'}.$
+\medskip 
 
 To have a self-contained discussion the space spinor
 formalism, originally introduced in \cite{Som80}, is briefly recalled
@@ -590,24 +591,22 @@ $\tau_{AA'}\tau^{AA'}=2$ and, consequently,
 Given a spacetime spinor $u_{AA'}$, its space spinor decomposition
 reads
 \[
-u_{AA'}= \frac{1}{2}\tau_{AA'}u-\tau^{B}{}_{A'}u_{(AB)},
+u_{AA'}= \tfrac{1}{2}\tau_{AA'}u-\tau^{B}{}_{A'}u_{(AB)},
 \]
-where $u:=\tau^{AA'}W_{AA'}$ and $u_{(AB)}:=\tau_{(A}{}^{B'}u_{B)B'}$.
+where $u:=\tau^{AA'}u_{AA'}$ and $u_{(AB)}:=\tau_{(A}{}^{B'}u_{B)B'}$.
 This split extends to higher valence spinors in an analogous way
 ---see \cite{GarVal08c,BaeVal10b,CFEbook}. Similarly,
 the covariant derivative $\nabla_{AA'}$ is then decomposed into the
 \emph{normal} and \emph{Sen} derivatives:
 \begin{align*}
   %& \mathcal{P}
-  &\nabla_{\bm\tau} := \tau^{AA'}\nabla_{AA'},\\ & \mathcal{D}_{AB}:=
+  \nabla_{\bm\tau} := \tau^{AA'}\nabla_{AA'},\qquad  \mathcal{D}_{AB}:=
   \tau_{(A}{}^{A'}\nabla_{B)A'}.
 \end{align*}
-The \emph{Weingarten} spinor and the \emph{acceleration} of the
+Though we will not need them here, for completeness we note that the \emph{Weingarten} spinor and the \emph{acceleration} of the
 congruence are then defined by
-\begin{align*}
-& K_{ABCD} := \tau_{D}{}^{C'} \mathcal{D}_{AB}\tau_{CC'},\\ &
-  K_{AB} := \tau_{B}{}^{C'} \nabla_{\bm\tau}\tau_{AC'}.
-\end{align*}
+\[K_{ABCD} := \tau_{D}{}^{C'} \mathcal{D}_{AB}\tau_{CC'},\qquad K_{AB} := \tau_{B}{}^{C'} \nabla_{\bm\tau}\tau_{AC'}.
+\]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%\mnotex{these are not really used so
 %% I cutted some of the discussion to make it more brief}
@@ -618,15 +617,12 @@ congruence are then defined by
 %%   \mathcal{D}_{AB}\tau_{CA'} = - K_{ABCD} \tau^{D}{}_{A'}.
 %% \end{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 The distribution induced by $\tau_{AA'}$ is integrable if and only
 $K^D{}_{(AB)D}=0$, in which case $K_{ABCD}$ describes the extrinsic
-curvature of the resulting foliation.
- Nevertheless, this is not required for our subsequent discussion.
-In other words, we will allow
- the possibility that the distribution is non-integrable
----i.e. the spinor $ K^D{}_{(AB)D}$ will not be assumed
-to vanish.
+curvature of the resulting foliation. Nevertheless, this is not required for our subsequent discussion; we will allow
+ for the possibility that the distribution is non-integrable.\mnotex{Is this true? Do we really not need an integrable manifold.}
+%---i.e. the spinor $ K^D{}_{(AB)D}$ will not be assumed
+%to vanish.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%\mnotex{these are not really used so
 %% I cutted some of the discussion to make it more brief}
@@ -642,13 +638,12 @@ to vanish.
 %% \epsilon_{A(C} \epsilon_{D)B}.
 %% \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+\mnotex{Add formula relating Sen to intrinsic Levi Civita.}
 
 
 \subsection{Killing spinors}\label{Sec:KillingSpinors}
 
-To start the discussion it is convenient to introduce some notation
+To begin the discussion it is convenient to introduce some notation
 and definitions. Let $(\tilde{\mathcal{M}},\tilde{\bmg})$ be a
 4-dimensional manifold equipped with a Lorentzian metric
 $\tilde{\bmg}$ and denote by $\tilde{\nabla}$ its associated
@@ -656,7 +651,6 @@ Levi-Civita connection.  Later, we will reserve the $\tilde{\cdot}$
 notation for a vacuum spacetime ---that is to say, a solution of the
 vacuum Einstein field equations \eqref{EFEVacuum}. We note however
 that, in the present section, no such restriction is necessary.
-
 \medskip
 
 A totally symmetric
@@ -687,7 +681,6 @@ $\tilde{\kappa}_{AB}=\tilde{\kappa}_{(AB)}$, is a \textit{Killing
 \begin{equation}
 \tilde{\nabla}_{A'(A}\tilde{\kappa}_{BC)}=0.
 \end{equation}
-
 The Killing spinor equation and twistor equations are, in general,
 overdetermined; in particular, they imply the so-called
 \textit{Buchdahl constraint}.  In the twistor case ($p=1$) this has
@@ -696,17 +689,25 @@ the form
 \tilde{\kappa}^D\Psi_{ABCD}=0,
 \]
 while in the Killing spinor case ($p=2$) the Buchdahl constraint
-adquires the form
+takes the form
 \[
 \tilde{\kappa}_{(A}{}^Q\Psi_{BCD)Q}=0,
 \]
 where $\Psi_{ABCD}$ denotes the conformally invariant Weyl spinor.
 The latter condition restricts $\Psi_{ABCD}$ to be algebraically
-special.  In the twistor case the spacetime is necessarity of Petrov
+special.  In the twistor case the spacetime is necessarily of Petrov
 type N or O, hence restricting its applicability for characterisation
 of black holes.  In the Killing spinor case the spacetime is only
-restricted to be of Petrov type D, N or O.
-
+restricted to be of Petrov type D, N or O. 
+%In the type N case, choosing an 
+%adapted dyad $\lbrace \bmo, \bm\iota\rbrace$ for which $\psi_{ABCD}=o_Ao_Bo_Co_D$, 
+%a Killing twistor and spinor are given explicitly 
+%by 
+%\[\tilde{\kappa}_A=o_A, \qquad\text{and}\qquad  \tilde{\kappa}_{AB}=o_Ao_B.\]
+In the type D case, there is an explicit formula for a Killing spinor: choosing an 
+adapted dyad $\lbrace \bmo, \bm\iota\rbrace$ for which $\psi_{ABCD}=\psi o_{(A}o_{B}\iota_C\iota_{D)}$
+\[\tilde{\kappa}_{AB} = \psi^{-1/3}o_{(A}\iota_{B)}\]
+is a Killing spinor. Indeed, the fact that the Killing spinor equation is satisfied follows from the Bianchi identity $\tilde{\nabla}^A{}_{A'}\Psi_{ABCD}=0$ ---see \cite{PenRin84, WalkerPenrose70} for more details. 
 \medskip
 
 At first glance, the conformal invariance property of the Killing
@@ -740,9 +741,6 @@ in the physical (non-conformal) framework if one is to include matter
 such as the Maxwell field and the analysis of \cite{GarVal08c} does
 not straighfowardly apply since further conditions (the matter
 alignment conditions) ---see \cite{ValCol16}--- need to be propagated.
-
-
-
 \begin{remark}
   \emph{
   The notion of Killing spinors is related to that
@@ -757,13 +755,11 @@ $\tilde{\nabla}_{(a}\tilde{\Upsilon}_{b)c}=0$--- as follows
 given a Killing--Yano tensor, one can construct a Killing spinor
 ---see \cite{ValCol16,McLBer93,PenRin86}.}
 \end{remark}
-
-
 \medskip
 
 From now on, $(\tilde{\mathcal{M}},\tilde{\bmg})$ will be reserved to
 denote the \emph{physical spacetime}, in other words, the symbol
-$\tilde{ \quad}$ will be added to those fields associated with a
+``$\tilde{ \quad}$" will be added to those fields associated with a
 solution $\tilde{\bmg}$ to the vacuum Einstein field equations
 \eqref{EFEVacuum}.  Similarly $(\mathcal{M},\bmg)$ will be used to
 represent the \emph{unphysical spacetime} related to
@@ -782,9 +778,6 @@ $\varphi:
 
 \subsection{The  conformal Einstein field equations}
 \label{Sec:CFEs}
-
-
-\medskip
 
 This section contains an abriged discussion of the conformal Einstein
 field equations.  At the end of this section the main technical
@@ -836,7 +829,7 @@ where $\Xi$ is the conformal factor, $L_{ab}$ is the Schouten tensor,
 defined in terms of the Ricci tensor $R_{ab}$ and the Ricci scalar $R$
 via
 \begin{equation}\label{SchoutenDefinition}
-L_{ab}=\frac{1}{2}R_{ab}-\frac{1}{12}Rg_{ab},
+L_{ab}=\tfrac{1}{2}R_{ab}-\tfrac{1}{12}Rg_{ab},
 \end{equation}
  $s$ is the so-called \emph{Friedrich scalar} defined as
 \begin{equation}\label{s-definition}
@@ -846,7 +839,7 @@ and $d^{a}{}_{bcd}$ denotes the \emph{rescaled Weyl tensor}, defined
 as
 \[d^{a}{}_{bcd}=\Xi^{-1}C^{a}{}_{bcd},\]
 where $C^{a}{}_{bcd}$ denotes the Weyl tensor.  The geometric meaning
-of these zero-quantities is the following: The equation $Z_{ab}=0$
+of these zero-quantities is as follows. The equation $Z_{ab}=0$
 encodes the conformal transformation law between ${R}_{ab}$ and
 $\tilde{R}_{ab}$.  The equation $Z_{a}=0$ is obtained considering
 $\nabla^{a}Z_{ab}$ and commuting covariant derivatives.  Equations
@@ -854,13 +847,12 @@ $\delta_{abc}=0$ and $\lambda_{abc}=0$ encode the contracted second
 Bianchi identity. Finally, $Z=0$ is a constraint in the sense that if
 it is verified at one point $p\in\mathcal{M}$ then $Z=0$ holds in
 $\mathcal{M}$ by virtue of the previous equations.  A solution to the
-metric conformal Einstein field equations consist of a collection of
+metric conformal Einstein field equations consists of a collection of
 fields
 \[
 \{g_{ab}, \; \Xi, \; \nabla_{a}\Xi,s\;,L_{ab},\; d_{abcd}\}
 \]
 satisfying
-
 \begin{equation}\label{vanishing_CFEs_tensorial_zq}
   Z_{ab}=0, \quad Z_{a}=0, \quad \delta_{abc}=0, \quad \lambda_{abc}=0, \quad Z=0.
 \end{equation}
@@ -918,34 +910,36 @@ defined as
 \end{equation}
  ---see \cite{Ste91, PenRin84} for more details. 
  \begin{remark}
-   \emph{ The initial data for $\phi_{ABCD}$ are in general determined
-   through the Gauss-Codazzi and Codazzi-Mainardi equations by the
-   initial data $(\mathcal{S}, \bmh, \bmK, \Omega, \Sigma)$. Here
-   $\mathcal{S}$ is a 3-dimensional manifold with Riemannian metric
-   $\bmh$, second fundamental form $\bmK$, while $\Omega$ and $\Sigma$
-   are the initial data for the conformal factor and its normal derivative respectively.
-   \mnotex{EG: Not sure if that is the
-     ``minimal'' set of ID. This probably needs fixing.}
-   %%%%%%%%%%%%%%%%%%%%%%%%
-   %% In the CFE evolution
-   %%   problem, determining data for $\phi_{ABCD}$ depends on the
-   %%   particular set-up for initial value problem in question.
-   %%%%%%%%%%%%%%%%%%%%%%%%%
-   %%In particular,
-   For the asymptotic initial value problem, the constraint equations
-   implied by the CFEs adquire a particularly simple form so that
-   initial data for the magnetic part of the rescaled Weyl tensor is
+ \label{G-C-M-Remark}
+   \emph{The initial data for $\phi_{ABCD}$ is determined using the Gauss-Codazzi and Codazzi-Mainardi equations []. First decompose 
+   \[ \phi_{ABCD}=E_{ABCD}+iB_{ABCD}\]
+where $\bmE$ and $\bmB$ are the \textit{electric} and \textit{magnetic} parts
+   \[
+   E_{ABCD} := \tfrac{1}{2}(\phi_{ABCD} + \hat{\phi}_{ABCD}),\qquad B_{ABCD} := \tfrac{i}{2}(-\phi_{ABCD} + \hat{\phi}_{ABCD}),
+  \]
+  with $\hat{\phi}_{ABCD}:=\tau_A{}^{A'}\tau_B{}^{B'}\tau_C{}^{C'}\tau_D{}^{D'}\bar{\phi}_{A'B'C'D'}$. The fields $\bmE,\bmB$ are the spinorial counterparts of the electric and magnetic parts of the rescaled Weyl tensor and comprise initial data: away from $\mathscr{I}$ they are determined by the Gauss--Codazzi--Mainardi equations, while
+   for the asymptotic initial value problem, the constraint equations
+   implied by the CFEs acquire a particularly simple form so that
+   initial data for the magnetic part is
    determined algebraically by 
    %%%%
    %%$y_{ij}$,
    %%%
-   the Bach tensor of $h_{ij}$, while the
-   electric part of the rescaled Weyl tensor satisfies $D^id_{ij}=0$
-   where $D_i$ is the Levi-Civita connection of $h_{ij}$ ---see
-   \cite{CFEbook, GasVal17a}. For the discussion of this paper we will
-   assume that such data has been already determined.}
+   the Bach tensor of $h_{ij}$ and the
+   electric part is prescribed, the only constraint being that it satisfies the \textit{TT} condition with respect to $h_{ij}$---see
+   \cite{CFEbook, GasVal17a}.
+   For the discussion of this paper we will
+   assume that such data $\bmE, \bmB$ (and hence $\bm\phi$) has been already determined.
+   One can use the initial datum
+  $\phi_{ABCD}|_{\mathcal{S}}$ to formally define the Petrov type of
+  an initial data set for the CFEs. \mnotex{Needs padding out}This can be expressed covariantly as $I^3 - 6J^2=0$, where $I,J$ are the complex-valued scalars
+\begin{align*}
+I &:= \phi_{ABCD}\phi^{ABCD} \equiv E_{ij}E^{ij} - B_{ij}B^{ij} + 2i E_{ij}B^{ij},\\
+J &:= \phi_{AB}{}^{CD}\phi_{CD}{}^{FG}\phi_{FG}{}^{AB} \equiv (E_{i}{}^jE_j{}^kE_{k}{}^i - 3E_{i}{}^jB_j{}^kB_{k}{}^i) + i(3B_{i}{}^jE_j{}^kE_k{}^{i} - B_{i}{}^jB_j{}^kB_k{}^i).
+\end{align*}
+Type $N$ corresponds to the special case $I=J=0$ (with $\bm\phi\neq 0$). 
+}
 \end{remark}
-
 The CFEs as previously presented can be regarded as a set of covariant
 conditions for geometric fields on $(\mathcal{M},\bmg)$ and, hence,
 they do not have a particular PDE character.  However, there are,
@@ -954,7 +948,7 @@ reduction strategies to extract a set of evolution and constraint
 equations.  For the subsequent discussion only the evolution and
 constraint equations implied by the $\Lambda_{C'ABC}=0$ equation, namely,
 \begin{equation}\label{RescaledWeylEquationDisplayed}
- \nabla_{DC'}\phi _{ABC}{}^{D}=0,
+ \nabla^D{}_{C'}\phi _{ABCD}=0,
 \end{equation}
 %%%% \mnotex{Equation displayed explicitly for making
 %%%% reference to it in a succint way in the text in section 4}
@@ -963,7 +957,7 @@ the space spinor formalism
 shows that equation \eqref{RescaledWeylEquationDisplayed}
 %%$\Lambda_{CC'AB}=0$
 can be recast as the following system
-of evolution equation and constraint equations
+of evolution and constraint equations
 \begin{align}\label{RescaledWeyl_evo_const}
 %%\nabla_{\bm\tau} \phi _{ABCD} = -2 \mathcal{D} _{DF}\phi _{ABC}{}^{F}
   & \nabla_{\bm\tau} \phi _{ABCD} = 2 \mathcal{D} _{(A}{}^{F}\phi_{BCD)F},
@@ -976,7 +970,6 @@ The evolution and constraint equations associated to the other
 zero-quantities depend on the particular gauge fixing strategy and
 will not play a relevant role for the discussion in the forthcoming
 sections.
-
 \medskip
 
 The CFEs are usually presented as the first-order system
@@ -1014,8 +1007,18 @@ It is worth noting here that one of the tools used in \cite{GasVal15}
 to show the equivalence between the spinorial CFE wave equations and
 the original spinorial CFEs
 \eqref{Def_ConfFactor_CFE_zeroquant}--\eqref{Def_cons_CFE_zeroquant}
-is the uniqueness property of solutions to a certain class of wave
-equations. This same result from the theory of partial differential
+is the uniqueness property of solutions to a certain class of \textit{homogeneous} wave
+equations. 
+
+\begin{definition}
+{\em An operator $h$ is said to be \textit{homogeneous in} $\underline{u}$
+\textit{and its first derivatives} if
+$h (\mu\underline{u},\mu\partial\underline{u})=\mu
+h(\underline{u}, \partial\underline{u})$ for all
+$\mu\in\mathbb{C}$. }
+\end{definition}
+
+This same result from the theory of partial differential
 equations will be used in the proof of the main theorem of this
 article, and so we quote it here:
 \begin{theorem}
@@ -1044,15 +1047,18 @@ $\mathcal{U}$.
 We refer the reader to Proposition 3.2 of \cite{Tay96c} for a proof
 ---see also Theorem 1 in \cite{GarVal08c}.
 
-\begin{remark}
-\emph{ Recall that an equation of the
-above form are said to be \textit{homogeneous in} $\underline{u}$
-\textit{and its first derivatives} if
-$h (\mu\underline{u},\mu\partial\underline{u})=\mu
-h(\underline{u}, \partial\underline{u})$ for all
-$\mu\in\mathbb{C}$. }
+\begin{remark}{\em 
+Analogous to the physical case, given a Petrov type D $\phi_{ABCD}$, 
+one can give an explicit construction of a Killing spinor, namely
+\begin{equation*}
+%& \kappa_{AB} = o_A o_B && (\textbf{Type N}),\\
+\kappa_{AB} = \phi^{-1/3}o_{(A}\iota_{B)} %&& (\textbf{Type D}),
+\end{equation*}
+in terms of the relevant adapted spin dyad $\lbrace \bmo, \bm\iota\rbrace$. This can be seen directly 
+by noting that the identity \eqref{RescaledWeylEquationDisplayed} satisfied by $\phi_{ABCD}$ is formally 
+identical to the Bianchi constraint and so the same computations as in \cite{WalkerPenrose70} follow through.
+An alternative approach to the construction of Killing spinor initial data equations would be to attempt to determine under what conditions the Petrov type of the (rescaled) Weyl tensor restricted to $\mathcal{S}$ is propagated into the spacetime development. Later, we shall see that such a result follows as a product of our analysis ---see Corollary \ref{Corollary:PetrovPropagation}.}\label{Remark:DyadExpressionForKillingSpinorInTypeD}
 \end{remark}
-
 
   \section{Conformal twistor initial data}
   \label{conformalTwistorKID}
@@ -1060,7 +1066,7 @@ $\mu\in\mathbb{C}$. }
   derived.  Although the main result of this article is on the
   conformal  Killing spinor initial data equations, the twistor case
     illustrates the main features of the calculation for the Killing
-  spinor case of section \ref{conformalKSKID} in a simpler setting.
+  spinor case of Section \ref{conformalKSKID} in a simpler setting.
 \subsection{Twistor zero-quantities}
 \label{Sec:TwistorZeroQuantities}
 
@@ -1107,7 +1113,7 @@ derivative of $\bmH$ and substituting definition
 H_{A'AB}=0, \qquad B_{ABC}=0.
   \end{equation}
   
-\subsection{Twistor auxiliary quantities and the twistor candidate equation}
+\subsection{Auxiliary quantities and the twistor candidate equation}
   
  A useful bookkeeping device for the subsequent
 calculations are the definitions of the following \emph{auxiliary quantities}:
@@ -1122,8 +1128,7 @@ calculations are the definitions of the following \emph{auxiliary quantities}:
   $\kappa_A$, such as
   \begin{align}\label{decomp_Der_kappa}
     \nabla_{AA'}\kappa _{B} & = \tfrac{1}{2} \epsilon _{AB}
-    \nabla_{CA'}\kappa ^{C} + \nabla_{(A|A'|}\kappa _{B)}\nonumber
- \\ & = \tfrac{1}{2} H_{A'AB} - \tfrac{1}{2} \xi _{A'} \epsilon_{AB}.
+    \nabla_{CA'}\kappa ^{C} + \nabla_{(A|A'|}\kappa _{B)} = \tfrac{1}{2} H_{A'AB} - \tfrac{1}{2} \xi _{A'} \epsilon_{AB}.
   \end{align}
 It is nevertheless illustrative to introduce this
   shorthand since the analogous quantity in the Killing spinor case
@@ -1157,8 +1162,8 @@ twistor equation. In other words,
 \[
 \bmH=0 \implies \bmQ =0, \qquad \text{but in general} \qquad \bmQ =0 \notimplies \bmH=0.
 \]
-However,  the initial data $(\nabla_{\bm\tau}
-\eta_A, \eta_A)|_{\mathcal{S}}$ for the wave equation
+However,  the initial data $(\eta_A, \nabla_{\bm\tau}
+\eta_A)|_{\mathcal{S}}$ for the wave equation
 \eqref{Wave_eq_twistor_candidate} has not been fixed yet. The aim of the following
 calculations is to determine the conditions on the initial data for the
 twistor candidate such that if propagated off $\mathcal{S}$, using
@@ -1187,8 +1192,8 @@ $\nabla_D{}^{A'}H_{A'AB}$,
  along with definition \eqref{def_Q_twistor} and equation
 \eqref{Curl_H_sym_toB_twistor} it follows that
 \begin{align}\label{derH_twistor_toBandQ}
-\nabla_{D}{}^{A'}H_{A'AB} = 2 B_{ABD} \Xi + \tfrac{1}{3} Q_{B}
-\epsilon _{AD} + \tfrac{1}{3} Q_{A} \epsilon _{BD}
+\nabla_{D}{}^{A'}H_{A'AB} = 2 \Xi B_{ABD}  + \tfrac{1}{3} Q_{B}
+\epsilon _{AD} + \tfrac{1}{3} Q_{A} \epsilon _{BD}.
 \end{align}
 Applying $\nabla_{D}{}^{B'}$ to the last expression, and using
 identity \eqref{DecomposeDoubleDerivativeContracted} along with the
@@ -1199,41 +1204,41 @@ renders
   \square H_{B'AB} = 6 \Lambda H_{B'AB} + 4 \Xi
   \nabla_{DB'}B_{AB}{}^{D} -4 B_{ABD} \nabla^{D}{}_{B'}\Xi -4
   \Phi_{(A}{}^{D}{}_{|B'}{}^{A'}H_{A'|B)D} + \tfrac{4}{3}
-  \nabla_{(A|B'|}Q_{B)}
+  \nabla_{(A|B'|}Q_{B)}.
 \end{equation}
-
-\noindent To derive a wave equation for $\bmB$, one applies the D'Alembertian operator
+To derive a wave equation for $\bmB$, one applies the D'Alembertian operator
 $\square$ to the definition \eqref{Def_B_twistor} to obtain
 \begin{align}\label{pre_wave_B_twistor}
 \square B_{ABC} = \kappa ^{D} \square \phi _{ABCD} + \phi _{ABCD}
-\square \kappa ^{D} + 2 \nabla_{FA'}\phi _{ABCD} \nabla^{FA'}\kappa
-^{D}
+\square \kappa ^{D} + 2 (\nabla_{FA'}\phi _{ABCD}) \nabla^{FA'}\kappa
+^{D}.
 \end{align}
 Substituting the definition \eqref{Def_B_twistor}, the identity
 \eqref{Q_to_box_twistor_candidate}, and the wave equation satisfied by
 the rescaled Weyl spinor \eqref{Wave_eq_CFE_Weyl} into the last expression gives
 \begin{equation}\label{wave_B_twistor}
-\square B_{ABC} = 10 B_{ABC} \Lambda + H^{A'DF} \nabla_{FA'}\phi _{ABCD}  -6 \Xi B_{(A}{}^{DF}\phi
-_{BC)DF} + \tfrac{2}{3} \phi _{ABCD} Q^{D}
+\square B_{ABC} = 10 \Lambda B_{ABC}  + H^{A'DF} \nabla_{FA'}\phi _{ABCD}  -6 \Xi B_{(A}{}^{DF}\phi
+_{BC)DF} + \tfrac{2}{3} \phi _{ABCD} Q^{D}.
 \end{equation}
 Observe that if $Q_{A}=0$, namely if the twistor candidate wave equation is imposed, then,
 $\bmH$ and $\bmB$ satisfy the following set of wave equations
 \begin{subequations}
 \begin{eqnarray}
   && \square H_{B'AB} = 6 \Lambda H_{B'AB} + 4 \Xi
-  \nabla_{DB'}B_{AB}{}^{D}  -4 B_{ABD} \nabla^{D}{}_{B'}\Xi   -4 \Phi_{(A}{}^{D}{}_{|B'}{}^{A'}H_{A'|B)D}
+  \nabla_{DB'}B_{AB}{}^{D}  -4 B_{ABD} \nabla^{D}{}_{B'}\Xi   -4 \Phi_{(A}{}^{D}{}_{|B'}{}^{A'}H_{A'|B)D},
    \label{Hom_wave_HandB1} \\
- && \square B_{ABC} = 10 B_{ABC} \Lambda + H^{A'DF} \nabla_{FA'}\phi _{ABCD}  -6 \Xi B_{(A}{}^{DF}\phi
-_{BC)DF}  \label{Hom_wave_HandB2}
+ && \square B_{ABC} = 10\Lambda B_{ABC} + H^{A'DF} \nabla_{FA'}\phi _{ABCD}  -6 \Xi B_{(A}{}^{DF}\phi
+_{BC)DF}.  \label{Hom_wave_HandB2}
 \end{eqnarray}
 \end{subequations}
-Notice that the only place where the CFEs ---in their wave equation form---
-have been used was in equation \eqref{pre_wave_B_twistor}
-to substitute for the term $\square \phi _{ABCD}$.
+Notice that the only place where the CFEs (in their wave equation form)
+were used is in
+substituting for the $\square \phi _{ABCD}$ term in equation \eqref{pre_wave_B_twistor}.
+\\
 
 The relevant observation about equations
 \eqref{Hom_wave_HandB1}-\eqref{Hom_wave_HandB2} is that they
-constitute a closed system of \emph{regular and homogeneous}
+comprise a closed system of \emph{regular and homogeneous}
 wave equations for $\bmH$ and $\bmB$.
 Hence prescribing trivial intial data
 \[
@@ -1256,7 +1261,7 @@ correspond to an actual twistor $\kappa_A$ in $\mathcal{D}^{+}(\mathcal{S})$.
 
 This discussion is summarised in the following:
 \begin{proposition}\label{Prop:Propagation_twistor}
-  Given initial data for the conformal field equations on $\mathcal{U}\subseteq\mathcal{S}$
+  Given initial data for the conformal field equations on $\mathcal{U}\subset\mathcal{S}$
   where $\mathcal{S}$ is a spacelike
 hypersurface $\mathcal{S}$ with normal vector $\tau^{AA'}$, and
 associated normal derivative $\nabla_{\bm\tau} :=
@@ -1332,23 +1337,25 @@ From equation \eqref{WaveH_twistor_singular} one can
 recover the analogous wave equation in the physical case
 discussed in \cite{GasVal15} simply by adding a tilde to the fields and
 setting $\Xi=1$.
+\\
 
 Arguably, one could try
-to use the theory of Fuchsian systems to see if the analogous of
+to use the theory of \textit{Fuchsian systems}, as used in \cite{ChrPaetz13,Pae14a}, to see if the analogue of
 Theorem \ref{TheoremHomogeneousWave} applies for the singular equation
 \eqref{WaveH_twistor_singular}.  However, one of the advantages of the
-conformal approach of the CFEs is that one deals with formally regular equations.
+conformal approach of the CFEs is that one deals with manifestly regular equations.
 Therefore, from this perspective, it is necessary to introduce $B_{ABC}$ as a further zero-quantity to
-be propagated.  A analogous observation holds for the conformal valence-2
+be propagated.  The same observation holds for the conformal valence-2
 Killing spinor initial data discussion of the following sections,
 where, to close the system in a regular way, one needs to introduce not
-only the Buchdahl zero-quantity but also its derivative.}
+only a ``Buchdahl" zero-quantity but also its derivative.}
 \end{remark}
-
 
 
 \subsection{Intrinsic conformal twistor initial data conditions}
 
+
+\mnotex{Put this in lemma}
 In this section, the conformal twistor initial data conditions of
 proposition \ref{Prop:Propagation_twistor} are written in terms of
 intrinsic quantities at $\mathcal{S}$.  To understand the need for the
@@ -1387,7 +1394,7 @@ Substituting the definition \eqref{Def_H_twistor} one obtains
 \begin{align}\label{spacespinordecompHtotwistorders}
 \mathcal{H} _{A} = \tfrac{3}{2} \nabla_{\bm\tau} \kappa_{A} - \mathcal{D} _{AB}\kappa^{B}, \qquad \mathcal{H} _{ABC} = 2 \mathcal{D} _{(AB}\kappa _{C)},
 \end{align}
-Then, $H_{A'AB}|_{\mathcal{S}}=0$  imposes
+Then, $H_{A'AB}|_{\mathcal{S}}=0$  imposes the
 following conditions on the
 the initial data
 $(\kappa_A,\nabla_{\bm\tau}\kappa_A)|_{\mathcal{S}}$
@@ -1401,11 +1408,11 @@ Another set of constraints arise from the conditions $\nabla_{\bm\tau}
 H_{A'BC}|_{\mathcal{S}}=0$ and $B_{ABC}|_{\mathcal{S}}=0$. These two
 conditions can be analysed in tandem since $\bmB$ is related to the
 derivative of $\bmH$. Using the space spinor split of $\nabla$ it
-follows, exploting the identity \eqref{derH_twistor_toBandQ}, that
+follows, exploiting the identity \eqref{derH_twistor_toBandQ}, that
 \begin{align}
   \tau _{D}{}^{A'}\nabla_{\bm\tau} H_{A'AB} -2 \tau ^{CA'} \mathcal{D}
   _{DC}H_{A'AB} = 4 B_{ABD} \Xi + \tfrac{4}{3} Q_{(A}\epsilon
-  _{B)D}\quad
+  _{B)D}
 \end{align}
 Transvecting with $\tau^{D}{}_{B'}$ and rearranging gives
 \begin{align}\label{time-derHToBHQ}
@@ -1448,7 +1455,7 @@ _{DF}\phi _{ABC}{}^{F} + \tfrac{2}{3} \phi _{ABCD} \mathcal{D}
 ^{D}{}_{F}\kappa ^{F} + \tfrac{2}{3}\phi_{ABCD}\mathcal{H}^D = 0
 \qquad \text{on} \qquad \mathcal{S}.
 \end{align}
-In fact, the latter expression can be completly rewritten in terms of
+In fact, the latter expression can be completely rewritten in terms of
 $\mathcal{H}_A|_{\mathcal{S}}$, $\mathcal{H}_{ABC}|_{\mathcal{S}}$ and
 $B_{ABC}|_{\mathcal{S}}$. This can be done as follows: swapping
 indices $D$ and $A$ in equation \eqref{normalderB_twistor_exp}, and
@@ -1473,13 +1480,13 @@ _{ABCF} \mathcal{D} _{D}{}^{F}\kappa ^{D} +
 From the irreducible decomposition of $\mathcal{D} _{AB}\kappa _{C}$
 and using the expression for $\mathcal{H}_{ABC}$ equation
 \eqref{spacespinordecompHtotwistorders} one has
-\begin{align}\label{decompSenKappa}
+\begin{equation}\label{decompSenKappa}
 \mathcal{D} _{AB}\kappa _{C} = \tfrac{1}{2} \mathcal{H} _{ABC} +
 \tfrac{1}{3} \epsilon _{BC} \mathcal{D} _{AD}\kappa ^{D} +
 \tfrac{1}{3} \epsilon _{AC} \mathcal{D} _{BD}\kappa ^{D}.
-\end{align}
+\end{equation}
 Substituting decomposition \eqref{decompSenKappa} into equation
-\eqref{normalderB_twistor_exp3} renders
+\eqref{normalderB_twistor_exp3} gives
 \begin{align}\label{time-derBToBH}
 \nabla_{\tau}B_{ABC}|_{\mathcal{S}}=- \phi _{BCDF} \mathcal{H}
 _{A}{}^{DF} -2 \mathcal{D} _{AD}B_{BC}{}^{D} +
@@ -1564,34 +1571,6 @@ with initial data satisfying conditions in equation
   endowed with a twistor.
 \end{proof}
 
-\begin{remark}
-  \emph{
-  Since the fields comprising initial data for the CFEs contain the
-  rescaled Weyl spinor, one can use the initial datum
-  $\phi_{ABCD}|_{\mathcal{S}}$ to formally define the Petrov type of
-  an initial data set for the CFEs. Therefore, Theorem
-  \ref{Theorem_twistor} can be phrased as saying that intial data which
-  is of Petrov type N or O will give rise to a development with
-  is of Petrov type N or O.
-  }
-\end{remark}
-
-\mnotex{Killing spinor $\implies$ special Petrov type.  (Buchdahl constraint) \checkmark}
-\mnotex{ For the \textbf{physical spacetime},
-  special Petrov type  $\implies$ Killing spinor \checkmark.
-  See references inside tex file. Is this also true for the unphysical spacetime?
-  I think it is not true in general but it is true in our conformal set up
-  ... replacing $\psi$ with $\phi$, the proof should be identical...
-   see Vol2 of \cite{PenRin84} page 107 and references there in.
-  To be discussed. }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%% References %%%%%%
-%%%%%%%% https://arxiv.org/pdf/2101.00856.pdf
-%%%%%%%% https://arxiv.org/pdf/1010.2421.pdf
-%%%%%%%% See page 107-108, section Killing spinors for type {22} vacuums of \cite{PenRin84}
-%%%%%%%% Lemma 1 of https://link.springer.com/article/10.1007/BF01649445
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
   
 \section{Conformal Killing spinor initial data}
@@ -1629,8 +1608,7 @@ Despite the formal resemblence with the equations of section
 \ref{Sec:TwistorZeroQuantities}, the following discussion
 will show that, unlike the twistor case, one cannot obtain a closed
 homogeneous wave system in terms of these variables alone and we shall
-need the following additional zero quantity \mnotex{We should be
-  consistent with notation for definitions}
+need the following additional zero quantity
 \begin{equation}
  F_{A'BCD}:=\nabla^Q{}_{A'}B_{QBCD}.\label{Eq:DefZeroQuantityF}
 \end{equation}
@@ -1640,33 +1618,29 @@ it is possible to derive
 %%%%%%%%%%%%
 %w% e shall see that one can derive
 %%%%%
-a closed homogeneous wave system for $(\bmH, \bmB, \bmF)$. \mnotex{Add
-  factor of one half into def of $Q$.}
+a closed homogeneous wave system for $(\bmH, \bmB, \bmF)$. 
 
 
 \subsection{Auxiliary quantities and the Killing spinor candidate equation}
-%%%%%%%%%%%%%%%%%%%%%%
-%\mnotex{Is the term candidate equation used anywhere (in twistor case, too)?
-%EG: yes the same terminology was used}
-%%%%%%%%%%%%%%%%%%%%%
-Analogously as in the twistor case, it will prove useful to define the
+
+By analogy with the twistor case, it will prove useful to define the
 following auxiliary quantity,
 \begin{equation}
-  Q_{BC} := \nabla^{AA'}H_{A'ABC}.
+  \mathcal{Q}_{BC} := \tfrac{1}{2}\nabla^{AA'}H_{A'ABC}.
 %%:= 2(\square \kappa_{BC} + 4
 %%\Lambda\kappa_{BC} - \Xi
 %%\phi_{BCAD}\kappa^{AD})=0.
   \label{Eq:WaveForKS_DefinitionQ}
 \end{equation}
-A direct calculation shows that the auxiliary quantity $\bmQ$ encodes
+A direct calculation shows that the auxiliary quantity $\mathcal{Q}_{AB}$ encodes
 a wave equation for $\bm\kappa$.
 \begin{equation}
-  \tfrac{1}{2}Q_{BC} = \square \kappa_{BC} + 4 \Lambda\kappa_{BC} - \Xi
+  \mathcal{Q}_{BC} = \square \kappa_{BC} + 4 \Lambda\kappa_{BC} - \Xi
   \phi_{BCAD}\kappa^{AD}. %=0.
   \label{Eq:WaveForKS}
 \end{equation}
-\noindent The wave equation for the Killing spinor candidate will then
-be imposed by setting $Q_{AB}=0$. It will also prove convenient to
+The wave equation for the Killing spinor candidate will then
+be imposed by setting $\mathcal{Q}_{AB}=0$. It will also prove convenient to
 define the auxiliary spinor $\xi_{AA'} :=
 \nabla^{B}{}_{A'}\kappa_{AB}$ in terms of which one can perform the
 following decomposition 
@@ -1675,22 +1649,12 @@ following decomposition
 \xi_{CA'} \epsilon_{AB} - \tfrac{1}{3} \xi_{BA'}
 \epsilon_{AC}.\label{Eq:DecompGradKS}
 \end{equation}
-Using the latter expression, we can show by a straightforward
+Using the latter expression, one can show by a straightforward
 computation that
-%%for the unphysical spacetime $(\mathcal{M},bmg)$ $\bm\Phi$ vanishing the vector
 \begin{equation}\label{eq:non-KillingVectorExplained}
-  \nabla^Q{}_{A'}H_{B'ABQ} + \tfrac{1}{2} Q_{AB} \epsilon_{A'B'} = \nabla_{AA'}\xi_{BB'} + \nabla_{BB'}\xi_{AA'} + 6 \kappa_{(A}{}^{Q} \Phi_{B)QA'B'} .
+  \nabla^Q{}_{A'}H_{B'ABQ} +  \mathcal{Q}_{AB} \epsilon_{A'B'} = \nabla_{AA'}\xi_{BB'} + \nabla_{BB'}\xi_{AA'} + 6 \kappa_{(A}{}^{Q} \Phi_{B)QA'B'},
 \end{equation}
-%%%%%%%%%%%%%%%
-%% but is in the case that the spacetime is
-%% physical.
-%%%%%%%%%%%%%%%
-\noindent 
-From equation \eqref{eq:non-KillingVectorExplained}
-%%%%%%%%%%%%%%%
-%%the above,
-%%%%%%%%%%%%%%%
-we can derive the following identity
+which in turn implies the following identity
 \begin{multline}
 \nabla_{AA'}\xi_{BB'} = - \tfrac{1}{2} \epsilon_{AB}
 \nabla^{C}{}_{(A'}\xi_{|C|B')}- 3 \kappa_{(A}{}^{C} \Phi_{B)CA'B'} - 3
@@ -1701,14 +1665,14 @@ we can derive the following identity
 which will prove useful later. On the other hand, it is
 straightforward to show using equation \eqref{Eq:BuchdahlAsCurlOfH} that
 \begin{equation}
-     \nabla_{D}{}^{A'}H_{A'ABC} = 6 \Xi B_{ABCD} + \tfrac{3}{4}
-     \ Q_{(AB}\epsilon_{C)D}.\label{IrrDecompCurlOfH}
+     \nabla_{D}{}^{A'}H_{A'ABC} = 6 \Xi B_{ABCD} + \tfrac{3}{2} \
+\mathcal{Q}_{(AB}\epsilon_{C)D}.\label{IrrDecompCurlOfH}
 \end{equation}
 
 
 
 \begin{remark}
-  \emph{ As stressed in section \ref{sec:Introduction}, in general,
+  \emph{ As stressed in Section \ref{sec:Introduction}, in general,
   the auxiliary spinor $\xi_{AA'}$ is not the spinorial counterpart of
   a Killing vector.  Contrast this with the case of the physical
   framework ---namely $(\tilde{\mathcal{M}},\tilde{\bmg})$ satisfying
@@ -1770,26 +1734,22 @@ factor $\Xi$ encoded in the CFE zero quantity
 %%%%%%%%%%%%%%%%%%%%
 \begin{multline}\label{conformalKillingvector}
   \nabla_{AA'}X_{BB'}+\nabla_{BB'}X_{AA'}-\tfrac{1}{2}\epsilon_{AB}\epsilon_{A'B'}\nabla^{CC'}X_{CC'}
-  =-\Xi \nabla^Q{}_{(A'}H_{B')(AB)Q} + 2H_{(A'|(AB)}{}^{C}\nabla_{C|B')}\Xi.
+  =-\Xi \nabla^Q{}_{(A'}H_{B')(AB)Q} + 2\nabla_{C(A'}H_{B')AB}{}^{C}.
 \end{multline}
 Therefore, if $\bm\kappa$ is a Killing spinor of $(\mathcal{M},\bmg)$ then
 the zero-quantities $\bmH$ and $\bmQ$ vanish and hence the right-hand
-side of equation \eqref{conformalKillingvector} vanishes which implies
-that $\bmX$ is a conformal Killing vector of the unphysical spacetime $(\mathcal{M},\bmg)$.  }
+side of equation \eqref{conformalKillingvector} vanishes, implying
+that $\bmX$ is a conformal Killing vector for the unphysical spacetime $(\mathcal{M},\bmg)$.  }
 \end{remark}
 
 \subsection{Wave equations for the zero-quantities}
-%%%%%%%%%
-%Contracting with $\nabla^A{}_{B'}$ we then derive the following wave equation:
-%%%%%%%%%%%%
+\label{Sec:KSWaveEqs}
+
 Applying $\nabla^A{}_{B'}$ to equation
 \eqref{eq:non-KillingVectorExplained} one obtains the following wave
 equation:
 \begin{multline}
-    \square H_{B'ABC} = 6 \Lambda H_{B'ABC} - 12 \Xi F_{B'ABC} - 12
-    B_{ABCD} \nabla^{D}{}_{B'}\Xi \\+ \tfrac{3}{2}
-    \nabla_{(A|B'|}Q_{BC)} - 6
-    \Phi_{(A}{}^{D}{}_{|B'}{}^{A'}H_{A'|BC)D}
+    \square H_{B'ABC} = 6 \Lambda H_{B'ABC} - 12 \Xi F_{B'ABC} - 12(\nabla^{D}{}_{B'}\Xi)  B_{ABCD} \\+ 3\nabla_{(A|B'|}\mathcal{Q}_{BC)} - 6 \Phi_{(A}{}^{D}{}_{|B'}{}^{A'}H_{A'|BC)D}.
 \end{multline}
 Similarly, applying $\nabla_A{}^{A'}$ to equation
 \eqref{Eq:DefZeroQuantityF}, it is straightforward to verify the
@@ -1801,17 +1761,14 @@ following wave equation for $B_{ABCD}$: \mnotex{I haven't carried the
      2\nabla_{AA'}F^{A'}{}_{BCD}. \label{Eq:FirstWaveEqForB}
 \end{equation}
 The task remaining is to derive a wave equation for $F_{A'ABC}$.  To
-do so, we will need some ancilliary identities first.
-%%%%%%
-%%let us first consider some useful identities:
-%%%%%
+do so, we will need some ancillary identities first.
 A direct calculation shows that
 \begin{multline}
 2\phi_{(AB}{}^{GH}B_{CF)GH}=
 \kappa_A{}^D\phi_{(BC}{}^{GH}\phi_{FD)GH}+\kappa_B{}^D\phi_{(AC}{}^{GH}\phi_{FD)GH}\\+\kappa_C{}^D\phi_{(AB}{}^{GH}\phi_{FD)GH}+\kappa_F{}^D\phi_{(BC}{}^{GH}\phi_{AD)GH}.\label{Eq:UsefulIdentity1}
  \end{multline}
 Using the last equation, along with the irreducible
-decomposition\mnotex{Can shorten this}
+decomposition
 \begin{align*}
 \phi_{ABCD} \phi_{FGH}{}^{D} &= \tfrac{1}{24} \phi_{DLMP} \phi^{DLMP}
 \epsilon_{AH} \epsilon_{BG} \epsilon_{CF} + \tfrac{1}{24} \phi_{DLMP}
@@ -1841,11 +1798,7 @@ in its first and second order form, namely equations
 \eqref{RescaledWeylEquationDisplayed} and \eqref{Wave_eq_CFE_Weyl},
 and using the decomposition \eqref{Eq:DecompGradKS} we get
 \begin{multline} 
-\square B_{ABCD} = \tfrac{2}{3} \nabla_{\bm\xi}\phi_{ABCD} + 8 \Lambda
-B_{ABCD} - \tfrac{1}{2} \phi_{(ABC}{}^{F}Q_{D)F} + \tfrac{2}{3}
-H^{A'}{}_{(A}{}^{FG}\nabla_{|FA'|}\phi_{BCD)G} \\ - 6 \Xi
-\kappa_{(A}{}^{F}\phi_{BC}{}^{GH}\phi_{D)FGH} - \Xi
-\kappa^{FG}\phi_{(ABC}{}^{H}\phi_{D)FGH}.
+\square B_{ABCD} = \tfrac{2}{3}  \nabla_{\bm\xi}\phi_{ABCD} + 8 \Lambda B_{ABCD} -   \phi_{(ABC}{}^{F}\mathcal{Q}_{D)F} + \tfrac{2}{3} H^{A'}{}_{(A}{}^{FG}\nabla_{|FA'|}\phi_{BCD)G} \\ - 6 \Xi \kappa_{(A}{}^{F}\phi_{BC}{}^{GH}\phi_{D)FGH} -  \Xi \kappa^{FG}\phi_{(ABC}{}^{H}\phi_{D)FGH}.
 \end{multline}
 where $\nabla_{\bm\xi} := \xi^{AA'}\nabla_{AA'}$. Substituting the above identities
 \eqref{Eq:UsefulIdentity1}--\eqref{Eq:UsefulIdentity2}, we can derive
@@ -1854,7 +1807,7 @@ $B_{ABCD}$:
 \begin{equation}
     \square B_{ABCD} = \tfrac{2}{3}\nabla_{\bm\xi}\phi_{ABCD} +
     8\Lambda B_{ABCD} - 14\Xi \phi_{(AB}{}^{FG}B_{CD)FG} +
-    \tfrac{2}{3}(\nabla_{FA'}\phi_{G(ABC})H^{A'}{}_{D)}{}^{FG}\label{Eq:SecondWaveEqForB}
+    \tfrac{2}{3}(\nabla_{FA'}\phi_{G(ABC})H^{A'}{}_{D)}{}^{FG}. \label{Eq:SecondWaveEqForB}
 \end{equation}
 %%%%%%
 %%\mnotex{EG: moved remarks to the end of the section to make the text better flow}
@@ -1888,11 +1841,9 @@ $B_{ABCD}$:
 %%   }
 \begin{remark}
   \emph{
-    \mnotex{Query about Weyl versus rescaled Weyl in physical spacetime. EG: I think it was correct as you originally wrote it :)  }
-  \mnotex{Check that the signs are correct}
 Equation \eqref{Eq:SecondWaveEqForB} actually encodes the fact that, \emph{given a Killing spinor} $\kappa_{AB}$, the field $\xi_{AA'}$ is a collineation for the rescaled Weyl tensor ---i.e. that
 \[  \mathcal{L}_{\bm\xi}\phi_{ABCD} := \nabla_{\bm\xi}\phi_{ABCD} + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'}=0,\] 
-the definition\footnote{The Lie derivative does not extend to spinor fields, in general [].} of the ``Lie derivative" being derived from the spinorialised counterpart of
+the definition\footnote{The Lie derivative does not extend to spinor fields, in general. See \cite{PenRin86} for a discussion.} of the ``Lie derivative" being derived from the spinorialised counterpart of
 $\mathcal{L}_{\bm\xi}d_{abcd}$. Indeed, this fact follows from a straightforward calculation
 \begin{align*}
     \mathcal{L}_{\bm\xi}\phi_{ABCD}&:= \nabla_{\bm\xi}\phi_{ABCD}
@@ -1916,41 +1867,64 @@ vector $\xi_{AA'}$ is not, in general, a
 conformal Killing vector. In contrast,
 for the physical spacetime it is clear that this condition holds 
 since in that case $\tilde{\xi}_{AA'}$ is a Killing vector and thus
-$\mathcal{L}_{\bm{\tilde{\xi}}}C_{abcd}=0$, trivially.
-}
-
-\end{remark}
-\begin{remark}\mnotex{Is this the right place for this remark? It kind of disrupts the flow, I think.} \emph{
-  If $\tilde{\kappa}_{AB}$ is a Killing spinor in the the physical
-  spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$ then $\tilde{X}_{AA'} :=
-  \nabla_A{}^{Q'}\tilde{\kappa}_{BA'}$  is a Killing
-  vector in the physical spacetime.  It is direct to check that
-  $X_{AA'}=\Xi^2 \tilde{X}_{AA'}$ is a conformal Killing vector in the
-  unphysical spacetime $(\mathcal{M},\bmg)$ with
-  $\bmg=\Xi^2\tilde{\bmg}$.  Hence, given that
-  $\kappa_{AB}=\Xi^{2}\tilde{\kappa}_{AB}$ a calculation using the
-  conformal transformation rules for the connection gives
-\[
-X_{AA'}=\Xi \xi_{AA'} - 3 \kappa_{AQ}\nabla_{A'}{}^{Q}\Xi
-\]
+$\mathcal{L}_{\bm{\tilde{\xi}}}C_{abcd}=0$, trivially.\mnotex{Should be a tilde over the C?}
 }
 \end{remark}
+%\begin{remark}\mnotex{Is this the right place for this remark? It kind of disrupts the flow, I think.} \emph{
+%  If $\tilde{\kappa}_{AB}$ is a Killing spinor in the the physical
+%  spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$ then $\tilde{X}_{AA'} :=
+%  \nabla_A{}^{Q'}\tilde{\kappa}_{BA'}$  is a Killing
+%  vector in the physical spacetime.  It is direct to check that
+%  $X_{AA'}=\Xi^2 \tilde{X}_{AA'}$ is a conformal Killing vector in the
+%  unphysical spacetime $(\mathcal{M},\bmg)$ with
+%  $\bmg=\Xi^2\tilde{\bmg}$.  Hence, given that
+%  $\kappa_{AB}=\Xi^{2}\tilde{\kappa}_{AB}$ a calculation using the
+%  conformal transformation rules for the connection gives the following expression for the 
+%  conformal Killing vector on the unphysical spacetime:
+%\[
+%X_{AA'}=\Xi \xi_{AA'} - 3 \kappa_{AQ}\nabla_{A'}{}^{Q}\Xi.
+%\]
+%Indeed, one finds
+%\[\nabla_{AA'}X_{BB'}+\nabla_{BB'}X_{AA'} - \tfrac{1}{2}\epsilon_{AB}\epsilon_{A'B'}\nabla^{CC'}X_{CC'} = 2(\nabla_{C(A'}\Xi)H_{B')AB}{}^C - \Xi \nabla^C{}_{(A'}H_{B')ABC} \]
+%by a straightforward calculation. 
+%}
+%\end{remark}
 
-  
+%\begin{remark}
+%  \emph{
+%  Notice that the collineation condition \eqref{Collineation} has some
+ % resemblance with the reduced conformal Killing vector initial data
+ % equations derived in \cite{Paetz14a} :
+%  \[
+% \mathcal{L}_{\mathring{\bmX}}d_{ij} +
+% \frac{1}{3}d_{ij}D_{k}\mathring{X}^k=0,
+% \]
+% \mnotex{We can ommit reminding the reader of Paetz result if this represents puting a trap for
+  %  ourselves. The referee could asks for the relation between the two conditions... to be discussed}
+% \mnotex{JW: I think it's worth exploring, but presumably the $X$ here is a $3-$vector. How does it relate to our $X$. Also the Lie derivative the one intrinsic to the hypersurface?}   
+ % where $\mathring{X}^a$ is a conformal Killing vector field on
+ % $(\mathscr{I},\bmh)$ where $\bmh$ denotes the induced metric by
+ % $\bmg$ on $\mathscr{I}$ with Levi-Civita connection $D$. Here,
+ % $d_{ij}$ represents the initial data for the electric part of the
+ % rescaled Weyl tensor.  However, as it will be shown in Section
+ % \ref{IntrinsicCKSID}
+ % the condition $\nabla_{\bm\xi}\phi_{ABCD}|_\mathcal{S}=0$ is
+ % trivially satisfied if $\bmH|_{\mathcal{S}}=0$ and
+ % $\bmB|_{\mathcal{S}}=0$. Hence our conformal Killing spinor initial
+ % data equations impose only algebraic restrictions on $\phi_{ABCD}$
+ % instead of differential ones.
+ % }
 %%  The latter condition can be strengthen assuming compactedness of
 %%   $\mathscr{I}$ and that $(\mathscr{I},\bmh)$ is not conformal to the
 %%   standard 3-sphere $(\mathcal{S}^3, \bar{\bmh})$ to
 %% \[
 %% \mathcal{L}_{\mathring{\bmX}}d_{ab} =0
 %% \]
-%\end{remark}
-
+% \end{remark}
 At this point we note that there are no derivatives of zero quantities
 appearing on the right-hand-side of \eqref{Eq:SecondWaveEqForB}. This,
 combined with the conformal field equation satisfied by
 $\bm\phi$ as given in equation \eqref{RescaledWeylEquationDisplayed}
-%%fact that
-%%%$\nabla^A{}_{A'}\phi_{ABCD}=0$,
 suggests
 that by applying $\nabla^A{}_{A'}$ to equation
 \eqref{Eq:SecondWaveEqForB} we may be able to derive a wave equation
@@ -1963,14 +1937,7 @@ quantities.
 %%\\
 To do so, first, we note some useful identities.  From the definition
 of the zero-quantities $\bmH$, $\bmB$ and the auxiliary spinor
-$\bm\xi$ the following identity can be derived \mnotex{Put in
-  appendix?}
-\begin{equation}
- \kappa^{CD} \nabla_{DG'}\phi_{ABFC} = 2 \xi^{C}{}_{G'} \phi_{ABFC} +
- \phi_{CD(AB} H_{\vert G'\vert F)}{}^{CD} - 4
- F_{G'ABF}\label{Eq:MiscIdentity}
- \end{equation}
-which can be used to derive the more general identity
+$\bm\xi$ the following identity can be derived
 \begin{align}
     \kappa_{A}{}^{F} \nabla_{FF'}\phi_{BCDG} &=\kappa_{A}{}^{F}
     \nabla_{DF'}\phi_{BCGF} \nonumber\\ &= \tfrac{1}{3} \xi_{AF'}
@@ -1985,19 +1952,12 @@ which can be used to derive the more general identity
     \phi_{(BC}{}^{FH}H_{|F'DFH}\epsilon_{A|G)} \nonumber\\ & -
     \tfrac{1}{3} \phi_{(B|D}{}^{FH}H_{F'|C|FH}\epsilon_{A|G)} -
     \tfrac{1}{6}
-    \phi_{D(B}{}^{FH}H_{|F'|C|FH}\epsilon_{A|G)}.\label{Eq:MiscIdentity2}
+    \phi_{D(B}{}^{FH}H_{|F'|C|FH}\epsilon_{A|G)}\label{Eq:MiscIdentity2}
 \end{align}
+from which it follows that 
 % \begin{multline}
 %     \kappa^{AD} \phi_{AD}{}^{GH} \nabla_{HA'}\phi_{BCFG} =  4 \xi^{A}{}_{A'}\phi_{(BC}{}^{DG}\phi_{F)ADG} + \tfrac{1}{2} \phi_{ADGH} \phi^{ADGH} H_{A'BCF} \\ + 4 B_{(BC}{}^{AD}\nabla^{G}{}_{|A'|}\phi_{F)ADG} - 4 B_{(B}{}^{ADG}\nabla_{|AA'|}\phi_{CF)DG} \\- 8 \phi_{(BC}{}^{AD}\nabla^{G}{}_{|A'|}B_{F)ADG} - 4 \phi_{(B}{}^{ADG}\nabla_{|AA'|}B_{CF)DG}  \\-  \tfrac{1}{3} \phi_{(BC}{}^{AD}\phi_{|AD}{}^{GH}H_{A'|F)GH} -  \tfrac{2}{3} \phi_{(B}{}^{ADG}\phi_{C|AD}{}^{H}H_{A'|F)GH}
 % \end{multline}
-Using the irreducible decomposition
-\begin{equation}
-\phi_{ABCD} \phi_{FG}{}^{CD} = \tfrac{1}{6} \phi_{CDHL} \phi^{CDHL}
-\epsilon_{AG} \epsilon_{BF} + \tfrac{1}{6} \phi_{CDHL} \phi^{CDHL}
-\epsilon_{AF} \epsilon_{BG} +
-\phi_{(AB}{}^{CD}\phi_{FG)CD} \label{Eq:DecompPhiSquared}
-\end{equation}
-we can show that\mnotex{Put derivation in an appendix?}
 \begin{align}
     \kappa^{AD} \phi_{AD}{}^{GH} \nabla_{HA'}\phi_{BCFG} &= 4
     \xi^{A}{}_{A'}\phi_{(BC}{}^{DG}\phi_{F)ADG} + \tfrac{1}{2}
@@ -2009,14 +1969,13 @@ we can show that\mnotex{Put derivation in an appendix?}
     \tfrac{2}{3}
     \phi_{(B}{}^{ADG}\phi_{C|AD}{}^{H}H_{A'|F)GH} \label{Eq:MiscIdentity3}
 \end{align}
+---see Appendix \ref{Appendix_A} for details.
+\\
+
 We return now to the task of expressing $
 \nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD}$ in terms of
-zero-quantities.\mnotex{Check the last equality ---had to typeset
-  manually} First, commuting derivatives and using equation
+zero-quantities. First, commuting derivatives and using equation
 \eqref{RescaledWeylEquationDisplayed} gives
-%%%%
-%$\Lambda_{C'ABC}=0$,
-%%%%
 \mnotex{Problems with indices all over the place, here!}
 \begin{align}
     \nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD} &=
@@ -2029,20 +1988,14 @@ zero-quantities.\mnotex{Check the last equality ---had to typeset
 \end{align}
 Then, using equations \eqref{Eq:DecompGradXi},
 \eqref{RescaledWeylEquationDisplayed}
-%%%
-%%$\Lambda_{C'ABC}=0$
-%%%
-and expanding the commutator, renders
-%%%%%%%
-%%one obtains
-%%%%%%%
+and expanding the commutator, gives
 \begin{align*}
 \nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD} & = 6 \Lambda \xi^{D}{}_{A'} \phi_{ABCD} -  \xi^{DF'} \Phi_{D}{}^{F}{}_{A'F'} \phi_{ABCF} -  3\xi^{DF'} \Phi_{(A}{}^{F}{}_{\vert A'F'\vert} \phi_{BC)DF}  \nonumber\\
-    &\quad -  3\Xi\xi^{D}{}_{A'}  \phi_{DFG(A} \phi_{BC)}{}^{FG} - 3\Lambda \kappa^{DF} \nabla_{FA'}\phi_{ABCD} + \tfrac{1}{8} Q^{DF} \nabla_{FA'}\phi_{ABCD}  \nonumber\\ 
+    &\quad -  3\Xi\xi^{D}{}_{A'}  \phi_{DFG(A} \phi_{BC)}{}^{FG} - 3\Lambda \kappa^{DF} \nabla_{FA'}\phi_{ABCD} + \tfrac{1}{4} \mathcal{Q}^{DF} \nabla_{FA'}\phi_{ABCD}  \nonumber\\ 
     &\quad -  \tfrac{3}{2} \kappa^{DF} \Phi_{D}{}^{G}{}_{A'}{}^{F'} \nabla_{FF'}\phi_{ABCG} -  \tfrac{3}{2} \kappa^{DF} \Phi_{D}{}^{G}{}_{A'}{}^{F'} \nabla_{GF'}\phi_{ABCF} \nonumber\\
     &\quad + \tfrac{3}{4} \Xi \kappa^{DF} \phi_{DF}{}^{GH} \nabla_{HA'}\phi_{ABCG} - \tfrac{1}{2}( \nabla_{FF'}\phi_{ABCD}) \nabla_{Q(A'}H_{F')F}{}^{DQ}.
 \end{align*}
-Finally, using equations\eqref{Eq:MiscIdentity2}--\eqref{Eq:MiscIdentity3}, one obtains
+Finally, using equations \eqref{Eq:MiscIdentity2}--\eqref{Eq:MiscIdentity3}, one obtains
 \begin{align}
 \nabla^A{}_{A'}\nabla_{\bm\xi}\phi_{ABCD}  &= -3 \Phi _{A}{}^{D}{}_{A'}{}^{F'} F_{F'BCD}  - \tfrac{3}{8} \Xi  \phi _{DFGH} \phi ^{DFGH} H_{A'ABC} + \Lambda  \phi _{BCDF} H_{A'A}{}^{DF} \nonumber\\ 
     & \quad- \tfrac{1}{8} Q^{DF} \nabla_{FA'}\phi _{ABCD}   - \tfrac{3}{2} \Phi ^{DF}{}_{A'}{}^{F'} \nabla_{FF'}B_{ABCD} + \tfrac{1}{4} (\nabla_{DA'}H^{F'DFG}) \nabla_{GF'}\phi _{ABCF} \nonumber\\
@@ -2077,14 +2030,9 @@ derivatives, as required.
 
 With this closed system of homogeneous wave equations at hand,
 a direct application of the uniqueness property for solutions of wave equations
-of theorem \ref{TheoremHomogeneousWave} gives the following
-%%%%%
-%%, and we are done.
-%%%%
-\mnotex{Simplifications  possible.}
-
+of Theorem \ref{TheoremHomogeneousWave} gives the following
 \begin{proposition}\label{Prop:Propagation_KS}
-  Given initial data for the conformal field equations on $\mathcal{U}\subseteq\mathcal{S}$
+  Given initial data for the conformal field equations on $\mathcal{U}\subset\mathcal{S}$
   where $\mathcal{S}$ is a spacelike
 hypersurface $\mathcal{S}$ with normal vector $\tau^{AA'}$, and
 associated normal derivative $\nabla_{\bm\tau} :=
@@ -2111,74 +2059,71 @@ evolved according to the Killing spinor candidate wave equation encoded in $Q_{A
 
 
 
-\begin{remark}
+%\begin{remark}
   %%%%
   %%%% \mnotex{Check that the signs are correct. EG: it is}
   %%%%
-  \emph{
-  In general, the Lie derivative (along non-conformal Killing vectors) 
-  does not extend to spinor fields   ---see
-  \cite{PenRin86} for a discussion. Nontheless, one can
-  define the following shorthand
-\[ \mathcal{L}_{\bm\xi}\phi_{ABCD} := \nabla_{\bm\xi}\phi_{ABCD} + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'},\]
-which is simply the spinorialised counterpart of
-$\mathcal{L}_{\bm\xi}d_{abcd}$. One can then show the following
-relation between this shorthand and the Killing spinor zero-quantities,
-\begin{align*}
-    \mathcal{L}_{\bm\xi}\phi_{ABCD}&:= \nabla_{\bm\xi}\phi_{ABCD}
-    + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'} \\ &=
-    \nabla_{\bm\xi}\phi_{ABCD}-6\Lambda \kappa_{(D}{}^{F} \phi_{ABC)F}
-    - \tfrac{3}{2} \Xi \ \kappa^{FG} \phi_{(ABC}{}^{H} \phi_{D)FGH} +
-    \tfrac{1}{4} \phi_{F(ABC} \ Q_{D)}{}^{F}\\ &=
-    \nabla_{\bm\xi}\phi_{ABCD}-6\Lambda B_{ABCD} - 3\Xi
-    \phi_{(AB}{}^{FG}B_{CD)FG} + \tfrac{1}{4}\phi_{F(ABC}Q_{D)}{}^F
-\end{align*}
-where we are using equation \eqref{Eq:DecompGradXi}, along with the identity
-\eqref{Eq:UsefulIdentity2}. Therefore, given a Killing spinor $\kappa_{AB}$,
-the resulting zero quantities vanish:
-$B_{ABCD}=H_{A'ABC}=Q_{AB}=0$, and hence it follows from
-\eqref{Eq:SecondWaveEqForB} that
-\begin{equation}\mathcal{L}_{\bm\xi}\phi_{ABCD} = \nabla_{\bm\xi}\phi_{ABCD} =0. \label{Collineation}
-\end{equation}
-Thus, a sub-product of our analysis is that if $(\mathcal{M},\bmg)$
-admits a Killing spinor, then the Weyl-collineation condition
-\eqref{Collineation} is satisfied.  This is not trivial since the
-vector $\xi_{AA'}$ is not, in general, a
-conformal Killing vector. In contrast,
-for the physical spacetime is clear that this condition holds 
-since in that case $\tilde{\xi}_{AA'}$ is a Killing vector and thus
-$\mathcal{L}_{\bm{\tilde{\xi}}}C_{abcd}=0$, trivially.
-}
-\end{remark}
+%  \emph{
+ % In general, the Lie derivative (along non-conformal Killing vectors) 
+%  does not extend to spinor fields   ---see
+%  \cite{PenRin86} for a discussion. Nontheless, one can
+%  define the following shorthand
+% \[ \mathcal{L}_{\bm\xi}\phi_{ABCD} := \nabla_{\bm\xi}\phi_{ABCD} + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'},\]
+% which is simply the spinorialised counterpart of
+% $\mathcal{L}_{\bm\xi}d_{abcd}$. One can then show the following
+% relation between this shorthand and the Killing spinor zero-quantities,
+% \begin{align*}
+%    \mathcal{L}_{\bm\xi}\phi_{ABCD}&:= \nabla_{\bm\xi}\phi_{ABCD}
+%    + \phi_{F(ABC}\nabla_{D)A'}\xi^{FA'} \\ &=
+%    \nabla_{\bm\xi}\phi_{ABCD}-6\Lambda \kappa_{(D}{}^{F} \phi_{ABC)F}
+%    - \tfrac{3}{2} \Xi \ \kappa^{FG} \phi_{(ABC}{}^{H} \phi_{D)FGH} +
+%    \tfrac{1}{4} \phi_{F(ABC} \ Q_{D)}{}^{F}\\ &=
+%    \nabla_{\bm\xi}\phi_{ABCD}-6\Lambda B_{ABCD} - 3\Xi
+%    \phi_{(AB}{}^{FG}B_{CD)FG} + \tfrac{1}{4}\phi_{F(ABC}Q_{D)}{}^F
+%\end{align*}
+%where we are using equation \eqref{Eq:DecompGradXi}, along with the identity
+%\eqref{Eq:UsefulIdentity2}. Therefore, given a Killing spinor $\kappa_{AB}$,
+%the resulting zero quantities vanish:
+%$B_{ABCD}=H_{A'ABC}=Q_{AB}=0$, and hence it follows from
+%\eqref{Eq:SecondWaveEqForB} that
+%\begin{equation}\mathcal{L}_{\bm\xi}\phi_{ABCD} = \nabla_{\bm\xi}\phi_{ABCD} =0. \label{Collineation}
+%\end{equation}
+%Thus, a sub-product of our analysis is that if $(\mathcal{M},\bmg)$
+%admits a Killing spinor, then the Weyl-collineation condition
+%\eqref{Collineation} is satisfied.  This is not trivial since the
+%vector $\xi_{AA'}$ is not, in general, a
+%conformal Killing vector. In contrast,
+%for the physical spacetime is clear that this condition holds 
+%since in that case $\tilde{\xi}_{AA'}$ is a Killing vector and thus
+%$\mathcal{L}_{\bm{\tilde{\xi}}}C_{abcd}=0$, trivially.
+%}
+%\end{remark}
 
-\subsection{Intrinsic (CKSID) conditions}
+\subsection{Intrinsic (``CKSID") conditions}
 \label{IntrinsicCKSID}
+\mnotex{Mimic the twistor case: add lemma.}
 
-In this section, we aim to reduce
-\eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSInitialCondition2} to a
-set of intrinsic conditions ---that is to say, conditions on
-$\kappa_{AB}$ that are computable at the level of an initial data
-manifold. We consider $\kappa_{AB}$ defined over
-$\mathcal{U}\subset\mathcal{S}$, satisfying
-\begin{subequations}
-\begin{eqnarray}
-      && \tau_{(A}{}^{A'}H_{\vert A'\vert BCD)} :=
-  \mathcal{D}_{(AB}\kappa_{CD)}=0, \label{Eq:SpatialKS}\\ &&
-  B_{ABCD}:= \kappa_{(A}{}^F\phi_{BCD)F} =
-  0 \label{Eq:VanishingBuchdahl}
-\end{eqnarray}
-\end{subequations}
-on $\mathcal{S}$. We evolve the Killing spinor candidate according to
-equation \eqref{Eq:WaveForKS} and the initial condition
+In this section, we aim to reduce \eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSInitialCondition2} to a set of intrinsic conditions ---that is to say, conditions on $\kappa_{AB}$ that are computable at the level of an initial data manifold. Clearly the condition 
+\begin{equation}
+B_{ABCD}\equiv \kappa_{(A}{}^F\phi_{BCD)F}=0. \label{Eq:VanishingBuchdahl}
+\end{equation}
+is already intrinsic ---see Remark \ref{G-C-M-Remark}. 
+%\begin{subequations}
+%\begin{eqnarray}
+ %     && \tau_{(A}{}^{A'}H_{\vert A'\vert BCD)} :=  \mathcal{D}_{(AB}\kappa_{CD)}=0, \label{Eq:SpatialKS}\\
+ %     && B_{ABCD}:= \kappa_{(A}{}^F\phi_{BCD)F} = 0 \label{Eq:VanishingBuchdahl}
+%\end{eqnarray}
+%\end{subequations}
+%on $\mathcal{U}$. 
+The condition $H_{A'ABC}\big\vert_{\mathcal{U}}=0$, on the other hand, implies the following intrinsic condition
+\begin{equation}
+ \tau_{(A}{}^{A'}H_{\vert A'\vert BCD)} :=  \mathcal{D}_{(AB}\kappa_{CD)}=0. \label{Eq:SpatialKS}
+\end{equation}
+We evolve the Killing spinor candidate according to \eqref{Eq:WaveForKS} and the initial condition
 \begin{equation}
      \nabla_{\bm\tau} \kappa_{BC} = - \xi_{BC}\label{InitialCondition}
 \end{equation}
-on $\mathcal{S}$, with
-$\xi_{AB}:=\mathcal{D}_{(A}{}^C\kappa_{B)C}$. This can be easily shown
-to be equivalent to $\tau^{AA'}H_{A'ABC}=0$, and so equations
-\eqref{InitialCondition} and \eqref{Eq:SpatialKS} together encode
-$H_{A'ABC}\big\vert_{\mathcal{S}}=0$. Decomposing the covariant
-derivative, we have on $\mathcal{S}$
+on $\mathcal{U}$, with $\xi_{AB}:=\mathcal{D}_{(A}{}^C\kappa_{B)C}$. This can be easily shown to be equivalent to $\tau^{AA'}H_{A'ABC}=0$, and so \eqref{Eq:SpatialKS} and \eqref{InitialCondition} together encode $H_{A'ABC}\big\vert_{\mathcal{S}}=0$. Decomposing the covariant derivative, we have on $\mathcal{S}$
 \begin{align}
 \xi_{AB'} = - \tau_{B}{}^{A'} \tau^{B}{}_{B'}\xi_{AA'}
 &=\tfrac{1}{2}\tau^{B}{}_{B'}\nabla_{\bm\tau}\kappa_{AB} +
@@ -2194,9 +2139,8 @@ are using equation \eqref{InitialCondition}. Starting from
 covariant derivative, we get
 \[ \nabla_{\bm\tau} H_{B'ABC} + 2 \tau^{D}{}_{B'} \tau^{FA'} \mathcal{D}_{DF}H_{A'ABC} = -12 \Xi \tau^{D}{}_{B'}B_{ABCD} + \tfrac{3}{2} \tau_{(A|B'|}Q_{BC)}.\]
 At this point we see that if
-\eqref{Eq:SpatialKS}--\eqref{Eq:VanishingBuchdahl} hold, then
-$\nabla_{\bm\tau} H_{B'ABC}\big\vert_{\mathcal{S}}=0$.
-
+\eqref{Eq:VanishingBuchdahl}--\eqref{InitialCondition} hold, then
+$\nabla_{\bm\tau} H_{B'ABC}\big\vert_{\mathcal{S}}=0$ also.
 \medskip
 
 Now we move onto analysing the constraints imposed by $B_{ABCD}$ and
@@ -2222,8 +2166,8 @@ $F_{A'ABC}$; recall that, by definition,
 $F_{A'ABC}=\nabla^D{}_{A'}B_{ABCD}$, and so decomposing the covariant
 derivative one obtains
 \[F_{A'BCD} = \tfrac{1}{2} \tau^{A}{}_{A'} \nabla_{\bm\tau} B_{ABCD}  -  \tau^{F}{}_{A'} \mathcal{D}^{A}{}_{F}B_{ABCD}.\]
-Hence, given the vanishing of $B_{ABCD}$ and Hence, given the vanishing of $B_{ABCD}$ and \eqref{IntrinsicCondition3}, we see that $F_{A'ABC}=0$ on
-$\mathcal{S}$, as well.
+Hence, given $B_{ABCD}=0$ and \eqref{IntrinsicCondition3}, we see that $F_{A'ABC}=0$ on
+$\mathcal{S}$, also.
 %%%%%%%%%%%%%%%%
 %%Thus, all that's left is to find intrinsic
 %%%%%%%%%%%%%%
@@ -2239,20 +2183,12 @@ Combining the two wave equations for $B_{ABCD}$,
 \eqref{Eq:FirstWaveEqForB} and \eqref{Eq:SecondWaveEqForB}, we see
 that
 \begin{multline}
-     \nabla_{FA'}F^{A'}{}_{BCD} = \tfrac{1}{3}
-     \nabla_{\xi}{}\phi_{BCDF} - 2 \Lambda B_{BCDF} + 3\Xi
-     B_{(BC}{}^{AG} \phi_{D)FAG} - 7 \Xi B_{(BC}{}^{AG}\phi_{DF)AG}
-     \\- \tfrac{1}{4} \phi_{(BCD}{}^{A}Q_{F)A} + \tfrac{1}{3}
-     H^{A'}{}_{(B}{}^{AG}\nabla_{|AA'|}\phi_{CDF)G}\label{CurlOfFInTermsOfCollineation}.
+     \nabla_{FA'}F^{A'}{}_{BCD} = \tfrac{1}{3} \nabla_{\xi}{}\phi_{BCDF} - 2 \Lambda B_{BCDF} + 3\Xi B_{(BC}{}^{AG}  \phi_{D)FAG}  - 7 \Xi B_{(BC}{}^{AG}\phi_{DF)AG} \\-  \tfrac{1}{2} \phi_{(BCD}{}^{A}\mathcal{Q}_{F)A} + \tfrac{1}{3} H^{A'}{}_{(B}{}^{AG}\nabla_{|AA'|}\phi_{CDF)G}\label{CurlOfFInTermsOfCollineation}. 
 \end{multline}
 Decomposing the covariant derivative, we get
 \begin{multline}
-\nabla_{\bm\tau} F_{B'BCD} + 2 \tau^{A}{}_{B'} \tau^{FA'}
-\mathcal{D}_{AF}F_{A'BCD} \\ = \tau^{A}{}_{B'}\left(\tfrac{2}{3}
-\nabla_{\xi}{}\phi_{BCDA} - 4 \Lambda B_{BCDA} + 6 \Xi B_{(BC}{}^{FG}
-\phi_{D)AFG} \right. \\ \left.  - 14 \Xi B_{(BC}{}^{AG}\phi_{DA)FG} -
-\tfrac{1}{2} \phi_{(BCD}{}^{F}Q_{A)F} + \tfrac{2}{3}
-H^{A'}{}_{(B}{}^{FG}\nabla_{|FA'|}\phi_{CDA)G}\right).
+\nabla_{\bm\tau} F_{B'BCD} + 2 \tau^{A}{}_{B'} \tau^{FA'} \mathcal{D}_{AF}F_{A'BCD} \\
+= \tau^{A}{}_{B'}\left\big(\tfrac{2}{3} \nabla_{\xi}{}\phi_{BCDA}  - 4 \Lambda  B_{BCDA} + 6 \Xi  B_{(BC}{}^{FG}  \phi_{D)AFG}  \right. \\ \left.  - 14 \Xi  B_{(BC}{}^{AG}\phi_{DA)FG}  -   \phi_{(BCD}{}^{F}\mathcal{Q}_{A)F}   + \tfrac{2}{3}  H^{A'}{}_{(B}{}^{FG}\nabla_{|FA'|}\phi_{CDA)G}\right\big).
 \end{multline}
 Hence, if
 $F_{A'ABC}\big\vert_{\mathcal{S}}=H_{A,ABC}\big\vert_{\mathcal{S}}=B_{ABCD}\big\vert_{\mathcal{S}}=0$,
@@ -2266,11 +2202,11 @@ Decomposing the covariant derivative, using the evolution equation $\bm\phi$
 as given in equation \eqref{RescaledWeyl_evo_const}, along with equation
 \eqref{DecompXiOnSUsingInitialCondition} we have
 \[ \nabla_{\bm\xi}\phi_{ABCD}\big\vert_{\mathcal{S}} =  \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F} + \tfrac{3}{2} \xi^{FG} \mathcal{D}_{FG}\phi_{ABCD}. \]
-At this point then, we have reduced our initial conditions for the
+Hence, at this point then, we have reduced our initial conditions for the
 zero quantities to the following set of intrinsic conditions:
 \begin{subequations}
 \begin{eqnarray}
-    && \mathcal{D}_{(AB}\kappa_{CD)}=0,\\ &&
+    && \mathcal{D}_{(AB}\kappa_{CD)}=0, \label{Raw_CSKID_1}\\ &&
   \kappa_{(A}{}^F\phi_{BCD)F}=0,\\ && 2
   \kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} +
   \phi_{(ABC}{}^{F}\xi_{D)F} = 0,\label{RedundantCondition1}\\ &&
@@ -2279,13 +2215,9 @@ zero quantities to the following set of intrinsic conditions:
   0. \label{RedundantCondition2}
 \end{eqnarray}
 \end{subequations}
-%%%%%
-%% We will now explore potential redundancy in the above conditions. We
-%% will see shortly that the following holds:
-%%%%%
-Although equations \eqref{Raw_CSKID} encode
-necessary and sufficient conditions for the existence of a
-Killing spinor, the redundancy relations between these equations are established
+These equations encode
+necessary and, when combined with \eqref{InitialCondition}, sufficient conditions for the existence of a
+Killing spinor. We now explore potential redundancy the 
 in the following
 \begin{proposition}\label{prop_remove_redundant_conditions}
 Suppose that either $\kappa_{AB}\kappa^{AB}:= 0$ on $\mathcal{U}$ or
@@ -2297,7 +2229,7 @@ $\kappa_{AB}$ by virtue of the first two conditions.
 
 The proof of this proposition requires decomposing the fields respect to a spin dyad
 and considering the cases where $\bm\phi$ is of different Petrov types.
-This is a long but direct calculation that is given in the Appendix \ref{Appendix_A}.
+This is a long but direct calculation that is given in Appendix \ref{Sec:ProofOfProp3}.
 
 
 \begin{remark}{\em 
@@ -2326,36 +2258,83 @@ $\mathcal{U}\subset\mathcal{S}$ denote an open set.
 The development
 of the initial data set will have a
 (valence-2) Killing spinor in the domain of
-dependence of $\mathcal{U}$ if and only if there exists
-$\kappa_{AB}$ defined over $\mathcal{U}$
-\mnotex{Slight technicality concerning restriction of open set.}
-satisfying the following equations
-\mnotex{To be modify if type D does not work}
-\begin{subequations}
-\begin{align}
-   &\mathcal{D}_{(AB}\kappa_{CD)}=0, \label{CSKID_1}
-  \\
-  & \kappa_{(A}{}^F\phi_{BCD)F}=0, \label{CSKID_2}
-\end{align}
-\end{subequations}
-%%%%
-%are satisfied
-%%%%
-on $\mathcal{U}$.
-The Killing spinor is obtained by 
-evolving according to the wave equation:
+dependence of $\mathcal{U}$ if and only if there exists $\kappa_{AB}$ defined over $\mathcal{U}$ satisfying\mnotex{Slight technicality concerning restriction of open set.}
+\[ \mathcal{D}_{(AB}\kappa_{CD)}=0, \qquad \kappa_{(A}{}^F\phi_{BCD)F}=0\]
+on $\mathcal{U}$. Given a solution to the above on $\mathcal{U}$, the Killing spinor is obtained by 
+evolving the initial data $\kappa_{AB}$ according to the wave equation:
 \begin{align} \label{Wave_eq_KS_theo}
 \square \kappa _{AB} = -4 \Lambda \kappa _{AB} + \Xi \phi_{ABCD}\kappa^{CD}.
 \end{align}
-with initial data satisfying conditions in equations
-%%%%
-\mnotex{Rewording needed}
-%%%%
-\eqref{CSKID_1}-\eqref{CSKID_2} and
+and subject to the initial condition
 \begin{equation}
   \nabla_{\bm\tau} \kappa _{AB} = -\mathcal{D} _{(A}{}^C \kappa_{B)C}.
 \end{equation}
 \end{theorem}
+\begin{proof}
+Hello world\mnotex{Write-up of proof needed.}
+\end{proof}
+
+\begin{remark}{\em 
+Note that we recover the conditions from \cite{BaeVal10a}, namely 
+\[\tilde{\mathcal{D}}_{(AB}\tilde{\kappa}_{CD)}=0, \qquad \tilde{\kappa}_{(A}{}^F
+\Psi_{BCD)F}=0, \]
+when $\Xi\equiv  1$ on $\mathcal{U}$. 
+%On the other hand, note that the condition $\kappa_{(A}{}^F\Psi_{BCD)F}=0$ would trivialise if one were to evaluate it at some $p\in \mathscr{I}$, since the existence of a regular compactification necessarily implies that $\Psi_{ABCD}=0$ on $\mathscr{I}$.
+}
+\end{remark}
+%\begin{remark}
+%  \emph{
+%  Since the fields comprising initial data for the CFEs contain the
+%  rescaled Weyl spinor, one can use the initial datum
+%  $\phi_{ABCD}|_{\mathcal{S}}$ to formally define the Petrov type of
+%  an initial data set for the CFEs. This can be expressed covariantly as $I^3 - 6J^2=0$, where $I,J$ are the complex-valued scalars
+%\begin{align*}
+%I &:= \phi_{ABCD}\phi^{ABCD} \equiv E_{ij}E^{ij} - B_{ij}B^{ij} + 2i E_{ij}B^{ij},\\
+%J &:= \phi_{AB}{}^{CD}\phi_{CD}{}^{FG}\phi_{FG}{}^{AB} \equiv (E_{i}{}^jE_j{}^kE_{k}{}^i - 3E_{i}{}^jB_j{}^kB_{k}{}^i) + i(3B_{i}{}^jE_j{}^kE_k{}^{i} - B_{i}{}^jB_j{}^kB_k{}^i),
+%\end{align*}
+%with $E_{ij}, B_{ij}$ denoting the electric and magnetic parts of the rescaled Weyl tensor, respectively. Type $N$ corresponds to the special case $I=J=0$. 
+%    }
+%\end{remark}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% References %%%%%%
+%%%%%%%% https://arxiv.org/pdf/2101.00856.pdf
+%%%%%%%% https://arxiv.org/pdf/1010.2421.pdf
+%%%%%%%% See page 107-108, section Killing spinors for type {22} vacuums of \cite{PenRin84}
+%%%%%%%% Lemma 1 of https://link.springer.com/article/10.1007/BF01649445
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Given the close connection between the notion of algebraic specialness and the existence of Killing spinors, outlined in Section \ref{Background}, it is not surprising that one can use the previous result to address the issue of under what conditions the Petrov type of an initial dataset is propagated to the resulting spacetime development. This is the content of the following: 
+\begin{corollary}\label{Corollary:PetrovPropagation}
+%Suppose that $\phi_{ABCD}$ is of Petrov type N on $\mathcal{U}\subset \mathcal{S}$, then $\phi_{ABCD}$ is of Petrov type N on an open\mnotex{is it open?} subset of the spacetime development, $\mathcal{D}^+(\mathcal{U})$,  as evidenced by the existence of a non-trivial twistor (i.e. valence-1 Killing spinor). 
+Suppose that $\phi_{ABCD}$ is of Petrov type D on $\mathcal{U}\subset\mathcal{S}$ and suppose further that 
+\begin{equation} 
+\sigma\equiv - o^A o^B o^C\mathcal{D}_{AB}o_C=0 \quad \text{and}\quad \lambda\equiv \iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C=0\label{ShearConditions}
+\end{equation}
+hold on $\mathcal{U}$, where $\lbrace \bmo, \bm\iota\rbrace$ is an adapted spin dyad in terms of which $\phi_{ABCD}=\phi o_{(A}o_B\iota_C\iota_{D)}$ for some field $\phi$.
+Then, $\phi_{ABCD}$ is also of Petrov type D on an open subset of the spacetime development, $\mathcal{D}^+(\mathcal{U})$, as evidenced by the existence of a non-trivial (valence-2) Killing spinor satisfying $\kappa_{AB}\kappa^{AB}\neq 0$. 
+\end{corollary}
+\begin{proof}
+%Suppose that $\phi_{ABCD}$ is of Petrov type N on $\mathcal{U}$, with $\lbrace \bmo, \bm\iota\rbrace$ an adapted spin dyad in terms of which $\phi_{ABCD} = \phi o_Ao_Bo_Co_D$ then as shown in \ref{TypeNCase} the 
+%\medskip
+Suppose that $\phi_{ABCD}$ is of Petrov type D on $\mathcal{U}$, with $\lbrace \bmo, \bm\iota\rbrace$ an adapted spin dyad in terms of which $\phi_{ABCD}=\phi o_{(A}o_B\iota_C\iota_{D)}$ for some field $\phi$. Define $\kappa_{AB}=\phi^{-1/3}o_{(A}\iota_{B)}$. The Buchdahl constraint is clearly satisfied. The equation $\mathcal{D}_{(AB}\kappa_{CD)}=0$ decomposes to give\mnotex{$\lambda$ both for the cosmological constant and an NP scalar.} 
+\begin{eqnarray*}
+&& \sigma=0,\\
+&& \mathcal{D}_{\bm0\bm0}\phi = 3\phi(\kappa - \tau), \\
+&& \mathcal{D}_{\bm0\bm1}\phi = \tfrac{3}{2} \phi(\rho + \mu),\\
+&& \mathcal{D}_{\bm1\bm1}\phi = 3\phi(\nu - \pi), \\
+&& \lambda = 0
+\end{eqnarray*}
+---to see this, substitute $e^{\varkappa}=\phi^{-1/3}$ in \eqref{SpatialSenTypeD0000}--\eqref{SpatialSenTypeD1111} of the Appendix.
+The first and last components are guaranteed by the assumption \eqref{ShearConditions}.
+The remaining equations are precisely those implied by the constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$ ---see \eqref{WeylConstraintTypeD} of the Appendix.
+%\[ o^Ao^Bo^C\iota^D\mathcal{D}_{(AB}\kappa_{CD)}=o^Ao^B\iota^C\iota^D\mathcal{D}_{(AB}\kappa_{CD)}=o^A\iota^B\iota^C\iota^D\mathcal{D}_{(AB}\kappa_{CD)}=0\]
+Hence, the Killing spinor initial data conditions are met by $\kappa_{AB}$ and propagating using \eqref{Wave_eq_KS_theo} we obtain a Killing spinor in some open subset of $\mathcal{D}^+(\mathcal{U})$, according to Theorem \ref{Theorem_KS}. Finally, $I\neq 0$ on $\mathcal{U}$ we have by continuous dependence on data that $I\neq 0$ on...
+\end{proof}
+
+\begin{remark}{\em 
+ While the constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$ implies that the $\bm0\bm0\bm0\bm1$, $\bm0\bm0\bm1\bm1$ and $\bm0\bm1\bm1\bm1$-components of $\mathcal{D}_{(AB}\kappa_{CD)}=0$
+  are all satisfied, as shown in the above proof, the extremal spin components are not guaranteed simply as a consequence of the above expression for $\kappa_{AB}$. Hence, the conditions of Theorem \ref{Theorem_KS} are more restrictive than simply assuming that $\bm\phi$ be of Petrov type D on $\mathcal{U}$. The remaining two extremal components of $\mathcal{D}^{AB}\phi_{ABCD}=0$ are however implied by the $\bm0\bm0\bm0\bm0$ and $\bm1\bm1\bm1\bm1$-components of the \emph{evolution equation} $\nabla_{\bm\tau}\phi_{ABCD}=2\mathcal{D}_{(A}{}^F\phi_{BCD)F}$ \emph{if} one assumes that the Petrov type extends to the spacetime development, consistent with Remark \ref{Remark:DyadExpressionForKillingSpinorInTypeD}.
+  }
+\end{remark}
 
 
 \section*{Conclusions}
@@ -2380,18 +2359,20 @@ the unphysical spacetime $(\mathcal{M},\bmg)$ governed by Friedrich's
   The initial data equations derived in this article contain one differential condition and one
   algebraic condition.  The differential condition corresponds to the
   so-called \emph{spatial Killing spinor equation} while the algebraic
-  condition is a restriction imposed by the \emph{Buchdahl constraint} to the initial
+  condition is a restriction imposed by the \emph{Buchdahl constraint} on the initial
   hypersurface. This constraint can be interpreted as restricting the Petrov type
-  of an initial data set for the conformal Einstein field equations.
+  of the initial data set for the conformal Einstein field equations.
   Although conditions \eqref{CSKID_1}-\eqref{CSKID_2} look formally
   identical to those derived for the physical spacetime
   $(\tilde{\mathcal{M}},\tilde{\bmg})$, since the Einstein field
   equations are not conformally invariant, the proof that these
   conditions also hold for the unphysical spacetime
-  $(\mathcal{M},\bmg)$ is non-trivial.  Moreover, the raw expressions
-  of proposition \ref{Prop:Propagation_KS} would suggest that one
-  needs further conditions besides \eqref{CSKID_1}-\eqref{CSKID_2} to
-  ensure the existence of a Killing spinor in $(\mathcal{M},\bmg)$. It
+  $(\mathcal{M},\bmg)$ is non-trivial.  
+%  Moreover, the raw expressions
+%  of proposition \ref{Prop:Propagation_KS} would suggest that one
+%  needs further conditions besides \eqref{CSKID_1}-\eqref{CSKID_2} to
+%  ensure the existence of a Killing spinor in $(\mathcal{M},\bmg)$. 
+  It
   is only after exploring the redundancy between the raw conditions
   \eqref{Raw_CSKID} that one obtains the reduced set
   \eqref{CSKID_1}-\eqref{CSKID_2}.
@@ -2399,7 +2380,7 @@ the unphysical spacetime $(\mathcal{M},\bmg)$ governed by Friedrich's
   \medskip
 
 In the case where the conformal rescaling is
-trivial, $\Xi = 1$, we recover the results of
+trivial, $\Xi \equiv 1$, we recover the results of
 \cite{BaeVal10b}. However, even for this case, the set of variables to
 be propagated in the physical and the unphysical spacetimes
 are different.  This difference can be traced back to the observation
@@ -2447,7 +2428,7 @@ conformal boundary.
 
 \medskip
 
-Moreover, the applications of the core analysis of this artticle
+Moreover, the applications of the core analysis of this article
 are not restricted to the study of de Sitter-like spacetimes since the most delicate part of the analysis
 consisted on finding a system of homogeneous wave equations for
 $H_{A'ABC}$ and $B_{ABCD}$ and $F_{A'ABC}$ which are irrespective of
@@ -2457,10 +2438,10 @@ uniqueness result for wave equations of Theorem
 $\mathcal{S}$ is provided then $H_{A'ABC}$, $B_{ABCD}$ and $F_{A'ABC}$
 vanish on the domain of dependence of the data which constitutes the
 of the main technical tool to derive the main result.
-Nontheless, analogous theorems for the characteristic problem or
+Nonetheless, analogous theorems for the characteristic problem or
 the initial boundary value problem could be used to obtain similar
-conditions considering a null or timelike hypersurface as it has been done
-some applications of the Killing vector initial data equations and the
+conditions on a null or timelike hypersurface, as has been done
+in the case of the Killing vector initial data equations and the
 physical Killing spinor initial data equations
 ---see \cite{Pae14a, ColRacVal18} and \cite{CarVal18}.
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -2471,7 +2452,7 @@ physical Killing spinor initial data equations
 %% considering a timelike or null hypersurface $\mathcal{S}$ instead.
 %%%%%%%%%%%%%%%%%%%%%%%%
 In the case of the characteristic problem, the conformal approach of
-this article would allow to analyse the existence of Killing spinors
+this article would facilitate the analysis of the existence of Killing spinors
 at the conformal boundary of an asymptotically flat spacetimes.  In the
 case of a timelike hypersurface, the analogous conformal Killing
 spinor initial data equations could be used in the analysis and
@@ -2485,29 +2466,133 @@ E. Gasper\'in acknowledges support from Consejo Nacional de
 Ciencia y Tecnolog\'ia (Mexico) ---CONACyT studentship
 494039/218141--- in the early stages of this work and from Fundaç\~ao
 para a Ci\^encia e a Tecnologia (Portugal) ---FCT-2020.03845.CEECIND---
-during its completion. J. L. Williams acknowledges support from COST action...\mnotex{Code needed...}
-
+during its completion. J. L. Williams acknowledges support from the COST grant CA16104.  
 \appendix
 
 \section{Appendix}\label{Appendix_A}
-In this appendix the proof of proposition
-\ref{prop_remove_redundant_conditions} is given.
+
+Here we give the derivation of some of the key identities used in Section \ref{Sec:KSWaveEqs} and the proof of Proposition \ref{prop_remove_redundant_conditions} from Section \ref{IntrinsicCKSID}. 
+
+\subsection{Spinorial identities}
+\mnotex{Prepend equation numbers with ``A"}
+
+Here we give the derivation of identities \eqref{Eq:MiscIdentity2} and \eqref{Eq:MiscIdentity3}. First, by expanding out the definition of $B_{ABCD}$,
+\begin{align*}
+\nabla^D{}_{G'}B_{ABFD} &= - \tfrac{1}{4} \phi_{ABFD} \nabla_{CG'}\kappa^{CD}  -  \tfrac{3}{4} \kappa_{(A}{}^{C} \nabla_{\vert DG'\vert}\phi_{BF)C}{}^{D} \\
+&\qquad -  \tfrac{1}{4} \kappa^{CD} \nabla_{DG'}\phi_{ABFC} + \tfrac{3}{4} \phi_{CD(AB} \nabla^{D}{}_{\vert G'\vert}\kappa_{F)}{}^{C} \\
+&=\tfrac{1}{2} \xi^{C}{}_{G'} \phi_{ABFC} + \tfrac{1}{4} \phi_{CD(AB} H_{\vert G'\vert F)}{}^{CD}  -  \tfrac{1}{4} \kappa^{CD} \nabla_{DG'}\phi_{ABFC}
+\end{align*}
+the second equality following from $\nabla^A{}_{A'}\phi_{ABCD}=0$. Using \eqref{Eq:DecompGradKS}, the definition of $F_{A'ABC}$ and rearranging, 
+\begin{equation}
+ \kappa^{CD} \nabla_{DG'}\phi_{ABFC} = 2 \xi^{C}{}_{G'} \phi_{ABFC} +
+ \phi_{CD(AB} H_{\vert G'\vert F)}{}^{CD} - 4
+ F_{G'ABF}\label{Eq:MiscIdentity}
+ \end{equation}
+Then, using the irreducible decomposition
+\begin{equation*}
+\kappa_{F}{}^{D} \phi_{ABCD} = B_{ABCF} + \tfrac{1}{4} \kappa^{DG} \phi_{BCDG} \epsilon_{AF} + \tfrac{1}{4} \kappa^{DG} \phi_{ACDG} \epsilon_{BF} + \tfrac{1}{4} \kappa^{DG} \phi_{ABDG} \epsilon_{CF},	
+\end{equation*}
+one calculates
+\begin{align*}
+	\kappa_{A}{}^{F} \nabla_{GF'}\phi_{BCDF} &= \nabla_{GF'}(\kappa_{A}{}^{F}\phi_{BCDF}) - \phi_{BCDF}\nabla_{GF'}\kappa_{A}{}^{F}\\
+	&= \nabla_{GF'}B_{ABCD} -     \tfrac{3}{4} \kappa^{FH} \epsilon_{A(B} \nabla_{\vert GF'\vert}\phi_{CD)FH}\\
+	&\qquad -  \phi_{BCDF} \nabla_{GF'}\kappa_{A}{}^{F} -  \tfrac{3}{4} \epsilon_{A(B}\phi_{CD)FH} \nabla_{GF'}\kappa^{FH}\\
+	&=\nabla_{GF'}B_{ABCD} + \tfrac{1}{3} \xi_{AF'} \phi_{BCDG} -  \tfrac{1}{3} \phi_{BCDF} H_{F'AG}{}^{F} + \tfrac{1}{2} \xi^{F}{}_{F'}\epsilon_{A(B} \phi_{CD)GF}  \\
+	&\qquad -  \tfrac{1}{4} \epsilon_{A(B}\phi_{CD)FH} H_{F'G}{}^{FH}   -  \tfrac{1}{3} \xi^{F}{}_{F'} \phi_{BCDF} \epsilon_{AG}  -  \tfrac{3}{4} \kappa^{FH} \epsilon_{A(B} \nabla_{\vert GF'\vert}\phi_{CD)FH},
+\end{align*}
+where the third equality follows from \eqref{Eq:DecompGradKS}. Then swapping indices on the $\nabla\bm\phi$ terms and using $\nabla^A{}_{A'}\phi_{ABCD}=0$, one obtains \eqref{Eq:MiscIdentity2}:
+\begin{align*}
+    \kappa_{A}{}^{F} \nabla_{FF'}\phi_{BCDG} &= \tfrac{1}{3} \xi_{AF'}
+    \phi_{BCDG} - \tfrac{1}{3} \xi^{F}{}_{F'} \phi_{BCGF}
+    \epsilon_{AD} - \tfrac{1}{3}
+    \xi^{F}{}_{F'}\phi_{(BC|DF}\epsilon_{A|G)} \nonumber \\ & -
+    \tfrac{2}{3} \xi^{F}{}_{F'}\phi_{(B|D|C|F}\epsilon_{A|G)} +
+    \epsilon_{AD} F_{F'BCG} + \nabla_{(B|F'}B_{A|CG)D} + \tfrac{1}{3}
+    \phi_{(BC|D}{}^{F}H_{F'A|G)F} \nonumber \\& + 2
+    \epsilon_{A(B}F_{|F'\vert CG)D} - \tfrac{1}{3}
+    \phi_{(BC}{}^{FH}H_{|F'|G)FH}\epsilon_{AD} - \tfrac{1}{6}
+    \phi_{(BC}{}^{FH}H_{|F'DFH}\epsilon_{A|G)} \nonumber\\ & -
+    \tfrac{1}{3} \phi_{(B|D}{}^{FH}H_{F'|C|FH}\epsilon_{A|G)} -
+    \tfrac{1}{6}
+    \phi_{D(B}{}^{FH}H_{|F'|C|FH}\epsilon_{A|G)}.
+\end{align*}
+To show \eqref{Eq:MiscIdentity3}, we first apply $\nabla^A{}_{A'}$ to identity \eqref{Eq:UsefulIdentity2}, using \eqref{Eq:DecompGradKS} and $\nabla^A{}_{A'}\phi_{ABCD}=0$, one obtains
+\begin{align*}
+&\tfrac{1}{2} \xi^{A}{}_{A'} \phi_{(BF}{}^{DG} \phi_{C)ADG} + \tfrac{1}{12} \
+\phi_{ADGH} \phi_{BCF}{}^{H} H_{A'}{}^{ADG} + \tfrac{1}{4} \
+\phi_{A(BF}{}^{H} \phi_{C)DGH} H_{A'}{}^{ADG}  \\
+&-  \tfrac{3}{4} \
+\kappa^{AD} \phi_{(CF}{}^{GH} \nabla_{\vert HA'\vert}\phi_{B)ADG} + \tfrac{1}{4} \
+\kappa^{AD} \phi_{AD}{}^{GH} \nabla_{HA'}\phi_{BCFG} = 2 \nabla^G{}_{A'}(B_{(BC}{}^{AD} \phi_{FG)}{}_{AD})	
+\end{align*}
+Then, using \eqref{Eq:MiscIdentity2}, along with the irreducible decomposition 
+\begin{equation*}
+\phi_{ABCD} \phi_{FG}{}^{CD} = \tfrac{1}{6} \phi_{CDHL} \phi^{CDHL}
+\epsilon_{AG} \epsilon_{BF} + \tfrac{1}{6} \phi_{CDHL} \phi^{CDHL}
+\epsilon_{AF} \epsilon_{BG} +
+\phi_{(AB}{}^{CD}\phi_{FG)CD}, %\label{Eq:DecompPhiSquared}
+\end{equation*}
+one finally obtains \eqref{Eq:MiscIdentity3}: 
+\begin{align*}
+    \kappa^{AD} \phi_{AD}{}^{GH} \nabla_{HA'}\phi_{BCFG} &= 4
+    \xi^{A}{}_{A'}\phi_{(BC}{}^{DG}\phi_{F)ADG} + \tfrac{1}{2}
+    \phi_{ADGH} \phi^{ADGH} H_{A'BCF} \nonumber\\ & - 4
+    B_{(B}{}^{ADG}\nabla_{|AA'|}\phi_{CF)DG} - 8
+    \phi_{(BC}{}^{AD}F_{|A'|F)ADG}\nonumber \\ & - 4
+    \phi_{(B}{}^{ADG}\nabla_{|AA'|}B_{CF)DG} - \tfrac{1}{3}
+    \phi_{(BC}{}^{AD}\phi_{|AD}{}^{GH}H_{A'|F)GH}\nonumber \\ & -
+    \tfrac{2}{3}
+    \phi_{(B}{}^{ADG}\phi_{C|AD}{}^{H}H_{A'|F)GH}. \label{Eq:MiscIdentity3}
+\end{align*}
+
+
+\subsection{Proof of Proposition \ref{prop_remove_redundant_conditions}}
+\label{Sec:ProofOfProp3}
+
+%In this section the proof of Proposition
+%\ref{prop_remove_redundant_conditions} is given.
 The Buchdahl constraint restricts the Petrov type of
 $\bm\phi$ to be type $D$, $N$ or $O$.
 The calculation proceeds by expanding out the
-conditions \eqref{Raw_CSKID} in a spin dyad
-by considering separatedly each Petrov type.
-Observe that for Type $O$, for which $\bm\phi=0$,
+conditions \eqref{Raw_CSKID_1}--\eqref{RedundantCondition2} in a spin dyad
+by considering separately the cases $\kappa_{AB}\kappa^{AB}\equiv 0$
+and $\kappa_{AB}\kappa^{AB}\neq 0$ on $\mathcal{U}$, corresponding to Petrov types N and D, respectively.
+Observe that for Type $O$, for which $\phi_{ABCD}=0$,
 the proof of \ref{prop_remove_redundant_conditions} trivialises,
-so only the type $N$ and $D$ are needed.
+so only the types $N$ and $D$ are needed.
+\\
 
-\subsection{Petrov type N: $\kappa_{AB}\kappa^{AB}=0$}
-=======
-\subsubsection{Case I: $\kappa_{AB}\kappa^{AB}=0$ on $\mathcal{U}$}
->>>>>>> main
+Recalling that $\mathcal{D}_{AB}:= \tau_{(A}{}^{A'}\nabla_{B)A'}$, a straightforward computation yields 
+\begin{align*}
+& o^Ao^Bo^C\mathcal{D}_{AB}o_C = -\sigma,\\
+& o^Ao^B\iota^C\mathcal{D}_{AB}o_C=o^Ao^Bo^C\mathcal{D}_{AB}\iota_C=-\beta,\\
+& o^A\iota^B o^C\mathcal{D}_{AB}o_C = \tfrac{1}{2}(\kappa - \tau),\\
+& o^A\iota^B\iota^C\mathcal{D}_{AB}o_C = o^A\iota^B o^C\mathcal{D}_{AB}\iota_C = \tfrac{1}{2}(\epsilon - \gamma),\\
+& \iota^A\iota^B o^C\mathcal{D}_{AB}o_C = \rho,\\
+& \iota^A\iota^B\iota^C\mathcal{D}_{AB}o_C = \iota^A\iota^B o^C\mathcal{D}_{AB}\iota_C = \alpha,\\
+& o^A o^B\iota^C\mathcal{D}_{AB}\iota_C = -\mu,\\
+& o^A\iota^B\iota^C\mathcal{D}_{AB} = \tfrac{1}{2}(\pi - \nu),\\
+& \iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C = \lambda	,
+\end{align*}
+%\[o^Ao^Bo^C\mathcal{D}_{AB}o_C = -\sigma, \qquad o^A\iota^B o^C\mathcal{D}_{AB}o_C = \tfrac{1}{2}(\kappa - \tau), \qquad \iota^A\iota^B o^C\mathcal{D}_{AB}o_C = \rho,\]
+%\[o^A o^B\iota^C\mathcal{D}_{AB}\iota_C = \mu, \qquad o^A\iota^B\iota^C\mathcal{D}_{AB} = \tfrac{1}{2}(\pi - \nu), \qquad \iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C = \lambda	\]
+%\[o^Ao^B\iota^C\mathcal{D}_{AB}o_C=o^Ao^Bo^C\mathcal{D}_{AB}\iota_C=-\beta, \qquad o^A\iota^B\iota^C\mathcal{D}_{AB}o_C = o^A\iota^B o^C\mathcal{D}_{AB}\iota_C = \tfrac{1}{2}(\epsilon - \gamma), \]
+%\[\iota^A\iota^B\iota^C\mathcal{D}_{AB}o_C = \iota^A\iota^B o^C\mathcal{D}_{AB}\iota_C = \alpha, \]
+where we are following the conventions of [] in the definition of the Newmann--Penrose (NP) scalars $\alpha, \beta, \epsilon, \gamma, \kappa, \mu, 
+\lambda, \rho, \tau, \sigma, \nu, \pi.$
+\\
 
-\mnotex{Not an open condition...what if it vanishes somewhere on $\mathcal{U}$ but not everywhere?}
-\mnotex{Recovers twistor case, right?}
+The following identities will also be useful
+\begin{subequations}
+\begin{eqnarray}
+&& \mathcal{D}_{AB}o^B = o^Bo^C\mathcal{D}_{AC}\iota_B - \iota^B o^C\mathcal{D}_{AB}o_C,\\
+&& \mathcal{D}_{AB}\iota^B = \iota^B o^C(\mathcal{D}_{AC}\iota_B - \mathcal{D}_{AB}\iota_C),
+\end{eqnarray}
+\end{subequations}
+and follow easily from $\epsilon_{AB}=o_A\iota_B - o_B\iota_A$. 
+
+\subsubsection{Case I: $\kappa_{AB}\kappa^{AB}\equiv 0$ on $\mathcal{U}$} \label{TypeNCase}
+
 The assumption that $\kappa_{AB}\kappa^{AB}=0$ on $\mathcal{U}$ implies that there exists a spin dyad $\lbrace \bm\omicron, \bm\iota\rbrace$ on $\mathcal{U}$ such that $\kappa_{AB}=\omicron_A\omicron_B$. The Buchdahl constraint then implies that 
 \begin{equation}
 \phi_{ABCD}=\phi \omicron_A\omicron_B\omicron_C\omicron_D
@@ -2516,84 +2601,84 @@ for some scalar field $\phi:\mathcal{U}\rightarrow\mathbb{C}$ and hence that the
 \begin{equation*}
  \omicron^A \omicron^B \omicron^C \mathcal{D}_{AB}\omicron_C= \omicron^A \omicron^B \iota^C\mathcal{D}_{(AB}\omicron_{C)}= \omicron^A \iota^B \iota^C\mathcal{D}_{(AB}\omicron_{C)}= \iota^A \iota^B \iota^C\mathcal{D}_{AB}\omicron_{C}=0,
 \end{equation*}
-implying that $\mathcal{D}_{(AB}\omicron_{C)}=0$ ---that is to say that $\omicron_A$ is a twistor candidate. We also have 
-\begin{align*}
- \xi &= 2 o^{A} \mathcal{D}_{AB}o^{B},\\
- \xi_{AB} &= -  o^{C} \mathcal{D}_{C(A}o_{B)}  -  o_{(A} \mathcal{D}_{B)C}o^{C}= - \tfrac{4}{3} o_{(A} \mathcal{D}_{B)C}o^{C}.
-\end{align*}
-The constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$ reduces to 
-\begin{equation}
- o^{A} o^{B} \mathcal{D}_{AB}\phi = -2 \phi  o^{A} \mathcal{D}_{AB}o^{B} - 2 \phi o^{A} o^{B}  \iota^{C} \mathcal{D}_{AB}o_{C}.\label{TypeNweylConstraint}
+implying that $\mathcal{D}_{(AB}\omicron_{C)}=0$ ---that is to say that $\omicron_A$ is a twistor candidate. In terms of the NP scalars, the above read as follows 
+\begin{equation}\label{NPRelationsTypeN} 
+\sigma=- \beta + \kappa -  \tau=\epsilon -  \gamma + \rho=\alpha=0.
+\end{equation}	
+Using these relations, we obtain
+\begin{equation}\label{AuxSpinorsTypeN}
+ \xi = -3\beta,\qquad \xi_{AB} &= 2\rho o_Ao_B - 2\beta o_{(A}\iota_{B)}.
 \end{equation}
-Then, 
+The non-trivial component of the constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$ reduces to 
+\begin{equation}
+ \mathcal{D}_{\bm0\bm0}\phi = \tfrac{5}{3}\phi (2\beta  +  \kappa -  \tau)=5\phi\beta.\label{TypeNweylConstraint}
+\end{equation}
+Then, substituting \eqref{AuxSpinorsTypeN}, condition \eqref{RedundantCondition1} reduces to
 \begin{align*}
-\omicron^A \iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) &=-\tfrac{1}{2}\phi \omicron^A \omicron^B \omicron^C\mathcal{D}_{AB}\omicron_C=0,\\
-\iota^A\iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) &=- \tfrac{1}{2} \phi o^{A}  \mathcal{D}_{AB}o^{B} -  \tfrac{1}{2} \phi o^{A} o^{B}  \iota^{C} \mathcal{D}_{AB}o_{C} -  \tfrac{5}{2}\phi o^{A} o^{B}  \iota^{C} \mathcal{D}_{BC}o_{A}\\
-&= -3 \phi o^{A} o^{B} \iota^{C} \mathcal{D}_{(AB}o_{C)} \\
-&= 0,
+\omicron^A \iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) &=\tfrac{1}{2}\phi\sigma =0,\\
+\iota^A\iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) &=\phi(\beta -  \kappa  + \tau) = 0
 \end{align*}
-with all other components vanishing trivially. These are essentially the same computations as in []. On the other hand,
+with the second equality following from \eqref{NPRelationsTypeN} and
+with all other components vanishing trivially. These are essentially the same computations as in []. On the other hand, substituting \eqref{AuxSpinorsTypeN}, condition \eqref{RedundantCondition2} reduces to
 \begin{align*}
-\omicron^A\omicron^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)&=-\tfrac{1}{3}\phi \xi \omicron^A\omicron^B\omicron^C\mathcal{D}_{AB}\omicron_C=0,\\
-\omicron^A\iota^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)&= - \phi\left(\tfrac{4}{3} \mathcal{D}_{A}{}^{D}o^{A} + 2 o^{A}  \iota^{D} \mathcal{D}_{AF}o^{F}\right) o^{B} o^{C}\mathcal{D}_{(BC}o_{D)}=0,
+\omicron^A\omicron^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)&=\tfrac{1}{3}\phi \xi \sigma=0,\\
+\omicron^A\iota^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)&= \tfrac{1}{2} \beta \mathcal{D}_{\bm0\bm0}\phi-2 \beta^2 \phi -  \tfrac{1}{2} \beta \kappa \phi - 2 \rho \sigma \phi + \tfrac{1}{2} \beta \tau \phi =0,\\
+\iota^A\iota^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right) &= 2 \rho \mathcal{D}_{\bm0\bm0}\phi-10 \beta \rho \phi =0,
 \end{align*}
-while, finally, 
-\begin{align*}
-&\iota^A\iota^B\iota^C\iota^D\left(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\xi\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)\\
-&\qquad=- \tfrac{16}{9} \phi (\mathcal{D}_{A}{}^{B}o^{A}) \mathcal{D}_{BC}o^{C} -  \tfrac{4}{3} o^{A} o^{B} \iota^{C} (\mathcal{D}_{AD}o^{D}) \mathcal{D}_{BC}\phi \\
-&\qquad\quad -  \tfrac{4}{3} o^{A} (\mathcal{D}_{AC}\phi) \mathcal{D}_{B}{}^{C}o^{B} -  \tfrac{40}{9} o^{A} \phi \iota^{B} (\mathcal{D}_{AC}o^{C}) \mathcal{D}_{BD}o^{D} \\
-&\qquad\quad -  \tfrac{16}{3} \phi o^{A}  \iota^{B} (\mathcal{D}_{C}{}^{D}o^{C}) \mathcal{D}_{(AB}o_{D)} - 4\phi  o^{A} o^{B} \iota^{C} \iota^{D} (\mathcal{D}_{AF}o^{F}) \mathcal{D}_{(BC}o_{D)}\\
-&\qquad =- \tfrac{16}{9} \phi (\mathcal{D}_{A}{}^{B}o^{A}) \mathcal{D}_{BC}o^{C} -  \tfrac{4}{3} o^{A} o^{B} \iota^{C} (\mathcal{D}_{AD}o^{D}) \mathcal{D}_{BC}\phi -  \tfrac{4}{3} o^{A} (\mathcal{D}_{AC}\phi) \mathcal{D}_{B}{}^{C}o^{B} -  \tfrac{40}{9}\phi  o^{A} \iota^{B} (\mathcal{D}_{AC}o^{C}) \mathcal{D}_{BD}o^{D}\\
-&\qquad =- \tfrac{16}{9} \phi (\mathcal{D}_{A}{}^{B}o^{A}) \mathcal{D}_{BC}o^{C} -  \tfrac{40}{9} o^{A} \phi \iota^{B} (\mathcal{D}_{AC}o^{C}) \mathcal{D}_{BD}o^{D} -  \tfrac{4}{3} o^{A} o^{B} \iota^{C} (\mathcal{D}_{AB}\phi) \mathcal{D}_{CD}o^{D}\\
-&\qquad =  - \tfrac{16}{9} \phi (\mathcal{D}_{A}{}^{B}o^{A}) \mathcal{D}_{BC}o^{C}\\
-&\qquad = 0,
-\end{align*}
-where in the third equality we are using the identity $\omicron_A\iota_C=\iota_A\omicron_C + \epsilon_{AC}$ on the second term, in the fourth we are substituting \eqref{TypeNweylConstraint} and the final equality follows from skew-symmetry. All other components vanishing trivially. Hence, in this case, \eqref{RedundantCondition1} and \eqref{RedundantCondition2} trivialise. 
+where we are again using \eqref{NPRelationsTypeN} and \eqref{TypeNweylConstraint}. All other components vanishing trivially. Hence, in this case, both conditions \eqref{RedundantCondition1} and \eqref{RedundantCondition2} trivialise. 
 
 
-\subsubsection{Case II: $\kappa_{AB}\kappa^{AB}\neq 0$ on $\mathcal{U}$}
+\subsubsection{Case II: $\kappa_{AB}\kappa^{AB}\neq 0$ on $\mathcal{U}$}\label{TypeDCase}
 
 There exists a spin dyad $\lbrace \bm\omicron, \bm\iota\rbrace$ such that $\kappa_{AB} = e^{\varkappa} \omicron_{(A}\iota_{B)}$ for some $\varkappa:\mathcal{U}\rightarrow\mathbb{C}$. The Buchdahl constraint then implies that the rescaled Weyl spinor takes the form
 \[ \phi_{ABCD}= \phi \omicron_{(A}\omicron_B\iota_C\iota_{D)}\]
 for some scalar field $\phi:\mathcal{U}\rightarrow\mathbb{C}$ and hence that the curvature is of Petrov type D on $\mathcal{U}$. The equation $\mathcal{D}_{(AB}\kappa_{CD)}=0$ is equivalent to 
 \begin{subequations}
 \begin{eqnarray}
-&& \omicron^A\omicron^B\omicron^C\mathcal{D}_{AB}\omicron_C=0,\label{SpatialSenTypeD0000}\\
-&& o^{A} o^{B} \mathcal{D}_{AB}\varkappa = -2 o^{A} o^{B} \iota^{C} \mathcal{D}_{BC}o_{A},\\
-&& o^{A} \iota^{B} \mathcal{D}_{AB}\varkappa = \tfrac{1}{2} o^{A} o^{B} \iota^{C} \mathcal{D}_{AB}\iota_{C} -  \tfrac{1}{2} o^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}o_{A},\\
-&& \iota^{A} \iota^{B} \mathcal{D}_{AB}\varkappa = 2 o^{A} \iota^{B} \iota^{C} \mathcal{D}_{AC}\iota_{B},\\
-&& \iota^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}\iota_{A} = 0.\label{SpatialSenTypeD1111}
+&& \sigma=0,\label{SpatialSenTypeD0000}\\
+&& \mathcal{D}_{\bm0\bm0}\varkappa = \tau - \kappa, \label{SpatialSenTypeD0001}\\
+&& \mathcal{D}_{\bm0\bm1}\varkappa = -\tfrac{1}{2} (\rho+\mu),\label{SpatialSenTypeD0011}\\
+&& \mathcal{D}_{\bm1\bm1}\varkappa = \pi - \nu, \label{SpatialSenTypeD0111}\\
+&& \lambda = 0.\label{SpatialSenTypeD1111}
 \end{eqnarray}
 \end{subequations}
-The auxiliary spinors 
-\begin{align*} 
-\xi &= ,\\
-\xi_{AB} &= \tfrac{1}{2} e^{\varkappa} \left(-   o_{(A}\iota^{C}\mathcal{D}_{B)C}\varkappa-   o^{C}\iota_{(A}\mathcal{D}_{B)C}\varkappa\right.\\
-& \qquad\qquad\left.+o_{(A}\mathcal{D}_{B)}{}^{C}\iota_{C} -  o^{C}\mathcal{D}_{(A|C|}\iota_{B)} + \iota_{(A}\mathcal{D}_{B)}{}^{C}o_{C} -  \iota^{C}\mathcal{D}_{(A|C|}o_{B)} \right).
-\end{align*}
-The latter is re-expressed using \eqref{SpatialSenTypeD0000}--\eqref{SpatialSenTypeD1111} as 
-\[ \xi_{AB} = \]
-The constraint $\mathcal{D}^{CD}\phi_{CDAB}=0$ is equivalent to 
+Using the above, the auxiliary spinors can be written as 
 \begin{subequations}
-\begin{align}
- o^{A} o^{B} \mathcal{D}_{AB}\phi &= -2 \phi o^{A} \mathcal{D}_{AB}o^{B} + 4 \phi o^{A} o^{B} \iota^{C} \mathcal{D}_{BC}o_{A} + 2 \phi o^{A} o^{B} o^{C} \mathcal{D}_{BC}\iota_{A},\\
- o^{A} \iota^{B} \mathcal{D}_{AB}\phi &= - \phi \iota^{A} \mathcal{D}_{AB}o^{B} -  \phi  o^{A} \mathcal{D}_{AB}\iota^{B} -  \tfrac{1}{2} \phi  o^{A} o^{B} \iota^{C} \mathcal{D}_{AB}\iota_{C} \nonumber\\
-&\quad-  \phi o^{A} \iota^{B} \iota^{C} \mathcal{D}_{AC}o_{B} + \tfrac{1}{2} \phi o^{A}  \iota^{B} \iota^{C} \mathcal{D}_{BC}o_{A} +  \phi o^{A} o^{B} \iota^{C} \mathcal{D}_{BC}\iota_{A},\\
- \iota^{A} \iota^{B} \mathcal{D}_{AB}\phi &= -2 \phi \iota^{A} \mathcal{D}_{AB}\iota^{B} - 4 \phi o^{A}\iota^{B} \iota^{C} \mathcal{D}_{AC}\iota_{B} + 2 \phi o_{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}\iota^{A}.
-\end{align}
+\begin{eqnarray} 
+&& \xi =-\tfrac{3}{2}e^{\varkappa}(\rho+\mu), \label{AuxSpinor1TypeD}\\
+&& \xi_{AB} = e^{\varkappa} (\nu - \pi) o_{A} o_{B} + e^{\varkappa}(\rho-\mu) o_{(A}\iota_{B)} + e^{\varkappa} (\tau - \kappa) \iota_{A} \iota_{B}. \label{AuxSpinor2TypeD}
+\end{eqnarray}
 \end{subequations}
-Then, 
+The constraint $\mathcal{D}^{CD}\phi_{CDAB}=0$ is equivalent to 
+\begin{equation}\label{WeylConstraintTypeD}
+  \mathcal{D}_{\bm0\bm0}\phi = 3 \phi(\kappa - \tau), \qquad 
+  \mathcal{D}_{\bm0\bm1}\phi = \tfrac{3}{2}\phi(\rho + \mu), \qquad
+  \mathcal{D}_{\bm1\bm1}\phi = 3\phi (\nu  - \pi). 
+\end{equation}
+Then, substituting \eqref{AuxSpinor1TypeD} and \eqref{AuxSpinor2TypeD}, condition \eqref{RedundantCondition1} decomposes as follows
 \begin{align*}
-\omicron^A \omicron^B \omicron^C \omicron^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) &=\tfrac{1}{2}\phi e^\varkappa \omicron^A \omicron^B \omicron^C\mathcal{D}_{AB}\omicron_C=0,\\
-\omicron^A \omicron^B \omicron^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) &=\tfrac{5}{48} e^{\varkappa} o^{A} \phi \mathcal{D}_{AB}o^{B} + \tfrac{1}{24} e^{\varkappa} o^{A} o^{B} \phi \iota^{C} \mathcal{D}_{AB}o_{C} + \tfrac{1}{24} e^{\varkappa} o^{A} o^{B} \mathcal{D}_{AB}\phi -  \tfrac{7}{48} e^{\varkappa} o^{A} o^{B} \phi \iota^{C} \mathcal{D}_{BC}o_{A} -  \tfrac{7}{48} e^{\varkappa} o^{A} o^{B} o^{C} \phi \mathcal{D}_{BC}\iota_{A}\\
-&=\tfrac{1}{48} e^{\varkappa} o^{A} \phi \mathcal{D}_{AB}o^{B} -  \tfrac{1}{48} e^{\varkappa} o^{A} o^{B} \phi \iota^{C} \mathcal{D}_{AB}o_{C} + \tfrac{1}{48} e^{\varkappa} o^{A} o^{B} \phi \iota^{C} \mathcal{D}_{BC}o_{A}=0,\\
-\omicron^A \omicron^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) &=,\\
-\omicron^A \iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) &=\tfrac{1}{24} e^{\varkappa} \iota^{A} \iota^{B} \mathcal{D}_{AB}\phi + \tfrac{5}{48} e^{\varkappa} \phi \iota^{A} \mathcal{D}_{AB}\iota^{B} + \tfrac{7}{48} e^{\varkappa} o^{A} \phi \iota^{B} \iota^{C} \mathcal{D}_{AC}\iota_{B} + \tfrac{7}{48} e^{\varkappa} \phi \iota^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}o_{A} -  \tfrac{1}{24} e^{\varkappa} o^{A} \phi \iota^{B} \iota^{C} \mathcal{D}_{BC}\iota_{A},\\
-&=\tfrac{1}{48} e^{\varkappa} \phi \iota^{A} \mathcal{D}_{AB}\iota^{B} -  \tfrac{1}{48} e^{\varkappa} o^{A} \phi \iota^{B} \iota^{C} \mathcal{D}_{AC}\iota_{B} + \tfrac{1}{48} e^{\varkappa} \phi \iota^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}o_{A}\\
-&=\tfrac{1}{48} e^{\varkappa} \phi \iota^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}o_{A} -  \tfrac{1}{48} e^{\varkappa} o^{A} \phi \iota^{B} \iota^{C} \mathcal{D}_{BC}\iota_{A}\\
-&=0,\\
-\iota^A \iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) &= - \tfrac{1}{2} e^{\varkappa} \phi \iota^{A} \iota^{B} \iota^{C} \mathcal{D}_{BC}\iota_{A}=0.
+\omicron^A \omicron^B \omicron^C \omicron^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) 
+&=- \tfrac{1}{2} e^{\varkappa}\phi \sigma=0,\\
+\omicron^A \omicron^B \omicron^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) & =\tfrac{1}{24} e^{\varkappa} \mathcal{D}_{\bm0\bm0}\phi + \tfrac{1}{8} e^{\varkappa}\phi (\tau - \kappa)  =0,\\
+ \omicron^A \omicron^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) 
+& = \tfrac{1}{18} e^{\varkappa} \mathcal{D}_{\bm0\bm1}\phi - \tfrac{1}{12} e^{\varkappa}\phi (\rho + \mu)  = 0,\\
+ \omicron^A \iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) & =\tfrac{1}{24} e^{\varkappa} \mathcal{D}_{\bm1\bm1}\phi + \tfrac{1}{8} e^{\varkappa} \phi(\pi-\nu)  = 0,\\
+ \iota^A \iota^B \iota^C \iota^D \left(2\kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\xi_{D)F}\right) & = - \tfrac{1}{2} e^{\kappa} \phi \lambda = 0,
 \end{align*}
+the equality with zero following from \eqref{WeylConstraintTypeD}. 
+On the other hand, substituting \eqref{AuxSpinor1TypeD} and \eqref{AuxSpinor2TypeD} into \eqref{RedundantCondition2}, 
+\begin{align*}
+& o^Ao^Bo^Co^D(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3} \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F})  =\tfrac{1}{3} \phi \sigma  \xi =0,\\
+& o^Ao^Bo^C\iota^D(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3} \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F}) \\
+&\qquad\qquad\qquad\qquad\qquad = \tfrac{1}{8} e^{\varkappa} (\rho+\mu) \mathcal{D}_{\bm0\bm0}\phi + \tfrac{3}{8}e^{\varkappa}\phi  (\tau - \kappa)(\rho+\mu)  +  \tfrac{1}{2} e^{\varkappa}\phi(\pi-\nu) \sigma   = 0	,\\
+& o^Ao^B\iota^C\iota^D(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3} \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F})  \\
+&\qquad\qquad\qquad\qquad\qquad=	\tfrac{1}{6} e^{\varkappa}\left((\nu-\pi)\mathcal{D}_{\bm0\bm0}\phi + (\rho-\mu)\mathcal{D}_{\bm0\bm1}\phi + (\tau-\kappa)\mathcal{D}_{\bm1\bm1}\phi \right)  + \tfrac{1}{4} e^{\varkappa} \phi(\mu^2-\rho^2) = 0,\\
+& o^A\iota^B\iota^C\iota^D(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3} \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F})  \\
+& \qquad\qquad\qquad\qquad\qquad =	- \tfrac{1}{8} e^{\varkappa}  (\rho+\mu) \mathcal{D}_{\bm1\bm1}\phi  +  \tfrac{3}{8} e^{\varkappa} \phi(\rho+\mu) (\nu-\pi) + \tfrac{1}{2} e^{\varkappa}\phi (\kappa-\tau) \lambda    = 0,\\
+& \iota^A\iota^B\iota^C\iota^D(\xi^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3} \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F})  =	- \tfrac{1}{3}\phi \lambda \xi = 0.
+\end{align*}
+Hence, again, \eqref{RedundantCondition1} and \eqref{RedundantCondition2} trivialise. Combining the result of this section with the previous, Proposition \ref{prop_remove_redundant_conditions} follows immediately.
+
 
 %%%%%%%%%%%%%% 
 %% \bibliographystyle{/home/egarcia/Dropbox/References/reporthack}
@@ -2629,6 +2714,11 @@ R.~Beig \& P.~T. Chru\'{s}ciel,
 D.~A. Carranza \& J.~A. Valiente~Kroon,
 \newblock {\em Killing boundary data for anti-de Sitter-like spacetimes},
 \newblock Classical and Quantum Gravity {\bf 35}(15), 155011 (Jul 2018).
+
+\bibitem{ChrPaetz13}
+P.~T.~Chru\'{s}ciel \& T.-T.~Paetz, 
+\newblock {\em KIDs like cones},
+\newblock Classical and Quantum Gravity 30.23 (2013): 235036.
 
 \bibitem{ColRacVal18}
 M.~J. Cole, I.~Rácz, \& J.~A. Valiente~Kroon,
@@ -2791,6 +2881,11 @@ M.~E. Taylor,
 J.~A. {Valiente Kroon},
 \newblock {\em Conformal methods in General Relativity},
 \newblock Cambridge University Press, 2016.
+
+\bibitem{WalkerPenrose70}
+M.~Walker \& R.~Penrose,
+\newblock {\em On quadratic first integrals of the geodesic equations for type {22} spacetimes.}
+\newblock Communications in Mathematical Physics 18.4 (1970): 265-274.
 
 \bibitem{Wei90a}
 G.~Weinstein,
