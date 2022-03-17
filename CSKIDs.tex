@@ -5,7 +5,7 @@
 %%%%%%%
 %%%%%%%
 %%%%%%% Started on: 11.9.2016
-%%%%%%% Current version: 31 Jan 2022 
+%%%%%%% Current version: 17 Mar 2022 
 %%%%%%%
 
 \documentclass[10pt,a4paper]{article}
@@ -260,10 +260,10 @@ equations and the black hole uniqueness problem, symmetries play an important ro
 Symmetry assumptions are usually incorporated into
  the Einstein field equations ---which in vacuum read
 \begin{equation}
-\tilde{R}_{ab}=\lambda \tilde{g}_{ab},
+\tilde{R}_{ab}=\lambda \tilde{g}_{ab}
 \label{EFEVacuum}
 \end{equation} 
- through the use of Killing vectors.  From the spacetime point of
+---through the use of Killing vectors.  From the spacetime point of
  view, the existence of Killing vectors allows one to perform
  \emph{symmetry reductions} of the Einstein field equations ---see for
  instance \cite{Wei90a}. This approach has been exploited in classical
@@ -639,10 +639,10 @@ curvature of the resulting foliation. Nevertheless, this is not required for our
 %% \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \[\mathcal{D}_{AB}\eta_C = D_{AB}\eta_C + \tfrac{1}{2}K_{ABC}{}^D\eta_D. \]
-For later use, we also define a \emph{spin dyad} $\lbrace \bmo, \bm\iota\rbrace$ as a pair of valence-$1$ spinors satisfying $\epsilon_{AB}=o_A\iota_B - o_B\iota_A$ (and hence $o_A\iota^A=1$). We also write $o^A=\epsilon_{\bm0}{}^A, \iota^A=\epsilon_{\bm1}{}^A$, and $\epsilon_A{}^{\bm0}=-\iota_A, \epsilon_A{}^{\bm1}=o_A$, in terms of which we can decompose any space spinor $\eta_{A_1\cdots A_k}$ as follows
-\[\eta_{A_1\cdots A_k} = \eta_{\bmA_1\cdots \bmA_k}\epsilon_{A_1}{}^{\bmA_1}\cdots \epsilon_{A_k}{}^{\bmA_k} \]
-in terms of the spin dyad components 
-\[\eta_{\bmA_1\cdots \bmA_k} := \eta_{A_1\cdots A_k}\epsilon_{\bmA_1}{}^{A_1}\cdots \epsilon_{\bmA_k}{}^{A_k}. \]
+% For later use, we also define a \emph{spin dyad} $\lbrace \bmo, \bm\iota\rbrace$ as a pair of valence-$1$ spinors satisfying $\epsilon_{AB}=o_A\iota_B - o_B\iota_A$ (and hence $o_A\iota^A=1$). We also write $o^A=\epsilon_{\bm0}{}^A, \iota^A=\epsilon_{\bm1}{}^A$, and $\epsilon_A{}^{\bm0}=-\iota_A, \epsilon_A{}^{\bm1}=o_A$, in terms of which we can decompose any space spinor $\eta_{A_1\cdots A_k}$ as follows
+% \[\eta_{A_1\cdots A_k} = \eta_{\bmA_1\cdots \bmA_k}\epsilon_{A_1}{}^{\bmA_1}\cdots \epsilon_{A_k}{}^{\bmA_k} \]
+% in terms of the spin dyad components 
+% \[\eta_{\bmA_1\cdots \bmA_k} := \eta_{A_1\cdots A_k}\epsilon_{\bmA_1}{}^{A_1}\cdots \epsilon_{\bmA_k}{}^{A_k}. \]
 
 \subsection{Killing spinors}\label{Sec:KillingSpinors}
 
@@ -1061,7 +1061,7 @@ one can give an explicit construction of a Killing spinor, namely
 in terms of the relevant adapted spin dyad $\lbrace \bmo, \bm\iota\rbrace$. This can be seen directly 
 by noting that the identity \eqref{RescaledWeylEquationDisplayed} satisfied by $\phi_{ABCD}$ is formally 
 identical to the Bianchi constraint and so the same computations as in \cite{WalkerPenrose70} follow through.
-An alternative approach to the construction of Killing spinor initial data equations would be to attempt to determine under what conditions the Petrov type of the (rescaled) Weyl tensor restricted to $\mathcal{S}$ is propagated into the spacetime development. Later, we shall see that such a result follows as a \emph{product} of our analysis ---see Corollary \ref{Corollary:PetrovPropagation}.}\label{Remark:DyadExpressionForKillingSpinorInTypeD}
+An alternative approach to the construction of Killing spinor initial data equations would be to attempt to determine under what conditions the Petrov type of the (rescaled) Weyl tensor restricted to $\mathcal{S}$ is propagated into the spacetime development. Later, we shall see that such a result follows, rather, as a \emph{product} of our analysis ---see Corollary \ref{Corollary:PetrovPropagation}.}\label{Remark:DyadExpressionForKillingSpinorInTypeD}
 \end{remark}
 
   \section{Conformal twistor initial data}
@@ -1301,10 +1301,10 @@ $\kappa_{A}$ solves the twistor equation on $\mathcal{D}^{+}(\mathcal{U})$.
 
 \begin{remark}
 \em{
-For the twistor case, one important difference between discussion in
+For the twistor case, one important difference with the discussion in
 \cite{GasVal15}
 %%---performed in the physical framework---
-using the vacuum Einstein field equations in  $(\tilde{\mathcal{M}},\tilde{\bmg})$
+using the vacuum Einstein field equations on $(\tilde{\mathcal{M}},\tilde{\bmg})$
 is that the system closes with $\tilde{H}_{A'AB}$ alone and there is no need
 to introduce the analogous physical Buchdahl zero-quantity $\tilde{B}_{ABC}$.
 Therefore it is interesting to check if in the conformal case
@@ -1328,9 +1328,7 @@ the Buchdahl constraint into equation
 % Hence, setting $Q_{A}=0$,
 %%%%%%%
 Hence, $\bmH$ satisfies  an homogeneous but
-\emph{singular equation}, due to the $\Xi^{-1}$ coefficient,
-for $H_{A'AB}$, a situation to which Theorem
-\ref{TheoremHomogeneousWave} does not apply.
+\emph{singular equation}, due to the $\Xi^{-1}$ coefficient, a situation to which Theorem \ref{TheoremHomogeneousWave} does not apply.
 From equation \eqref{WaveH_twistor_singular} one can
 recover the analogous wave equation in the physical case
 discussed in \cite{GasVal15} simply by adding a tilde to the fields and
@@ -1345,7 +1343,7 @@ Therefore, from this perspective, it is preferable to instead introduce $B_{ABC}
 be propagated.  The same observation holds for the conformal valence-2
 Killing spinor initial data discussion of the following sections,
 where, to close the system in a regular way, one needs to introduce not
-only a ``Buchdahl" zero-quantity but also its derivative.}
+only a ``Buchdahl" zero-quantity but also a further derivative thereof.}
 \end{remark}
 
 
@@ -2196,7 +2194,7 @@ We begin with the following:
 \begin{lemma}\label{Lemma_initial_conditions}
   Suppose we have an initial data for the conformal field equations on $\mathcal{U}\subset\mathcal{S}$
   where $\mathcal{S}$ is a spacelike
-hypersurface. Let $\bar{\kappa}_{AB}$ be a CSKID on $\mathcal{U}$ which moreover satisfies the equations 
+hypersurface. Let $\bar{\kappa}_{AB}$ be a CKSID on $\mathcal{U}$ which moreover satisfies the equations 
 % \[\mathcal{H}(\bar{\bm\kappa})_{ABCD}=0,\qquad B(\bar{\bm\kappa})_{ABCD}=0 \]
 \begin{subequations}
 \begin{eqnarray}
@@ -2234,7 +2232,7 @@ Starting from
 \eqref{IrrDecompCurlOfH}, performing the decomposition of the
 covariant derivative and substituting the Killing spinor candidate equation $Q_{AB}=0$, we get
 \[ \nabla_{\bm\tau} H_{B'ABC} + 2 \tau^{D}{}_{B'} \tau^{FA'} \mathcal{D}_{DF}H_{A'ABC} = -12 \Xi \tau^{D}{}_{B'}B_{ABCD}.\]
-At this point we see that, since the CSKID conditions hold, then
+At this point we see that, since the CKSID conditions hold, then
 \[\nabla_{\bm\tau} H_{B'ABC}\big\vert_{\mathcal{U}}=0\] also. Now, a similar computation to the
 twistor case yields
 \begin{equation}
@@ -2253,7 +2251,7 @@ $F_{A'ABC}$; recall that, by definition,
 $F_{A'ABC}=\nabla^D{}_{A'}B_{ABCD}$, and so decomposing the covariant
 derivative one obtains
 \[F_{A'BCD} = \tfrac{1}{2} \tau^{A}{}_{A'} \nabla_{\bm\tau} B_{ABCD}  -  \tau^{F}{}_{A'} \mathcal{D}^{A}{}_{F}B_{ABCD}.\]
-Hence, substituting the CSKID condition $B_{ABCD}=0$ and using \eqref{Eq:NormalDerivativeOfBuchdahlVanishes} we see that $F_{A'ABC}=0$ on $\mathcal{U}$, also.
+Hence, substituting the CKSID condition $B_{ABCD}=0$ and using \eqref{Eq:NormalDerivativeOfBuchdahlVanishes} we see that $F_{A'ABC}=0$ on $\mathcal{U}$, also.
 Thus it only remains to show that $\nabla_{\bm\tau}F_{A'ABC}=0$ on
 $\mathcal{U}$.
 
@@ -2283,7 +2281,7 @@ and we are done.
 \end{proof}
 Condition \eqref{RedundantCondition1} is in fact the ``unphysical" counterpart of the condition appearing in \cite{GarVal08c}, which was later shown to be redundant in \cite{BaeVal10c}, modulo a minor algebraic assumption on the Killing spinor initial data ---see (i) and (ii) in the lemma below. Although no such counterpart of \eqref{RedundantCondition2} appears in the physical case, this same algebraic assumption ensures redundancy of both \eqref{RedundantCondition1} and \eqref{RedundantCondition2}:
 \begin{lemma}\label{prop_remove_redundant_conditions}
-Suppose that $\bar{\kappa}_{AB}$ is CSKID set on $\mathcal{U}$ satisfying one of the following two conditions holds on $\mathcal{U}$:
+Suppose that $\bar{\kappa}_{AB}$ is CKSID set on $\mathcal{U}$ satisfying one of the following two conditions holds on $\mathcal{U}$:
 \begin{enumerate}[(i)]
     \item $\bar{\kappa}_{AB}\bar{\kappa}^{AB} \equiv 0$ ~~~but ~~~$\bar{\kappa}_{AB}\neq 0$,~~~\textit{\textbf{or}}
     \item $\bar{\kappa}_{AB}\bar{\kappa}^{AB}\neq 0$.
@@ -2291,7 +2289,7 @@ Suppose that $\bar{\kappa}_{AB}$ is CSKID set on $\mathcal{U}$ satisfying one of
 Then
 conditions \eqref{RedundantCondition1} and \eqref{RedundantCondition2}
 are redundant in the sense that they are automatically satisfied by
-$\bar{\kappa}_{AB}$ by virtue of the CSKID conditions \eqref{CSKIDs}. 
+$\bar{\kappa}_{AB}$ by virtue of the CKSID conditions \eqref{CSKIDs}. 
 \end{lemma}
 The proof of this lemma requires decomposing the fields respect to a spin dyad
 and considering the cases where $\bm\phi$ is of different Petrov types.
@@ -2359,7 +2357,7 @@ Suppose that $\phi_{ABCD}$ is of Petrov type D on $\mathcal{U}\subset\mathcal{S}
 \sigma\equiv - o^A o^B o^C\mathcal{D}_{AB}o_C=0 \quad \text{and}\quad \lambda\equiv \iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C=0\label{ShearConditions}
 \end{equation}
 hold on $\mathcal{U}$, where $\lbrace \bmo, \bm\iota\rbrace$ is an adapted spin dyad in terms of which $\phi_{ABCD}=\phi o_{(A}o_B\iota_C\iota_{D)}$ for some field $\phi$.
-Then, $\phi_{ABCD}$ is also of Petrov type D on an open subset of the spacetime development, $\mathcal{D}^+(\mathcal{U})$, as evidenced by the existence of a non-trivial (valence-2) Killing spinor satisfying $\kappa_{AB}\kappa^{AB}\neq 0$. 
+Then, $\phi_{ABCD}$ is also of Petrov type D on an open subset of the domain of dependence, $\mathcal{D}^+(\mathcal{U})$, as evidenced by the existence of a non-trivial (valence-2) Killing spinor satisfying $\kappa_{AB}\kappa^{AB}\neq 0$. 
 \end{corollary}
 \begin{proof}
 %Suppose that $\phi_{ABCD}$ is of Petrov type N on $\mathcal{U}$, with $\lbrace \bmo, \bm\iota\rbrace$ an adapted spin dyad in terms of which $\phi_{ABCD} = \phi o_Ao_Bo_Co_D$ then as shown in \ref{TypeNCase} the 
@@ -2381,7 +2379,7 @@ Hence, the conformal Killing spinor initial data conditions \eqref{CSKIDs} are m
 
 \begin{remark}{\em 
  While the constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$ implies that the $\bm0\bm0\bm0\bm1$, $\bm0\bm0\bm1\bm1$ and $\bm0\bm1\bm1\bm1$-components of $\mathcal{D}_{(AB}\bar{\kappa}_{CD)}=0$
-  are all satisfied, as shown in the above proof, the $\bm0\bm0\bm0\bm0$ and $\bm1\bm1\bm1\bm1$ spin components are not guaranteed simply as a consequence of the expression $\bar{\kappa}_{AB}=\phi^{-1/3}o_{(A}\iota_{B)}$. Hence, the conditions of Theorem \ref{Theorem_KS} are more restrictive than simply assuming that $\bm\phi$ be of Petrov type D on $\mathcal{U}$. These remaining two components of $\mathcal{D}^{AB}\phi_{ABCD}=0$ are however implied by the $\bm0\bm0\bm0\bm0$ and $\bm1\bm1\bm1\bm1$ components of the \emph{evolution equation} $\nabla_{\bm\tau}\phi_{ABCD}=2\mathcal{D}_{(A}{}^F\phi_{BCD)F}$ if one \emph{assumes} that the Petrov type extends to the spacetime development, consistent with Remark \ref{Remark:DyadExpressionForKillingSpinorInTypeD}.
+  are all satisfied, as shown in the above proof, the $\bm0\bm0\bm0\bm0$ and $\bm1\bm1\bm1\bm1$-spin components are not guaranteed simply as a consequence of the expression $\bar{\kappa}_{AB}=\phi^{-1/3}o_{(A}\iota_{B)}$. Hence, the conditions of Theorem \ref{Theorem_KS} are more restrictive than simply assuming that $\bm\phi$ be of Petrov type D on $\mathcal{U}$. These remaining two components of $\mathcal{D}^{AB}\phi_{ABCD}=0$ are however implied by the $\bm0\bm0\bm0\bm0$ and $\bm1\bm1\bm1\bm1$-components of the \emph{evolution equation} $\nabla_{\bm\tau}\phi_{ABCD}=2\mathcal{D}_{(A}{}^F\phi_{BCD)F}$ if one \emph{assumes} that the Petrov type extends to the spacetime development, consistent with Remark \ref{Remark:DyadExpressionForKillingSpinorInTypeD}.
   }
 \end{remark}
 
