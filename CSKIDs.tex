@@ -735,9 +735,7 @@ alignment conditions) need to be propagated ---see \cite{ValCol16}.
 given a Killing--Yano tensor, one can construct a Killing spinor
 ---see \cite{ValCol16,McLBer93,PenRin86}.  The (Killing--Yano) tensor
 counterpart of the Killing spinor initial data result of \cite{GarVal08c}
-has been recently derived in \cite{GarKha19a}.
-
-  }
+has been recently derived in \cite{GarKha19a}.  }
 \end{remark}
 \medskip
 
@@ -1589,8 +1587,8 @@ and \eqref{Eq:WaveForKS_DefinitionQ} that
 \end{remark}
 
 
-\begin{remark} \emph{
-  If $\tilde{\kappa}_{AB}$ is a Killing spinor in the the physical
+\begin{remark}
+  \emph{ If $\tilde{\kappa}_{AB}$ is a Killing spinor in the the physical
   spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$ then
   $\tilde{\xi}_{AA'} := \tilde{\nabla}_{A'}{}^{Q}\tilde{\kappa}_{QA}$
   is a Killing vector in the physical spacetime.  It is direct to
@@ -1609,7 +1607,6 @@ vector of $(\mathcal{M},\bmg)$ as follows.  Using equations
 equation satisfied by the conformal factor $\Xi$ encoded in the CFE
 zero-quantity \eqref{Def_ConfFactor_CFE_zeroquant}, a calculation
 gives
-
 \begin{multline}\label{conformalKillingvector}
   \nabla_{AA'}X_{BB'}+\nabla_{BB'}X_{AA'}-\tfrac{1}{2}\epsilon_{AB}\epsilon_{A'B'}\nabla^{CC'}X_{CC'}
   =-\Xi \nabla^Q{}_{(A'}H_{B')(AB)Q} + 2\nabla_{C(A'}H_{B')AB}{}^{C}.
@@ -1929,6 +1926,7 @@ initial condition of \eqref{KillingSpinorIVP}. Again, the conditions
 $\mathcal{H}_{ABCD}=B_{ABCD}=0$ involve only quantities intrinsic to
 $\mathcal{S}$. Following the twistor case, we make the following
 definition:
+
 \begin{definition}{\em
 A symmetric spinor field $\bar{\kappa}_{AB}$ defined on some
 $\mathcal{U}\subset\mathcal{S}$ and satisfying
@@ -1941,11 +1939,13 @@ $\mathcal{U}\subset\mathcal{S}$ and satisfying
 will be called a \emph{conformal Killing spinor initial data set}
 (\emph{CKSID}) on $\mathcal{U}$.}
 \end{definition}
+
 While conditions \eqref{CSKIDs} are clearly necessary for
 $\kappa_{AB}$ to be a Killing spinor, we will only be able to prove
 their sufficiency under an additional, albeit minor, assumption; see
 the statement of Lemma \ref{prop_remove_redundant_conditions}, below.
 We begin with the following:
+
 \begin{lemma}\label{Lemma_initial_conditions}
   Suppose we have an initial data for the conformal Einstein field
   equations on $\mathcal{U}\subset\mathcal{S}$ where $\mathcal{S}$ is
@@ -1963,17 +1963,20 @@ We begin with the following:
 where $\bar{\xi}_{AB}:=\mathcal{D}_{(A}{}^C\bar{\kappa}_{B)C}$ and
 $\bar{\xi}:=\mathcal{D}^{AB}\bar{\kappa}_{AB}$. Then the resulting
 solution $\kappa_{AB}$ of equation \eqref{KillingSpinorIVP} satisfies
-\[H(\bm\kappa)_{A'ABC}=B(\bm\kappa)_{ABCD}=\nabla_{\bm\tau}H(\bm\kappa)_{A'ABC}=\nabla_{\bm\tau}B(\bm\kappa)_{ABCD}=0 \]
-on $\mathcal{U}$. 
+\[H(\bm\kappa)_{A'ABC}=B(\bm\kappa)_{ABCD}=F(\bm\kappa)_{A'BCD}=\nabla_{\bm\tau}H(\bm\kappa)_{A'ABC}
+=\nabla_{\bm\tau}B(\bm\kappa)_{ABCD}=\nabla_{\bm\tau}F(\bm\kappa)_{A'ABC}=0 \]
+on $\mathcal{U}$.
 \end{lemma}
 \begin{proof}
-First we note that for $\kappa_{AB}$ satisfying equation \eqref{KillingSpinorIVP}, the following holds
+  First we note that for $\kappa_{AB}$ satisfying equation
+  \eqref{KillingSpinorIVP}, the following holds
 \begin{equation}
 \xi_{AB'}|_{\mathcal{U}} = -\tfrac{3}{2}
 \tau^B{}_{B'}\xi_{AB} +
 \xi\tau_{AB'}, \label{DecompXiOnSUsingInitialCondition}
 \end{equation}
-with $\xi:=\mathcal{D}^{AB}\kappa_{AB}$ and where, recall, $\xi_{AB}=\mathcal{D}_{(A}{}^C\kappa_{B)C}$. To see this, note that
+with $\xi:=\mathcal{D}^{AB}\kappa_{AB}$ and where, recall,
+$\xi_{AB}=\mathcal{D}_{(A}{}^C\kappa_{B)C}$. To see this, note that
 \begin{align}
 \xi_{AB'} = - \tau_{B}{}^{A'} \tau^{B}{}_{B'}\xi_{AA'}
 &= - \tau_{B}{}^{A'} \tau^{B}{}_{B'}\nabla^C{}_{A'}\kappa_{AC}\nonumber\\
@@ -1990,10 +1993,11 @@ a result of the initial condition $\kappa_{AB}=\bar{\kappa}_{AB}$.
 Starting from equation \eqref{IrrDecompCurlOfH}, performing the
 decomposition of the covariant derivative and substituting the Killing
 spinor candidate equation $Q_{AB}=0$, we get
-\[ \nabla_{\bm\tau} H_{B'ABC} + 2 \tau^{D}{}_{B'} \tau^{FA'} \mathcal{D}_{DF}H_{A'ABC} = -12 \Xi \tau^{D}{}_{B'}B_{ABCD}.\]
+\[ \nabla_{\bm\tau} H_{B'ABC} + 2 \tau^{D}{}_{B'} \tau^{FA'}
+\mathcal{D}_{DF}H_{A'ABC} = -12 \Xi \tau^{D}{}_{B'}B_{ABCD}.\]
 At this point we see that, since the CKSID conditions hold, then
-\[\nabla_{\bm\tau} H_{B'ABC}\big\vert_{\mathcal{U}}=0\] also. Now, a similar computation to the
-twistor case yields
+\[\nabla_{\bm\tau} H_{B'ABC}\big\vert_{\mathcal{U}}=0\] also. Now, a
+similar computation to the twistor case yields
 \begin{equation}
     \nabla_{\bm\tau} B_{ABCD}|_{\mathcal{U}} = 2
     \kappa_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} +
@@ -2010,8 +2014,9 @@ the right-hand-side is intrinsic to $\mathcal{S}$. Hence, if we assume
 Consider now the quantity $F_{A'ABC}$; recall that, by definition,
 $F_{A'ABC}=\nabla^D{}_{A'}B_{ABCD}$, and so decomposing the covariant
 derivative one obtains
-\[F_{A'BCD} = \tfrac{1}{2} \tau^{A}{}_{A'} \nabla_{\bm\tau} B_{ABCD}  -  \tau^{F}{}_{A'} \mathcal{D}^{A}{}_{F}B_{ABCD}.\]
-Hence, substituting the CKSID condition $B_{ABCD}=0$ and using
+\[F_{A'BCD} = \tfrac{1}{2} \tau^{A}{}_{A'} \nabla_{\bm\tau} B_{ABCD}
+- \tau^{F}{}_{A'} \mathcal{D}^{A}{}_{F}B_{ABCD}.\] Hence, substituting
+the CKSID condition $B_{ABCD}=0$ and using
 \eqref{Eq:NormalDerivativeOfBuchdahlVanishes} we see that
 $F_{A'ABC}=0$ on $\mathcal{U}$, also.  Thus it only remains to show
 that $\nabla_{\bm\tau}F_{A'ABC}=0$ on $\mathcal{U}$.
@@ -2031,29 +2036,37 @@ Decomposing the covariant derivative and imposing the Killing spinor
 candidate equation, $Q_{AB}=0$, we get
 \begin{multline}
 \nabla_{\bm\tau} F_{B'BCD} + 2 \tau^{A}{}_{B'} \tau^{FA'}
-\mathcal{D}_{AF}F_{A'BCD} \\ = \tau^{A}{}_{B'}\left\big(\tfrac{2}{3}
+\mathcal{D}_{AF}F_{A'BCD} \\ = \tau^{A}{}_{B'} \big(\tfrac{2}{3}
 \nabla_{\xi}\phi_{BCDA} - 4 \Lambda B_{BCDA} + 6 \Xi B_{(BC}{}^{FG}
-\phi_{D)AFG} \right. \\ \left. - 14 \Xi B_{(BC}{}^{AG}\phi_{DA)FG} +
-\tfrac{2}{3}
-H^{A'}{}_{(B}{}^{FG}\nabla_{|FA'|}\phi_{CDA)G}\right\big).
+\phi_{D)AFG} \\ - 14 \Xi B_{(BC}{}^{AG}\phi_{DA)FG} + \tfrac{2}{3}
+H^{A'}{}_{(B}{}^{FG}\nabla_{|FA'|}\phi_{CDA)G} \big).
 \end{multline}
 Hence, if
-$F_{A'ABC}|_{\mathcal{U}}=H_{A,ABC}|_{\mathcal{U}}=B_{ABCD}|_{\mathcal{U}}=0$,
+$F_{A'ABC}|_{\mathcal{U}}=H_{A'ABC}|_{\mathcal{U}}=B_{ABCD}|_{\mathcal{U}}=0$,
 then $\nabla_{\bm\tau}F_{A'ABC}|_{\mathcal{U}}=0$ if and only if
 \[ \nabla_{\bm\xi}\phi_{ABCD}|_{\mathcal{U}}=0.\]
-Decomposing the covariant derivative, and using the evolution equation \eqref{RescaledWeyl_evo_const} for $\phi_{ABCD}$ again,
-along with equation
-\eqref{DecompXiOnSUsingInitialCondition}, we have
+Decomposing the covariant derivative, and using the evolution equation
+\eqref{RescaledWeyl_evo_const} for $\phi_{ABCD}$ again, along with
+equation \eqref{DecompXiOnSUsingInitialCondition}, we have
 \[ \nabla_{\bm\xi}\phi_{ABCD}|_{\mathcal{U}} =  \xi \mathcal{D}_{(A}{}^{F}\phi_{BCD)F} + \tfrac{3}{2} \xi^{FG} \mathcal{D}_{FG}\phi_{ABCD}. \]
 Hence, if we assume \eqref{RedundantCondition2} to hold, then
 \[\nabla_{\bm\tau} F_{B'BCD}|_{\mathcal{U}}=0, \]
-and we are done.
+and the result of Lemma \ref{Lemma_initial_conditions} follows.
 \end{proof}
-Condition \eqref{RedundantCondition1} is in fact the ``unphysical" counterpart of the condition appearing in \cite{GarVal08c}, which was later shown to be redundant in \cite{BaeVal10c}, modulo a minor algebraic assumption on the Killing spinor initial data ---see (i) and (ii) in the lemma below. Although no such counterpart of \eqref{RedundantCondition2} appears in the physical case, this same algebraic assumption ensures redundancy of both \eqref{RedundantCondition1} and \eqref{RedundantCondition2}:
+Condition \eqref{RedundantCondition1} is in fact the ``unphysical"
+counterpart of the condition appearing in \cite{GarVal08c}, which was
+later shown to be redundant in \cite{BaeVal10c}, modulo a minor
+algebraic assumption on the Killing spinor initial data ---see (i) and
+(ii) in the lemma below. Although no such counterpart of
+\eqref{RedundantCondition2} appears in the physical case, this same
+algebraic assumption ensures redundancy of both
+\eqref{RedundantCondition1} and \eqref{RedundantCondition2}:
 \begin{lemma}\label{prop_remove_redundant_conditions}
-Suppose that $\bar{\kappa}_{AB}$ is CKSID set on $\mathcal{U}$ satisfying one of the following two conditions holds on $\mathcal{U}$:
+Suppose that $\bar{\kappa}_{AB}$ is CKSID set on $\mathcal{U}$
+satisfying one of the following two conditions on $\mathcal{U}$:
 \begin{enumerate}[(i)]
-    \item $\bar{\kappa}_{AB}\bar{\kappa}^{AB} \equiv 0$ ~~~but ~~~$\bar{\kappa}_{AB}\neq 0$,~~~\textit{\textbf{or}}
+    \item $\bar{\kappa}_{AB}\bar{\kappa}^{AB} \equiv 0$ ~~~but
+      ~~~$\bar{\kappa}_{AB}\neq 0$,~~~\textit{or}
     \item $\bar{\kappa}_{AB}\bar{\kappa}^{AB}\neq 0$.
 \end{enumerate}
 Then
@@ -2075,64 +2088,92 @@ candidate. }
 \end{remark}
 
 \noindent
-Finally, putting together Proposition
-\ref{Prop:Propagation_KS}, Lemmas \ref{Lemma_initial_conditions} and \ref{prop_remove_redundant_conditions}
-gives the following valence-2 analogue of Theorem \ref{Theorem_twistor}:
+Finally, putting together Proposition \ref{Prop:Propagation_KS},
+Lemmas \ref{Lemma_initial_conditions} and
+\ref{prop_remove_redundant_conditions} gives the following valence-2
+analogue of Theorem \ref{Theorem_twistor}:
+
 \begin{theorem}\label{Theorem_KS}
-Consider an initial data set for the vacuum conformal Einstein
-field equations, as encoded in the CFE zero-quantities
-\eqref{Def_ConfFactor_CFE_zeroquant}--\eqref{Def_cons_CFE_zeroquant}, on a spacelike hypersurface $\mathcal{S}$ and let
-$\mathcal{U}\subset\mathcal{S}$ be an open set.
-If there exists a CKSID set $\bar{\kappa}_{AB}$ on $\mathcal{U}$ satisfying either of conditions $(i)$ or $(ii)$ from Lemma \ref{prop_remove_redundant_conditions}, then the development
-of the initial data set admits a Killing spinor 
-in $\mathcal{D}^+(\mathcal{U})$, given by the solution $\kappa_{AB}$ of the IVP \eqref{KillingSpinorIVP}. If condition (i) holds, then in fact there exists a twistor on $\mathcal{D}^+(\mathcal{U})$.  
+Consider an initial data set for the vacuum conformal Einstein field
+equations, as encoded in the CFE zero-quantities
+\eqref{Def_ConfFactor_CFE_zeroquant}--\eqref{Def_cons_CFE_zeroquant},
+on a spacelike hypersurface $\mathcal{S}$ and let
+$\mathcal{U}\subset\mathcal{S}$ be an open set.  If there exists a
+CKSID set $\bar{\kappa}_{AB}$ on $\mathcal{U}$ satisfying either of
+conditions $(i)$ or $(ii)$ from Lemma
+\ref{prop_remove_redundant_conditions}, then the development of the
+initial data set admits a Killing spinor in
+$\mathcal{W}\subseteq\mathcal{D}^+(\mathcal{U})$, given by the solution $\kappa_{AB}$ of
+the initial value problem \eqref{KillingSpinorIVP}. If condition (i) holds, then in fact
+there exists a twistor on $\mathcal{W}$.
 \end{theorem}
+
 \begin{proof}
-Given such a $\bar{\kappa}_{AB}$, Lemmas \ref{Lemma_initial_conditions} and \ref{prop_remove_redundant_conditions} together imply that the Killing spinor candidate $\kappa_{AB}$ constructed as a solution of \eqref{KillingSpinorIVP} satisfies conditions \eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSInitialCondition2}. Proposition \ref{Prop:Propagation_KS} then implies that $H_{A'ABC}=0$ on $\mathcal{D}^+(\mathcal{U})$ and hence that $\kappa_{AB}$ is indeed a Killing spinor. In particular, if condition (i) holds then $\bar{\kappa}_{AB}=\bar{\kappa}_A\bar{\kappa}_B$ for some $\bar{\kappa}_A\neq 0$ on $\mathcal{U}$. It is straightforward to verify that $\bar{\kappa}_A$ solves the conformal twistor initial data conditions, equations \eqref{twistor_CSKIDs}; see the discussion of Appendix \ref{TypeNCase}. Theorem \ref{Theorem_twistor} then implies the existence of a twistor on $\mathcal{D}^+(\mathcal{U})$. 
+Given such a $\bar{\kappa}_{AB}$, Lemmas
+\ref{Lemma_initial_conditions} and
+\ref{prop_remove_redundant_conditions} together imply that the Killing
+spinor candidate $\kappa_{AB}$ constructed as a solution of
+\eqref{KillingSpinorIVP} satisfies conditions
+\eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSInitialCondition2}. Proposition
+\ref{Prop:Propagation_KS} then implies that $H_{A'ABC}=0$ on
+$\mathcal{D}^+(\mathcal{U})$ and hence that $\kappa_{AB}$ is indeed a
+Killing spinor. In particular, if condition (i) holds then
+$\bar{\kappa}_{AB}=\bar{\kappa}_A\bar{\kappa}_B$ for some
+$\bar{\kappa}_A\neq 0$ on $\mathcal{U}$. It is straightforward to
+verify that $\bar{\kappa}_A$ solves the conformal twistor initial data
+conditions, equations \eqref{twistor_CSKIDs}; see the discussion of
+Appendix \ref{TypeNCase}. Theorem \ref{Theorem_twistor} then implies
+the existence of a twistor on $\mathcal{D}^+(\mathcal{U})$.
 \end{proof}
 
 \begin{remark}{\em 
-Note that we recover the conditions from \cite{BaeVal10a}, namely 
+Note that we recover the conditions from \cite{BaeVal10a}, namely
 \[\tilde{\mathcal{D}}_{(AB}\tilde{\kappa}_{CD)}=0, \qquad \tilde{\kappa}_{(A}{}^F
-\Psi_{BCD)F}=0, \]
-when $\Xi\equiv  1$ on $\mathcal{U}$. 
-%On the other hand, note that the condition $\kappa_{(A}{}^F\Psi_{BCD)F}=0$ would trivialise if one were to evaluate it at some $p\in \mathscr{I}$, since the existence of a regular compactification necessarily implies that $\Psi_{ABCD}=0$ on $\mathscr{I}$.
-}
+\Psi_{BCD)F}=0, \] when $\Xi\equiv 1$ on $\mathcal{U}$.  }
 \end{remark}
-%\begin{remark}
-%  \emph{
-%  Since the fields comprising initial data for the CFEs contain the
-%  rescaled Weyl spinor, one can use the initial datum
-%  $\phi_{ABCD}|_{\mathcal{S}}$ to formally define the Petrov type of
-%  an initial data set for the CFEs. This can be expressed covariantly as $I^3 - 6J^2=0$, where $I,J$ are the complex-valued scalars
-%\begin{align*}
-%I &:= \phi_{ABCD}\phi^{ABCD} \equiv E_{ij}E^{ij} - B_{ij}B^{ij} + 2i E_{ij}B^{ij},\\
-%J &:= \phi_{AB}{}^{CD}\phi_{CD}{}^{FG}\phi_{FG}{}^{AB} \equiv (E_{i}{}^jE_j{}^kE_{k}{}^i - 3E_{i}{}^jB_j{}^kB_{k}{}^i) + i(3B_{i}{}^jE_j{}^kE_k{}^{i} - B_{i}{}^jB_j{}^kB_k{}^i),
-%\end{align*}
-%with $E_{ij}, B_{ij}$ denoting the electric and magnetic parts of the rescaled Weyl tensor, respectively. Type $N$ corresponds to the special case $I=J=0$. 
-%    }
-%\end{remark}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%% References %%%%%%
-%%%%%%%% https://arxiv.org/pdf/2101.00856.pdf
-%%%%%%%% https://arxiv.org/pdf/1010.2421.pdf
-%%%%%%%% See page 107-108, section Killing spinors for type {22} vacuums of \cite{PenRin84}
-%%%%%%%% Lemma 1 of https://link.springer.com/article/10.1007/BF01649445
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Given the close connection between the notion of algebraic specialness and the existence of Killing spinors, recalled in Section \ref{Background}, it is not surprising that one can use the previous result to establish conditions under which the Petrov type of an initial dataset is ``propagated" to the resulting spacetime development; see Theorem 3 of \cite{GarVal08c} for a similar result in the ``physical" case. This is the content of the following:
+Given the close connection between the notion of algebraic special Petrov types
+and the existence of Killing spinors, discussed in section
+\ref{Background}, it is not surprising that one can use the previous
+result to establish conditions under which the Petrov type of an
+initial data set is ``propagated" to the resulting spacetime
+development; see Theorem 3 of \cite{GarVal08c} for a similar result in
+the physical framework case. This is the content of the following:
+
 \begin{corollary}\label{Corollary:PetrovPropagation}
-%Suppose that $\phi_{ABCD}$ is of Petrov type N on $\mathcal{U}\subset \mathcal{S}$, then $\phi_{ABCD}$ is of Petrov type N on an open\mnotex{is it open?} subset of the spacetime development, $\mathcal{D}^+(\mathcal{U})$,  as evidenced by the existence of a non-trivial twistor (i.e. valence-1 Killing spinor). 
-Suppose that $\phi_{ABCD}$ is of Petrov type D on $\mathcal{U}\subset\mathcal{S}$ and suppose further that\footnote{The fields $\sigma$ and $\lambda$ (not to be confused with the cosmological constant), along with $\kappa, \tau, \rho, \mu, \nu, \pi$ to follow, are Newmann--Penrose (NP) scalars \cite{PenRin84, PenRin86}; see the Appendix, also.}
+  Given initial data for the CFEs, suppose that the initial data for the rescaled Weyl spinor
+  $\phi_{ABCD}$ is of Petrov type D on $\mathcal{U}\subset\mathcal{S}$
+  and suppose further that
+  \footnote{The fields $\sigma$ and $\lambda$ (not to be confused with
+  the cosmological constant), along with $\kappa, \tau, \rho, \mu,
+  \nu, \pi$ to follow, are Newmann--Penrose (NP) scalars
+  \cite{PenRin84, PenRin86}; see the Appendix for further details.}
 \begin{equation} 
-\sigma\equiv - o^A o^B o^C\mathcal{D}_{AB}o_C=0 \quad \text{and}\quad \lambda\equiv \iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C=0\label{ShearConditions}
+\sigma\equiv - o^A o^B o^C\mathcal{D}_{AB}o_C=0 \quad \text{and}\quad
+\lambda\equiv
+\iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C=0\label{ShearConditions}
 \end{equation}
-hold on $\mathcal{U}$, where $\lbrace \bmo, \bm\iota\rbrace$ is an adapted spin dyad in terms of which $\phi_{ABCD}=\phi o_{(A}o_B\iota_C\iota_{D)}$ for some field $\phi$.
-Then, $\phi_{ABCD}$ is also of Petrov type D on an open subset of the domain of dependence, $\mathcal{D}^+(\mathcal{U})$, as evidenced by the existence of a non-trivial (valence-2) Killing spinor satisfying $\kappa_{AB}\kappa^{AB}\neq 0$. 
+hold on $\mathcal{U}$, where $\lbrace \bmo, \bm\iota\rbrace$ is an
+adapted spin dyad in terms of which $\phi_{ABCD}=\phi
+o_{(A}o_B\iota_C\iota_{D)}$ for some field $\phi$ on $\mathcal{U}$.  Then, the rescaled
+Weyl spinor $\phi_{ABCD}$ of the corresponding development $(\mathcal{M},\bmg)$ 
+is of Petrov type D on an open subset of the domain of dependence
+$\mathcal{W}\subseteq\mathcal{D}^+(\mathcal{U})$, as evidenced by the
+existence of a non-trivial (valence-2) Killing spinor satisfying
+$\kappa_{AB}\kappa^{AB}\neq 0$.
 \end{corollary}
 \begin{proof}
-%Suppose that $\phi_{ABCD}$ is of Petrov type N on $\mathcal{U}$, with $\lbrace \bmo, \bm\iota\rbrace$ an adapted spin dyad in terms of which $\phi_{ABCD} = \phi o_Ao_Bo_Co_D$ then as shown in \ref{TypeNCase} the 
-%\medskip
-Suppose that $\phi_{ABCD}$ is of Petrov type D on $\mathcal{U}$, with $\lbrace \bmo, \bm\iota\rbrace$ an adapted spin dyad in terms of which $\phi_{ABCD}=\phi o_{(A}o_B\iota_C\iota_{D)}$ for some field $\phi$. Note that $\phi\neq 0$ everywhere on $\mathcal{U}$; if $\phi=0$ at some $p\in\mathcal{U}$ then $\bm\phi$ would be of type O at $p$. Define $\bar{\kappa}_{AB}=\phi^{-1/3}o_{(A}\iota_{B)}$ and note that $\bar{\kappa}_{AB}\bar{\kappa}^{AB}\propto\phi^{-2/3}\neq 0$ on $\mathcal{U}$. A short calculation verifies that the Buchdahl constraint $B(\bar{\bm\kappa})_{ABCD}=0$ is satisfied. The equation $\mathcal{D}_{(AB}\bar{\kappa}_{CD)}=0$, on the other hand, decomposes to give
+  Suppose that the initial data for the rescaled Weyl spinor
+  $\phi_{ABCD}$ is of Petrov type D on $\mathcal{U}$, with
+$\lbrace \bmo, \bm\iota\rbrace$ an adapted spin dyad in terms of which
+$\phi_{ABCD}=\phi o_{(A}o_B\iota_C\iota_{D)}$ for some field
+$\phi$ on $\mathcal{U}$. Note that $\phi\neq 0$ everywhere on $\mathcal{U}$; if
+$\phi=0$ at some $p\in\mathcal{U}$ then $\phi_{ABCD}|_{\mathcal{U}}$ would be of type O
+at $p$. Define $\bar{\kappa}_{AB}=\phi^{-1/3}o_{(A}\iota_{B)}$ and
+note that $\bar{\kappa}_{AB}\bar{\kappa}^{AB}\propto\phi^{-2/3}\neq 0$
+on $\mathcal{U}$. A short calculation verifies that the Buchdahl
+constraint $B(\bar{\bm\kappa})_{ABCD}=0$ is satisfied. The equation
+$\mathcal{D}_{(AB}\bar{\kappa}_{CD)}=0$, on the other hand, decomposes
+to give
 \begin{eqnarray*}
 && \sigma=0,\\
 && \mathcal{D}_{\bm0\bm0}\phi = 3\phi(\kappa - \tau), \\
@@ -2140,17 +2181,50 @@ Suppose that $\phi_{ABCD}$ is of Petrov type D on $\mathcal{U}$, with $\lbrace \
 && \mathcal{D}_{\bm1\bm1}\phi = 3\phi(\nu - \pi), \\
 && \lambda = 0,
 \end{eqnarray*}
-in terms of the NP scalars ---to see this, substitute $e^{\varkappa}=\phi^{-1/3}$ in \eqref{SpatialSenTypeD0000}--\eqref{SpatialSenTypeD1111} of the Appendix.
-The first and last components are guaranteed by the assumption \eqref{ShearConditions}.
-The remaining equations are precisely those implied by the constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$ ---see \eqref{WeylConstraintTypeD} of the Appendix.
-%\[ o^Ao^Bo^C\iota^D\mathcal{D}_{(AB}\kappa_{CD)}=o^Ao^B\iota^C\iota^D\mathcal{D}_{(AB}\kappa_{CD)}=o^A\iota^B\iota^C\iota^D\mathcal{D}_{(AB}\kappa_{CD)}=0\]
-Hence, the conformal Killing spinor initial data conditions \eqref{CSKIDs} are met by $\bar{\kappa}_{AB}$ and propagating using \eqref{KillingSpinorIVP} we obtain a Killing spinor $\kappa_{AB}$ on $\mathcal{D}^+(\mathcal{U})$, according to Theorem \ref{Theorem_KS}. Now, by continuous dependence on the data, it follows that there exists some open subset $\mathcal{V}\subset\mathcal{D}^+(\mathcal{U})$ on which $\kappa_{AB}\kappa^{AB}\neq 0$. Since the Buchdahl constraint neceessarily holds on $\mathcal{V}$ and since $\kappa_{AB}\kappa^{AB}\neq 0$, it follows that either $\bm\phi$ is of Petrov type D or O on $\mathcal{V}$. Now $\phi_{ABCD}\phi^{ABCD}\propto \phi^2\neq 0$ on $\mathcal{U}$ and so by continuity $\phi_{ABCD}\phi^{ABCD}\neq 0$ on some open $\tilde{\mathcal{V}}\subset\mathcal{V}$. Therefore, $\bm\phi$ cannot be of type O anywhere on $\tilde{\mathcal{V}}$ and so must be of type D.
+in terms of the NP scalars ---to see this, substitute
+$e^{\varkappa}=\phi^{-1/3}$ in equations
+\eqref{SpatialSenTypeD0000}--\eqref{SpatialSenTypeD1111} of the
+Appendix.  The first and last components are guaranteed by the
+assumption \eqref{ShearConditions}.  The remaining equations are
+precisely those implied by the constraint
+$\mathcal{D}^{AB}\phi_{ABCD}=0$ ---see \eqref{WeylConstraintTypeD} of
+the Appendix.  Hence, the conformal Killing spinor initial data
+conditions \eqref{CSKIDs} are met by $\bar{\kappa}_{AB}$ and
+propagating this data using \eqref{KillingSpinorIVP} we obtain a Killing spinor
+$\kappa_{AB}$ on $\mathcal{D}^+(\mathcal{U})$, according to Theorem
+\ref{Theorem_KS}. Now, by continuous dependence on the data, it
+follows that there exists some open subset
+$\mathcal{V}\subset\mathcal{D}^+(\mathcal{U})$ on which
+$\kappa_{AB}\kappa^{AB}\neq 0$. Since the Buchdahl constraint
+neceessarily holds on $\mathcal{V}$ and since
+$\kappa_{AB}\kappa^{AB}\neq 0$, it follows that either $\phi_{ABCD}$ is of
+Petrov type D or O on $\mathcal{V}$. Now
+$\phi_{ABCD}\phi^{ABCD}\propto \phi^2\neq 0$ on $\mathcal{U}$ and so
+by continuity $\phi_{ABCD}\phi^{ABCD}\neq 0$ on some open
+$\tilde{\mathcal{V}}\subset\mathcal{V}$. Therefore, $\phi_{ABCD}$ cannot
+be of type O anywhere on $\tilde{\mathcal{V}}$ and so must be of type
+D.
 \end{proof}
 
 \begin{remark}{\em 
- While the constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$ implies that the $\bm0\bm0\bm0\bm1$, $\bm0\bm0\bm1\bm1$ and $\bm0\bm1\bm1\bm1$-components of $\mathcal{D}_{(AB}\bar{\kappa}_{CD)}=0$
-  are all satisfied, as shown in the above proof, the $\bm0\bm0\bm0\bm0$ and $\bm1\bm1\bm1\bm1$-spin components are not guaranteed simply as a consequence of the expression $\bar{\kappa}_{AB}=\phi^{-1/3}o_{(A}\iota_{B)}$. Hence, the conditions of Theorem \ref{Theorem_KS} are more restrictive than simply assuming that $\bm\phi$ be of Petrov type D on $\mathcal{U}$. These remaining two components of $\mathcal{D}^{AB}\phi_{ABCD}=0$ are however implied by the $\bm0\bm0\bm0\bm0$ and $\bm1\bm1\bm1\bm1$-components of the \emph{evolution equation} $\nabla_{\bm\tau}\phi_{ABCD}=2\mathcal{D}_{(A}{}^F\phi_{BCD)F}$ if one \emph{assumes} that the Petrov type extends to the spacetime development, consistent with Remark \ref{Remark:DyadExpressionForKillingSpinorInTypeD}.
-  }
+ While the constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$ implies that the
+ $\bm0\bm0\bm0\bm1$, $\bm0\bm0\bm1\bm1$ and
+ $\bm0\bm1\bm1\bm1$-components of
+ $\mathcal{D}_{(AB}\bar{\kappa}_{CD)}=0$ are all satisfied, as shown
+ in the above proof, the $\bm0\bm0\bm0\bm0$ and
+ $\bm1\bm1\bm1\bm1$-spin components are not guaranteed simply as a
+ consequence of the expression
+ $\bar{\kappa}_{AB}=\phi^{-1/3}o_{(A}\iota_{B)}$. Hence, the
+ conditions of Theorem \ref{Theorem_KS} are more restrictive than
+ simply assuming that $\phi_{ABCD}$ be of Petrov type D on
+ $\mathcal{U}$. These remaining two components of
+ $\mathcal{D}^{AB}\phi_{ABCD}=0$ are however implied by the
+ $\bm0\bm0\bm0\bm0$ and $\bm1\bm1\bm1\bm1$-components of the
+ \emph{evolution equation}
+ $\nabla_{\bm\tau}\phi_{ABCD}=2\mathcal{D}_{(A}{}^F\phi_{BCD)F}$ if
+ one \emph{assumes} that the Petrov type extends to the spacetime
+ development, consistent with Remark
+ \ref{Remark:DyadExpressionForKillingSpinorInTypeD}.  }
 \end{remark}
 
 
@@ -2160,19 +2234,11 @@ In this article a \emph{conformal} version of the Killing spinor
 initial data equations given in \cite{GarVal08c} are derived. By
 conformal it is understood that $(\mathcal{M},\bmg)$ is conformally
 related to a vacuum Einstein spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$.
-%%%%%%%%%%%%%%%%%%%%%%%
-%Consequently, we call these
-%conditions the \emph{conformal Killing spinor initial data equations}.
-%%%%%%%%%%%%%%
 It is shown that, modulo a technical assumption, the existence of a non-trivial solution of equations
 \eqref{CSKIDs} is a necessary and sufficient
 condition for the existence of a Killing spinor on the development in
-the unphysical spacetime $(\mathcal{M},\bmg)$, as given by a solution by Friedrich's
+the unphysical spacetime $(\mathcal{M},\bmg)$, as given by a solution of Friedrich's
 \emph{conformal Einstein field equations}.
-%%%%%%%%%%%%%%%%%%%%
-%These conditions are intrinsic to a
-%spacelike hypersurface $\mathcal{S}\subset\mathcal{M}$.
-%%%%%%%%%%%%%%%%%%%%
   The initial data equations \eqref{CSKIDs} are comprised of one differential condition and one
   algebraic condition.  The differential condition corresponds to the
   so-called \emph{spatial Killing spinor equation} while the algebraic
@@ -2185,14 +2251,6 @@ the unphysical spacetime $(\mathcal{M},\bmg)$, as given by a solution by Friedri
   equations are not conformally invariant, the proof that these
   conditions also hold for the unphysical spacetime
   $(\mathcal{M},\bmg)$ is non-trivial.  
-%  Moreover, the raw expressions
-%  of proposition \ref{Prop:Propagation_KS} would suggest that one
-%  needs further conditions besides \eqref{CSKID_1}-\eqref{CSKID_2} to
-%  ensure the existence of a Killing spinor in $(\mathcal{M},\bmg)$. 
-%   It
-%   is only after exploring the redundancy between the raw conditions
-%   \eqref{Raw_CSKID} that one obtains the reduced set
-%   \eqref{CSKID_1}-\eqref{CSKID_2}.
   \medskip
 
 In the case where the conformal rescaling is
@@ -2211,72 +2269,82 @@ established one can always construct, a posteriori, a conformal
 Killing vector $X_{AA'}$ on $(\mathcal{M},\bmg)$ which corresponds to a Killing vector
 $\tilde{\xi}_{AA'}$ of the physical spacetime
 $(\tilde{\mathcal{M}},\tilde{\bmg})$.
-%%%%%%%%%%%%%%%%%%%%%
-%% The first algebraic condition
-%% corresponds to the restriction of the Buchdahl constraint on the
-%% initial hypersurface and the second imposes restrictions on the Cotton
-%% spinor of the initial data set. Moreover, it was shown that, in a spin
-%% dyad adapted to the Killing spinor, these conditions can be used along
-%% with the conformal Einstein field equations to show that certain
-%% components (at least half of them) of the Cotton spinor $Y_{ABCA'}$
-%% have to vanish on the initial hypersurface $\mathcal{S}$.
-%%%%%%%%%%%%%%%%%%%
+
 Notice that the conformal approach followed in this article ---i.e.,
-use of the conformal Einstein field equations--- allows for the possibility
-that $\mathcal{S}$ intersect non-trivially with (or even be a subset of) the conformal boundary $\mathscr{I}$.  One possible application is the identification of \emph{asymptotic initial data} ---initial data for the
-conformal Einstein field equations given on $\mathscr{I}$--- for de
-Sitter-like spacetimes and, in particular, an asymptotic characterisation of the Kerr-de Sitter
-spacetime, via the existence of Killing spinors at the (spacelike)
-conformal boundary. Such a result would mirror the spinorial characterisations of Kerr given in \cite{BaeVal10a,BaeVal10b,BaeVal10c,BaeVal11b}; it would be interest to also compare with \cite{Gar16, Gar20}, in which the propagation of Petrov type is explored in the context of both the Einstein and the \emph{conformal} Einstein field equations.  
+use of the conformal Einstein field equations--- allows for the
+possibility that $\mathcal{S}$ intersect non-trivially with (or even
+be a subset of) the conformal boundary $\mathscr{I}$.  One possible
+application is the identification of \emph{asymptotic initial data}
+---initial data for the conformal Einstein field equations given on
+$\mathscr{I}$--- for de Sitter-like spacetimes and, in particular, an
+asymptotic characterisation of the Kerr-de Sitter spacetime, via the
+existence of Killing spinors at the (spacelike) conformal
+boundary. Such a result would mirror the spinorial characterisations
+of Kerr given in \cite{BaeVal10a,BaeVal10b,BaeVal10c,BaeVal11b}; it
+would be interest to also compare with \cite{Gar16, Gar20}, in which
+the propagation of Petrov type is explored in the context of both the
+Einstein and the \emph{conformal} Einstein field equations.
 \medskip
 
-The applications of the core analysis of this article, however,
-are not restricted to the study of de Sitter-like spacetimes since the most taxing part of the procedure
-consisted in finding a closed system of homogeneous wave equations for
-$H_{A'ABC}$, $B_{ABCD}$ and $F_{A'ABC}$, these equations being irrespective of
-the causal nature of $\mathcal{S}$. For the spacelike case, the
-uniqueness result for wave equations of Theorem
-\ref{TheoremHomogeneousWave} ensures that if trivial initial data on
-$\mathcal{S}$ is provided then $H_{A'ABC}$, $B_{ABCD}$ and $F_{A'ABC}$
-vanish on the domain of dependence of the data which constitutes the
-of the main technical tool to derive the result.
-Analogous theorems for the characteristic problem or
-the initial boundary value problem could be used to obtain similar
-conditions on a null or timelike hypersurface, as has been done
-in the case of the Killing vector initial data equations and the
-physical Killing spinor initial data equations
----see \cite{Pae14a, ColRacVal18} and \cite{CarVal18}.
-In the case of the characteristic problem, the conformal approach of
-this article would facilitate the analysis of the existence of Killing spinors
-at the conformal boundary of an asymptotically flat spacetimes.  In the
-case of a timelike hypersurface, the analogous conformal Killing
-spinor initial data equations could be used in the analysis and
-characterisation of anti-de Sitter like spacetimes.
+The applications of the core analysis of this article, however, are
+not restricted to the study of de Sitter-like spacetimes since the
+most taxing part of the procedure consisted in finding a closed system
+of homogeneous wave equations for $H_{A'ABC}$, $B_{ABCD}$ and
+$F_{A'ABC}$, these equations being irrespective of the causal nature
+of $\mathcal{S}$. For the spacelike case, the uniqueness result for
+wave equations of Theorem \ref{TheoremHomogeneousWave} ensures that if
+trivial initial data on $\mathcal{S}$ is provided then $H_{A'ABC}$,
+$B_{ABCD}$ and $F_{A'ABC}$ vanish on the domain of dependence of the
+data which constitutes the main technical tool to derive the
+result.  Analogous theorems for the characteristic problem or the
+initial boundary value problem could be used to obtain similar
+conditions on a null or timelike hypersurface, as has been done in the
+case of the Killing vector initial data equations and the physical
+Killing spinor initial data equations ---see \cite{Pae14a,
+  ColRacVal18} and \cite{CarVal18}.  In the case of the characteristic
+problem, the conformal approach of this article would facilitate the
+analysis of the existence of Killing spinors at the conformal boundary
+of an asymptotically flat spacetimes.  In the case of a timelike
+hypersurface, the analogous conformal Killing spinor initial data
+equations could be used in the analysis and characterisation of
+anti-de Sitter like spacetimes.
 
 
 \subsection*{Acknowledgements}
 
-We would like to thank Juan A. Valiente Kroon, David Hilditch and Justin Feng for helpful discussions.
-E. Gasper\'in acknowledges support from Consejo Nacional de
-Ciencia y Tecnolog\'ia (Mexico) ---CONACyT studentship
-494039/218141--- in the early stages of this work and from Fundaç\~ao
-para a Ci\^encia e a Tecnologia (Portugal) ---FCT-2020.03845.CEECIND---
-during its completion. J. L. Williams acknowledges support from the COST grant CA16104.  
-\appendix
+We would like to thank Juan A. Valiente Kroon, David Hilditch and
+Justin Feng for helpful discussions.  E. Gasper\'in acknowledges
+support from Consejo Nacional de Ciencia y Tecnolog\'ia (Mexico)
+---CONACyT studentship 494039/218141--- in the early stages of this
+work and from Fundaç\~ao para a Ci\^encia e a Tecnologia (Portugal)
+---FCT-2020.03845.CEECIND--- during its completion. J. L. Williams
+acknowledges support from the COST grant CA16104.  \appendix
 
 \section{Appendix}\label{Appendix_A}
 
-Here we give the derivation of some of the key identities used in Section \ref{Sec:KSWaveEqs} and the proof of Lemma \ref{prop_remove_redundant_conditions} from Section \ref{IntrinsicCKSID}. 
+Here we give the derivation of some of the key identities used in
+Section \ref{Sec:KSWaveEqs} and the proof of Lemma
+\ref{prop_remove_redundant_conditions} from Section
+\ref{IntrinsicCKSID}.
 
 \subsection{Spinorial identities}
 
-Here we give the derivation of identities \eqref{Eq:MiscIdentity2} and \eqref{Eq:MiscIdentity3}. First, by expanding out the definition of $B_{ABCD}$,
+Here we give the derivation of identities \eqref{Eq:MiscIdentity2} and
+\eqref{Eq:MiscIdentity3}. First, by expanding out the definition of
+$B_{ABCD}$,
 \begin{align*}
-\nabla^D{}_{G'}B_{ABFD} &= - \tfrac{1}{4} \phi_{ABFD} \nabla_{CG'}\kappa^{CD}  -  \tfrac{3}{4} \kappa_{(A}{}^{C} \nabla_{\vert DG'\vert}\phi_{BF)C}{}^{D} \\
-&\qquad -  \tfrac{1}{4} \kappa^{CD} \nabla_{DG'}\phi_{ABFC} + \tfrac{3}{4} \phi_{CD(AB} \nabla^{D}{}_{\vert G'\vert}\kappa_{F)}{}^{C} \\
-&=\tfrac{1}{2} \xi^{C}{}_{G'} \phi_{ABFC} + \tfrac{1}{4} \phi_{CD(AB} H_{\vert G'\vert F)}{}^{CD}  -  \tfrac{1}{4} \kappa^{CD} \nabla_{DG'}\phi_{ABFC}
+\nabla^D{}_{G'}B_{ABFD} &= - \tfrac{1}{4} \phi_{ABFD}
+\nabla_{CG'}\kappa^{CD} - \tfrac{3}{4} \kappa_{(A}{}^{C} \nabla_{\vert
+  DG'\vert}\phi_{BF)C}{}^{D} \\ &\qquad - \tfrac{1}{4} \kappa^{CD}
+\nabla_{DG'}\phi_{ABFC} + \tfrac{3}{4} \phi_{CD(AB}
+\nabla^{D}{}_{\vert G'\vert}\kappa_{F)}{}^{C} \\ &=\tfrac{1}{2}
+\xi^{C}{}_{G'} \phi_{ABFC} + \tfrac{1}{4} \phi_{CD(AB} H_{\vert
+  G'\vert F)}{}^{CD} - \tfrac{1}{4} \kappa^{CD}
+\nabla_{DG'}\phi_{ABFC}
 \end{align*}
-the second equality following from $\nabla^A{}_{A'}\phi_{ABCD}=0$. Using \eqref{Eq:DecompGradKS}, the definition of $F_{A'ABC}$ and rearranging, 
+the second equality following from
+$\nabla^A{}_{A'}\phi_{ABCD}=0$. Using \eqref{Eq:DecompGradKS}, the
+definition of $F_{A'ABC}$ and rearranging,
 \begin{equation}
  \kappa^{CD} \nabla_{DG'}\phi_{ABFC} = 2 \xi^{C}{}_{G'} \phi_{ABFC} +
  \phi_{CD(AB} H_{\vert G'\vert F)}{}^{CD} - 4
@@ -2284,17 +2352,31 @@ the second equality following from $\nabla^A{}_{A'}\phi_{ABCD}=0$. Using \eqref{
  \end{equation}
 Then, using the irreducible decomposition
 \begin{equation*}
-\kappa_{F}{}^{D} \phi_{ABCD} = B_{ABCF} + \tfrac{1}{4} \kappa^{DG} \phi_{BCDG} \epsilon_{AF} + \tfrac{1}{4} \kappa^{DG} \phi_{ACDG} \epsilon_{BF} + \tfrac{1}{4} \kappa^{DG} \phi_{ABDG} \epsilon_{CF},	
+\kappa_{F}{}^{D} \phi_{ABCD} = B_{ABCF} + \tfrac{1}{4} \kappa^{DG}
+\phi_{BCDG} \epsilon_{AF} + \tfrac{1}{4} \kappa^{DG} \phi_{ACDG}
+\epsilon_{BF} + \tfrac{1}{4} \kappa^{DG} \phi_{ABDG} \epsilon_{CF},
 \end{equation*}
 one calculates
 \begin{align*}
-	\kappa_{A}{}^{F} \nabla_{GF'}\phi_{BCDF} &= \nabla_{GF'}(\kappa_{A}{}^{F}\phi_{BCDF}) - \phi_{BCDF}\nabla_{GF'}\kappa_{A}{}^{F}\\
-	&= \nabla_{GF'}B_{ABCD} -     \tfrac{3}{4} \kappa^{FH} \epsilon_{A(B} \nabla_{\vert GF'\vert}\phi_{CD)FH}\\
-	&\qquad -  \phi_{BCDF} \nabla_{GF'}\kappa_{A}{}^{F} -  \tfrac{3}{4} \epsilon_{A(B}\phi_{CD)FH} \nabla_{GF'}\kappa^{FH}\\
-	&=\nabla_{GF'}B_{ABCD} + \tfrac{1}{3} \xi_{AF'} \phi_{BCDG} -  \tfrac{1}{3} \phi_{BCDF} H_{F'AG}{}^{F} + \tfrac{1}{2} \xi^{F}{}_{F'}\epsilon_{A(B} \phi_{CD)GF}  \\
-	&\qquad -  \tfrac{1}{4} \epsilon_{A(B}\phi_{CD)FH} H_{F'G}{}^{FH}   -  \tfrac{1}{3} \xi^{F}{}_{F'} \phi_{BCDF} \epsilon_{AG}  -  \tfrac{3}{4} \kappa^{FH} \epsilon_{A(B} \nabla_{\vert GF'\vert}\phi_{CD)FH},
+	\kappa_{A}{}^{F} \nabla_{GF'}\phi_{BCDF} &=
+        \nabla_{GF'}(\kappa_{A}{}^{F}\phi_{BCDF}) -
+        \phi_{BCDF}\nabla_{GF'}\kappa_{A}{}^{F}\\ &=
+        \nabla_{GF'}B_{ABCD} - \tfrac{3}{4} \kappa^{FH} \epsilon_{A(B}
+        \nabla_{\vert GF'\vert}\phi_{CD)FH}\\ &\qquad - \phi_{BCDF}
+        \nabla_{GF'}\kappa_{A}{}^{F} - \tfrac{3}{4}
+        \epsilon_{A(B}\phi_{CD)FH}
+        \nabla_{GF'}\kappa^{FH}\\ &=\nabla_{GF'}B_{ABCD} +
+        \tfrac{1}{3} \xi_{AF'} \phi_{BCDG} - \tfrac{1}{3} \phi_{BCDF}
+        H_{F'AG}{}^{F} + \tfrac{1}{2} \xi^{F}{}_{F'}\epsilon_{A(B}
+        \phi_{CD)GF} \\ &\qquad - \tfrac{1}{4}
+        \epsilon_{A(B}\phi_{CD)FH} H_{F'G}{}^{FH} - \tfrac{1}{3}
+        \xi^{F}{}_{F'} \phi_{BCDF} \epsilon_{AG} - \tfrac{3}{4}
+        \kappa^{FH} \epsilon_{A(B} \nabla_{\vert
+          GF'\vert}\phi_{CD)FH},
 \end{align*}
-where the third equality follows from \eqref{Eq:DecompGradKS}. Then swapping indices on the $\nabla\bm\phi$ terms and using $\nabla^A{}_{A'}\phi_{ABCD}=0$, one obtains \eqref{Eq:MiscIdentity2}:
+where the third equality follows from \eqref{Eq:DecompGradKS}. Then
+swapping indices on the $\nabla\bm\phi$ terms and using
+$\nabla^A{}_{A'}\phi_{ABCD}=0$, one obtains \eqref{Eq:MiscIdentity2}:
 \begin{align*}
     \kappa_{A}{}^{F} \nabla_{FF'}\phi_{BCDG} &= \tfrac{1}{3} \xi_{AF'}
     \phi_{BCDG} - \tfrac{1}{3} \xi^{F}{}_{F'} \phi_{BCGF}
@@ -2310,7 +2392,9 @@ where the third equality follows from \eqref{Eq:DecompGradKS}. Then swapping ind
     \tfrac{1}{6}
     \phi_{D(B}{}^{FH}H_{|F'|C|FH}\epsilon_{A|G)}.
 \end{align*}
-To show \eqref{Eq:MiscIdentity3}, we first apply $\nabla^A{}_{A'}$ to identity \eqref{Eq:UsefulIdentity2}, using \eqref{Eq:DecompGradKS} and $\nabla^A{}_{A'}\phi_{ABCD}=0$, one obtains
+To show \eqref{Eq:MiscIdentity3}, we first apply $\nabla^A{}_{A'}$ to
+identity \eqref{Eq:UsefulIdentity2}, using \eqref{Eq:DecompGradKS} and
+$\nabla^A{}_{A'}\phi_{ABCD}=0$, one obtains
 \begin{align*}
 &\tfrac{1}{2} \xi^{A}{}_{A'} \phi_{(BF}{}^{DG} \phi_{C)ADG} + \tfrac{1}{12} \
 \phi_{ADGH} \phi_{BCF}{}^{H} H_{A'}{}^{ADG} + \tfrac{1}{4} \
@@ -2343,17 +2427,18 @@ one finally obtains \eqref{Eq:MiscIdentity3}:
 \subsection{Proof of Lemma \ref{prop_remove_redundant_conditions}}
 \label{Sec:ProofOfProp3}
 
-%In this section the proof of Proposition
-%\ref{prop_remove_redundant_conditions} is given.
-Assuming $\bar{\kappa}_{AB}\neq 0$, the Buchdahl constraint restricts the Petrov type of
-$\bm\phi$ to be type D, N or O.
-We follow the same strategy as in \cite{BaeVal10c}, expanding out
-conditions \eqref{RedundantCondition1}--\eqref{RedundantCondition2} in an adapted spin dyad, considering separately the cases (i): $\bar{\kappa}_{AB}\bar{\kappa}^{AB}\equiv 0$, $\bar{\kappa}_{AB}\neq 0$
-and (ii): $\bar{\kappa}_{AB}\bar{\kappa}^{AB}\neq 0$ on $\mathcal{U}$, from Lemma \ref{prop_remove_redundant_conditions}, corresponding to Petrov types N and D, respectively.
-Observe that for Type O, for which $\phi_{ABCD}=0$,
-the proof of Lemma \ref{prop_remove_redundant_conditions} trivialises,
-so only the types $N$ and $D$ are needed.
-\\
+Assuming $\bar{\kappa}_{AB}\neq 0$, the Buchdahl constraint restricts
+the Petrov type of $\bm\phi$ to be type D, N or O.  We follow the same
+strategy as in \cite{BaeVal10c}, expanding out conditions
+\eqref{RedundantCondition1}--\eqref{RedundantCondition2} in an adapted
+spin dyad, considering separately the cases (i):
+$\bar{\kappa}_{AB}\bar{\kappa}^{AB}\equiv 0$, $\bar{\kappa}_{AB}\neq
+0$ and (ii): $\bar{\kappa}_{AB}\bar{\kappa}^{AB}\neq 0$ on
+$\mathcal{U}$, from Lemma \ref{prop_remove_redundant_conditions},
+corresponding to Petrov types N and D, respectively.  Observe that for
+Type O, for which $\phi_{ABCD}=0$, the proof of Lemma
+\ref{prop_remove_redundant_conditions} trivialises, so only the types
+$N$ and $D$ are needed.  \\
 
 Recalling that $\mathcal{D}_{AB}:= \tau_{(A}{}^{A'}\nabla_{B)A'}$, a straightforward computation yields 
 \begin{align*}
@@ -2367,11 +2452,9 @@ Recalling that $\mathcal{D}_{AB}:= \tau_{(A}{}^{A'}\nabla_{B)A'}$, a straightfor
 & o^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C = \tfrac{1}{2}(\pi - \nu),\\
 & \iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C = \lambda	,
 \end{align*}
-%\[o^Ao^Bo^C\mathcal{D}_{AB}o_C = -\sigma, \qquad o^A\iota^B o^C\mathcal{D}_{AB}o_C = \tfrac{1}{2}(\kappa - \tau), \qquad \iota^A\iota^B o^C\mathcal{D}_{AB}o_C = \rho,\]
-%\[o^A o^B\iota^C\mathcal{D}_{AB}\iota_C = \mu, \qquad o^A\iota^B\iota^C\mathcal{D}_{AB} = \tfrac{1}{2}(\pi - \nu), \qquad \iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C = \lambda	\]
-%\[o^Ao^B\iota^C\mathcal{D}_{AB}o_C=o^Ao^Bo^C\mathcal{D}_{AB}\iota_C=-\beta, \qquad o^A\iota^B\iota^C\mathcal{D}_{AB}o_C = o^A\iota^B o^C\mathcal{D}_{AB}\iota_C = \tfrac{1}{2}(\epsilon - \gamma), \]
-%\[\iota^A\iota^B\iota^C\mathcal{D}_{AB}o_C = \iota^A\iota^B o^C\mathcal{D}_{AB}\iota_C = \alpha, \]
-where we are following the conventions of \cite{PenRin84} in the definition of the Newmann--Penrose (NP) scalars $\alpha, \beta, \epsilon, \gamma, \kappa, \mu, \lambda, \rho, \tau, \sigma, \nu, \pi.$
+where we are following the conventions of \cite{PenRin84} in the
+definition of the Newmann--Penrose (NP) scalars $\alpha, \beta,
+\epsilon, \gamma, \kappa, \mu, \lambda, \rho, \tau, \sigma, \nu, \pi.$
 \\
 
 The following identities will also be useful
@@ -2385,46 +2468,87 @@ and follow easily from $\epsilon_{AB}=o_A\iota_B - o_B\iota_A$.
 
 \subsubsection{Case I: $\bar{\kappa}_{AB}\bar{\kappa}^{AB}\equiv 0$, $\bar{\kappa}_{AB}\neq 0$ on $\mathcal{U}$} \label{TypeNCase}
 
-The assumption on $\bar{\kappa}_{AB}$ imply that there exists a spin dyad $\lbrace \bm\omicron, \bm\iota\rbrace$ on $\mathcal{U}$ such that $\bar{\kappa}_{AB}=\omicron_A\omicron_B$. The Buchdahl constraint then implies that 
+The assumption on $\bar{\kappa}_{AB}$ imply that there exists a spin
+dyad $\lbrace \bm\omicron, \bm\iota\rbrace$ on $\mathcal{U}$ such that
+$\bar{\kappa}_{AB}=\omicron_A\omicron_B$. The Buchdahl constraint then
+implies that
 \begin{equation}
 \phi_{ABCD}=\phi \omicron_A\omicron_B\omicron_C\omicron_D
 \end{equation}
-for some scalar field $\phi:\mathcal{U}\rightarrow\mathbb{C}$ and hence that the curvature is of Petrov type N on $\mathcal{U}$. Note that $\phi_{ABCD}\omicron^D=0$. The equation $\mathcal{D}_{(AB}\bar{\kappa}_{CD)}=0$ implies 
+for some scalar field $\phi:\mathcal{U}\rightarrow\mathbb{C}$ and
+hence that the curvature is of Petrov type N on $\mathcal{U}$. Note
+that $\phi_{ABCD}\omicron^D=0$. The equation
+$\mathcal{D}_{(AB}\bar{\kappa}_{CD)}=0$ implies
 \begin{equation*}
- \omicron^A \omicron^B \omicron^C \mathcal{D}_{AB}\omicron_C= \omicron^A \omicron^B \iota^C\mathcal{D}_{(AB}\omicron_{C)}= \omicron^A \iota^B \iota^C\mathcal{D}_{(AB}\omicron_{C)}= \iota^A \iota^B \iota^C\mathcal{D}_{AB}\omicron_{C}=0,
+ \omicron^A \omicron^B \omicron^C \mathcal{D}_{AB}\omicron_C=
+ \omicron^A \omicron^B \iota^C\mathcal{D}_{(AB}\omicron_{C)}=
+ \omicron^A \iota^B \iota^C\mathcal{D}_{(AB}\omicron_{C)}= \iota^A
+ \iota^B \iota^C\mathcal{D}_{AB}\omicron_{C}=0,
 \end{equation*}
-implying that $\mathcal{D}_{(AB}\omicron_{C)}=0$ ---that is to say that $\omicron_A$ is a twistor candidate. In terms of the NP scalars, the above read as follows 
+implying that $\mathcal{D}_{(AB}\omicron_{C)}=0$ ---that is to say
+that $\omicron_A$ is a twistor candidate. In terms of the NP scalars,
+the above read as follows
 \begin{equation}\label{NPRelationsTypeN} 
-\sigma=- \beta + \kappa -  \tau=\epsilon -  \gamma + \rho=\alpha=0.
+\sigma=- \beta + \kappa - \tau=\epsilon - \gamma + \rho=\alpha=0.
 \end{equation}	
 Using these relations, we obtain
 \begin{equation}\label{AuxSpinorsTypeN}
- \bar{\xi} = -3\beta,\qquad \bar{\xi}_{AB} = 2\rho o_Ao_B - 2\beta o_{(A}\iota_{B)}.
+ \bar{\xi} = -3\beta,\qquad \bar{\xi}_{AB} = 2\rho o_Ao_B - 2\beta
+ o_{(A}\iota_{B)}.
 \end{equation}
-The non-trivial component of the constraint $\mathcal{D}^{AB}\phi_{ABCD}=0$ reduces to 
+The non-trivial component of the constraint
+$\mathcal{D}^{AB}\phi_{ABCD}=0$ reduces to
 \begin{equation}
- \mathcal{D}_{\bm0\bm0}\phi = \tfrac{5}{3}\phi (2\beta  +  \kappa -  \tau)=5\phi\beta.\label{TypeNweylConstraint}
+ \mathcal{D}_{\bm0\bm0}\phi = \tfrac{5}{3}\phi (2\beta + \kappa -
+ \tau)=5\phi\beta.\label{TypeNweylConstraint}
 \end{equation}
-Then, substituting \eqref{AuxSpinorsTypeN}, condition \eqref{RedundantCondition1} reduces to
+Then, substituting \eqref{AuxSpinorsTypeN}, condition
+\eqref{RedundantCondition1} reduces to
 \begin{align*}
-\omicron^A \iota^B \iota^C \iota^D \left(2\bar{\kappa}_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\bar{\xi}_{D)F}\right) &=\tfrac{1}{2}\phi\sigma =0,\\
-\iota^A\iota^B \iota^C \iota^D \left(2\bar{\kappa}_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\bar{\xi}_{D)F}\right) &=\phi(\beta -  \kappa  + \tau) = 0,
+\omicron^A \iota^B \iota^C \iota^D
+\left(2\bar{\kappa}_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} +
+\phi_{(ABC}{}^{F}\bar{\xi}_{D)F}\right) &=\tfrac{1}{2}\phi\sigma
+=0,\\ \iota^A\iota^B \iota^C \iota^D
+\left(2\bar{\kappa}_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} +
+\phi_{(ABC}{}^{F}\bar{\xi}_{D)F}\right) &=\phi(\beta - \kappa + \tau)
+= 0,
 \end{align*}
 with the second equality following from \eqref{NPRelationsTypeN} and
-with all other components vanishing trivially. These are essentially the same computations as in \cite{BaeVal10c}. On the other hand, substituting \eqref{AuxSpinorsTypeN}, condition \eqref{RedundantCondition2} reduces to
+with all other components vanishing trivially. These are essentially
+the same computations as in \cite{BaeVal10c}. On the other hand,
+substituting \eqref{AuxSpinorsTypeN}, condition
+\eqref{RedundantCondition2} reduces to
 \begin{align*}
-\omicron^A\omicron^B\iota^C\iota^D\left(\bar{\xi}^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\bar{\xi}\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)&=\tfrac{1}{3}\phi \xi \sigma=0,\\
-\omicron^A\iota^B\iota^C\iota^D\left(\bar{\xi}^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\bar{\xi}\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)&= \tfrac{1}{2} \beta \mathcal{D}_{\bm0\bm0}\phi-2 \beta^2 \phi -  \tfrac{1}{2} \beta \kappa \phi - 2 \rho \sigma \phi + \tfrac{1}{2} \beta \tau \phi =0,\\
-\iota^A\iota^B\iota^C\iota^D\left(\bar{\xi}^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3}\bar{\xi}\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right) &= 2 \rho \mathcal{D}_{\bm0\bm0}\phi-10 \beta \rho \phi =0,
+\omicron^A\omicron^B\iota^C\iota^D\left(\bar{\xi}^{FG}\mathcal{D}_{FG}\phi_{ABCD}
++
+\tfrac{2}{3}\bar{\xi}\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)&=\tfrac{1}{3}\phi
+\xi
+\sigma=0,\\ \omicron^A\iota^B\iota^C\iota^D\left(\bar{\xi}^{FG}\mathcal{D}_{FG}\phi_{ABCD}
++ \tfrac{2}{3}\bar{\xi}\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right)&=
+\tfrac{1}{2} \beta \mathcal{D}_{\bm0\bm0}\phi-2 \beta^2 \phi -
+\tfrac{1}{2} \beta \kappa \phi - 2 \rho \sigma \phi + \tfrac{1}{2}
+\beta \tau \phi
+=0,\\ \iota^A\iota^B\iota^C\iota^D\left(\bar{\xi}^{FG}\mathcal{D}_{FG}\phi_{ABCD}
++ \tfrac{2}{3}\bar{\xi}\mathcal{D}_{(A}{}^F\phi_{BCD)F}\right) &= 2
+\rho \mathcal{D}_{\bm0\bm0}\phi-10 \beta \rho \phi =0,
 \end{align*}
-where we are again using \eqref{NPRelationsTypeN} and \eqref{TypeNweylConstraint}. All other components vanish trivially. Hence, in this case, both conditions \eqref{RedundantCondition1} and \eqref{RedundantCondition2} trivialise. 
+where we are again using \eqref{NPRelationsTypeN} and
+\eqref{TypeNweylConstraint}. All other components vanish
+trivially. Hence, in this case, both conditions
+\eqref{RedundantCondition1} and \eqref{RedundantCondition2}
+trivialise.
 
 
 \subsubsection{Case II: $\bar{\kappa}_{AB}\bar{\kappa}^{AB}\neq 0$ on $\mathcal{U}$}\label{TypeDCase}
 
-There exists a spin dyad $\lbrace \bm\omicron, \bm\iota\rbrace$ such that $\bar{\kappa}_{AB} = e^{\varkappa} \omicron_{(A}\iota_{B)}$ for some $\varkappa:\mathcal{U}\rightarrow\mathbb{C}$. The Buchdahl constraint then implies that the rescaled Weyl spinor takes the form
+There exists a spin dyad $\lbrace \bm\omicron, \bm\iota\rbrace$ such
+that $\bar{\kappa}_{AB} = e^{\varkappa} \omicron_{(A}\iota_{B)}$ for
+some $\varkappa:\mathcal{U}\rightarrow\mathbb{C}$. The Buchdahl
+constraint then implies that the rescaled Weyl spinor takes the form
 \[ \phi_{ABCD}= \phi \omicron_{(A}\omicron_B\iota_C\iota_{D)}\]
-for some scalar field $\phi:\mathcal{U}\rightarrow\mathbb{C}$ and hence that the curvature is of Petrov type D on $\mathcal{U}$. The equation $\mathcal{D}_{(AB}\bar{\kappa}_{CD)}=0$ is equivalent to 
+for some scalar field $\phi:\mathcal{U}\rightarrow\mathbb{C}$ and
+hence that the curvature is of Petrov type D on $\mathcal{U}$. The
+equation $\mathcal{D}_{(AB}\bar{\kappa}_{CD)}=0$ is equivalent to
 \begin{subequations}
 \begin{eqnarray}
 && \sigma=0,\label{SpatialSenTypeD0000}\\
@@ -2457,8 +2581,11 @@ Then, substituting \eqref{AuxSpinor1TypeD} and \eqref{AuxSpinor2TypeD}, conditio
  \omicron^A \iota^B \iota^C \iota^D \left(2\bar{\kappa}_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\bar{\xi}_{D)F}\right) & =\tfrac{1}{24} e^{\varkappa} \mathcal{D}_{\bm1\bm1}\phi + \tfrac{1}{8} e^{\varkappa} \phi(\pi-\nu)  = 0,\\
  \iota^A \iota^B \iota^C \iota^D \left(2\bar{\kappa}_{(A}{}^{F}\mathcal{D}_{B}{}^{G}\phi_{CD)FG} + \phi_{(ABC}{}^{F}\bar{\xi}_{D)F}\right) & = - \tfrac{1}{2} e^{\kappa} \phi \lambda = 0,
 \end{align*}
-the equality with zero following from \eqref{WeylConstraintTypeD}. Again, these are essentially the same computations as in \cite{BaeVal10c}.
-On the other hand, substituting \eqref{AuxSpinor1TypeD} and \eqref{AuxSpinor2TypeD} into \eqref{RedundantCondition2}, 
+the equality with zero following from
+\eqref{WeylConstraintTypeD}. Again, these are essentially the same
+computations as in \cite{BaeVal10c}.  On the other hand, substituting
+\eqref{AuxSpinor1TypeD} and \eqref{AuxSpinor2TypeD} into
+\eqref{RedundantCondition2},
 \begin{align*}
 & o^Ao^Bo^Co^D(\bar{\xi}^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3} \bar{\xi} \mathcal{D}_{(A}{}^{F}\phi_{BCD)F})  =\tfrac{1}{3} \phi \sigma  \bar{\xi} =0,\\
 & o^Ao^Bo^C\iota^D(\bar{\xi}^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3} \bar{\xi} \mathcal{D}_{(A}{}^{F}\phi_{BCD)F}) \\
@@ -2469,7 +2596,10 @@ On the other hand, substituting \eqref{AuxSpinor1TypeD} and \eqref{AuxSpinor2Typ
 & \qquad\qquad\qquad\qquad\qquad =	- \tfrac{1}{8} e^{\varkappa}  (\rho+\mu) \mathcal{D}_{\bm1\bm1}\phi  +  \tfrac{3}{8} e^{\varkappa} \phi(\rho+\mu) (\nu-\pi) + \tfrac{1}{2} e^{\varkappa}\phi (\kappa-\tau) \lambda    = 0,\\
 & \iota^A\iota^B\iota^C\iota^D(\bar{\xi}^{FG}\mathcal{D}_{FG}\phi_{ABCD} + \tfrac{2}{3} \bar{\xi} \mathcal{D}_{(A}{}^{F}\phi_{BCD)F})  =	- \tfrac{1}{3}\phi \lambda \bar{\xi} = 0.
 \end{align*}
-Hence, again, \eqref{RedundantCondition1} and \eqref{RedundantCondition2} trivialise. Combining the result of this section with the previous, Lemma \ref{prop_remove_redundant_conditions} follows immediately.
+Hence, again, \eqref{RedundantCondition1} and
+\eqref{RedundantCondition2} trivialise. Combining the result of this
+section with the previous, Lemma
+\ref{prop_remove_redundant_conditions} follows immediately.
 
 
 %%%%%%%%%%%%%%%%% 
