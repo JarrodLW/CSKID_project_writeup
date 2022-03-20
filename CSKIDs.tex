@@ -5,7 +5,7 @@
 %%%%%%%
 %%%%%%% Version from branch: Edgar_writeup
 %%%%%%% Started on: 11.9.2016
-%%%%%%% Current version: 18 Mar 2022 
+%%%%%%% Current version: 20 Mar 2022 
 %%%%%%%
 
 \documentclass[10pt,a4paper]{article}
@@ -239,10 +239,10 @@ $\!\!\!\!\!\!\,\bullet$\themnotecount: #1} }
   rise to a spacetime development possessing a Killing spinor.  The
   fact that the conformal Einstein field equations are used in our
   derivation allows for the possibility that the initial hypersurface
-  $\mathcal{S}$ intersect non-trivially with (or even be a subset of)
-  the conformal boundary $\mathscr{I}$.  For conciseness, these
+  $\mathcal{S}$ intersects non-trivially with (or even be a subset of)
+  null infinity $\mathscr{I}$.  For conciseness, these
   conditions are derived assuming that the initial hypersurface is
-  spacelike. In particular, these equations encode necessary and
+  spacelike. Hence, in particular, these equations encode necessary and
   sufficient conditions for the existence of a Killing spinor in the
   development of asymptotic initial data on spacelike components of
   $\mathscr{I}$.
@@ -273,17 +273,19 @@ black hole uniqueness problem, characterisations and classifications
 of solutions to the Einstein field equations usually exploit the
 symmetries of the spacetime in one way or another, e.g. in the
 characterisations of the Kerr spacetime via the \emph{Mars-Simon
-tensor} ---see \cite{Mar99,Mar00,Sim84}.  On the other hand, from the
-point of view of the Cauchy problem, symmetry assumptions should be
-imposed only at the level of initial data. In this regard, symmetry
-assumptions can be phrased in terms of the \emph{Killing vector
+  tensor} ---see \cite{Mar99,Mar00,Sim84, MarPaeSenSim16, MarPeo22}.
+On the other hand, from the point of view of the Cauchy problem,
+symmetry assumptions should be imposed only at the level of initial
+data. In this regard, symmetry assumptions can be phrased in terms of
+the \emph{Killing vector
 initial data}.  The Killing vector initial data equations constitute a
 set of conditions that an initial data set
 $(\tilde{\mathcal{S}},\tilde{\bmh},\tilde{\bmK})$ for the Einstein
 field equations ---where $\tilde{\mathcal{S}}$ is a 3-dimensional
-manifold with metric $\tilde{\bmh}$ and $\tilde{\bmK}$ denotes the
-second fundamental form--- has to satisfy to ensure that the
-development will contain a Killing vector ---see \cite{BeiChr97b}.
+manifold with first and second fundamental forms $\tilde{\bmh}$ and
+$\tilde{\bmK}$--- has to satisfy to ensure that the
+development $(\tilde{\mathcal{M}},\tilde{\bmg})$
+will contain a Killing vector ---see \cite{BeiChr97b}.
 Nevertheless, despite the fact that the existence of Killing vector
 plays a central role in the discussion of the symmetries, the
 existence of Killing vectors is sometimes not enough to encode all the
@@ -334,7 +336,7 @@ hypersurface is determined by the sign of the cosmological constant,
 being null, spacelike or timelike if $\lambda$ is zero, positive or
 negative respectively.  Although null infinity, and more generally the
 conformal boundary, is central for the resolution of several open
-questions in General Relativity, unfortunatelly, the Einstein field
+questions in General Relativity, unfortunately, the Einstein field
 equations are not conformally invariant. Moreover, a direct
 computation using the conformal transformation formula for the Ricci
 tensor shows that the vacuum Einstein field equations
@@ -359,17 +361,18 @@ allows, in particular, to consider the $\Xi=0$ hypersurface as a
 legitimate hypersurface to prescribe data which can be evolved using
 regular ---without $\Xi^{-1}$-terms--- evolution equations.  This set
 up is particularly attractive to study spacetimes with $\lambda>0$ in
-which, given the appropriate conditions, the conformal boundary is a
-spacelike hypersurface and hence one can pose \emph{an asymptotic
-initial value problem}: an initial value problem where the initial
-hypersurface is $\mathscr{I}$ ---see \cite{GasVal17,MarPaeSenSim16,
-  LueVal09}.
+which, given the appropriate conditions (enough decay of matter fields
+at infinity), null infinity is a spacelike hypersurface and
+hence one can pose \emph{an asymptotic initial value problem}: an
+initial value problem where the initial hypersurface is $\mathscr{I}$
+---see \cite{GasVal17,MarPaeSenSim16, LueVal09}.
 
 \medskip
 
 The conformal counterpart of the Killing vector initial data equations
-\cite{BeiChr97b} was derived in \cite{Pae14a}.  In the latter
-reference, intrinsic conditions on an initial hypersurface
+\cite{BeiChr97b} was derived in \cite{Pae14a} ---see also \cite{MarPeo22}
+for a generalisation to higher spacetime dimensions.
+In \cite{Pae14a} intrinsic conditions on an initial hypersurface
 $\mathcal{S}\subset \mathcal{M}$ of the unphysical spacetime are found
 such that the development of the data gives rise to a conformal
 Killing vector of the unphysical spacetime $(\mathcal{M},\bmg)$ which,
@@ -470,11 +473,12 @@ can be found in Theorem \ref{Theorem_KS}--- is summarised informally
 in the following:
 
 \begin{main}\label{TheoremSummary}
-If the \emph{conformal Killing spinor initial data equations}
+If the conformal Killing spinor initial data equations
 \eqref{CSKIDs} admit a solution on an open set $\mathcal{U}\subset
 \mathcal{S}$, where $\mathcal{S}$ is a spacelike hypersurface on which
 initial data for the conformal Einstein field equations has been
-prescribed, then the domain of dependence of $\mathcal{U}$ possesses a
+prescribed, then a neighborhood $\mathcal{W}$ of $\mathcal{U}$ contained in the
+domain of dependence $\mathcal{W}\subseteq\mathcal{D}^+(\mathcal{U})$, possesses a
 Killing spinor.
 \end{main}
 
@@ -503,9 +507,9 @@ facilitated through the {\tt xAct} suite in {\tt Mathematica}.
   identities to be used and the space spinor formalism; subsection
   \ref{Sec:KillingSpinors} gives an overview of Killing spinors and
   their conformal properties; subsection \ref{Sec:CFEs} the conformal
-  Einstein field equations are presented for later use.  In Section
+  Einstein field equations are presented for later use.  In section
   \ref{conformalTwistorKID} the conformal (valence-1 Killing spinor)
-  twistor initial data equations are obtained. In Section
+  twistor initial data equations are obtained. In section
   \ref{conformalKSKID} the conformal (valence-2) Killing initial data
   equations are derived and discussed.
 
@@ -515,7 +519,7 @@ facilitated through the {\tt xAct} suite in {\tt Mathematica}.
 Throughout this article, $(\mathcal{M}, \bmg)$ will denote a
 4-dimensional manifold equipped with a Lorentzian metric $\bmg$ of
 signature $(+, -, -, -)$, with associated Levi-Civita connection
-$\tilde{\nabla}$.  Moreover, $(\mathcal{M}, \bmg)$ is assumed to be
+$\nabla$.  Moreover, $(\mathcal{M}, \bmg)$ is assumed to be
 globally-hyperbolic. The Upper case Latin indices ~$_{ABC\cdots
   A'B'C'}$~ will be used as abstract indices of the \emph{spacetime
 spinor} algebra, and the bold numerals ~$_{\bm0\bm1\bm2\cdots}$~
@@ -772,8 +776,8 @@ field equations, the CFEs
 encode a system of differential conditions for the curvature and
 concomitants of the conformal factor associated with
 $(\mathcal{M},\bmg)$ where $\bmg=\Xi^2\tilde{\bmg}$. The key property
-of these equations is that they are regular even at the conformal
-boundary $\mathscr{I}$, where $\Xi=0$.  The CFEs were derived originally
+of these equations is that they are regular even at null infinity
+$\mathscr{I}$, where $\Xi=0$.  The CFEs were derived originally
 in \cite{Fri81a} ---see also \cite{CFEbook} for a
 comprehensive discussion.
 
@@ -871,7 +875,7 @@ the \emph{rescaled Weyl spinor}, $\phi_{ABCD}$, defined as
  \label{G-C-M-Remark}
    \emph{In the initial value problem for the CFEs, $\phi_{ABCD}$ is
    determined by the initial data on a spacelike hupersurface
-   $\mathcal{S}$. First decompose
+   $\mathcal{S}$. First decompose the rescaled Weyl spinor as
    \[ \phi_{ABCD}=E_{ABCD}+iB_{ABCD}\]
 where $\bmE$ and $\bmB$ are the \textit{electric} and
 \textit{magnetic} parts
@@ -964,8 +968,8 @@ respect to $\bmg$. Then the Cauchy problem
 \end{align*} 
 where $\underline{u}_{0}$ and $\underline{u}_{1}$ are smooth on
 $\mathcal{U}$ and $\nabla_{\bm\tau}:= \tau^\mu\nabla_\mu$, has a
-unique solution $\underline{u}$ in $\mathcal{W}$,
-a neighborhood of $\mathcal{U}$, with $\mathcal{W} \subseteq\mathcal{D}^+(\mathcal{U})$.
+unique solution $\underline{u}$ in an open neighbourhood $\mathcal{W}$ of
+$\mathcal{U}$, with $\mathcal{W} \subseteq\mathcal{D}^+(\mathcal{U})$.
 \end{theorem}
 We refer the reader to Proposition 3.2 of \cite{Tay96c} for a proof.
 
@@ -995,7 +999,7 @@ follows, rather, as a \emph{product} of our analysis ---see Corollary
   derived.  Although the main result of this article is on the
   conformal  Killing spinor initial data equations, the twistor case
     illustrates the main features of the calculation for the Killing
-  spinor case of Section \ref{conformalKSKID} in a simpler setting.
+  spinor case of section \ref{conformalKSKID} in a simpler setting.
 \subsection{Twistor zero-quantities}
 \label{Sec:TwistorZeroQuantities}
 
@@ -1102,7 +1106,7 @@ $(\kappa_A, \nabla_{\bm\tau}
 system of homogeneous wave equations for the zero-quantities $\bmH$
 and $\bmB$ to show that, if trivial initial data for such
 equations is given, then, using Theorem \ref{TheoremHomogeneousWave},
-$\bmH=0$ and $\bmB=0$ in a neighbourhood $\mathcal{W}$ of $\mathcal{S}$, with
+$\bmH=0$ and $\bmB=0$ in an open neighbourhood $\mathcal{W}$ of $\mathcal{S}$, with
 $\mathcal{W}\subseteq \mathcal{D}^{+}(\mathcal{S})$.
 
 \subsection{Wave equations for the zero-quantities}
@@ -1186,6 +1190,7 @@ prescription to fix the intial data $(\kappa_A, \nabla_{\bm\tau}
 \kappa_A)|_\mathcal{S}$ for twistor candidate wave equation
 \eqref{Wave_eq_twistor_candidate} that ensures that the twistor
 candidate $\kappa_A$ will be a twistor on
+an open neighbourhood $\mathcal{W}$ of $\mathcal{U}$, with
 $\mathcal{W}\subseteq \mathcal{D}^{+}(\mathcal{U})$.
 \\
 
@@ -1194,9 +1199,10 @@ This discussion is summarised in the following:
   Given initial data for the conformal Einstein field equations on
   $\mathcal{U}\subset\mathcal{S}$ where $\mathcal{S}$ is a spacelike
   hypersurface $\mathcal{S}$ with normal vector $\tau^{AA'}$, then a
-  twistor candidate on
-  $\mathcal{W}\subseteq\mathcal{D}^{+}(\mathcal{U})$ is a true twistor
-  (valence-1 Killing spinor) on $\mathcal{W}$ if and only if
+  twistor candidate on $\mathcal{D}^{+}(\mathcal{U})$, is a true
+  twistor (valence-1 Killing spinor) on an open neighbourhood
+  $\mathcal{W}$ of $\mathcal{U}$, with
+  $\mathcal{W}\subseteq\mathcal{D}^{+}(\mathcal{U})$, if and only if
 \begin{subequations}
 \begin{eqnarray}
   &&
@@ -1216,10 +1222,9 @@ $H_{A'AB},~B_{ABC}$ satisfy the homogeneous wave equations
 result for homogeneous wave equations, given in Theorem
 \ref{TheoremHomogeneousWave}, ensures that
 \[ H_{A'AB}=0,\qquad B_{ABC}=0,\]
-in $\mathcal{W}\subseteq\mathcal{D}^{+}(\mathcal{U})$.
-In other words, $\kappa_{A}$ solves
-the twistor equation on
-$\mathcal{W}$.
+in an open neighbourhood $\mathcal{W}$ of $\mathcal{U}$, with
+$\mathcal{W}\subseteq\mathcal{D}^{+}(\mathcal{U})$.  In other words, $\kappa_{A}$
+solves the twistor equation in $\mathcal{W}$.
 \end{proof}
 
 \begin{remark}
@@ -1343,25 +1348,26 @@ $\mathcal{U}$.}
 \end{definition}
 We will show that a conformal twistor initial dataset,
 $\bar{\kappa}_A$, indeed comprises initial data for a spacetime
-twistor, in that the resulting solution of \eqref{TwistorIVP}
-necessarily satisfies the twistor equation on
-$\mathcal{D}^+(\mathcal{U})$. First we establish the following:
+twistor, in that the resulting solution of the initial value problem \eqref{TwistorIVP}
+necessarily satisfies the twistor equation on an open neighbourhood $\mathcal{W}$
+of $\mathcal{U}$, with $\mathcal{W}\subseteq\mathcal{D}^+(\mathcal{U})$.
+First we establish the following:
 \begin{lemma}\label{lemma:twistor_removing_redundancy}
   Given initial data for the conformal Einstein field equations on
   $\mathcal{U}\subset\mathcal{S}$, where $\mathcal{S}$ is a spacelike
   hypersurface with normal $\bm\tau$, if $\bar{\kappa}_A$ is a
-  conformal twistor initial data set on $\mathcal{U}$,
-
-then the solution $\kappa_A$ of \eqref{TwistorIVP} satisfies
+  conformal twistor initial data set on $\mathcal{U}$, then the
+  solution $\kappa_A$ of the initial value problem \eqref{TwistorIVP}
+  satisfies
 \[H(\bm\kappa)_{A'AB}=B(\bm\kappa)_{ABC}=\nabla_{\bm\tau}H(\bm\kappa)_{A'AB}=\nabla_{\bm\tau}B(\bm\kappa)_{ABC}=0 \]
 on $\mathcal{U}$.
 \end{lemma}
 \begin{proof}
  The assumption that $\bar{\kappa}_A$ satisfies
- $\mathcal{H}(\bar{\bm\kappa})_{ABC}=0$ implies that the solution of
- \eqref{TwistorIVP} also satisfies
+ $\mathcal{H}(\bar{\bm\kappa})_{ABC}=0$ implies that the solution
+ of \eqref{TwistorIVP} also satisfies
 \[\mathcal{H}_{ABC}|_{\mathcal{U}}=0, \qquad \mathcal{H}_A|_{\mathcal{U}}=0,\]
-the latter following from the second initial condition of
+the latter following from the second initial condition of the initial value problem
 \eqref{TwistorIVP}. Hence, as remarked above, we have
 $H_{A'ABC}|_{\mathcal{U}}=0$. Clearly $B_{ABC}|_{\mathcal{U}}=0$ also,
 since $\kappa_A|_{\mathcal{U}}=\bar{\kappa}_A$. Now, substituting the
@@ -1455,10 +1461,9 @@ equations, as encoded in the CFE zero-quantities
 on a spacelike hypersurface $\mathcal{S}$ and let
 $\mathcal{U}\subset\mathcal{S}$ be an open set.  The development of
 the initial data set will have a twistor (valence-1 Killing spinor) in
-a neighbourhood $\mathcal{W}$ of $\mathcal{U}$
-with $\mathcal{W}\subseteq \mathcal{D}^{+}(\mathcal{U})$,
-if and only if there exists
-a conformal twistor initial data set $\bar{\kappa}_A$ on
+an open neighbourhood $\mathcal{W}$ of $\mathcal{U}$, with
+$\mathcal{W}\subseteq \mathcal{D}^{+}(\mathcal{U})$, if and only if
+there exists a conformal twistor initial data set $\bar{\kappa}_A$ on
 $\mathcal{U}$.  Given the existence of such a $\bar{\kappa}_A$, the
 twistor $\kappa_A$ is obtained as the solution of the initial value
 problem \eqref{TwistorIVP}.
@@ -1468,10 +1473,11 @@ problem \eqref{TwistorIVP}.
   $\bar{\kappa}_A$ is a conformal twistor initial data set, then
   $\kappa_A$ satisfies
   \eqref{eq:VanishingOfH_twistor}--\eqref{eq:VanishingOfNormalDerivB_twistor},
-  then, by virtue of Proposition \ref{Prop:Propagation_twistor}, one has that
-  $H_{A'ABC}=0$ on $\mathcal{W}\subseteq
-  \mathcal{D}^{+}(\mathcal{U})$ and hence that
-  $\kappa_A$ is a twistor on $\mathcal{W}$.
+  then, by virtue of Proposition \ref{Prop:Propagation_twistor}, one
+  has that $H_{A'ABC}=0$ in an open neighbourhood $\mathcal{W}$ of
+  $\mathcal{U}$, with $\mathcal{W}\subseteq
+  \mathcal{D}^{+}(\mathcal{U})$, and hence that $\kappa_A$ is a
+  twistor on $\mathcal{W}$.
 \end{proof}
 
   
@@ -1841,9 +1847,10 @@ property for solutions of wave equations of Theorem
   Given initial data for the conformal Einstein field equations on
   $\mathcal{U}\subset\mathcal{S}$ where $\mathcal{S}$ is a spacelike
   hypersurface $\mathcal{S}$ with normal vector $\tau^{AA'}$, then a
-  (valence-2) Killing spinor candidate on
-  $\mathcal{D}^{+}(\mathcal{U})$ is a true Killing spinor on
-  $\mathcal{D}^{+}(\mathcal{U})$ if and only if
+  (valence-2) Killing spinor candidate on $\mathcal{D}^{+}(\mathcal{U})$,
+  is a true Killing spinor on an open neighbourhood $\mathcal{W}$
+  of $\mathcal{U}$, with $\mathcal{W} \subseteq \mathcal{D}^{+}(\mathcal{U})$,
+  if and only if
 \begin{subequations}
 \begin{eqnarray}
   &&
@@ -1867,8 +1874,9 @@ $F_{A'ABC}$. The uniqueness result for homogeneous wave equations,
 given in Theorem \ref{TheoremHomogeneousWave},
 ensures then that
 \[ H_{A'ABC}=0,\qquad B_{ABCD}=0, \qquad F_{A'ABC}=0,\]
-on $\mathcal{D}^{+}(\mathcal{U})$. In particular,
-$\kappa_{AB}$ solves the Killing spinor equation on $\mathcal{D}^{+}(\mathcal{U})$.
+on an open neighbourhood $\mathcal{W}$ of $\mathcal{U}$, with $\mathcal{W}\subseteq
+\mathcal{D}^{+}(\mathcal{U})$. In particular,
+$\kappa_{AB}$ solves the Killing spinor equation on $\mathcal{W}.
 \end{proof}
 
 To summarise: we have found necessary and sufficient conditions,
@@ -2102,8 +2110,9 @@ $\mathcal{U}\subset\mathcal{S}$ be an open set.  If there exists a
 CKSID set $\bar{\kappa}_{AB}$ on $\mathcal{U}$ satisfying either of
 conditions $(i)$ or $(ii)$ from Lemma
 \ref{prop_remove_redundant_conditions}, then the development of the
-initial data set admits a Killing spinor in
-$\mathcal{W}\subseteq\mathcal{D}^+(\mathcal{U})$, given by the solution $\kappa_{AB}$ of
+initial data set admits a Killing spinor on an open neighbourhood 
+$\mathcal{W}$ of $\mathcal{U}$, with $\mathcal{W}\subseteq\mathcal{D}^+(\mathcal{U})$,
+given by the solution $\kappa_{AB}$ of
 the initial value problem \eqref{KillingSpinorIVP}. If condition (i) holds, then in fact
 there exists a twistor on $\mathcal{W}$.
 \end{theorem}
@@ -2116,14 +2125,16 @@ spinor candidate $\kappa_{AB}$ constructed as a solution of
 \eqref{KillingSpinorIVP} satisfies conditions
 \eqref{Eq:KSInitialCondition1}--\eqref{Eq:KSInitialCondition2}. Proposition
 \ref{Prop:Propagation_KS} then implies that $H_{A'ABC}=0$ on
-$\mathcal{D}^+(\mathcal{U})$ and hence that $\kappa_{AB}$ is indeed a
-Killing spinor. In particular, if condition (i) holds then
+an open neighbourhood $\mathcal{W}$ of $\mathcal{U}$, with
+$\mathcal{W} \subseteq \mathcal{D}^+(\mathcal{U})$,
+and hence that $\kappa_{AB}$ is indeed a
+Killing spinor on $\mathcal{W}$. In particular, if condition (i) holds then
 $\bar{\kappa}_{AB}=\bar{\kappa}_A\bar{\kappa}_B$ for some
 $\bar{\kappa}_A\neq 0$ on $\mathcal{U}$. It is straightforward to
 verify that $\bar{\kappa}_A$ solves the conformal twistor initial data
 conditions, equations \eqref{twistor_CSKIDs}; see the discussion of
 Appendix \ref{TypeNCase}. Theorem \ref{Theorem_twistor} then implies
-the existence of a twistor on $\mathcal{D}^+(\mathcal{U})$.
+the existence of a twistor on $\mathcal{W}$.
 \end{proof}
 
 \begin{remark}{\em 
@@ -2156,8 +2167,8 @@ hold on $\mathcal{U}$, where $\lbrace \bmo, \bm\iota\rbrace$ is an
 adapted spin dyad in terms of which $\phi_{ABCD}=\phi
 o_{(A}o_B\iota_C\iota_{D)}$ for some field $\phi$ on $\mathcal{U}$.  Then, the rescaled
 Weyl spinor $\phi_{ABCD}$ of the corresponding development $(\mathcal{M},\bmg)$ 
-is of Petrov type D on an open subset of the domain of dependence
-$\mathcal{W}\subseteq\mathcal{D}^+(\mathcal{U})$, as evidenced by the
+is of Petrov type D on an an open neighbourhood $\mathcal{W}$ of
+$\mathcal{U}$, with $\mathcal{W}\subseteq\mathcal{D}^+(\mathcal{U})$, as evidenced by the
 existence of a non-trivial (valence-2) Killing spinor satisfying
 $\kappa_{AB}\kappa^{AB}\neq 0$.
 \end{corollary}
@@ -2255,7 +2266,7 @@ the unphysical spacetime $(\mathcal{M},\bmg)$, as given by a solution of Friedri
 
 In the case where the conformal rescaling is
 trivial, $\Xi \equiv 1$, we recover the results of
-\cite{BaeVal10c}. However, even for this case, the set of variables to
+\cite{GarVal08c}. However, even for this case, the set of variables to
 be propagated in the physical and the unphysical spacetimes
 are different.  This difference can be traced back to the observation
 that for a general Lorentzian manifold the vector
@@ -2273,7 +2284,7 @@ $(\tilde{\mathcal{M}},\tilde{\bmg})$.
 Notice that the conformal approach followed in this article ---i.e.,
 use of the conformal Einstein field equations--- allows for the
 possibility that $\mathcal{S}$ intersect non-trivially with (or even
-be a subset of) the conformal boundary $\mathscr{I}$.  One possible
+be a subset of) null infinity $\mathscr{I}$.  One possible
 application is the identification of \emph{asymptotic initial data}
 ---initial data for the conformal Einstein field equations given on
 $\mathscr{I}$--- for de Sitter-like spacetimes and, in particular, an
@@ -2304,7 +2315,7 @@ Killing spinor initial data equations ---see \cite{Pae14a,
   ColRacVal18} and \cite{CarVal18}.  In the case of the characteristic
 problem, the conformal approach of this article would facilitate the
 analysis of the existence of Killing spinors at the conformal boundary
-of an asymptotically flat spacetimes.  In the case of a timelike
+of a asymptotically flat spacetimes.  In the case of a timelike
 hypersurface, the analogous conformal Killing spinor initial data
 equations could be used in the analysis and characterisation of
 anti-de Sitter like spacetimes.
@@ -2323,8 +2334,8 @@ acknowledges support from the COST grant CA16104.  \appendix
 \section{Appendix}\label{Appendix_A}
 
 Here we give the derivation of some of the key identities used in
-Section \ref{Sec:KSWaveEqs} and the proof of Lemma
-\ref{prop_remove_redundant_conditions} from Section
+section \ref{Sec:KSWaveEqs} and the proof of Lemma
+\ref{prop_remove_redundant_conditions} from section
 \ref{IntrinsicCKSID}.
 
 \subsection{Spinorial identities}
@@ -2603,8 +2614,10 @@ section with the previous, Lemma
 
 
 %%%%%%%%%%%%%%%%% 
-% \bibliographystyle{/home/egarcia/Dropbox/References/reporthack}
-% \bibliography{/home/egarcia/Dropbox/References/GRbibJune2021a}
+%%\bibliographystyle{/home/egarcia/Dropbox/References/reporthack}
+%\bibliographystyle{/home/gasperin/Academic/Dropbox/References/reporthack}
+%%\bibliography{/home/egarcia/Dropbox/References/GRbibJune2021a}
+%\bibliography{/home/gasperin/Academic/Dropbox/References/GRbibJune2021a}
 %%%%%%%%%%%%%%%%%
 
 
@@ -2771,6 +2784,13 @@ M.~{Mars}, T.-T. {Paetz}, J.~M.~M. {Senovilla}, \& W.~{Simon},
 \newblock {\em {Characterization of (asymptotically) Kerr-de Sitter-like
   spacetimes at null infinity}},
 \newblock Classical and Quantum Gravity {\bf 33}(15), 155001 (Aug. 2016).
+
+
+\bibitem{MarPeo22}
+M.~Mars \& C.~Pe\'on-Nieto,
+\newblock {\em {Classification of Kerr\textendash{}de Sitter-like spacetimes
+  with conformally flat I in all dimensions}},
+\newblock Phys. Rev. D {\bf 105}(4), 044027 (2022).
 
 \bibitem{McLBer93}
 R.~G. McLenaghan \& N.~V. den Bergh,
