@@ -362,7 +362,7 @@ infinity $\mathscr{I}$, being a submanifold of $(\mathcal{M},\bmg)$, is a bonafi
 (regular) evolution equations. This set
 up is particularly attractive in cases where $\lambda>0$, in
 which, given the appropriate conditions (sufficient decay of matter fields
-at infinity), null infinity is a spacelike hypersurface, allowing for one can pose an \emph{asymptotic initial value problem}: an
+at infinity), null infinity is a spacelike hypersurface, allowing for one to pose an \emph{asymptotic initial value problem}: an
 initial value problem where the initial hypersurface is $\mathscr{I}$
 ---see \cite{GasVal17,MarPaeSenSim16, LueVal09}.
 
@@ -397,7 +397,7 @@ initial data equations introduced in \cite{GarVal08c}. In other words, what are 
 this article by deriving such conditions, these being termed the
 \emph{conformal Killing spinor initial data equations}. 
 
-% \medskip
+\medskip
 The main result of this article, the more precise statement of which
 can be found in Theorem \ref{Theorem_KS}, is summarised informally
 in the following:
@@ -414,7 +414,7 @@ domain of dependence, $\mathcal{W}\subseteq\mathcal{D}^+(\mathcal{U})$.
 
    The core of the proof of this theorem is
    obtaining a closed system of homogeneous wave equations for certain fields
-   encoding the existence of a Killing spinor. Although these wave
+   (so called \emph{zero quantities}) encoding the existence of a Killing spinor. Although these wave
    equations hold regardless of the causal character of $\mathcal{S}$,
    when obtaining conditions intrinsic to $\mathcal{S}$ we assume for conciseness
    that it is spacelike.  A similar
@@ -486,7 +486,7 @@ spinors and the conformal Einstein field equations.
 \subsection{Spinorial formalism in a nutshell}
 \label{NotationAndSpinorFormalism}
 
-Since $(\mathcal{M}, \bmg)$ is, by assumption, globally-hyperbolic, and of signature $(+, -, -, -)$ it
+Since $(\mathcal{M}, \bmg)$ is, by assumption, globally-hyperbolic and of signature $(+, -, -, -)$, it
 admits a spinor structure ---see Proposition $4$ in
 \cite{CFEbook}. 
 %The use of the spinor structure of $(\mathcal{M},\bmg)$ fixes the signature to $(+, -, -, -)$.
@@ -531,8 +531,7 @@ $\square := \nabla_{AA'}\nabla^{AA'}.$
 \medskip 
 
 To keep the discussion self-contained, we briefly recall the space spinor
-formalism, originally introduced in \cite{Som80}
----see also \cite{GarVal08c,BaeVal10b,CFEbook}.  Let $\tau^{AA'}$
+formalism, originally introduced in \cite{Som80}; see also \cite{GarVal08c,BaeVal10b,CFEbook}.  Let $\tau^{AA'}$
 denote the spinorial counterpart of a timelike vector $\tau^{a}$,
 normal to a spacelike hypersurface $\mathcal{S}$ and normalised so
 that $\tau_{a}\tau^{a}=2$.  Then, it follows that
@@ -622,7 +621,7 @@ while in the Killing spinor case ($p=2$) it takes the form
 \]
 where $\Psi_{ABCD}$ denotes the Weyl spinor, which is conformally invariant.
 This constraint restricts $\Psi_{ABCD}$ to be algebraically special, in particular of Petrov type D, N or O. In the twistor case, which can be considered a degenerate case in which $\kappa_{AB}\kappa^{AB}=0$ (implying that $\kappa_{AB}=\kappa_A\kappa_B$ for some twistor $\kappa_A$), the spacetime is necessarily of Petrov type N or
-O, hence restricting its applicability to black
+O, hence restricting its utlity in black
 hole characterisation. On the other hand, given a vacuum spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$ of Petrov type D,
 there is an explicit
 formula for a Killing spinor: choosing an adapted dyad $\lbrace \bmo,
@@ -655,7 +654,7 @@ collineations.  Once the existence of a Killing spinor is established
 one can use the conformal factor $\Xi$, the Killing spinor
 $\kappa_{AB}$ and $\xi_{AA'}$ to construct a conformal Killing vector
 $X_{a}$ associated to a Killing vector $\tilde{X}_{a}$ of the physical
-spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$. In the analysis of
+spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$ ---see Remark \ref{GeometricSignificance}, later. In the analysis of
 \cite{GarVal08c}, the fact that
 $\tilde{\xi}_{AA'}=\tilde{\nabla}_{A'}{}^{Q}\tilde{\kappa}_{QA}$ is a
 Killing vector is crucial;
@@ -756,7 +755,7 @@ reformulation of the Einstein field equations. In other words, given a
 spacetime $(\tilde{\mathcal{M}},\tilde{\bmg})$ satisfying the Einstein
 field equations, the CFEs encode a system of implied differential conditions for the curvature and
 concomitants of the conformal factor associated with
-$(\mathcal{M},\bmg)$ where $\bmg=\Xi^2\tilde{\bmg}$. The key property
+$(\mathcal{M},\bmg)$ where $\bmg=\Xi^2\tilde{\bmg}$. As mentioned in the introduction, the key property
 of these equations is that they are regular even at null infinity
 $\mathscr{I}$, where $\Xi=0$ ---see also \cite{CFEbook} for a
 comprehensive discussion.
@@ -1045,11 +1044,7 @@ calculations.
   \end{align}
 It is illustrative to introduce this
   shorthand since the analogous quantity in the Killing spinor case
-  will play an important role in the calculation.
-
-  \medskip
-  
-  On the other hand, the auxiliary quantity
+  will play an important role in the calculation. On the other hand, the auxiliary quantity
   $Q_A$ will be central for the following discussion since it
   encodes a wave equation for $\kappa_A$. To see this, observe that
   tracing the identity \eqref{curl_H_twistor} and substituting 
@@ -1228,7 +1223,7 @@ analogue of Theorem \ref{TheoremHomogeneousWave} applies for the
 singular equation \eqref{WaveH_twistor_singular}.  However, one of the
 advantages of the conformal approach of the CFEs is that one deals
 with manifestly regular equations.  Therefore, from this perspective,
-it is preferable to deal with regular equations by introducing $B_{ABC}$ as a further
+it is preferable to deal with manifestly regular equations by introducing $B_{ABC}$ as a further
 zero-quantity to be propagated.  The same observation holds for the
 conformal valence-2 Killing spinor initial data discussion of the
 following sections, where, to close the system in a regular way, one
@@ -1528,6 +1523,7 @@ and \eqref{Eq:WaveForKS_DefinitionQ} that
 
 
 \begin{remark}
+\label{GeometricSignificance}
   \emph{ As stressed in section \ref{sec:Introduction}, in general
   the auxiliary spinor $\xi_{AA'}$ is not the spinorial counterpart of
   a Killing vector. Contrast this with the case of the physical
