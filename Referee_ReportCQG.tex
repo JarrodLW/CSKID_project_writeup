@@ -1,0 +1,277 @@
+
+
+%%%% answer to referee report 14 June 2022
+
+\documentclass[a4paper,10pt]{article}      
+\usepackage[utf8x]{inputenc}
+\pdfoutput=1
+\usepackage{nccfoots}
+\renewcommand\refname{Referencias}
+\usepackage{times}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{stmaryrd}
+\usepackage{marginnote}
+\usepackage[mathscr]{euscript}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage[dvips]{epsfig}
+%\usepackage{showkeys}
+\usepackage{wasysym}
+\usepackage{mathrsfs}
+\usepackage{eufrak}
+\usepackage{bm}
+\usepackage{authblk}
+\usepackage{slashed}
+\usepackage{yhmath} 
+%\usepackage{authblk}
+%%%%%large commented parts
+\usepackage{verbatim}
+\renewcommand\Affilfont{\itshape\small}
+
+\usepackage{natbib}
+
+
+\theoremstyle{plain}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{assumption}{Assumption}
+\newtheorem*{conjecture}{Conjecture}
+\newtheorem*{subconjecture}{Subconjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{main}{Main Result}
+\newtheorem*{definition}{Definition}
+\newtheorem*{remark}{Remark}
+
+
+
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\newcommand{\myrule} [3] []{
+    \begin{center}
+        \begin{tikzpicture}
+            \draw[#2-#3, ultra thick, #1] (0,0) to (0.5\linewidth,0);
+        \end{tikzpicture}
+    \end{center}
+}
+
+
+% Underlined lowcase latin letters
+\def\es{{\bar{s}}}
+\def\er{{\bar{r}}}
+
+% Boldface mathmode lowcase latin letters
+\def\bma{{\bm a}}
+\def\bmb{{\bm b}}
+\def\bmc{{\bm c}}
+\def\bmd{{\bm d}}
+\def\bme{{\bm e}}
+\def\bmf{{\bm f}}
+\def\bmg{{\bm g}}
+\def\bmh{{\bm h}}
+\def\bmi{{\bm i}}
+\def\bmj{{\bm j}}
+\def\bmk{{\bm k}}
+\def\bml{{\bm l}}
+\def\bmn{{\bm n}}
+\def\bmm{{\bm m}}
+\def\bmo{{\bm o}}
+\def\bmp{{\bm p}}
+\def\bms{{\bm s}}
+\def\bmt{{\bm t}}
+\def\bmu{{\bm u}}
+\def\bmv{{\bm v}}
+\def\bmw{{\bm w}}
+\def\bmx{{\bm x}}
+\def\bmy{{\bm y}}
+\def\bmz{{\bm z}}
+
+% Boldface mathmode numbers
+\def\bmzero{{\bm 0}}
+\def\bmone{{\bm 1}}
+\def\bmtwo{{\bm 2}}
+\def\bmthree{{\bm 3}}
+
+% Boldface mathmode uppercase latin letters
+\def\bmA{{\bm A}}
+\def\bmB{{\bm B}}
+\def\bmC{{\bm C}}
+\def\bmD{{\bm D}}
+\def\bmE{{\bm E}}
+\def\bmF{{\bm F}}
+\def\bmG{{\bm G}}
+\def\bmH{{\bm H}}
+\def\bmK{{\bm K}}
+\def\bmL{{\bm L}}
+\def\bmM{{\bm M}}
+\def\bmN{{\bm N}}
+\def\bmP{{\bm P}}
+\def\bmQ{{\bm Q}}
+\def\bmR{{\bm R}}
+\def\bmS{{\bm S}}
+\def\bmT{{\bm T}}
+\def\bmX{{\bm X}}
+\def\bmZ{{\bm Z}}
+
+\def\Riem{{\bm R}{\bm i}{\bm e}{\bm m}}
+\def\Ric{{\bm R}{\bm i}{\bm c}}
+\def\Weyl{{\bm W}{\bm e}{\bm y}{\bm l}}
+\def\Schouten{{\bm S}{\bmc}{\bm h}}
+
+% Mathbf letters
+\def\mbfu{\mathbf{u}}
+
+% Boldface mathmode lowcase greek letters
+\def\bmalpha{{\bm \alpha}}
+\def\bmbeta{{\bm \beta}}
+\def\bmgamma{{\bm \gamma}}
+\def\bmdelta{{\bm \delta}}
+\def\bmepsilon{{\bm \epsilon}}
+\def\bmeta{{\bm \eta}}
+\def\bmzeta{{\bm\zeta}}
+\def\bmxi{{\bm \xi}}
+\def\bmchi{{\bm \chi}}
+\def\bmiota{{\bm \iota}}
+\def\bmomega{{\bm \omega}}
+\def\bmlambda{{\bm \lambda}}
+\def\bmmu{{\bm \mu}}
+\def\bmnu{{\bm \nu}}
+\def\bmpi{{\bm \pi}}
+\def\bmpsi{{\bm \psi}}
+\def\bmphi{{\bm \phi}}
+\def\bmvarphi{{\bm \varphi}}
+\def\bmsigma{{\bm \sigma}}
+\def\bmvarsigma{{\bm \varsigma}}
+\def\bmtau{{\bm \tau}}
+
+% Boldface mathmode uppercase greek letters
+\def\bmUpsilon{{\bm \Upsilon}}
+\def\bmSigma{{\bm \Sigma}}
+
+% Boldface operators
+\def\bmpartial{{\bm \partial}}
+\def\bmnabla{{\bm \nabla}}
+\def\bmhbar{{\bm \hbar}}
+\def\bmperp{{\bm \perp}}
+
+
+%Yang-Mills indices
+\def\fraka{\mathfrak{a}}
+\def\frakb{\mathfrak{b}}
+\def\frakc{\mathfrak{c}}
+
+
+%Counter variable for the margin notes
+\newcounter{mnotecount}%[section]
+
+% This code generates the margin notes
+\newcommand{\mnotex}[1]%{}
+{\protect{\stepcounter{mnotecount}}$^{\mbox{\footnotesize $\bullet$\themnotecount}}$ 
+\marginpar{%\color{red}%
+\raggedright\tiny\em
+$\!\!\!\!\!\!\,\bullet$\themnotecount: #1} }
+
+
+\renewcommand{\title}[1]{{\bfseries #1}\par}
+\renewcommand{\author}[1]{\medskip{#1}\par\smallskip}
+\newcommand{\affiliation}[1]{{\itshape #1}\par}
+\newcommand{\email}[1]{E-mail:~\texttt{#1}\par}
+
+
+\numberwithin{equation}{section}
+
+
+
+
+\begin{document}
+\begin{center}
+  \title{\LARGE Response to the referee report on ``The conformal Killing spinor initial data equations''
+  \\ \vspace{0.5cm} \Large
+  }
+\vspace{3mm}
+\author{\large }
+%\Footnotetext{}{1991 \emph{Mathematics Subject Classification.} 58J45,53C25,83C05.}
+%\Footnotetext{}{\emph{Key words and phrases.} Nonlinear Stability, General Relativity, Einstein metrics, Einstein flow.}
+
+\vspace{1mm}
+%\affiliation{Universität Potsdam, Institut für Mathematik\\Am Neuen Palais 10\\14469 Potsdam, Germany} 
+%\email{klaus.kroencke@uni-potsdam.de} 
+\end{center}
+
+%\begin{center}
+%\today
+%\end{center}
+%
+\vspace{2mm}
+
+ 
+%
+%\begin{center}
+%\line(1,0){250}
+%\end{center}
+% \myrule[double]{}{}
+%
+%\tableofcontents
+%
+
+We thank the referee for his/her valuable the time taken
+for the careful reading our paper and for the insightful comments. We think that the article has significantly improved
+with the received recommendations. We have addressed the comments of the referee and we provide a list of the changes for so that
+they can be more easily located in the revised version the paper which we adjoint.
+
+
+  \begin{itemize}
+
+  \item[i)] About Comment 1. Indeed we agree with the referee that the
+    fact that $\xi_{AA'}$ is not a Killing vector is a conceptual
+    important point to stress and explained in the text as early as
+    possible. To do so, we have added what constitutes Remark 1 in
+    page 6 of the revised version of the paper.
+
+  
+     
+  \item[ii)] About Comment 2: We coincide with the referee that at
+    first sight equations (19) and (45) do not imply that $B_{ABC}$
+    and $B_{ABCD}$ vanish on the conformal boundary. We have followed
+    the suggestion of the referee to clarify this point. We thank the
+    referee for this comment and for suggesting a solution as
+    well. The corresponding change is located in ............... in
+    the revised version of the paper.
+
+  \item[iii)] About Comment 3: We thank the referee for pointing out
+    this fact about the 2-dimensional Sen connection. Although we are
+    not experts on the 1+1+2 spinor split from which the 2-dimensional
+    Sen connection arises, we have added reference [27] (New spinorial
+    approach to mass inequalities for black holes in general
+    relativity) where this is explained and could be useful for
+    readers interested in further investigations of these conditions
+    where the 1+1+2 split has applicability. Touching upon this point
+    we have added remark 12. We acknowledge that the observation by the
+    referee about the 2-dim Sen connection is of potential relevance
+    for future applications of the present paper: possibly in the
+    characteristic set up and for applications related to trapped
+    surfaces and distorted horizons. Nevertheless, we leave this
+    discussion for future work.
+
+    
+  \end{itemize}
+
+
+
+
+
+
+\end{document}
+
+
