@@ -627,13 +627,7 @@ setting $\Xi = 1$. The need for a different
 set of Killing spinor zero-quantities in the
 conformal case can be traced back to the observation that in
 $(\mathcal{M},\bmg)$ the vector
-$\xi_{AA'}=\nabla_{A'}{}^{Q}\kappa_{QA}$ does not correspond to a Killing (or even a \emph{conformal} Killing) vector.
-
-\begin{remark}
-  
-\mnotex{EG: change here. Adding remark.}
-    %%%%% Addressing Referee's comment 1 here %%%%%%%
-    \emph{ To clarify this point observe that,
+$\xi_{AA'}=\nabla_{A'}{}^{Q}\kappa_{QA}$ does not correspond to a Killing (or even a \emph{conformal} Killing) vector. To clarify this point observe that,
 %%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%
 %% defining $H_{A'ABC} := 3\nabla_{A'(A}\kappa_{BC)}$ ---so that the Killing spinor equation is
 %% encoded in $H_{A'ABC}=0$--- one has,
@@ -650,16 +644,15 @@ Thus, if $(\mathcal{M},\bmg)$ admits a Killing spinor, then
 \nabla_{AA'}\xi_{BB'} + \nabla_{BB'}\xi_{AA'} +
 6\kappa_{(A}{}^{Q}\Phi_{B)QA'B'}=0.
 \end{equation}
-Notice that, if the last term were absent, then expression
+Notice that if the last term were absent, then expression
 \eqref{S_expression} would constitute the Killing vector equation
-$\nabla_{a}\xi_b +\nabla_b\xi_a=0$. Hence if $(\mathcal{M},\bmg)$ is a
-solution to the vacuum EFE ---namely $\Phi_{AA'BB'}=0$--- which admits a Killing spinor,
-then $\xi_a$ is a Killing vector.  Observe that for a general $(\mathcal{M},\bmg)$
----for which $\Phi_{AA'BB'}\neq 0$--- admiting a Killing spinor, one
-cannot conclude that $\xi_a$ is a Killing vector ---unless one imposes
-further assumptions.  }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{remark}
+$\nabla_{a}\xi_b +\nabla_b\xi_a=0$. Hence, if $(\mathcal{M},\bmg)$ is a
+solution to the vacuum EFEs, namely $\Phi_{AA'BB'}=0$, and admitting a Killing spinor,
+then the resulting $\xi^a$ is a Killing vector. Observe that for a general $(\mathcal{M},\bmg)$
+---for which $\Phi_{AA'BB'}\neq 0$--- one
+cannot conclude that the vector $\xi^a$ derived from a Killing spinor is a Killing vector unless one imposes
+further assumptions. 
+\\
 
 Although for a general Lorentzian manifold
 the vector $\xi_{AA'}$ appears not to have any clear geometric significance, a
@@ -987,8 +980,14 @@ derivative of $\bmH$ and substituting definition
   \nabla_{(A}{}^{A'}H_{|A'|BC)} = 2\Xi B_{ABC}.
   \end{equation}
   It is clear that if the unphysical spacetime
-  $(\mathcal{M},\bmg)$ admits a twistor  then $H_{A'AB}=B_{ABC}=0$. 
+  $(\mathcal{M},\bmg)$ admits a twistor then $H_{A'AB}=0$. Away from the
+  conformal boundary, equation \eqref{Curl_H_sym_toB_twistor} then implies
+  that $B_{ABC}=0$, since $\Xi\neq 0$. This clearly extends to the conformal boundary
+  by continuity. Hence, given a twistor $\kappa_{AB}$, the resulting quantities
+  $\bmH, \bmB$ necessarily vanish. In the case that the conformal boundary is not null, 
+  one can argue that $B_{ABC}=0$ without appealing to an argument by continuity\footnote{We thank the referee for suggesting this calculation.} ---see Remark \ref{Remark:VanshingOfBuchdahlAtBoundary}, below, for more details. 
   
+      
 \subsection{Auxiliary quantities and the twistor candidate equation}
   
 The following auxiliary quantities
@@ -1106,8 +1105,23 @@ _{BC)DF}.  \label{Hom_wave_HandB2}
 \end{subequations}
 Notice that the only place where the CFEs (in their wave equation
 form) were used is in substituting for the $\square \phi _{ABCD}$ term
-in equation \eqref{pre_wave_B_twistor}.  \\
+in equation \eqref{pre_wave_B_twistor}.  
 
+\begin{remark}\label{Remark:VanshingOfBuchdahlAtBoundary}
+{\em Contracting \eqref{Hom_wave_HandB1} with $\nabla_F{}^{B'}\Xi$, one obtains
+\begin{multline}\label{wave_H_twistor}
+ (\nabla_{CC'}\Xi)(\nabla^{CC'}\Xi) B_{ABF}  =\tfrac{1}{2}(\nabla_F{}^{B'}\Xi)(\square H_{B'AB} - 6 \Lambda H_{B'AB} - 4 \Xi
+  \nabla_{DB'}B_{AB}{}^{D} + \\
+  4
+  \Phi_{(A}{}^{D}{}_{|B'}{}^{A'}H_{A'|B)D} - \tfrac{4}{3}
+  \nabla_{(A|B'|}Q_{B)}).
+\end{multline}
+Now let $p\in\mathscr{I}$ and suppose there exists a twistor on some open neighbourhood. Then, we see that at $p$ the right-hand-side of \eqref{wave_H_twistor} vanishes, and we obtain
+\[ (\nabla_{CC'}\Xi)(\nabla^{CC'}\Xi) B_{ABF}=0. \]
+Hence, if the conformal boundary is not null at $p$, then $ (\nabla_{CC'}\Xi)(\nabla^{CC'}\Xi) \neq 0$ and we see then that 
+$B_{ABC}=0$.
+}
+\end{remark}
 The important observation about equations
 \eqref{Hom_wave_HandB1}--\eqref{Hom_wave_HandB2} is that they comprise
 a closed system of \emph{regular and homogeneous} wave equations for
@@ -1416,7 +1430,11 @@ following additional zero-quantity
 \begin{equation}
  F_{A'BCD}:=\nabla^Q{}_{A'}B_{QBCD}.\label{Eq:DefZeroQuantityF}
 \end{equation}
-We shall show that it is however possible to derive a closed
+Following the same logic as in the twistor case ---see Section
+\ref{Sec:TwistorZeroQuantities}--- it is clear that if there exists a Killing spinor on 
+an open region of the unphysical spacetime, then there resulting zero quantities
+$\bmH,\bmB,\bmF$ indeed vanish there.
+We shall show that it is possible to derive a closed
 homogeneous wave system for the fields $(\bmH, \bmB, \bmF)$.
 
 
@@ -2035,10 +2053,10 @@ the physical framework case. This is the content of the following:
   Given initial data for the CFEs, suppose that the initial data for the rescaled Weyl spinor
   $\phi_{ABCD}$ is of Petrov type D on $\mathcal{U}\subset\mathcal{S}$
   and suppose further that
-  \footnote{The fields $\sigma$ and $\lambda$ (not to be confused with
-  the cosmological constant), along with $\kappa, \tau, \rho, \mu,
-  \nu, \pi$ to follow, are Newmann--Penrose (NP) scalars
-  \cite{PenRin84, PenRin86}; see the Appendix for further details.}
+ % \footnote{The fields $\sigma$ and $\lambda$ (not to be confused with
+ % the cosmological constant), along with $\kappa, \tau, \rho, \mu,
+ % \nu, \pi$ to follow, are Newmann--Penrose (NP) scalars
+ % \cite{PenRin84, PenRin86}; see the Appendix for further details.}
 \begin{equation} 
 \sigma\equiv - o^A o^B o^C\mathcal{D}_{AB}o_C=0 \quad \text{and}\quad
 \lambda\equiv
@@ -2073,7 +2091,8 @@ to give
 && \mathcal{D}_{\bm1\bm1}\phi = 3\phi(\nu - \pi), \\
 && \lambda = 0,
 \end{eqnarray*}
-in terms of the NP scalars ---to see this, substitute
+in terms of the spin connection coefficients given in Appendix \ref{Sec:ProofOfProp3}. 
+To see this, substitute
 $e^{\varkappa}=\phi^{-1/3}$ in equations
 \eqref{SpatialSenTypeD0000}--\eqref{SpatialSenTypeD1111} of the
 Appendix.  The first and last components are guaranteed by the
@@ -2098,50 +2117,63 @@ be of type O anywhere on $\tilde{\mathcal{V}}$ and so must be of type
 D.
 \end{proof}
 
-
-\mnotex{EG: change here. Adding remark.}
-\begin{remark}
+\begin{remark}\label{Remark:DyadRelations}
   {\em Recall that the spin basis $\{o^A, \iota^A\}$ used in Corollary
     \ref{Corollary:PetrovPropagation} is one adapted to the
     principal null directions, namely, so that the Killing spinor and the
     rescaled Weyl spinor read
-    \begin{align}
-\kappa_{AB}=e^\varkappa o_{(A}\iota_{B)} \qquad \phi_{ABCD}=\phi
+    \begin{align}\label{AdaptedDyadExpressions}
+\kappa_{AB}=e^\varkappa o_{(A}\iota_{B)} \qquad \phi_{ABCD}=\phi 
 o_{(A}o_{B}\iota_{C}\iota_{D)}.
     \end{align}
+If the normal to the foliation takes the form 
+\begin{equation}\label{CanonicalNormal}
+\tau^{AA'}=o^A\bar{o}^{A'}+\iota^A\bar{\iota}^{A'}
+\end{equation}
+with respect to this dyad, then the scalars $\alpha, \beta,
+\epsilon, \gamma, \kappa, \mu, \lambda, \rho, \tau, \sigma, \nu, \pi$, as given in Appendix \ref{Sec:ProofOfProp3}, coincide with the 
+ Newman--Penrose (NP) scalars of the same names. For a general hypersurface of a type D spacetime, however, there need not exist 
+a dyad for which \eqref{AdaptedDyadExpressions} and \eqref{CanonicalNormal} both hold. 
+Indeed, the normal to the $``t=\text{constant}"$ hypersurfaces in the Kerr spacetime ---$``t"$
+ being the standard Boyer--Lindquist time coordinate--- does not take the form \eqref{CanonicalNormal}
+ with respect to a Petrov-adapted dyad. 
+ %In particular, $\lambda$ and $\sigma$ are 
+ However, it is interesting to note that in the case of Kerr-de Sitter there exists a spin dyad for which
+ \eqref{AdaptedDyadExpressions} and \eqref{CanonicalNormal} both hold \emph{on the conformal boundary}, 
+ which recall is a spacelike hypersurface ---see []. 
 
-    As discussed in \cite{ValCol17} for the physical spacetime
-    $(\tilde{\mathcal{M}},\tilde{\bmg})$ and
+    %As discussed in \cite{ValCol17} for the physical spacetime
+    %$(\tilde{\mathcal{M}},\tilde{\bmg})$ and
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    in the particular case of the Kerr-Newman spacetime
+    %in the particular case of the Kerr-Newman spacetime
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% the spinor basis adapted to
-    the principal null directions $\{\tilde{o}^A, \tilde{\iota}^A\}$
-    may not coincide with a spinor basis $\{\hat{\tilde{o}}^A,
-    \hat{\tilde{\iota}}^A\}$ adapted to the timelike Killing vector so
-    that $(\partial_{\tilde{t}})^{AA'}=
-    \hat{\tilde{o}}^A\hat{\tilde{o}}^{A'} +
-    \hat{\tilde{\iota}}^A\hat{\tilde{\iota}}^{A'} $.  Nevertheless, this
-    does not imply that the principal null directions cannot be
-    aligned with the normal $\tilde{N}^a$ to the spacelike
-    hypersurface $\tilde{\Sigma}:=\{ p\in \tilde{\mathcal{M}}
-    \,\,|\,\,\tilde{t}=0\}$. To see this, recall that in the standard 3+1 split one has
-    $\tilde{N}^a=\tilde{N}
-    (\partial_{\tilde{t}})^a+ \tilde{\beta}^a$, where $\tilde{N}$
-    denotes the lapse and $\tilde{\beta}^a$ the shift so one can
-    allow for a non trivial shift so that $\tilde{N}^a=\tilde{l}^a+\tilde{n}^a$.
-    Mutatis mutandis, a similar
-    construction can be done for a conformal extension
-    $(\mathcal{M},\bmg)$ of the Kerr-de Sitter spacetime.
+    %the principal null directions $\{\tilde{o}^A, \tilde{\iota}^A\}$
+    %may not coincide with a spinor basis $\{\hat{\tilde{o}}^A,
+    %\hat{\tilde{\iota}}^A\}$ adapted to the timelike Killing vector so
+    %that $(\partial_{\tilde{t}})^{AA'}=
+    %\hat{\tilde{o}}^A\hat{\tilde{o}}^{A'} +
+    %\hat{\tilde{\iota}}^A\hat{\tilde{\iota}}^{A'} $.  Nevertheless, this
+    %does not imply that the principal null directions cannot be
+    %aligned with the normal $\tilde{N}^a$ to the spacelike
+    %hypersurface $\tilde{\Sigma}:=\{ p\in \tilde{\mathcal{M}}
+    %\,\,|\,\,\tilde{t}=0\}$. To see this, recall that in the standard 3+1 split one has
+    %$\tilde{N}^a=\tilde{N}
+    %(\partial_{\tilde{t}})^a+ \tilde{\beta}^a$, where $\tilde{N}$
+    %denotes the lapse and $\tilde{\beta}^a$ the shift so one can
+    %allow for a non trivial shift so that $\tilde{N}^a=\tilde{l}^a+\tilde{n}^a$.
+    %Mutatis mutandis, a similar
+    %construction can be done for a conformal extension
+    %$(\mathcal{M},\bmg)$ of the Kerr-de Sitter spacetime.
     %%%%%%%%%%%%%%%% cheap thing %%%%%%%%%%%%%%
     %%---see \cite{ \cite{https://qmro.qmul.ac.uk/xmlui/bitstream/handle/123456789/25820}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    Additionally, note that the conditions of Corollary
-    \ref{Corollary:PetrovPropagation}  constraints only the geometry of a foliation of the initial
-    hypersurface $\Sigma$ by 2-surfaces $\mathcal{S}$ with normal
-    vector $\rho^{AA'}:=o^A\bar{o}^{A'} - \iota^A\bar{\iota}^{A'}$
-    ---see \cite{ValKop21} for a discussion of the 1+1+2 spinor formalism
-    and the associated 2-dimensional Sen connection.
-    \footnote{We thank the anonimous referee for pointing out this last observation.}
+    %Additionally, note that the conditions of Corollary
+    %\ref{Corollary:PetrovPropagation}  constraints only the geometry of a foliation of the initial
+    %hypersurface $\Sigma$ by 2-surfaces $\mathcal{S}$ with normal
+    %vector $\rho^{AA'}:=o^A\bar{o}^{A'} - \iota^A\bar{\iota}^{A'}$
+    %---see \cite{ValKop21} for a discussion of the 1+1+2 spinor formalism
+    %and the associated 2-dimensional Sen connection.
+    %\footnote{We thank the referee for making this last observation.}
 
 
   }
@@ -2379,7 +2411,7 @@ Type O, for which $\phi_{ABCD}=0$, the proof of Lemma
 \ref{prop_remove_redundant_conditions} trivialises, so only the types
 $N$ and $D$ are needed.  \\
 
-Recalling that $\mathcal{D}_{AB}:= \tau_{(A}{}^{A'}\nabla_{B)A'}$, a straightforward computation yields 
+For convenience, we write
 \begin{align*}
 & o^Ao^Bo^C\mathcal{D}_{AB}o_C = -\sigma,\\
 & o^Ao^B\iota^C\mathcal{D}_{AB}o_C=o^Ao^Bo^C\mathcal{D}_{AB}\iota_C=-\beta,\\
@@ -2389,12 +2421,15 @@ Recalling that $\mathcal{D}_{AB}:= \tau_{(A}{}^{A'}\nabla_{B)A'}$, a straightfor
 & \iota^A\iota^B\iota^C\mathcal{D}_{AB}o_C = \iota^A\iota^B o^C\mathcal{D}_{AB}\iota_C = \alpha,\\
 & o^A o^B\iota^C\mathcal{D}_{AB}\iota_C = -\mu,\\
 & o^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C = \tfrac{1}{2}(\pi - \nu),\\
-& \iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C = \lambda	,
+& \iota^A\iota^B\iota^C\mathcal{D}_{AB}\iota_C = \lambda	.
 \end{align*}
-where we are following the conventions of \cite{PenRin84} in the
-definition of the Newmann--Penrose (NP) scalars $\alpha, \beta,
-\epsilon, \gamma, \kappa, \mu, \lambda, \rho, \tau, \sigma, \nu, \pi.$
-\\
+If the normal vector takes the canonical form 
+\[ \tau^{AA'}=o^A\bar{o}^{A'}+\iota^A\bar{\iota}^{A'}\]
+then the fields $\alpha, \beta,
+\epsilon, \gamma, \kappa, \mu, \lambda, \rho, \tau, \sigma, \nu, \pi$ coincide with the 
+familiar NP scalars, consistent with the conventions of \cite{PenRin84}. 
+In general, this need not be the case and the above should be regarded as convenient shorthands; we do not use 
+any relations satisfied by the NP scalars. See remark \ref{Remark:DyadRelations} for more discussion.\\
 
 The following identities will also be useful
 \begin{subequations}
@@ -2697,11 +2732,11 @@ G.~H. Katzin, J.~Levine, \& W.~R. Davis,
   of the Riemann Curvature Tensor},
 \newblock Journal of Mathematical Physics {\bf 10}(4), 617--629 (1969).
 
-\bibitem{ValKop21}
-J.~Kopi\'nski \& J.~A.~Valiente Kroon,
-\newblock {\em New spinorial approach to mass inequalities for black holes in
-  general relativity},
-\newblock Physical Review D {\bf 103}(2) (jan 2021).
+%\bibitem{ValKop21}
+%J.~Kopi\'nski \& J.~A.~Valiente Kroon,
+%\newblock {\em New spinorial approach to mass inequalities for black holes in
+%  general relativity},
+%\newblock Physical Review D {\bf 103}(2) (jan 2021).
 
 \bibitem{LueVal09}
 C.~L\"ubbe \& J.~A. {Valiente Kroon},
